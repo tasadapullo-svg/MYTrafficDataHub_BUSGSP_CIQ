@@ -1,0 +1,176 @@
+{
+  "header": {
+    "gtfs_realtime_version": "2.0",
+    "incrementality": "FULL_DATASET",
+    "timestamp": "1788105820"
+  },
+  "entity": [{
+    "id": "0",
+    "vehicle": {
+      "trip": {
+        "trip_id": "weekend_U3000_U300002_0",
+        "start_time": "00:00:40",
+        "start_date": "20260831",
+        "route_id": "U3000"
+      },
+      "position": {
+        "latitude": 3.138952,
+        "longitude": 101.75622,
+        "bearing": 66.6,
+        "speed": 16.3
+      },
+      "timestamp": "1788105800",
+      "vehicle": {
+        "id": "VEN6127",
+        "license_plate": "VEN6127"
+      }
+    }
+  }, {
+    "id": "1",
+    "vehicle": {
+      "trip": {
+        "trip_id": "weekend_T6000_T600002_0",
+        "start_time": "00:01:54",
+        "start_date": "20260831",
+        "route_id": "T6000"
+      },
+      "position": {
+        "latitude": 3.047383,
+        "longitude": 101.62118,
+        "bearing": 206.0,
+        "speed": 48.15
+      },
+      "timestamp": "1788105804",
+      "vehicle": {
+        "id": "WVN7784",
+        "license_plate": "WVN7784"
+      }
+    }
+  }, {
+    "id": "2",
+    "vehicle": {
+      "trip": {
+        "trip_id": "weekend_U3000_U300002_0",
+        "start_time": "00:00:20",
+        "start_date": "20260831",
+        "route_id": "U3000"
+      },
+      "position": {
+        "latitude": 3.123942,
+        "longitude": 101.730225,
+        "bearing": 50.4,
+        "speed": 17.96
+      },
+      "timestamp": "1788105790",
+      "vehicle": {
+        "id": "VGG9481",
+        "license_plate": "VGG9481"
+      }
+    }
+  }, {
+    "id": "3",
+    "vehicle": {
+      "trip": {
+        "trip_id": "weekend_T6010_T601001_0",
+        "start_time": "00:00:53",
+        "start_date": "20260831",
+        "route_id": "T6010"
+      },
+      "position": {
+        "latitude": 3.001489,
+        "longitude": 101.59715,
+        "bearing": 22.9,
+        "speed": 7.96
+      },
+      "timestamp": "1788105802",
+      "vehicle": {
+        "id": "WA1376G",
+        "license_plate": "WA1376G"
+      }
+    }
+  }, {
+    "id": "4",
+    "vehicle": {
+      "trip": {
+        "trip_id": "weekend_T6010_T601002_0",
+        "start_time": "00:00:25",
+        "start_date": "20260831",
+        "route_id": "T6010"
+      },
+      "position": {
+        "latitude": 2.984987,
+        "longitude": 101.61219,
+        "bearing": 358.3,
+        "speed": 16.46
+      },
+      "timestamp": "1788105791",
+      "vehicle": {
+        "id": "WVG2493",
+        "license_plate": "WVG2493"
+      }
+    }
+  }, {
+    "id": "5",
+    "vehicle": {
+      "trip": {
+        "trip_id": "weekend_U7508_U750802_0",
+        "start_time": "00:00:22",
+        "start_date": "20260831",
+        "route_id": "U7508"
+      },
+      "position": {
+        "latitude": 3.069289,
+        "longitude": 101.516945,
+        "bearing": 10.4,
+        "speed": 21.11
+      },
+      "timestamp": "1788105798",
+      "vehicle": {
+        "id": "JXK435",
+        "license_plate": "JXK435"
+      }
+    }
+  }, {
+    "id": "6",
+    "vehicle": {
+      "trip": {
+        "trip_id": "weekend_T6400_T640002_0",
+        "start_time": "00:01:36",
+        "start_date": "20260831",
+        "route_id": "T6400"
+      },
+      "position": {
+        "latitude": 3.10015,
+        "longitude": 101.64616,
+        "bearing": 294.0,
+        "speed": 25.93
+      },
+      "timestamp": "1788105786",
+      "vehicle": {
+        "id": "WB872U",
+        "license_plate": "WB872U"
+      }
+    }
+  }, {
+    "id": "7",
+    "vehicle": {
+      "trip": {
+        "trip_id": "weekend_U2020_U202001_0",
+        "start_time": "00:02:11",
+        "start_date": "20260831",
+        "route_id": "U2020"
+      },
+      "position": {
+        "latitude": 3.152228,
+        "longitude": 101.69866,
+        "bearing": 29.1,
+        "speed": 9.07
+      },
+      "timestamp": "1788105782",
+      "vehicle": {
+        "id": "WVE4752",
+        "license_plate": "WVE4752"
+      }
+    }
+  }]
+}

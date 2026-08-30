@@ -1,0 +1,4 @@
+package com.mytransitgps.modules.ciq.parser;
+import com.fasterxml.jackson.databind.ObjectMapper;import com.mytransitgps.modules.ciq.domain.FaultyTrafficLightRecord;import java.util.*;
+/** 独立 Parser：只解析字段，不访问网络/数据库。 */
+public class FaultyTrafficLightsParser { private final ObjectMapper mapper; public FaultyTrafficLightsParser(ObjectMapper m){mapper=m;} public List<FaultyTrafficLightRecord> parse(byte[] body){var root=CiqJsonParserSupport.root(mapper,body);List<FaultyTrafficLightRecord> out=new ArrayList<>();for(var n:CiqJsonParserSupport.values(root))out.add(new FaultyTrafficLightRecord(CiqJsonParserSupport.text(n,"AlarmID"),CiqJsonParserSupport.text(n,"NodeID"),CiqJsonParserSupport.sn(n,"Type"),CiqJsonParserSupport.instant(n,"StartDate"),CiqJsonParserSupport.instant(n,"EndDate"),CiqJsonParserSupport.text(n,"Message")));return out;} }

@@ -1,0 +1,92 @@
+{
+  "header": {
+    "gtfs_realtime_version": "2.0",
+    "incrementality": "FULL_DATASET",
+    "timestamp": "1788107489"
+  },
+  "entity": [{
+    "id": "0",
+    "vehicle": {
+      "trip": {
+        "trip_id": "weekend_U7700_U770001_11",
+        "start_time": "00:22:14",
+        "start_date": "20260831",
+        "route_id": "U7700"
+      },
+      "position": {
+        "latitude": 3.123817,
+        "longitude": 101.68283,
+        "bearing": 236.0,
+        "speed": 35.19
+      },
+      "timestamp": "1788107474",
+      "vehicle": {
+        "id": "CDH8332",
+        "license_plate": "CDH8332"
+      }
+    }
+  }, {
+    "id": "1",
+    "vehicle": {
+      "trip": {
+        "trip_id": "weekend_U7720_U772001_10",
+        "start_time": "00:21:23",
+        "start_date": "20260831",
+        "route_id": "U7720"
+      },
+      "position": {
+        "latitude": 3.130422,
+        "longitude": 101.68345,
+        "bearing": 324.0,
+        "speed": 13.52
+      },
+      "timestamp": "1788107467",
+      "vehicle": {
+        "id": "W479T",
+        "license_plate": "W479T"
+      }
+    }
+  }, {
+    "id": "2",
+    "vehicle": {
+      "trip": {
+        "trip_id": "weekend_U7508_U750802_0",
+        "start_time": "00:00:22",
+        "start_date": "20260831",
+        "route_id": "U7508"
+      },
+      "position": {
+        "latitude": 3.098375,
+        "longitude": 101.63538,
+        "bearing": 14.2,
+        "speed": 54.26
+      },
+      "timestamp": "1788107478",
+      "vehicle": {
+        "id": "JXK435",
+        "license_plate": "JXK435"
+      }
+    }
+  }, {
+    "id": "3",
+    "vehicle": {
+      "trip": {
+        "trip_id": "weekend_U2020_U202001_0",
+        "start_time": "00:02:11",
+        "start_date": "20260831",
+        "route_id": "U2020"
+      },
+      "position": {
+        "latitude": 3.235726,
+        "longitude": 101.70054,
+        "bearing": 270.7,
+        "speed": 42.6
+      },
+      "timestamp": "1788107482",
+      "vehicle": {
+        "id": "WVE4752",
+        "license_plate": "WVE4752"
+      }
+    }
+  }]
+}

@@ -1,0 +1,48 @@
+{
+  "header": {
+    "gtfs_realtime_version": "2.0",
+    "incrementality": "FULL_DATASET",
+    "timestamp": "1788105613"
+  },
+  "entity": [{
+    "id": "9e2048d2-466b-4f96-bf5f-2cbeb396216c",
+    "vehicle": {
+      "trip": {
+        "trip_id": "0006_M23CWLMYMK_12594_1_P2_ALLDAY_1_3",
+        "start_date": "20260830",
+        "route_id": "M23CWLMYMK",
+        "direction_id": 1
+      },
+      "position": {
+        "latitude": 2.351676,
+        "longitude": 102.10832
+      },
+      "timestamp": "1788105612",
+      "vehicle": {
+        "id": "MDL1275",
+        "label": "MDL1275",
+        "license_plate": "MDL1275"
+      }
+    }
+  }, {
+    "id": "0fbf0947-aeaa-4ccb-9611-6a726b726f86",
+    "vehicle": {
+      "trip": {
+        "trip_id": "0006_M11CWLMYMK_12571_0_P2_ALLDAY_2_1",
+        "start_date": "20260830",
+        "route_id": "M11CWLMYMK",
+        "direction_id": 0
+      },
+      "position": {
+        "latitude": 2.228754,
+        "longitude": 102.29506
+      },
+      "timestamp": "1788105612",
+      "vehicle": {
+        "id": "MDV2713",
+        "label": "MDV2713",
+        "license_plate": "MDV2713"
+      }
+    }
+  }]
+}

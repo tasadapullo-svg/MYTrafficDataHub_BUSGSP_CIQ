@@ -1,0 +1,1927 @@
+{
+  "header": {
+    "gtfs_realtime_version": "2.0",
+    "incrementality": "FULL_DATASET",
+    "timestamp": "1787806285"
+  },
+  "entity": [{
+    "id": "0",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010183S5",
+        "route_id": "T410"
+      },
+      "position": {
+        "latitude": 3.079532,
+        "longitude": 101.74612,
+        "bearing": 179.0,
+        "speed": 0.0
+      },
+      "timestamp": "1787806277",
+      "vehicle": {
+        "id": "VH4089",
+        "license_plate": "VH4089"
+      }
+    }
+  }, {
+    "id": "1",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010144S7",
+        "route_id": "T588"
+      },
+      "position": {
+        "latitude": 3.089615,
+        "longitude": 101.694466,
+        "bearing": 185.0,
+        "speed": 0.0
+      },
+      "timestamp": "1787806265",
+      "vehicle": {
+        "id": "VH4215",
+        "license_plate": "VH4215"
+      }
+    }
+  }, {
+    "id": "2",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010023S6",
+        "route_id": "T801"
+      },
+      "position": {
+        "latitude": 3.170078,
+        "longitude": 101.57543,
+        "bearing": 358.0,
+        "speed": 9.0
+      },
+      "timestamp": "1787806269",
+      "vehicle": {
+        "id": "VH4307",
+        "license_plate": "VH4307"
+      }
+    }
+  }, {
+    "id": "3",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010268S6",
+        "route_id": "T772"
+      },
+      "position": {
+        "latitude": 3.143448,
+        "longitude": 101.53311,
+        "bearing": 26.0,
+        "speed": 34.0
+      },
+      "timestamp": "1787806269",
+      "vehicle": {
+        "id": "VH4604",
+        "license_plate": "VH4604"
+      }
+    }
+  }, {
+    "id": "4",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010078S7",
+        "route_id": "T103"
+      },
+      "position": {
+        "latitude": 3.190334,
+        "longitude": 101.59512,
+        "bearing": 271.0,
+        "speed": 37.0
+      },
+      "timestamp": "1787806273",
+      "vehicle": {
+        "id": "VH4683",
+        "license_plate": "VH4683"
+      }
+    }
+  }, {
+    "id": "5",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010008S6",
+        "route_id": "T155 Outbound"
+      },
+      "position": {
+        "latitude": 3.222571,
+        "longitude": 101.50906,
+        "bearing": 273.0,
+        "speed": 30.0
+      },
+      "timestamp": "1787806278",
+      "vehicle": {
+        "id": "VH4930",
+        "license_plate": "VH4930"
+      }
+    }
+  }, {
+    "id": "6",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010132S5",
+        "route_id": "T543"
+      },
+      "position": {
+        "latitude": 2.999153,
+        "longitude": 101.66501,
+        "bearing": 180.0,
+        "speed": 0.0
+      },
+      "timestamp": "1787806281",
+      "vehicle": {
+        "id": "VK2655",
+        "license_plate": "VK2655"
+      }
+    }
+  }, {
+    "id": "7",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010133S5",
+        "route_id": "T543"
+      },
+      "position": {
+        "latitude": 3.040165,
+        "longitude": 101.67449,
+        "bearing": 272.0,
+        "speed": 30.0
+      },
+      "timestamp": "1787806253",
+      "vehicle": {
+        "id": "VAE7196",
+        "license_plate": "VAE7196"
+      }
+    }
+  }, {
+    "id": "8",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010186S5",
+        "route_id": "T464"
+      },
+      "position": {
+        "latitude": 2.982704,
+        "longitude": 101.7901,
+        "bearing": 181.0,
+        "speed": 0.0
+      },
+      "timestamp": "1787806276",
+      "vehicle": {
+        "id": "VK6258",
+        "license_plate": "VK6258"
+      }
+    }
+  }, {
+    "id": "9",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010136S5",
+        "route_id": "T565"
+      },
+      "position": {
+        "latitude": 0.0,
+        "longitude": 0.0,
+        "bearing": 0.0,
+        "speed": 0.0
+      },
+      "timestamp": "1787806262",
+      "vehicle": {
+        "id": "VAF5439",
+        "license_plate": "VAF5439"
+      }
+    }
+  }, {
+    "id": "10",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010166S7",
+        "route_id": "T408"
+      },
+      "position": {
+        "latitude": 3.095939,
+        "longitude": 101.75632,
+        "bearing": 209.0,
+        "speed": 40.0
+      },
+      "timestamp": "1787806274",
+      "vehicle": {
+        "id": "VAF5451",
+        "license_plate": "VAF5451"
+      }
+    }
+  }, {
+    "id": "11",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010168S6",
+        "route_id": "T410"
+      },
+      "position": {
+        "latitude": 3.080306,
+        "longitude": 101.722145,
+        "bearing": 200.0,
+        "speed": 23.0
+      },
+      "timestamp": "1787806275",
+      "vehicle": {
+        "id": "VAF5461",
+        "license_plate": "VAF5461"
+      }
+    }
+  }, {
+    "id": "12",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010193S8",
+        "route_id": "T409"
+      },
+      "position": {
+        "latitude": 3.104619,
+        "longitude": 101.749725,
+        "bearing": 0.0,
+        "speed": 0.0
+      },
+      "timestamp": "1787806276",
+      "vehicle": {
+        "id": "VM1930",
+        "license_plate": "VM1930"
+      }
+    }
+  }, {
+    "id": "13",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010263S5",
+        "route_id": "T568"
+      },
+      "position": {
+        "latitude": 3.000048,
+        "longitude": 101.71202,
+        "bearing": 94.0,
+        "speed": 5.0
+      },
+      "timestamp": "1787806275",
+      "vehicle": {
+        "id": "VM2846",
+        "license_plate": "VM2846"
+      }
+    }
+  }, {
+    "id": "14",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010281S6",
+        "route_id": "T401"
+      },
+      "position": {
+        "latitude": 3.113922,
+        "longitude": 101.719666,
+        "bearing": 180.0,
+        "speed": 31.0
+      },
+      "timestamp": "1787806262",
+      "vehicle": {
+        "id": "VX3035",
+        "license_plate": "VX3035"
+      }
+    }
+  }, {
+    "id": "15",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010285S8",
+        "route_id": "T461"
+      },
+      "position": {
+        "latitude": 2.974782,
+        "longitude": 101.798416,
+        "bearing": 269.0,
+        "speed": 0.0
+      },
+      "timestamp": "1787806256",
+      "vehicle": {
+        "id": "VX3537",
+        "license_plate": "VX3537"
+      }
+    }
+  }, {
+    "id": "16",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010048S5",
+        "route_id": "T114"
+      },
+      "position": {
+        "latitude": 3.257476,
+        "longitude": 101.6435,
+        "bearing": 21.0,
+        "speed": 51.0
+      },
+      "timestamp": "1787806278",
+      "vehicle": {
+        "id": "VAF5761",
+        "license_plate": "VAF5761"
+      }
+    }
+  }, {
+    "id": "17",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010243S5",
+        "route_id": "T305"
+      },
+      "position": {
+        "latitude": 3.109579,
+        "longitude": 101.73024,
+        "bearing": 161.0,
+        "speed": 0.0
+      },
+      "timestamp": "1787806264",
+      "vehicle": {
+        "id": "VX3578",
+        "license_plate": "VX3578"
+      }
+    }
+  }, {
+    "id": "18",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010153S6",
+        "route_id": "T569"
+      },
+      "position": {
+        "latitude": 3.036212,
+        "longitude": 101.76808,
+        "bearing": 26.0,
+        "speed": 45.0
+      },
+      "timestamp": "1787806265",
+      "vehicle": {
+        "id": "VH2499",
+        "license_plate": "VH2499"
+      }
+    }
+  }, {
+    "id": "19",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010178S5",
+        "route_id": "T815"
+      },
+      "position": {
+        "latitude": 3.118082,
+        "longitude": 101.64804,
+        "bearing": 290.0,
+        "speed": 0.0
+      },
+      "timestamp": "1787806255",
+      "vehicle": {
+        "id": "VAF5780",
+        "license_plate": "VAF5780"
+      }
+    }
+  }, {
+    "id": "20",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010219S8",
+        "route_id": "T415"
+      },
+      "position": {
+        "latitude": 3.053209,
+        "longitude": 101.78572,
+        "bearing": 208.0,
+        "speed": 2.0
+      },
+      "timestamp": "1787806280",
+      "vehicle": {
+        "id": "VAG4673",
+        "license_plate": "VAG4673"
+      }
+    }
+  }, {
+    "id": "21",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010278S6",
+        "route_id": "T400"
+      },
+      "position": {
+        "latitude": 3.107347,
+        "longitude": 101.72739,
+        "bearing": 329.0,
+        "speed": 0.0
+      },
+      "timestamp": "1787806273",
+      "vehicle": {
+        "id": "VAG4709",
+        "license_plate": "VAG4709"
+      }
+    }
+  }, {
+    "id": "22",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010227S5",
+        "route_id": "T511"
+      },
+      "position": {
+        "latitude": 2.922476,
+        "longitude": 101.68529,
+        "bearing": 220.0,
+        "speed": 11.0
+      },
+      "timestamp": "1787806268",
+      "vehicle": {
+        "id": "VAG4711",
+        "license_plate": "VAG4711"
+      }
+    }
+  }, {
+    "id": "23",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010245S7",
+        "route_id": "T458"
+      },
+      "position": {
+        "latitude": 2.991555,
+        "longitude": 101.79919,
+        "bearing": 249.0,
+        "speed": 0.0
+      },
+      "timestamp": "1787806258",
+      "vehicle": {
+        "id": "VAG8049",
+        "license_plate": "VAG8049"
+      }
+    }
+  }, {
+    "id": "24",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010196S5",
+        "route_id": "T451"
+      },
+      "position": {
+        "latitude": 2.926894,
+        "longitude": 101.78951,
+        "bearing": 319.0,
+        "speed": 0.0
+      },
+      "timestamp": "1787806279",
+      "vehicle": {
+        "id": "VAG8051",
+        "license_plate": "VAG8051"
+      }
+    }
+  }, {
+    "id": "25",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010216S4",
+        "route_id": "T460"
+      },
+      "position": {
+        "latitude": 2.987307,
+        "longitude": 101.80881,
+        "bearing": 265.0,
+        "speed": 39.0
+      },
+      "timestamp": "1787806252",
+      "vehicle": {
+        "id": "VAG8541",
+        "license_plate": "VAG8541"
+      }
+    }
+  }, {
+    "id": "26",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010269S6",
+        "route_id": "T772"
+      },
+      "position": {
+        "latitude": 3.147356,
+        "longitude": 101.52496,
+        "bearing": 340.0,
+        "speed": 32.0
+      },
+      "timestamp": "1787806253",
+      "vehicle": {
+        "id": "VAH9042",
+        "license_plate": "VAH9042"
+      }
+    }
+  }, {
+    "id": "27",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010014S8",
+        "route_id": "T107"
+      },
+      "position": {
+        "latitude": 3.199101,
+        "longitude": 101.6217,
+        "bearing": 146.0,
+        "speed": 13.0
+      },
+      "timestamp": "1787806269",
+      "vehicle": {
+        "id": "VAJ2850",
+        "license_plate": "VAJ2850"
+      }
+    }
+  }, {
+    "id": "28",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010013S8",
+        "route_id": "T106"
+      },
+      "position": {
+        "latitude": 3.19744,
+        "longitude": 101.60838,
+        "bearing": 112.0,
+        "speed": 31.0
+      },
+      "timestamp": "1787806271",
+      "vehicle": {
+        "id": "VAJ2854",
+        "license_plate": "VAJ2854"
+      }
+    }
+  }, {
+    "id": "29",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010042S5",
+        "route_id": "T114"
+      },
+      "position": {
+        "latitude": 3.220471,
+        "longitude": 101.640976,
+        "bearing": 129.0,
+        "speed": 20.0
+      },
+      "timestamp": "1787806268",
+      "vehicle": {
+        "id": "VAK1014",
+        "license_plate": "VAK1014"
+      }
+    }
+  }, {
+    "id": "30",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010053S14",
+        "route_id": "T117"
+      },
+      "position": {
+        "latitude": 3.194094,
+        "longitude": 101.65794,
+        "bearing": 67.0,
+        "speed": 0.0
+      },
+      "timestamp": "1787806280",
+      "vehicle": {
+        "id": "VG6477",
+        "license_plate": "VG6477"
+      }
+    }
+  }, {
+    "id": "31",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010175S6",
+        "route_id": "T807"
+      },
+      "position": {
+        "latitude": 3.124419,
+        "longitude": 101.59327,
+        "bearing": 172.0,
+        "speed": 23.0
+      },
+      "timestamp": "1787806277",
+      "vehicle": {
+        "id": "VG6524",
+        "license_plate": "VG6524"
+      }
+    }
+  }, {
+    "id": "32",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010062S9",
+        "route_id": "T812"
+      },
+      "position": {
+        "latitude": 3.159015,
+        "longitude": 101.61595,
+        "bearing": 285.0,
+        "speed": 6.0
+      },
+      "timestamp": "1787806267",
+      "vehicle": {
+        "id": "VG6550",
+        "license_plate": "VG6550"
+      }
+    }
+  }, {
+    "id": "33",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010067S7",
+        "route_id": "T419"
+      },
+      "position": {
+        "latitude": 3.130836,
+        "longitude": 101.71753,
+        "bearing": 135.0,
+        "speed": 16.0
+      },
+      "timestamp": "1787806280",
+      "vehicle": {
+        "id": "VG8671",
+        "license_plate": "VG8671"
+      }
+    }
+  }, {
+    "id": "34",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010040S8",
+        "route_id": "T805"
+      },
+      "position": {
+        "latitude": 3.151162,
+        "longitude": 101.57621,
+        "bearing": 306.0,
+        "speed": 0.0
+      },
+      "timestamp": "1787806267",
+      "vehicle": {
+        "id": "VG8849",
+        "license_plate": "VG8849"
+      }
+    }
+  }, {
+    "id": "35",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010126S6",
+        "route_id": "T565"
+      },
+      "position": {
+        "latitude": 3.031304,
+        "longitude": 101.72418,
+        "bearing": 88.0,
+        "speed": 35.0
+      },
+      "timestamp": "1787806273",
+      "vehicle": {
+        "id": "VH2049",
+        "license_plate": "VH2049"
+      }
+    }
+  }, {
+    "id": "36",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010215S8",
+        "route_id": "T414"
+      },
+      "position": {
+        "latitude": 3.055696,
+        "longitude": 101.75936,
+        "bearing": 159.0,
+        "speed": 22.0
+      },
+      "timestamp": "1787806268",
+      "vehicle": {
+        "id": "VH4062",
+        "license_plate": "VH4062"
+      }
+    }
+  }, {
+    "id": "37",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010001S6",
+        "route_id": "T305"
+      },
+      "position": {
+        "latitude": 3.117573,
+        "longitude": 101.763336,
+        "bearing": 354.0,
+        "speed": 38.0
+      },
+      "timestamp": "1787806267",
+      "vehicle": {
+        "id": "VH4084",
+        "license_plate": "VH4084"
+      }
+    }
+  }, {
+    "id": "38",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010148S6",
+        "route_id": "T852"
+      },
+      "position": {
+        "latitude": 3.144603,
+        "longitude": 101.661545,
+        "bearing": 247.0,
+        "speed": 6.0
+      },
+      "timestamp": "1787806269",
+      "vehicle": {
+        "id": "VAC5764",
+        "license_plate": "VAC5764"
+      }
+    }
+  }, {
+    "id": "39",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010114S6",
+        "route_id": "T852"
+      },
+      "position": {
+        "latitude": 3.158246,
+        "longitude": 101.64873,
+        "bearing": 227.0,
+        "speed": 52.0
+      },
+      "timestamp": "1787806275",
+      "vehicle": {
+        "id": "VAC5791",
+        "license_plate": "VAC5791"
+      }
+    }
+  }, {
+    "id": "40",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010238S11",
+        "route_id": "T455"
+      },
+      "position": {
+        "latitude": 3.026552,
+        "longitude": 101.77167,
+        "bearing": 140.0,
+        "speed": 24.0
+      },
+      "timestamp": "1787806256",
+      "vehicle": {
+        "id": "VAE7147",
+        "license_plate": "VAE7147"
+      }
+    }
+  }, {
+    "id": "41",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010154S6",
+        "route_id": "T569"
+      },
+      "position": {
+        "latitude": 3.017921,
+        "longitude": 101.71057,
+        "bearing": 179.0,
+        "speed": 30.0
+      },
+      "timestamp": "1787806267",
+      "vehicle": {
+        "id": "VAE7340",
+        "license_plate": "VAE7340"
+      }
+    }
+  }, {
+    "id": "42",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010129S7",
+        "route_id": "T566"
+      },
+      "position": {
+        "latitude": 3.008723,
+        "longitude": 101.70637,
+        "bearing": 279.0,
+        "speed": 0.0
+      },
+      "timestamp": "1787806256",
+      "vehicle": {
+        "id": "VAE7537",
+        "license_plate": "VAE7537"
+      }
+    }
+  }, {
+    "id": "43",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731021322S6",
+        "route_id": "T458"
+      },
+      "position": {
+        "latitude": 2.998787,
+        "longitude": 101.78557,
+        "bearing": 139.0,
+        "speed": 0.0
+      },
+      "timestamp": "1787806276",
+      "vehicle": {
+        "id": "VAE7564",
+        "license_plate": "VAE7564"
+      }
+    }
+  }, {
+    "id": "44",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010253S7",
+        "route_id": "T462"
+      },
+      "position": {
+        "latitude": 2.962938,
+        "longitude": 101.758804,
+        "bearing": 167.0,
+        "speed": 0.0
+      },
+      "timestamp": "1787806266",
+      "vehicle": {
+        "id": "VAF5430",
+        "license_plate": "VAF5430"
+      }
+    }
+  }, {
+    "id": "45",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010173S7",
+        "route_id": "T417"
+      },
+      "position": {
+        "latitude": 3.01625,
+        "longitude": 101.75314,
+        "bearing": 329.0,
+        "speed": 29.0
+      },
+      "timestamp": "1787806250",
+      "vehicle": {
+        "id": "VAF5438",
+        "license_plate": "VAF5438"
+      }
+    }
+  }, {
+    "id": "46",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010190S8",
+        "route_id": "T412"
+      },
+      "position": {
+        "latitude": 3.063088,
+        "longitude": 101.7461,
+        "bearing": 179.0,
+        "speed": 31.0
+      },
+      "timestamp": "1787806259",
+      "vehicle": {
+        "id": "VAF5480",
+        "license_plate": "VAF5480"
+      }
+    }
+  }, {
+    "id": "47",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010027S6",
+        "route_id": "T802"
+      },
+      "position": {
+        "latitude": 3.167479,
+        "longitude": 101.54775,
+        "bearing": 89.0,
+        "speed": 26.0
+      },
+      "timestamp": "1787806257",
+      "vehicle": {
+        "id": "VAF5766",
+        "license_plate": "VAF5766"
+      }
+    }
+  }, {
+    "id": "48",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010138S7",
+        "route_id": "T586"
+      },
+      "position": {
+        "latitude": 3.083814,
+        "longitude": 101.68983,
+        "bearing": 354.0,
+        "speed": 20.0
+      },
+      "timestamp": "1787806274",
+      "vehicle": {
+        "id": "VAF6417",
+        "license_plate": "VAF6417"
+      }
+    }
+  }, {
+    "id": "49",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010176S8",
+        "route_id": "T810"
+      },
+      "position": {
+        "latitude": 3.168559,
+        "longitude": 101.613205,
+        "bearing": 238.0,
+        "speed": 1.0
+      },
+      "timestamp": "1787806271",
+      "vehicle": {
+        "id": "VAF691",
+        "license_plate": "VAF691"
+      }
+    }
+  }, {
+    "id": "50",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010195S5",
+        "route_id": "T451"
+      },
+      "position": {
+        "latitude": 2.970726,
+        "longitude": 101.789696,
+        "bearing": 1.0,
+        "speed": 6.0
+      },
+      "timestamp": "1787806262",
+      "vehicle": {
+        "id": "VAG4715",
+        "license_plate": "VAG4715"
+      }
+    }
+  }, {
+    "id": "51",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010018S7",
+        "route_id": "T108"
+      },
+      "position": {
+        "latitude": 3.192401,
+        "longitude": 101.63358,
+        "bearing": 247.0,
+        "speed": 31.0
+      },
+      "timestamp": "1787806265",
+      "vehicle": {
+        "id": "VAG4892",
+        "license_plate": "VAG4892"
+      }
+    }
+  }, {
+    "id": "52",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010276S5",
+        "route_id": "T305"
+      },
+      "position": {
+        "latitude": 3.135008,
+        "longitude": 101.76922,
+        "bearing": 185.0,
+        "speed": 0.0
+      },
+      "timestamp": "1787806267",
+      "vehicle": {
+        "id": "VAG8054",
+        "license_plate": "VAG8054"
+      }
+    }
+  }, {
+    "id": "53",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010248S8",
+        "route_id": "T459"
+      },
+      "position": {
+        "latitude": 2.984678,
+        "longitude": 101.814156,
+        "bearing": 117.0,
+        "speed": 0.0
+      },
+      "timestamp": "1787806275",
+      "vehicle": {
+        "id": "VAJ1481",
+        "license_plate": "VAJ1481"
+      }
+    }
+  }, {
+    "id": "54",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010213S8",
+        "route_id": "T413"
+      },
+      "position": {
+        "latitude": 3.07674,
+        "longitude": 101.764755,
+        "bearing": 106.0,
+        "speed": 0.0
+      },
+      "timestamp": "1787806272",
+      "vehicle": {
+        "id": "VAJ3412",
+        "license_plate": "VAJ3412"
+      }
+    }
+  }, {
+    "id": "55",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010179S6",
+        "route_id": "T152"
+      },
+      "position": {
+        "latitude": 3.235569,
+        "longitude": 101.66294,
+        "bearing": 193.0,
+        "speed": 3.0
+      },
+      "timestamp": "1787806275",
+      "vehicle": {
+        "id": "VAK985",
+        "license_plate": "VAK985"
+      }
+    }
+  }, {
+    "id": "56",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010012S5",
+        "route_id": "T102"
+      },
+      "position": {
+        "latitude": 3.19559,
+        "longitude": 101.52849,
+        "bearing": 87.0,
+        "speed": 26.0
+      },
+      "timestamp": "1787806273",
+      "vehicle": {
+        "id": "VG6493",
+        "license_plate": "VG6493"
+      }
+    }
+  }, {
+    "id": "57",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731011020S11",
+        "route_id": "T100"
+      },
+      "position": {
+        "latitude": 3.213732,
+        "longitude": 101.578766,
+        "bearing": 0.0,
+        "speed": 33.0
+      },
+      "timestamp": "1787806268",
+      "vehicle": {
+        "id": "VG8643",
+        "license_plate": "VG8643"
+      }
+    }
+  }, {
+    "id": "58",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010152S6",
+        "route_id": "T569"
+      },
+      "position": {
+        "latitude": 3.026886,
+        "longitude": 101.71433,
+        "bearing": 330.0,
+        "speed": 13.0
+      },
+      "timestamp": "1787806273",
+      "vehicle": {
+        "id": "VH2485",
+        "license_plate": "VH2485"
+      }
+    }
+  }, {
+    "id": "59",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010025S6",
+        "route_id": "T802"
+      },
+      "position": {
+        "latitude": 3.169861,
+        "longitude": 101.56445,
+        "bearing": 196.0,
+        "speed": 0.0
+      },
+      "timestamp": "1787806277",
+      "vehicle": {
+        "id": "VAC5746",
+        "license_plate": "VAC5746"
+      }
+    }
+  }, {
+    "id": "60",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731011068S6",
+        "route_id": "T105"
+      },
+      "position": {
+        "latitude": 3.252246,
+        "longitude": 101.55732,
+        "bearing": 298.0,
+        "speed": 21.0
+      },
+      "timestamp": "1787806267",
+      "vehicle": {
+        "id": "VH4086",
+        "license_plate": "VH4086"
+      }
+    }
+  }, {
+    "id": "61",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010036S5",
+        "route_id": "T155 Inbound"
+      },
+      "position": {
+        "latitude": 3.206711,
+        "longitude": 101.57807,
+        "bearing": 105.0,
+        "speed": 20.0
+      },
+      "timestamp": "1787806265",
+      "vehicle": {
+        "id": "VH4236",
+        "license_plate": "VH4236"
+      }
+    }
+  }, {
+    "id": "62",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010220S5",
+        "route_id": "T154"
+      },
+      "position": {
+        "latitude": 3.228219,
+        "longitude": 101.55242,
+        "bearing": 100.0,
+        "speed": 0.0
+      },
+      "timestamp": "1787806268",
+      "vehicle": {
+        "id": "VH4925",
+        "license_plate": "VH4925"
+      }
+    }
+  }, {
+    "id": "63",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010223S5",
+        "route_id": "T154"
+      },
+      "position": {
+        "latitude": 3.228612,
+        "longitude": 101.55709,
+        "bearing": 246.0,
+        "speed": 0.0
+      },
+      "timestamp": "1787806279",
+      "vehicle": {
+        "id": "VH4961",
+        "license_plate": "VH4961"
+      }
+    }
+  }, {
+    "id": "64",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010242S8",
+        "route_id": "T457"
+      },
+      "position": {
+        "latitude": 3.012312,
+        "longitude": 101.814514,
+        "bearing": 314.0,
+        "speed": 22.0
+      },
+      "timestamp": "1787806275",
+      "vehicle": {
+        "id": "VK6460",
+        "license_plate": "VK6460"
+      }
+    }
+  }, {
+    "id": "65",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010117S8",
+        "route_id": "T560"
+      },
+      "position": {
+        "latitude": 3.063594,
+        "longitude": 101.71043,
+        "bearing": 333.0,
+        "speed": 3.0
+      },
+      "timestamp": "1787806277",
+      "vehicle": {
+        "id": "VH2549",
+        "license_plate": "VH2549"
+      }
+    }
+  }, {
+    "id": "66",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010140S7",
+        "route_id": "T587"
+      },
+      "position": {
+        "latitude": 3.089732,
+        "longitude": 101.69444,
+        "bearing": 0.0,
+        "speed": 0.0
+      },
+      "timestamp": "1787806259",
+      "vehicle": {
+        "id": "VAG4725",
+        "license_plate": "VAG4725"
+      }
+    }
+  }, {
+    "id": "67",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010202S8",
+        "route_id": "T411"
+      },
+      "position": {
+        "latitude": 3.083293,
+        "longitude": 101.7418,
+        "bearing": 357.0,
+        "speed": 41.0
+      },
+      "timestamp": "1787806279",
+      "vehicle": {
+        "id": "VH3743",
+        "license_plate": "VH3743"
+      }
+    }
+  }, {
+    "id": "68",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010072S6",
+        "route_id": "T815"
+      },
+      "position": {
+        "latitude": 3.128082,
+        "longitude": 101.64287,
+        "bearing": 231.0,
+        "speed": 7.0
+      },
+      "timestamp": "1787806242",
+      "vehicle": {
+        "id": "VAH9044",
+        "license_plate": "VAH9044"
+      }
+    }
+  }, {
+    "id": "69",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010020S8",
+        "route_id": "T109"
+      },
+      "position": {
+        "latitude": 3.184577,
+        "longitude": 101.63143,
+        "bearing": 295.0,
+        "speed": 31.0
+      },
+      "timestamp": "1787806270",
+      "vehicle": {
+        "id": "VAK952",
+        "license_plate": "VAK952"
+      }
+    }
+  }, {
+    "id": "70",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010077S9",
+        "route_id": "T816"
+      },
+      "position": {
+        "latitude": 3.119933,
+        "longitude": 101.63172,
+        "bearing": 87.0,
+        "speed": 15.0
+      },
+      "timestamp": "1787806279",
+      "vehicle": {
+        "id": "VG6473",
+        "license_plate": "VG6473"
+      }
+    }
+  }, {
+    "id": "71",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010265S6",
+        "route_id": "T803"
+      },
+      "position": {
+        "latitude": 3.154021,
+        "longitude": 101.55535,
+        "bearing": 255.0,
+        "speed": 53.0
+      },
+      "timestamp": "1787806273",
+      "vehicle": {
+        "id": "VG6491",
+        "license_plate": "VG6491"
+      }
+    }
+  }, {
+    "id": "72",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010142S10",
+        "route_id": "T589"
+      },
+      "position": {
+        "latitude": 3.064938,
+        "longitude": 101.7009,
+        "bearing": 197.0,
+        "speed": 33.0
+      },
+      "timestamp": "1787806279",
+      "vehicle": {
+        "id": "VG6529",
+        "license_plate": "VG6529"
+      }
+    }
+  }, {
+    "id": "73",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010066S8",
+        "route_id": "T813"
+      },
+      "position": {
+        "latitude": 3.136362,
+        "longitude": 101.620895,
+        "bearing": 177.0,
+        "speed": 40.0
+      },
+      "timestamp": "1787806273",
+      "vehicle": {
+        "id": "VG8580",
+        "license_plate": "VG8580"
+      }
+    }
+  }, {
+    "id": "74",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010011S5",
+        "route_id": "T102"
+      },
+      "position": {
+        "latitude": 3.20665,
+        "longitude": 101.58067,
+        "bearing": 0.0,
+        "speed": 0.0
+      },
+      "timestamp": "1787806269",
+      "vehicle": {
+        "id": "VG8597",
+        "license_plate": "VG8597"
+      }
+    }
+  }, {
+    "id": "75",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010157S5",
+        "route_id": "T102"
+      },
+      "position": {
+        "latitude": 3.212554,
+        "longitude": 101.51507,
+        "bearing": 359.0,
+        "speed": 42.0
+      },
+      "timestamp": "1787806277",
+      "vehicle": {
+        "id": "VG8703",
+        "license_plate": "VG8703"
+      }
+    }
+  }, {
+    "id": "76",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010034S8",
+        "route_id": "T180"
+      },
+      "position": {
+        "latitude": 3.195951,
+        "longitude": 101.6941,
+        "bearing": 1.0,
+        "speed": 0.0
+      },
+      "timestamp": "1787806275",
+      "vehicle": {
+        "id": "VG8715",
+        "license_plate": "VG8715"
+      }
+    }
+  }, {
+    "id": "77",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010063S7",
+        "route_id": "T418"
+      },
+      "position": {
+        "latitude": 3.130019,
+        "longitude": 101.71333,
+        "bearing": 35.0,
+        "speed": 21.0
+      },
+      "timestamp": "1787806273",
+      "vehicle": {
+        "id": "VG8742",
+        "license_plate": "VG8742"
+      }
+    }
+  }, {
+    "id": "78",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010019S12",
+        "route_id": "T104"
+      },
+      "position": {
+        "latitude": 3.198247,
+        "longitude": 101.57614,
+        "bearing": 271.0,
+        "speed": 0.0
+      },
+      "timestamp": "1787806268",
+      "vehicle": {
+        "id": "VH1570",
+        "license_plate": "VH1570"
+      }
+    }
+  }, {
+    "id": "79",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010259S7",
+        "route_id": "T544"
+      },
+      "position": {
+        "latitude": 2.983594,
+        "longitude": 101.66145,
+        "bearing": 0.0,
+        "speed": 0.0
+      },
+      "timestamp": "1787806275",
+      "vehicle": {
+        "id": "VH2478",
+        "license_plate": "VH2478"
+      }
+    }
+  }, {
+    "id": "80",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010280S6",
+        "route_id": "T401"
+      },
+      "position": {
+        "latitude": 3.122766,
+        "longitude": 101.72834,
+        "bearing": 327.0,
+        "speed": 32.0
+      },
+      "timestamp": "1787806270",
+      "vehicle": {
+        "id": "VH3745",
+        "license_plate": "VH3745"
+      }
+    }
+  }, {
+    "id": "81",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010073S6",
+        "route_id": "T815"
+      },
+      "position": {
+        "latitude": 3.119179,
+        "longitude": 101.655624,
+        "bearing": 275.0,
+        "speed": 15.0
+      },
+      "timestamp": "1787806274",
+      "vehicle": {
+        "id": "VH4221",
+        "license_plate": "VH4221"
+      }
+    }
+  }, {
+    "id": "82",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010146S6",
+        "route_id": "T852"
+      },
+      "position": {
+        "latitude": 3.16741,
+        "longitude": 101.65269,
+        "bearing": 188.0,
+        "speed": 7.0
+      },
+      "timestamp": "1787806252",
+      "vehicle": {
+        "id": "VAC5778",
+        "license_plate": "VAC5778"
+      }
+    }
+  }, {
+    "id": "83",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010043S8",
+        "route_id": "T115"
+      },
+      "position": {
+        "latitude": 3.204707,
+        "longitude": 101.64263,
+        "bearing": 312.0,
+        "speed": 0.0
+      },
+      "timestamp": "1787806273",
+      "vehicle": {
+        "id": "VH4318",
+        "license_plate": "VH4318"
+      }
+    }
+  }, {
+    "id": "84",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010226S5",
+        "route_id": "T511"
+      },
+      "position": {
+        "latitude": 2.932605,
+        "longitude": 101.67193,
+        "bearing": 331.0,
+        "speed": 0.0
+      },
+      "timestamp": "1787806274",
+      "vehicle": {
+        "id": "VH4335",
+        "license_plate": "VH4335"
+      }
+    }
+  }, {
+    "id": "85",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010277S6",
+        "route_id": "T400"
+      },
+      "position": {
+        "latitude": 3.133312,
+        "longitude": 101.72311,
+        "bearing": 284.0,
+        "speed": 10.0
+      },
+      "timestamp": "1787806277",
+      "vehicle": {
+        "id": "VX3625",
+        "license_plate": "VX3625"
+      }
+    }
+  }, {
+    "id": "86",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010135S6",
+        "route_id": "T585"
+      },
+      "position": {
+        "latitude": 3.098006,
+        "longitude": 101.68623,
+        "bearing": 357.0,
+        "speed": 0.0
+      },
+      "timestamp": "1787806278",
+      "vehicle": {
+        "id": "VH2547",
+        "license_plate": "VH2547"
+      }
+    }
+  }, {
+    "id": "87",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010182S5",
+        "route_id": "T352"
+      },
+      "position": {
+        "latitude": 3.123782,
+        "longitude": 101.72763,
+        "bearing": 336.0,
+        "speed": 12.0
+      },
+      "timestamp": "1787806277",
+      "vehicle": {
+        "id": "VH3603",
+        "license_plate": "VH3603"
+      }
+    }
+  }, {
+    "id": "88",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010004S8",
+        "route_id": "T101"
+      },
+      "position": {
+        "latitude": 3.212368,
+        "longitude": 101.561165,
+        "bearing": 214.0,
+        "speed": 17.0
+      },
+      "timestamp": "1787806261",
+      "vehicle": {
+        "id": "VAE7038",
+        "license_plate": "VAE7038"
+      }
+    }
+  }, {
+    "id": "89",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010096S8",
+        "route_id": "T465"
+      },
+      "position": {
+        "latitude": 3.003101,
+        "longitude": 101.782814,
+        "bearing": 164.0,
+        "speed": 2.0
+      },
+      "timestamp": "1787806273",
+      "vehicle": {
+        "id": "VAE7157",
+        "license_plate": "VAE7157"
+      }
+    }
+  }, {
+    "id": "90",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010221S9",
+        "route_id": "T416"
+      },
+      "position": {
+        "latitude": 3.041011,
+        "longitude": 101.77287,
+        "bearing": 0.0,
+        "speed": 0.0
+      },
+      "timestamp": "1787806203",
+      "vehicle": {
+        "id": "VH4096",
+        "license_plate": "VH4096"
+      }
+    }
+  }, {
+    "id": "91",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010207S8",
+        "route_id": "T453"
+      },
+      "position": {
+        "latitude": 3.03658,
+        "longitude": 101.78474,
+        "bearing": 69.0,
+        "speed": 49.0
+      },
+      "timestamp": "1787806265",
+      "vehicle": {
+        "id": "VAF5425",
+        "license_plate": "VAF5425"
+      }
+    }
+  }, {
+    "id": "92",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010204S5",
+        "route_id": "T460"
+      },
+      "position": {
+        "latitude": 2.971496,
+        "longitude": 101.827286,
+        "bearing": 215.0,
+        "speed": 28.0
+      },
+      "timestamp": "1787806272",
+      "vehicle": {
+        "id": "VAF5489",
+        "license_plate": "VAF5489"
+      }
+    }
+  }, {
+    "id": "93",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010098S7",
+        "route_id": "T821"
+      },
+      "position": {
+        "latitude": 3.159136,
+        "longitude": 101.671036,
+        "bearing": 161.0,
+        "speed": 44.0
+      },
+      "timestamp": "1787806280",
+      "vehicle": {
+        "id": "VAF5762",
+        "license_plate": "VAF5762"
+      }
+    }
+  }, {
+    "id": "94",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010147S6",
+        "route_id": "T852"
+      },
+      "position": {
+        "latitude": 3.162996,
+        "longitude": 101.65497,
+        "bearing": 64.0,
+        "speed": 21.0
+      },
+      "timestamp": "1787806276",
+      "vehicle": {
+        "id": "VAF5904",
+        "license_plate": "VAF5904"
+      }
+    }
+  }, {
+    "id": "95",
+    "vehicle": {
+      "trip": {
+        "trip_id": "241209021024S2",
+        "route_id": "T105"
+      },
+      "position": {
+        "latitude": 3.206444,
+        "longitude": 101.58082,
+        "bearing": 274.0,
+        "speed": 13.0
+      },
+      "timestamp": "1886017556",
+      "vehicle": {
+        "id": "VAL4552",
+        "license_plate": "VAL4552"
+      }
+    }
+  }, {
+    "id": "96",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010158S6",
+        "route_id": "T352"
+      },
+      "position": {
+        "latitude": 3.11266,
+        "longitude": 101.74007,
+        "bearing": 206.0,
+        "speed": 41.0
+      },
+      "timestamp": "1787806275",
+      "vehicle": {
+        "id": "VAF7167",
+        "license_plate": "VAF7167"
+      }
+    }
+  }, {
+    "id": "97",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010052S7",
+        "route_id": "T809"
+      },
+      "position": {
+        "latitude": 3.164565,
+        "longitude": 101.6109,
+        "bearing": 198.0,
+        "speed": 14.0
+      },
+      "timestamp": "1787806274",
+      "vehicle": {
+        "id": "VAG4871",
+        "license_plate": "VAG4871"
+      }
+    }
+  }, {
+    "id": "98",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010162S7",
+        "route_id": "T402"
+      },
+      "position": {
+        "latitude": 3.100908,
+        "longitude": 101.711914,
+        "bearing": 9.0,
+        "speed": 0.0
+      },
+      "timestamp": "1787806272",
+      "vehicle": {
+        "id": "VAG6349",
+        "license_plate": "VAG6349"
+      }
+    }
+  }, {
+    "id": "99",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010058S7",
+        "route_id": "T811"
+      },
+      "position": {
+        "latitude": 3.140912,
+        "longitude": 101.61514,
+        "bearing": 17.0,
+        "speed": 23.0
+      },
+      "timestamp": "1787806265",
+      "vehicle": {
+        "id": "VAJ6314",
+        "license_plate": "VAJ6314"
+      }
+    }
+  }, {
+    "id": "100",
+    "vehicle": {
+      "trip": {
+        "trip_id": "260731010047S6",
+        "route_id": "T807"
+      },
+      "position": {
+        "latitude": 3.121617,
+        "longitude": 101.57982,
+        "bearing": 73.0,
+        "speed": 37.0
+      },
+      "timestamp": "1787806274",
+      "vehicle": {
+        "id": "VAJ9068",
+        "license_plate": "VAJ9068"
+      }
+    }
+  }]
+}

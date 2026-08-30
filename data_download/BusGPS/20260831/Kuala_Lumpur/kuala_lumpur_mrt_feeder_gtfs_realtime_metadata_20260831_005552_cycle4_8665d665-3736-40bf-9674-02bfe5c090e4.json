@@ -1,0 +1,23 @@
+{
+  "run_id" : "multicity_continuous_20260831_004840",
+  "run_uid" : "6da4eda1-f53f-4349-8d34-8cd643939684",
+  "city" : "Kuala Lumpur",
+  "schema" : "kl",
+  "feed_id" : "rapid-bus-mrtfeeder",
+  "feed_uid" : "7f89e04c-f644-4c27-8817-6b550adb30e4",
+  "request_uid" : "8665d665-3736-40bf-9674-02bfe5c090e4",
+  "snapshot_uid" : "2c27fab9-7426-4378-aa45-47d51092a83a",
+  "cycle" : 4,
+  "scheduled_at" : "2026-08-30T16:55:52.928110100Z",
+  "request_started_at" : "2026-08-30T16:55:52.930723600Z",
+  "response_received_at" : "2026-08-30T16:55:52.999682Z",
+  "http_status" : 200,
+  "response_bytes" : 2077,
+  "response_sha256" : "a4a1bb3ed066771d3bc08f6ebd72f0727b912d4f895b816fc81b623787b14d9a",
+  "raw_pb_path" : "raw_data/20260831/Kuala_Lumpur/kuala_lumpur_mrt_feeder_gtfs_realtime_raw_20260831_005552_cycle4_8665d665-3736-40bf-9674-02bfe5c090e4.pb",
+  "parsed_json_path" : "BusGPS/20260831/Kuala_Lumpur/kuala_lumpur_mrt_feeder_gtfs_realtime_parsed_full_20260831_005552_cycle4_8665d665-3736-40bf-9674-02bfe5c090e4.json",
+  "enriched_json_path" : "BusGPS/20260831/Kuala_Lumpur/kuala_lumpur_mrt_feeder_gtfs_realtime_enriched_full_20260831_005552_cycle4_8665d665-3736-40bf-9674-02bfe5c090e4.json",
+  "entity_count" : 26,
+  "vehicle_count" : 26,
+  "result" : "SUCCESS"
+}

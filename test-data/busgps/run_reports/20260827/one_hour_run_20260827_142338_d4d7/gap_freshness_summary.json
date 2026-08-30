@@ -1,0 +1,121 @@
+[ {
+  "feed_id" : "mybas-johor",
+  "freshness" : {
+    "count" : 2454,
+    "p50" : 42,
+    "p90" : 42,
+    "p95" : 42,
+    "max" : 42,
+    "lte_120_count" : 2454,
+    "sec_121_300_count" : 0,
+    "sec_301_600_count" : 0,
+    "gt_600_count" : 0,
+    "future_count" : 0
+  },
+  "gap" : {
+    "count" : 2325,
+    "p50" : 120,
+    "p90" : 121,
+    "p95" : 150,
+    "max" : 2610,
+    "gt_180_count" : 32,
+    "gt_300_count" : 32,
+    "gt_600_count" : 27
+  }
+}, {
+  "feed_id" : "mybas-kuching",
+  "freshness" : {
+    "count" : 1349,
+    "p50" : 51,
+    "p90" : 114,
+    "p95" : 180,
+    "max" : 1089,
+    "lte_120_count" : 1232,
+    "sec_121_300_count" : 103,
+    "sec_301_600_count" : 7,
+    "gt_600_count" : 7,
+    "future_count" : 0
+  },
+  "gap" : {
+    "count" : 1303,
+    "p50" : 120,
+    "p90" : 150,
+    "p95" : 240,
+    "max" : 841,
+    "gt_180_count" : 97,
+    "gt_300_count" : 6,
+    "gt_600_count" : 2
+  }
+}, {
+  "feed_id" : "rapid-bus-kl",
+  "freshness" : {
+    "count" : 3608,
+    "p50" : 58,
+    "p90" : 84,
+    "p95" : 92,
+    "max" : 138,
+    "lte_120_count" : 3586,
+    "sec_121_300_count" : 22,
+    "sec_301_600_count" : 0,
+    "gt_600_count" : 0,
+    "future_count" : 0
+  },
+  "gap" : {
+    "count" : 3404,
+    "p50" : 120,
+    "p90" : 180,
+    "p95" : 198,
+    "max" : 3060,
+    "gt_180_count" : 219,
+    "gt_300_count" : 68,
+    "gt_600_count" : 33
+  }
+}, {
+  "feed_id" : "rapid-bus-mrtfeeder",
+  "freshness" : {
+    "count" : 3099,
+    "p50" : 43,
+    "p90" : 65,
+    "p95" : 72,
+    "max" : 129,
+    "lte_120_count" : 3096,
+    "sec_121_300_count" : 3,
+    "sec_301_600_count" : 0,
+    "gt_600_count" : 0,
+    "future_count" : 30
+  },
+  "gap" : {
+    "count" : 2907,
+    "p50" : 111,
+    "p90" : 152,
+    "p95" : 162,
+    "max" : 3297,
+    "gt_180_count" : 49,
+    "gt_300_count" : 35,
+    "gt_600_count" : 32
+  }
+}, {
+  "feed_id" : "mybas-melaka",
+  "freshness" : {
+    "count" : 938,
+    "p50" : 18,
+    "p90" : 48,
+    "p95" : 48,
+    "max" : 49,
+    "lte_120_count" : 938,
+    "sec_121_300_count" : 0,
+    "sec_301_600_count" : 0,
+    "gt_600_count" : 0,
+    "future_count" : 0
+  },
+  "gap" : {
+    "count" : 893,
+    "p50" : 120,
+    "p90" : 121,
+    "p95" : 150,
+    "max" : 1890,
+    "gt_180_count" : 8,
+    "gt_300_count" : 6,
+    "gt_600_count" : 5
+  }
+} ]

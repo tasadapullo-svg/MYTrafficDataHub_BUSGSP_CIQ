@@ -1,0 +1,23 @@
+spring:
+  config:
+    activate:
+      on-profile: prod
+  data:
+    redis:
+      host: ${TRAFFIC_REDIS_HOST}
+      port: ${TRAFFIC_REDIS_PORT:6379}
+      database: ${TRAFFIC_REDIS_DATABASE:0}
+      password: ${TRAFFIC_REDIS_PASSWORD:}
+
+app:
+  redis:
+    connect-on-startup: ${TRAFFIC_REDIS_CONNECT_ON_STARTUP:false}
+
+archive:
+  daily:
+    enabled: ${TRAFFIC_DAILY_ARCHIVE_ENABLED:true}
+
+traffic:
+  ciq:
+    manual-test:
+      enabled: false

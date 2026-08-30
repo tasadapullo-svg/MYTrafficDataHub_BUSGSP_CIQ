@@ -1,0 +1,4 @@
+package com.mytransitgps.modules.ciq.parser;
+import com.fasterxml.jackson.databind.ObjectMapper;import com.mytransitgps.modules.ciq.domain.RoadOpeningRecord;import java.util.*;
+/** 独立 Parser：只解析字段，不访问网络/数据库。 */
+public class RoadOpeningsParser { private final ObjectMapper mapper; public RoadOpeningsParser(ObjectMapper m){mapper=m;} public List<RoadOpeningRecord> parse(byte[] body){var root=CiqJsonParserSupport.root(mapper,body);List<RoadOpeningRecord> out=new ArrayList<>();for(var n:CiqJsonParserSupport.values(root))out.add(new RoadOpeningRecord(CiqJsonParserSupport.text(n,"EventID"),CiqJsonParserSupport.date(n,"StartDate"),CiqJsonParserSupport.date(n,"EndDate"),CiqJsonParserSupport.text(n,"SvcDept"),CiqJsonParserSupport.text(n,"RoadName"),CiqJsonParserSupport.text(n,"Other")));return out;} }

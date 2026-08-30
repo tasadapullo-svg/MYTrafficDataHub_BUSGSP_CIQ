@@ -1,0 +1,187 @@
+{
+  "schema_fingerprint" : {
+    "metadata_row_count" : 3527,
+    "sha256" : "a240ff26460635f9f1f65e773f243bdfdf53f5966588e82a59f31eb8c8e036a3",
+    "table_count" : 52
+  },
+  "row_counts" : {
+    "core.collection_run" : 30,
+    "jb.api_request_log" : 772,
+    "jb.realtime_snapshot" : 772,
+    "jb.vehicle_observation" : 41140,
+    "jb.vehicle_observation_qc" : 2229,
+    "jb.vehicle_latest_state" : 147,
+    "kuching.api_request_log" : 681,
+    "kuching.realtime_snapshot" : 681,
+    "kuching.vehicle_observation" : 13942,
+    "kuching.vehicle_observation_qc" : 17886,
+    "kuching.vehicle_latest_state" : 54,
+    "kl.api_request_log" : 1347,
+    "kl.realtime_snapshot" : 1347,
+    "kl.vehicle_observation" : 62285,
+    "kl.vehicle_observation_qc" : 37417,
+    "kl.vehicle_latest_state" : 530,
+    "melaka.api_request_log" : 667,
+    "melaka.realtime_snapshot" : 667,
+    "melaka.vehicle_observation" : 11058,
+    "melaka.vehicle_observation_qc" : 898,
+    "melaka.vehicle_latest_state" : 51
+  },
+  "captured_at" : "2026-08-30T16:48:05.855713Z",
+  "static_versions" : {
+    "mybas-johor" : [ {
+      "uid" : "358c5d91-1c74-4e54-8197-f68f71960b3c",
+      "static_sha256" : "b0293c1a3b6078ceb48d72bfddabd927cc5d7f3f5b911587c6dde50807e215d6",
+      "routes_count" : 21,
+      "trips_count" : 1782,
+      "stops_count" : 988,
+      "stop_times_count" : 76731,
+      "shapes_count" : 40,
+      "shape_points_count" : 14476
+    } ],
+    "mybas-kuching" : [ {
+      "uid" : "eb4fe127-160a-4a61-b093-780db51615f5",
+      "static_sha256" : "a020ac7f025965852cbaff509ae184f0ee957c9f6f9421142a82da83a8e265f1",
+      "routes_count" : 13,
+      "trips_count" : 620,
+      "stops_count" : 406,
+      "stop_times_count" : 17170,
+      "shapes_count" : 23,
+      "shape_points_count" : 611
+    } ],
+    "rapid-bus-kl" : [ {
+      "uid" : "518103ef-8d2f-4360-8640-c45ba13eb608",
+      "static_sha256" : "083170db34edbafcdf7b13cf39150eece637e2af3b7e9766fd0963d59e1de65b",
+      "routes_count" : 137,
+      "trips_count" : 2102,
+      "stops_count" : 4053,
+      "stop_times_count" : 87935,
+      "shapes_count" : 171,
+      "shape_points_count" : 69246
+    } ],
+    "rapid-bus-mrtfeeder" : [ {
+      "uid" : "400b8fb9-cfab-45ce-ba3d-5b5c39292c62",
+      "static_sha256" : "50c70a17faf8d1384e6c69741919806f4641cd975a5cc6addc600e636e9e0fda",
+      "routes_count" : 91,
+      "trips_count" : 6277,
+      "stops_count" : 2112,
+      "stop_times_count" : 174759,
+      "shapes_count" : 92,
+      "shape_points_count" : 35030
+    } ],
+    "mybas-melaka" : [ {
+      "uid" : "cfb0ab47-9372-43a1-92c8-423311e0b761",
+      "static_sha256" : "dbe0ad1ae91d13bc09240fe7f1285f9498f1537c285b28e78a9e26d14b81857d",
+      "routes_count" : 22,
+      "trips_count" : 569,
+      "stops_count" : 678,
+      "stop_times_count" : 25107,
+      "shapes_count" : 43,
+      "shape_points_count" : 18604
+    } ]
+  },
+  "database_bytes" : 987148771,
+  "relation_sizes" : {
+    "jb.api_request_log" : {
+      "total_bytes" : 1507328,
+      "table_bytes" : 778240,
+      "index_bytes" : 688128
+    },
+    "jb.realtime_snapshot" : {
+      "total_bytes" : 786432,
+      "table_bytes" : 253952,
+      "index_bytes" : 507904
+    },
+    "jb.vehicle_observation" : {
+      "total_bytes" : 94289920,
+      "table_bytes" : 56172544,
+      "index_bytes" : 38068224
+    },
+    "jb.vehicle_observation_qc" : {
+      "total_bytes" : 1040384,
+      "table_bytes" : 385024,
+      "index_bytes" : 614400
+    },
+    "jb.vehicle_latest_state" : {
+      "total_bytes" : 466944,
+      "table_bytes" : 81920,
+      "index_bytes" : 344064
+    },
+    "kuching.api_request_log" : {
+      "total_bytes" : 1376256,
+      "table_bytes" : 696320,
+      "index_bytes" : 638976
+    },
+    "kuching.realtime_snapshot" : {
+      "total_bytes" : 761856,
+      "table_bytes" : 229376,
+      "index_bytes" : 507904
+    },
+    "kuching.vehicle_observation" : {
+      "total_bytes" : 26894336,
+      "table_bytes" : 14270464,
+      "index_bytes" : 12582912
+    },
+    "kuching.vehicle_observation_qc" : {
+      "total_bytes" : 6447104,
+      "table_bytes" : 3244032,
+      "index_bytes" : 3162112
+    },
+    "kuching.vehicle_latest_state" : {
+      "total_bytes" : 376832,
+      "table_bytes" : 49152,
+      "index_bytes" : 286720
+    },
+    "kl.api_request_log" : {
+      "total_bytes" : 2580480,
+      "table_bytes" : 1433600,
+      "index_bytes" : 1105920
+    },
+    "kl.realtime_snapshot" : {
+      "total_bytes" : 1294336,
+      "table_bytes" : 450560,
+      "index_bytes" : 819200
+    },
+    "kl.vehicle_observation" : {
+      "total_bytes" : 116416512,
+      "table_bytes" : 64569344,
+      "index_bytes" : 51798016
+    },
+    "kl.vehicle_observation_qc" : {
+      "total_bytes" : 13139968,
+      "table_bytes" : 6815744,
+      "index_bytes" : 6283264
+    },
+    "kl.vehicle_latest_state" : {
+      "total_bytes" : 1220608,
+      "table_bytes" : 196608,
+      "index_bytes" : 983040
+    },
+    "melaka.api_request_log" : {
+      "total_bytes" : 1277952,
+      "table_bytes" : 606208,
+      "index_bytes" : 630784
+    },
+    "melaka.realtime_snapshot" : {
+      "total_bytes" : 712704,
+      "table_bytes" : 221184,
+      "index_bytes" : 466944
+    },
+    "melaka.vehicle_observation" : {
+      "total_bytes" : 26116096,
+      "table_bytes" : 15097856,
+      "index_bytes" : 10977280
+    },
+    "melaka.vehicle_observation_qc" : {
+      "total_bytes" : 573440,
+      "table_bytes" : 163840,
+      "index_bytes" : 376832
+    },
+    "melaka.vehicle_latest_state" : {
+      "total_bytes" : 360448,
+      "table_bytes" : 32768,
+      "index_bytes" : 286720
+    }
+  },
+  "run_uid" : "14752618-ee4d-4e3f-ad8b-5af7d151efd9"
+}

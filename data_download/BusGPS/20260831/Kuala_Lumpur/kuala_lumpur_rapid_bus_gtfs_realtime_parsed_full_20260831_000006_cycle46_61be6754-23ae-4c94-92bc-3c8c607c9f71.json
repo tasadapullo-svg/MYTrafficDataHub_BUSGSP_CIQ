@@ -1,0 +1,50 @@
+{
+  "header": {
+    "gtfs_realtime_version": "2.0",
+    "incrementality": "FULL_DATASET",
+    "timestamp": "1788105572"
+  },
+  "entity": [{
+    "id": "0",
+    "vehicle": {
+      "trip": {
+        "trip_id": "weekend_U1710_U171001_9",
+        "start_time": "23:31:29",
+        "start_date": "20260830",
+        "route_id": "U1710"
+      },
+      "position": {
+        "latitude": 3.229483,
+        "longitude": 101.688995,
+        "bearing": 358.0,
+        "speed": 51.86
+      },
+      "timestamp": "1788105539",
+      "vehicle": {
+        "id": "WVB5687",
+        "license_plate": "WVB5687"
+      }
+    }
+  }, {
+    "id": "1",
+    "vehicle": {
+      "trip": {
+        "trip_id": "weekend_U2020_U202001_6",
+        "start_time": "23:34:38",
+        "start_date": "20260830",
+        "route_id": "U2020"
+      },
+      "position": {
+        "latitude": 3.20405,
+        "longitude": 101.702,
+        "bearing": 342.0,
+        "speed": 14.82
+      },
+      "timestamp": "1788105548",
+      "vehicle": {
+        "id": "WUW8434",
+        "license_plate": "WUW8434"
+      }
+    }
+  }]
+}

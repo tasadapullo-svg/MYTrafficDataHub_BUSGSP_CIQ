@@ -1,0 +1,22 @@
+2026-08-30 15:16:04.708 [mytransitgps-continuous-collector] ERROR c.m.persistence.service.WorkspaceRootResolver - 配置的 MYTrafficDataHub 工作区无效，candidate=C:\MYTrafficDataHubData
+2026-08-30 15:16:04.709 [mytransitgps-continuous-collector] ERROR c.m.p.s.MulticityContinuousCollectionLifecycle - 无固定时长连续多城市采集Run失败，将在配置的延迟后重新启动，错误信息=Invalid TRAFFIC_WORKSPACE_ROOT: C:\MYTrafficDataHubData
+java.lang.IllegalStateException: Invalid TRAFFIC_WORKSPACE_ROOT: C:\MYTrafficDataHubData
+	at com.mytransitgps.persistence.service.WorkspaceRootResolver.requireWorkspace(WorkspaceRootResolver.java:49)
+	at com.mytransitgps.persistence.service.WorkspaceRootResolver.resolve(WorkspaceRootResolver.java:31)
+	at com.mytransitgps.persistence.service.MulticityContinuousCollectionLifecycle.runLoop(MulticityContinuousCollectionLifecycle.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-08-30 15:16:34.719 [mytransitgps-continuous-collector] ERROR c.m.persistence.service.WorkspaceRootResolver - 配置的 MYTrafficDataHub 工作区无效，candidate=C:\MYTrafficDataHubData
+2026-08-30 15:16:34.719 [mytransitgps-continuous-collector] ERROR c.m.p.s.MulticityContinuousCollectionLifecycle - 无固定时长连续多城市采集Run失败，将在配置的延迟后重新启动，错误信息=Invalid TRAFFIC_WORKSPACE_ROOT: C:\MYTrafficDataHubData
+java.lang.IllegalStateException: Invalid TRAFFIC_WORKSPACE_ROOT: C:\MYTrafficDataHubData
+	at com.mytransitgps.persistence.service.WorkspaceRootResolver.requireWorkspace(WorkspaceRootResolver.java:49)
+	at com.mytransitgps.persistence.service.WorkspaceRootResolver.resolve(WorkspaceRootResolver.java:31)
+	at com.mytransitgps.persistence.service.MulticityContinuousCollectionLifecycle.runLoop(MulticityContinuousCollectionLifecycle.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)

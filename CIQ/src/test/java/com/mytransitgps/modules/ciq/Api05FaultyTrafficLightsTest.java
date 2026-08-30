@@ -1,0 +1,4 @@
+package com.mytransitgps.modules.ciq;
+import static org.junit.jupiter.api.Assertions.*;import com.fasterxml.jackson.databind.ObjectMapper;import com.mytransitgps.modules.ciq.parser.FaultyTrafficLightsParser;import com.mytransitgps.modules.ciq.quality.FaultyTrafficLightsValidator;import java.nio.charset.StandardCharsets;import org.junit.jupiter.api.Test;
+/** 单接口 Parser + Validator 节点测试。 */
+class Api05FaultyTrafficLightsTest {@Test void parsesAndValidatesFixture(){var rows=new FaultyTrafficLightsParser(new ObjectMapper()).parse("{\"value\":[{\"AlarmID\":\"A1\",\"NodeID\":\"N1\",\"Type\":13,\"StartDate\":\"2026-08-30 16:00:00.0\",\"EndDate\":\"\",\"Message\":\"Flashing Yellow\"}]}".getBytes(StandardCharsets.UTF_8));assertFalse(rows.isEmpty());assertTrue(new FaultyTrafficLightsValidator().isValid(rows.get(0)));}}

@@ -1,0 +1,28 @@
+spring:
+  config:
+    activate:
+      on-profile: dev
+  data:
+    redis:
+      database: ${TRAFFIC_REDIS_DATABASE:0}
+
+app:
+  redis:
+    connect-on-startup: ${TRAFFIC_REDIS_CONNECT_ON_STARTUP:false}
+
+archive:
+  daily:
+    enabled: true
+
+mytransitgps:
+  workspace-root: ${TRAFFIC_WORKSPACE_ROOT:${MYTRANSITGPS_WORKSPACE_ROOT:data_download}}
+  database:
+    enabled: true
+  db-test:
+    enabled: false
+  multicity-db-test:
+    enabled: false
+  continuous:
+    enabled: true
+    validate-after-window: false
+    retry-delay-seconds: 30

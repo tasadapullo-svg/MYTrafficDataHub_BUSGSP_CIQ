@@ -1,0 +1,112 @@
+2026-08-30 18:21:50.992 [main] INFO  com.mytransitgps.MyTrafficDataHubApplication - Starting MyTrafficDataHubApplication using Java 21.0.11 with PID 6597 (/mnt/data/compile_out/app started by root in /mnt/data/ciq_work/MYTrafficDataHub_20260829)
+2026-08-30 18:21:50.994 [main] INFO  com.mytransitgps.MyTrafficDataHubApplication - The following 1 profile is active: "test"
+2026-08-30 18:21:51.118 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-08-30 18:21:51.507 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-08-30 18:21:51.509 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-08-30 18:21:51.533 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2026-08-30 18:21:51.933 [main] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 0 (http)
+2026-08-30 18:21:51.943 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+2026-08-30 18:21:51.945 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-08-30 18:21:51.945 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-08-30 18:21:51.975 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 949 ms
+2026-08-30 18:21:52.228 [main] INFO  com.mytransitgps.config.RedisConfig - Redis StringRedisTemplate初始化完成
+2026-08-30 18:21:52.390 [main] INFO  com.mytransitgps.config.RedisConfig - Redis byte[] RedisTemplate初始化完成
+2026-08-30 18:21:52.419 [main] INFO  com.mytransitgps.gtfs.config.GtfsFeedRegistry - GTFS Feed注册表初始化完成，feedCount=5，enabledFeedCount=5
+2026-08-30 18:21:52.661 [main] INFO  c.b.m.e.s.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.boot.web.server.servlet.context.AnnotationConfigServletWebServerApplicationContext@50305a
+2026-08-30 18:21:52.735 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
+2026-08-30 18:21:52.746 [main] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 43105 (http) with context path '/'
+2026-08-30 18:21:52.755 [main] INFO  com.mytransitgps.MyTrafficDataHubApplication - Started MyTrafficDataHubApplication in 2.24 seconds (process running for 2.496)
+2026-08-30 18:21:52.758 [main] INFO  c.m.config.RedisStartupConnectionChecker - Redis启动连通性检查未启用，跳过启动Ping
+2026-08-30 18:21:52.758 [main] INFO  c.m.persistence.service.WorkspaceRootResolver - MYTrafficDataHub 工作区根目录解析完成，source=CONFIGURED，workspaceRoot=/mnt/data/ciq_work/MYTrafficDataHub_20260829/data_download
+2026-08-30 18:21:53.042 [main] INFO  c.m.gtfs.service.BusGpsLegacyStorageMigrator - BUS GPS历史存储无需迁移，标准目录已生效，workspaceRoot=/mnt/data/ciq_work/MYTrafficDataHub_20260829/data_download
+2026-08-30 18:21:53.045 [main] INFO  c.m.config.ApplicationStartupLoggingListener - Spring Context初始化完成，activeProfiles=test
+2026-08-30 18:21:53.046 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub启动配置：profiles=test，serverPort=0，databaseEnabled=false，dbTestEnabled=false，multicityTestEnabled=false，continuousEnabled=false，dailyArchiveEnabled=true，redisStartupCheckEnabled=false，workspaceRoot=data_download
+2026-08-30 18:21:53.046 [main] INFO  c.m.config.ApplicationStartupLoggingListener - 交通模块状态：busGpsEnabled=true，busGpsFeedCount=5，ciqEnabled=true，ciqScheduleEnabled=true，ciqArchiveEnabled=true，ciqDatabaseWriteEnabled=false，ltaAccountKeyConfigured=false
+2026-08-30 18:21:53.046 [main] INFO  c.m.config.ApplicationStartupLoggingListener - CIQ 8接口启用状态：API01=true，API02=true，API03=true，API04=true，API05=true，API06=true，API07=true，API08=true
+2026-08-30 18:21:53.046 [main] INFO  c.m.config.ApplicationStartupLoggingListener - 当前未启用自动多城市连续采集，服务处于待命状态
+2026-08-30 18:21:53.046 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub服务已就绪，稳定模块=MYTransitGPS
+2026-08-30 18:21:53.047 [main] INFO  c.m.modules.ciq.storage.CiqDirectoryInitializer - CIQ每日八接口目录初始化完成，trigger=APPLICATION_READY，date=2026-08-30，apiFolderCount=8，path=/mnt/data/ciq_work/MYTrafficDataHub_20260829/data_download/CIQ/20260830
+2026-08-30 18:22:05.259 [SpringApplicationShutdownHook] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub正在关闭
+2026-08-30 18:22:05.263 [SpringApplicationShutdownHook] INFO  o.springframework.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-08-30 18:22:05.269 [tomcat-shutdown] INFO  o.springframework.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-08-30 18:22:05.274 [SpringApplicationShutdownHook] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub已完成关闭流程
+2026-08-30 18:35:42.882 [main] INFO  com.mytransitgps.MyTrafficDataHubApplication - Starting MyTrafficDataHubApplication using Java 21.0.11 with PID 7658 (/mnt/data/final_ciq_compile/app started by root in /mnt/data/ciq_work/MYTrafficDataHub_20260829)
+2026-08-30 18:35:42.883 [main] INFO  com.mytransitgps.MyTrafficDataHubApplication - The following 1 profile is active: "test"
+2026-08-30 18:35:43.028 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-08-30 18:35:43.470 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-08-30 18:35:43.472 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-08-30 18:35:43.499 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2026-08-30 18:35:43.889 [main] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 0 (http)
+2026-08-30 18:35:43.899 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+2026-08-30 18:35:43.900 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-08-30 18:35:43.901 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-08-30 18:35:43.930 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1014 ms
+2026-08-30 18:35:44.323 [main] INFO  com.mytransitgps.config.RedisConfig - Redis StringRedisTemplate初始化完成
+2026-08-30 18:35:44.330 [main] INFO  com.mytransitgps.gtfs.config.GtfsFeedRegistry - GTFS Feed注册表初始化完成，feedCount=5，enabledFeedCount=5
+2026-08-30 18:35:44.357 [main] INFO  com.mytransitgps.config.RedisConfig - Redis byte[] RedisTemplate初始化完成
+2026-08-30 18:35:44.603 [main] INFO  c.b.m.e.s.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.boot.web.server.servlet.context.AnnotationConfigServletWebServerApplicationContext@2ad3a1bb
+2026-08-30 18:35:44.683 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
+2026-08-30 18:35:44.695 [main] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 35137 (http) with context path '/'
+2026-08-30 18:35:44.717 [main] INFO  com.mytransitgps.MyTrafficDataHubApplication - Started MyTrafficDataHubApplication in 2.304 seconds (process running for 2.569)
+2026-08-30 18:35:44.720 [main] INFO  c.m.config.RedisStartupConnectionChecker - Redis启动连通性检查未启用，跳过启动Ping
+2026-08-30 18:35:44.721 [main] INFO  c.m.persistence.service.WorkspaceRootResolver - MYTrafficDataHub 工作区根目录解析完成，source=CONFIGURED，workspaceRoot=/mnt/data/ciq_work/MYTrafficDataHub_20260829/data_download
+2026-08-30 18:35:45.068 [main] INFO  c.m.gtfs.service.BusGpsLegacyStorageMigrator - BUS GPS历史存储无需迁移，标准目录已生效，workspaceRoot=/mnt/data/ciq_work/MYTrafficDataHub_20260829/data_download
+2026-08-30 18:35:45.071 [main] INFO  c.m.modules.ciq.storage.CiqDirectoryInitializer - CIQ每日八接口目录初始化完成，trigger=APPLICATION_READY，date=2026-08-30，apiFolderCount=8，path=/mnt/data/ciq_work/MYTrafficDataHub_20260829/data_download/CIQ/20260830
+2026-08-30 18:35:45.071 [main] INFO  c.m.config.ApplicationStartupLoggingListener - Spring Context初始化完成，activeProfiles=test
+2026-08-30 18:35:45.072 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub启动配置：profiles=test，serverPort=0，databaseEnabled=false，dbTestEnabled=false，multicityTestEnabled=false，continuousEnabled=false，dailyArchiveEnabled=true，redisStartupCheckEnabled=false，workspaceRoot=data_download
+2026-08-30 18:35:45.072 [main] INFO  c.m.config.ApplicationStartupLoggingListener - 交通模块状态：busGpsEnabled=true，busGpsFeedCount=5，ciqEnabled=true，ciqScheduleEnabled=true，ciqArchiveEnabled=false，ciqDatabaseWriteEnabled=false，ltaAccountKeyConfigured=false
+2026-08-30 18:35:45.072 [main] INFO  c.m.config.ApplicationStartupLoggingListener - CIQ 8接口启用状态：API01=true，API02=true，API03=true，API04=true，API05=true，API06=true，API07=true，API08=true
+2026-08-30 18:35:45.072 [main] INFO  c.m.config.ApplicationStartupLoggingListener - 当前未启用自动多城市连续采集，服务处于待命状态
+2026-08-30 18:35:45.072 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub服务已就绪，稳定模块=MYTransitGPS
+2026-08-30 18:35:45.075 [main] INFO  c.m.gtfs.service.BusGpsDirectoryInitializer - BUS GPS每日JSON目录初始化完成，trigger=APPLICATION_READY，date=20260830，cityFolderCount=4，path=/mnt/data/ciq_work/MYTrafficDataHub_20260829/data_download/BusGPS/20260830
+2026-08-30 18:35:54.146 [SpringApplicationShutdownHook] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub正在关闭
+2026-08-30 18:35:54.150 [SpringApplicationShutdownHook] INFO  o.springframework.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-08-30 18:35:54.156 [tomcat-shutdown] INFO  o.springframework.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-08-30 18:35:54.161 [SpringApplicationShutdownHook] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub已完成关闭流程
+2026-08-30 18:39:05.585 [main] INFO  CiqSchedulerBeanSmoke - Starting CiqSchedulerBeanSmoke using Java 21.0.11 with PID 7983 (/mnt/data/final_smoke_classes started by root in /mnt/data/ciq_work/MYTrafficDataHub_20260829)
+2026-08-30 18:39:05.587 [main] INFO  CiqSchedulerBeanSmoke - The following 1 profile is active: "dev"
+2026-08-30 18:39:05.672 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-08-30 18:39:06.069 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-08-30 18:39:06.071 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-08-30 18:39:06.101 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2026-08-30 18:39:06.720 [main] INFO  com.mytransitgps.config.RedisConfig - Redis StringRedisTemplate初始化完成
+2026-08-30 18:39:06.768 [main] INFO  com.mytransitgps.gtfs.config.GtfsFeedRegistry - GTFS Feed注册表初始化完成，feedCount=5，enabledFeedCount=5
+2026-08-30 18:39:06.790 [main] INFO  c.m.persistence.config.MyBatisDatabaseConfig - MYTransitGPS MyBatis 数据库配置已初始化，城市 Schema 路由已启用
+2026-08-30 18:39:07.213 [main] INFO  com.mytransitgps.config.RedisConfig - Redis byte[] RedisTemplate初始化完成
+2026-08-30 18:39:07.226 [main] INFO  c.b.m.e.s.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.context.annotation.AnnotationConfigApplicationContext@1827a871
+2026-08-30 18:39:07.337 [main] INFO  CiqSchedulerBeanSmoke - Started CiqSchedulerBeanSmoke in 2.245 seconds (process running for 2.522)
+2026-08-30 18:39:07.339 [main] INFO  c.m.config.RedisStartupConnectionChecker - Redis启动连通性检查未启用，跳过启动Ping
+2026-08-30 18:39:07.340 [main] INFO  c.m.persistence.service.WorkspaceRootResolver - MYTrafficDataHub 工作区根目录解析完成，source=CONFIGURED，workspaceRoot=/mnt/data/ciq_work/MYTrafficDataHub_20260829/data_download
+2026-08-30 18:39:07.588 [main] INFO  c.m.gtfs.service.BusGpsLegacyStorageMigrator - BUS GPS历史存储无需迁移，标准目录已生效，workspaceRoot=/mnt/data/ciq_work/MYTrafficDataHub_20260829/data_download
+2026-08-30 18:39:07.591 [main] INFO  c.m.config.ApplicationStartupLoggingListener - Spring Context初始化完成，activeProfiles=dev
+2026-08-30 18:39:07.592 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub启动配置：profiles=dev，serverPort=8080，databaseEnabled=true，dbTestEnabled=false，multicityTestEnabled=false，continuousEnabled=true，dailyArchiveEnabled=true，redisStartupCheckEnabled=false，workspaceRoot=data_download
+2026-08-30 18:39:07.592 [main] INFO  c.m.config.ApplicationStartupLoggingListener - 交通模块状态：busGpsEnabled=true，busGpsFeedCount=5，ciqEnabled=false，ciqScheduleEnabled=false，ciqArchiveEnabled=true，ciqDatabaseWriteEnabled=false，ltaAccountKeyConfigured=false
+2026-08-30 18:39:07.592 [main] INFO  c.m.config.ApplicationStartupLoggingListener - CIQ 8接口启用状态：API01=false，API02=false，API03=false，API04=false，API05=false，API06=false，API07=false，API08=false
+2026-08-30 18:39:07.592 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub服务已就绪，稳定模块=MYTransitGPS
+2026-08-30 18:39:07.595 [main] INFO  c.m.gtfs.service.BusGpsDirectoryInitializer - BUS GPS每日JSON目录初始化完成，trigger=APPLICATION_READY，date=20260830，cityFolderCount=4，path=/mnt/data/ciq_work/MYTrafficDataHub_20260829/data_download/BusGPS/20260830
+2026-08-30 18:39:07.600 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub正在关闭
+2026-08-30 18:39:07.607 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub已完成关闭流程
+2026-08-30 18:39:26.838 [main] INFO  CiqSchedulerBeanSmoke - Starting CiqSchedulerBeanSmoke using Java 21.0.11 with PID 8058 (/mnt/data/final_smoke_classes started by root in /mnt/data/ciq_work/MYTrafficDataHub_20260829)
+2026-08-30 18:39:26.840 [main] INFO  CiqSchedulerBeanSmoke - The following 1 profile is active: "test"
+2026-08-30 18:39:26.939 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-08-30 18:39:27.383 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-08-30 18:39:27.385 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-08-30 18:39:27.414 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2026-08-30 18:39:28.038 [main] INFO  com.mytransitgps.config.RedisConfig - Redis StringRedisTemplate初始化完成
+2026-08-30 18:39:28.047 [main] INFO  com.mytransitgps.gtfs.config.GtfsFeedRegistry - GTFS Feed注册表初始化完成，feedCount=5，enabledFeedCount=5
+2026-08-30 18:39:28.076 [main] INFO  com.mytransitgps.config.RedisConfig - Redis byte[] RedisTemplate初始化完成
+2026-08-30 18:39:28.161 [main] INFO  c.b.m.e.s.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.context.annotation.AnnotationConfigApplicationContext@73393584
+2026-08-30 18:39:28.271 [main] INFO  CiqSchedulerBeanSmoke - Started CiqSchedulerBeanSmoke in 1.877 seconds (process running for 2.157)
+2026-08-30 18:39:28.274 [main] INFO  c.m.config.RedisStartupConnectionChecker - Redis启动连通性检查未启用，跳过启动Ping
+2026-08-30 18:39:28.275 [main] INFO  c.m.persistence.service.WorkspaceRootResolver - MYTrafficDataHub 工作区根目录解析完成，source=CONFIGURED，workspaceRoot=/tmp/ciq-context-8352151996222278703
+2026-08-30 18:39:28.276 [main] INFO  c.m.gtfs.service.BusGpsLegacyStorageMigrator - BUS GPS历史存储无需迁移，标准目录已生效，workspaceRoot=/tmp/ciq-context-8352151996222278703
+2026-08-30 18:39:28.277 [main] INFO  c.m.modules.ciq.storage.CiqDirectoryInitializer - CIQ每日八接口目录初始化完成，trigger=APPLICATION_READY，date=2026-08-30，apiFolderCount=8，path=/tmp/ciq-context-8352151996222278703/CIQ/20260830
+2026-08-30 18:39:28.277 [main] INFO  c.m.config.ApplicationStartupLoggingListener - Spring Context初始化完成，activeProfiles=test
+2026-08-30 18:39:28.278 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub启动配置：profiles=test，serverPort=8080，databaseEnabled=false，dbTestEnabled=false，multicityTestEnabled=false，continuousEnabled=false，dailyArchiveEnabled=true，redisStartupCheckEnabled=false，workspaceRoot=/tmp/ciq-context-8352151996222278703
+2026-08-30 18:39:28.278 [main] INFO  c.m.config.ApplicationStartupLoggingListener - 交通模块状态：busGpsEnabled=true，busGpsFeedCount=5，ciqEnabled=true，ciqScheduleEnabled=true，ciqArchiveEnabled=false，ciqDatabaseWriteEnabled=false，ltaAccountKeyConfigured=false
+2026-08-30 18:39:28.278 [main] INFO  c.m.config.ApplicationStartupLoggingListener - CIQ 8接口启用状态：API01=true，API02=true，API03=true，API04=true，API05=true，API06=true，API07=true，API08=true
+2026-08-30 18:39:28.278 [main] INFO  c.m.config.ApplicationStartupLoggingListener - 当前未启用自动多城市连续采集，服务处于待命状态
+2026-08-30 18:39:28.279 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub服务已就绪，稳定模块=MYTransitGPS
+2026-08-30 18:39:28.280 [main] INFO  c.m.gtfs.service.BusGpsDirectoryInitializer - BUS GPS每日JSON目录初始化完成，trigger=APPLICATION_READY，date=20260830，cityFolderCount=4，path=/tmp/ciq-context-8352151996222278703/BusGPS/20260830
+2026-08-30 18:39:28.282 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub正在关闭
+2026-08-30 18:39:28.287 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub已完成关闭流程

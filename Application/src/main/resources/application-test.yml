@@ -1,0 +1,26 @@
+spring:
+  config:
+    activate:
+      on-profile: test
+  data:
+    redis:
+      host: ${TRAFFIC_REDIS_HOST:127.0.0.1}
+      port: ${TRAFFIC_REDIS_PORT:6379}
+      database: ${TRAFFIC_REDIS_DATABASE:15}
+      password: ${TRAFFIC_REDIS_PASSWORD:}
+
+app:
+  redis:
+    connect-on-startup: false
+
+mytransitgps:
+  database:
+    enabled: false
+  db-test:
+    enabled: false
+  long-test:
+    enabled: false
+  multicity-db-test:
+    enabled: false
+  continuous:
+    enabled: false

@@ -1,0 +1,23 @@
+{
+  "run_id" : "multicity_continuous_20260830_222916",
+  "run_uid" : "5d4da3ac-48ea-49cd-8455-c04b5e6a4c5b",
+  "city" : "Johor Bahru",
+  "schema" : "jb",
+  "feed_id" : "mybas-johor",
+  "feed_uid" : "86671fa7-aac9-4309-9154-91817b0b83a9",
+  "request_uid" : "3a2c248c-03d5-457a-baa1-d8d35104e711",
+  "snapshot_uid" : "a7e58779-577f-485d-89dc-b5aa73b38e37",
+  "cycle" : 58,
+  "scheduled_at" : "2026-08-30T16:23:16.254525100Z",
+  "request_started_at" : "2026-08-30T16:23:16.265651400Z",
+  "response_received_at" : "2026-08-30T16:23:16.322848700Z",
+  "http_status" : 200,
+  "response_bytes" : 3489,
+  "response_sha256" : "45d9dd8a7ec959b40bfd65adbfd45f1fbb80e27e0646093775dac26242b1c970",
+  "raw_pb_path" : "raw_data/20260831/Johor_Bahru/johor_bahru_gtfs_realtime_raw_20260831_002316_cycle58_3a2c248c-03d5-457a-baa1-d8d35104e711.pb",
+  "parsed_json_path" : "BusGPS/20260831/Johor_Bahru/johor_bahru_gtfs_realtime_parsed_full_20260831_002316_cycle58_3a2c248c-03d5-457a-baa1-d8d35104e711.json",
+  "enriched_json_path" : "BusGPS/20260831/Johor_Bahru/johor_bahru_gtfs_realtime_enriched_full_20260831_002316_cycle58_3a2c248c-03d5-457a-baa1-d8d35104e711.json",
+  "entity_count" : 22,
+  "vehicle_count" : 22,
+  "result" : "SUCCESS"
+}

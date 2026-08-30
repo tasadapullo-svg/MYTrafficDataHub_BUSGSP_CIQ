@@ -1,0 +1,113 @@
+spring:
+  application:
+    name: mytrafficdatahub
+  profiles:
+    active: dev
+  config:
+    import:
+      - optional:classpath:config/bus-gps.yml
+      - optional:classpath:config/ciq.yml
+      - optional:classpath:config/monitoring.yml
+  data:
+    redis:
+      host: ${TRAFFIC_REDIS_HOST:127.0.0.1}
+      port: ${TRAFFIC_REDIS_PORT:6379}
+      database: ${TRAFFIC_REDIS_DATABASE:0}
+      password: ${TRAFFIC_REDIS_PASSWORD:}
+      connect-timeout: 3s
+      timeout: 3s
+  datasource:
+    url: ${TRAFFIC_DB_URL:jdbc:postgresql://localhost:5432/postgres}
+    username: ${TRAFFIC_DB_USERNAME:${MYTRANSITGPS_DB_USERNAME:postgres}}
+    password: ${TRAFFIC_DB_PASSWORD:${MYTRANSITGPS_DB_PASSWORD:}}
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      minimum-idle: 2
+      maximum-pool-size: 12
+      connection-timeout: 10000
+      validation-timeout: 3000
+      idle-timeout: 600000
+      max-lifetime: 1800000
+
+server:
+  port: 8080
+
+app:
+  redis:
+    connect-on-startup: false
+
+traffic:
+  file-log-root: ${TRAFFIC_FILE_LOG_ROOT:C:/Users/DELL/Desktop/MYTrafficDataHub_20260829/data_download/logs}
+
+archive:
+  daily:
+    enabled: true
+    cron: "0 30 0 * * *"
+    zone: "Asia/Kuala_Lumpur"
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+  type-handlers-package: com.mytransitgps.persistence.typehandler
+  configuration:
+    map-underscore-to-camel-case: true
+    jdbc-type-for-null: NULL
+  global-config:
+    banner: false
+    db-config:
+      id-type: input
+
+mytransitgps:
+  workspace-root: ${TRAFFIC_WORKSPACE_ROOT:${MYTRANSITGPS_WORKSPACE_ROOT:data_download}}
+  database:
+    enabled: true
+    schema: jb
+    feed-id: mybas-johor
+  persistence:
+    batch-size: 200
+    qc-batch-size: 500
+    static-batch-size: 500
+    save-realtime-entity: true
+    save-qc-detail: true
+    update-latest-state: true
+  db-test:
+    enabled: false
+    feed-id: mybas-johor
+    duration-minutes: 10
+    cycles: 5
+    interval-seconds: 120
+    validate-after-run: true
+  long-test:
+    enabled: false
+    feed-id: mybas-johor
+    duration-minutes: 120
+    cycles: 60
+    interval-seconds: 120
+    validate-after-run: true
+  multicity-db-test:
+    enabled: false
+    duration-minutes: 10
+    cycles-per-feed: 5
+    interval-seconds: 120
+    validate-after-run: true
+    feeds:
+      - mybas-johor
+      - mybas-kuching
+      - rapid-bus-kl
+      - rapid-bus-mrtfeeder
+      - mybas-melaka
+  continuous:
+    enabled: true
+    validate-after-window: false
+    retry-delay-seconds: 30
+
+qc:
+  position:
+    feed-bounds-buffer-km: 10
+  gps-jump:
+    suspicious-speed-kmh: 100
+    jump-speed-kmh: 130
+    max-comparable-gap-seconds: 600
+  static-shape:
+    max-segment-km: 10
+  scheduled-time:
+    max-trip-hours: 6

@@ -1,0 +1,2683 @@
+{
+  "snapshot" : {
+    "batch_id" : "20260827_073218_5991",
+    "city_code" : "kuching",
+    "city_name" : "Kuching",
+    "feed_id" : "mybas-kuching",
+    "operator" : "BAS.MY",
+    "service_type" : "bus",
+    "gtfs_realtime_version" : "2.0",
+    "incrementality" : "FULL_DATASET",
+    "feed_timestamp" : 1787787183,
+    "feed_timestamp_utc" : "2026-08-26T23:33:03Z",
+    "request_started_at" : "2026-08-26T23:33:34.317956600Z",
+    "response_received_at" : "2026-08-26T23:33:34.362946800Z",
+    "ingest_timestamp_utc" : "2026-08-26T23:33:34.362946800Z",
+    "entity_count" : 45,
+    "vehicle_count" : 45,
+    "unique_route_count" : 0,
+    "route_static_match_count" : 0,
+    "route_static_unmatched_count" : 45,
+    "route_static_match_rate" : "0 / 45 (0.00%)",
+    "trip_static_match_count" : 44,
+    "trip_static_unmatched_count" : 1,
+    "trip_static_match_rate" : "44 / 45 (97.78%)",
+    "direction_match_count" : 0,
+    "direction_mismatch_count" : 44,
+    "response_bytes" : 4096,
+    "response_sha256" : "f8fcfeb67b9918cc5c7dce8ba7ad8402b8727a069ccd1fedf79f56c3073bd486"
+  },
+  "vehicles" : [ {
+    "entity_id" : "MADANI1047",
+    "vehicle_id" : "MADANI1047",
+    "vehicle_label" : "MADANI1047",
+    "license_plate" : "MADANI1047",
+    "wheelchair_accessible" : null,
+    "trip_id" : "206_1_WD_4",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30399",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 1,
+    "trip_headsign" : "Q10",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30399_1",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.1659667,
+    "longitude" : 110.56663,
+    "bearing" : 333.93,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787171,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:51Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI1047",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "206_1_WD_4"
+        },
+        "position" : {
+          "latitude" : 1.1659667,
+          "longitude" : 110.56663,
+          "bearing" : 333.93
+        },
+        "timestamp" : "1787787171",
+        "vehicle" : {
+          "id" : "MADANI1047",
+          "label" : "MADANI1047",
+          "license_plate" : "MADANI1047"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI1050",
+    "vehicle_id" : "MADANI1050",
+    "vehicle_label" : "MADANI1050",
+    "license_plate" : "MADANI1050",
+    "wheelchair_accessible" : null,
+    "trip_id" : "206_1_WD_2",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30399",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 1,
+    "trip_headsign" : "Q10",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30399_1",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.4782484,
+    "longitude" : 110.41474,
+    "bearing" : 330.53,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787176,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:56Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI1050",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "206_1_WD_2"
+        },
+        "position" : {
+          "latitude" : 1.4782484,
+          "longitude" : 110.41474,
+          "bearing" : 330.53
+        },
+        "timestamp" : "1787787176",
+        "vehicle" : {
+          "id" : "MADANI1050",
+          "label" : "MADANI1050",
+          "license_plate" : "MADANI1050"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI1051",
+    "vehicle_id" : "MADANI1051",
+    "vehicle_label" : "MADANI1051",
+    "license_plate" : "MADANI1051",
+    "wheelchair_accessible" : null,
+    "trip_id" : "206_1_WD_3",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30399",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 1,
+    "trip_headsign" : "Q10",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30399_1",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.2798967,
+    "longitude" : 110.42967,
+    "bearing" : 298.64,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787179,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:59Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI1051",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "206_1_WD_3"
+        },
+        "position" : {
+          "latitude" : 1.2798967,
+          "longitude" : 110.42967,
+          "bearing" : 298.64
+        },
+        "timestamp" : "1787787179",
+        "vehicle" : {
+          "id" : "MADANI1051",
+          "label" : "MADANI1051",
+          "license_plate" : "MADANI1051"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI1061",
+    "vehicle_id" : "MADANI1061",
+    "vehicle_label" : "MADANI1061",
+    "license_plate" : "MADANI1061",
+    "wheelchair_accessible" : null,
+    "trip_id" : "206_0_WD_4",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30399",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 0,
+    "trip_headsign" : "Q10",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30399_0",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.5593367,
+    "longitude" : 110.342476,
+    "bearing" : 218.37,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787785193,
+    "vehicle_timestamp_utc" : "2026-08-26T22:59:53Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI1061",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "206_0_WD_4"
+        },
+        "position" : {
+          "latitude" : 1.5593367,
+          "longitude" : 110.342476,
+          "bearing" : 218.37
+        },
+        "timestamp" : "1787785193",
+        "vehicle" : {
+          "id" : "MADANI1061",
+          "label" : "MADANI1061",
+          "license_plate" : "MADANI1061"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI1071",
+    "vehicle_id" : "MADANI1071",
+    "vehicle_label" : "MADANI1071",
+    "license_plate" : "MADANI1071",
+    "wheelchair_accessible" : null,
+    "trip_id" : "206_0_WD_2",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30399",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 0,
+    "trip_headsign" : "Q10",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30399_0",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.1978734,
+    "longitude" : 110.54635,
+    "bearing" : 123.9,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787176,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:56Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI1071",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "206_0_WD_2"
+        },
+        "position" : {
+          "latitude" : 1.1978734,
+          "longitude" : 110.54635,
+          "bearing" : 123.9
+        },
+        "timestamp" : "1787787176",
+        "vehicle" : {
+          "id" : "MADANI1071",
+          "label" : "MADANI1071",
+          "license_plate" : "MADANI1071"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI1144",
+    "vehicle_id" : "MADANI1144",
+    "vehicle_label" : "MADANI1144",
+    "license_plate" : "MADANI1144",
+    "wheelchair_accessible" : null,
+    "trip_id" : "206_0_WD_3",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30399",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 0,
+    "trip_headsign" : "Q10",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30399_0",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.526485,
+    "longitude" : 110.373215,
+    "bearing" : 108.91,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787170,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:50Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI1144",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "206_0_WD_3"
+        },
+        "position" : {
+          "latitude" : 1.526485,
+          "longitude" : 110.373215,
+          "bearing" : 108.91
+        },
+        "timestamp" : "1787787170",
+        "vehicle" : {
+          "id" : "MADANI1144",
+          "label" : "MADANI1144",
+          "license_plate" : "MADANI1144"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI1151",
+    "vehicle_id" : "MADANI1151",
+    "vehicle_label" : "MADANI1151",
+    "license_plate" : "MADANI1151",
+    "wheelchair_accessible" : null,
+    "trip_id" : "207_1_WD_3",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30395",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 1,
+    "trip_headsign" : "Q01",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30395_1",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.554705,
+    "longitude" : 110.24752,
+    "bearing" : 76.53,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787172,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:52Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI1151",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "207_1_WD_3"
+        },
+        "position" : {
+          "latitude" : 1.554705,
+          "longitude" : 110.24752,
+          "bearing" : 76.53
+        },
+        "timestamp" : "1787787172",
+        "vehicle" : {
+          "id" : "MADANI1151",
+          "label" : "MADANI1151",
+          "license_plate" : "MADANI1151"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI1161",
+    "vehicle_id" : "MADANI1161",
+    "vehicle_label" : "MADANI1161",
+    "license_plate" : "MADANI1161",
+    "wheelchair_accessible" : null,
+    "trip_id" : "207_0_WD_2",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30395",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 0,
+    "trip_headsign" : "Q01",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30395_0",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.559815,
+    "longitude" : 110.34246,
+    "bearing" : 77.84,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787176,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:56Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI1161",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "207_0_WD_2"
+        },
+        "position" : {
+          "latitude" : 1.559815,
+          "longitude" : 110.34246,
+          "bearing" : 77.84
+        },
+        "timestamp" : "1787787176",
+        "vehicle" : {
+          "id" : "MADANI1161",
+          "label" : "MADANI1161",
+          "license_plate" : "MADANI1161"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI2160",
+    "vehicle_id" : "MADANI2160",
+    "vehicle_label" : "MADANI2160",
+    "license_plate" : "MADANI2160",
+    "wheelchair_accessible" : null,
+    "trip_id" : null,
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : null,
+    "static_service_id" : null,
+    "static_direction_id" : null,
+    "trip_headsign" : null,
+    "trip_short_name" : null,
+    "shape_id" : null,
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.50408,
+    "longitude" : 110.3369,
+    "bearing" : 202.86,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787174,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:54Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : false,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI2160",
+      "vehicle" : {
+        "position" : {
+          "latitude" : 1.50408,
+          "longitude" : 110.3369,
+          "bearing" : 202.86
+        },
+        "timestamp" : "1787787174",
+        "vehicle" : {
+          "id" : "MADANI2160",
+          "label" : "MADANI2160",
+          "license_plate" : "MADANI2160"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI2161",
+    "vehicle_id" : "MADANI2161",
+    "vehicle_label" : "MADANI2161",
+    "license_plate" : "MADANI2161",
+    "wheelchair_accessible" : null,
+    "trip_id" : "269_0_WD_2",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30455",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 0,
+    "trip_headsign" : "Q15",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30455_0",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.551735,
+    "longitude" : 110.36605,
+    "bearing" : 307.51,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787174,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:54Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI2161",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "269_0_WD_2"
+        },
+        "position" : {
+          "latitude" : 1.551735,
+          "longitude" : 110.36605,
+          "bearing" : 307.51
+        },
+        "timestamp" : "1787787174",
+        "vehicle" : {
+          "id" : "MADANI2161",
+          "label" : "MADANI2161",
+          "license_plate" : "MADANI2161"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI2163",
+    "vehicle_id" : "MADANI2163",
+    "vehicle_label" : "MADANI2163",
+    "license_plate" : "MADANI2163",
+    "wheelchair_accessible" : null,
+    "trip_id" : "269_0_WD_4",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30455",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 0,
+    "trip_headsign" : "Q15",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30455_0",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.4810534,
+    "longitude" : 110.33257,
+    "bearing" : 0.0,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787171,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:51Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI2163",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "269_0_WD_4"
+        },
+        "position" : {
+          "latitude" : 1.4810534,
+          "longitude" : 110.33257,
+          "bearing" : 0.0
+        },
+        "timestamp" : "1787787171",
+        "vehicle" : {
+          "id" : "MADANI2163",
+          "label" : "MADANI2163",
+          "license_plate" : "MADANI2163"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI2262",
+    "vehicle_id" : "MADANI2262",
+    "vehicle_label" : "MADANI2262",
+    "license_plate" : "MADANI2262",
+    "wheelchair_accessible" : null,
+    "trip_id" : "267_1_WD_3",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30452",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 1,
+    "trip_headsign" : "Q13",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30452_1",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.4448633,
+    "longitude" : 110.32839,
+    "bearing" : 5.41,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787177,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:57Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI2262",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "267_1_WD_3"
+        },
+        "position" : {
+          "latitude" : 1.4448633,
+          "longitude" : 110.32839,
+          "bearing" : 5.41
+        },
+        "timestamp" : "1787787177",
+        "vehicle" : {
+          "id" : "MADANI2262",
+          "label" : "MADANI2262",
+          "license_plate" : "MADANI2262"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI2292",
+    "vehicle_id" : "MADANI2292",
+    "vehicle_label" : "MADANI2292",
+    "license_plate" : "MADANI2292",
+    "wheelchair_accessible" : null,
+    "trip_id" : "267_1_WD_2",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30452",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 1,
+    "trip_headsign" : "Q13",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30452_1",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.5411717,
+    "longitude" : 110.35532,
+    "bearing" : 354.99,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787172,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:52Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI2292",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "267_1_WD_2"
+        },
+        "position" : {
+          "latitude" : 1.5411717,
+          "longitude" : 110.35532,
+          "bearing" : 354.99
+        },
+        "timestamp" : "1787787172",
+        "vehicle" : {
+          "id" : "MADANI2292",
+          "label" : "MADANI2292",
+          "license_plate" : "MADANI2292"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI2352",
+    "vehicle_id" : "MADANI2352",
+    "vehicle_label" : "MADANI2352",
+    "license_plate" : "MADANI2352",
+    "wheelchair_accessible" : null,
+    "trip_id" : "267_0_WD_2",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30452",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 0,
+    "trip_headsign" : "Q13",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30452_0",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.4481868,
+    "longitude" : 110.33174,
+    "bearing" : 158.25,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787177,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:57Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI2352",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "267_0_WD_2"
+        },
+        "position" : {
+          "latitude" : 1.4481868,
+          "longitude" : 110.33174,
+          "bearing" : 158.25
+        },
+        "timestamp" : "1787787177",
+        "vehicle" : {
+          "id" : "MADANI2352",
+          "label" : "MADANI2352",
+          "license_plate" : "MADANI2352"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI2362",
+    "vehicle_id" : "MADANI2362",
+    "vehicle_label" : "MADANI2362",
+    "license_plate" : "MADANI2362",
+    "wheelchair_accessible" : null,
+    "trip_id" : "267_1_WD_4",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30452",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 1,
+    "trip_headsign" : "Q13",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30452_1",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.36137,
+    "longitude" : 110.4053,
+    "bearing" : 121.74,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787171,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:51Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI2362",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "267_1_WD_4"
+        },
+        "position" : {
+          "latitude" : 1.36137,
+          "longitude" : 110.4053,
+          "bearing" : 121.74
+        },
+        "timestamp" : "1787787171",
+        "vehicle" : {
+          "id" : "MADANI2362",
+          "label" : "MADANI2362",
+          "license_plate" : "MADANI2362"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI3001",
+    "vehicle_id" : "MADANI3001",
+    "vehicle_label" : "MADANI3001",
+    "license_plate" : "MADANI3001",
+    "wheelchair_accessible" : null,
+    "trip_id" : "264_0_WD_3",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30449",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 0,
+    "trip_headsign" : "Q11",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30449_0",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.5580233,
+    "longitude" : 110.34219,
+    "bearing" : 37.29,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787174,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:54Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI3001",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "264_0_WD_3"
+        },
+        "position" : {
+          "latitude" : 1.5580233,
+          "longitude" : 110.34219,
+          "bearing" : 37.29
+        },
+        "timestamp" : "1787787174",
+        "vehicle" : {
+          "id" : "MADANI3001",
+          "label" : "MADANI3001",
+          "license_plate" : "MADANI3001"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI3011",
+    "vehicle_id" : "MADANI3011",
+    "vehicle_label" : "MADANI3011",
+    "license_plate" : "MADANI3011",
+    "wheelchair_accessible" : null,
+    "trip_id" : "265_0_WD_3",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30450",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 0,
+    "trip_headsign" : "Q12",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30450_0",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.5580868,
+    "longitude" : 110.3421,
+    "bearing" : 72.37,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787178,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:58Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI3011",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "265_0_WD_3"
+        },
+        "position" : {
+          "latitude" : 1.5580868,
+          "longitude" : 110.3421,
+          "bearing" : 72.37
+        },
+        "timestamp" : "1787787178",
+        "vehicle" : {
+          "id" : "MADANI3011",
+          "label" : "MADANI3011",
+          "license_plate" : "MADANI3011"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI3022",
+    "vehicle_id" : "MADANI3022",
+    "vehicle_label" : "MADANI3022",
+    "license_plate" : "MADANI3022",
+    "wheelchair_accessible" : null,
+    "trip_id" : "265_0_WD_2",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30450",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 0,
+    "trip_headsign" : "Q12",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30450_0",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.5119267,
+    "longitude" : 110.35213,
+    "bearing" : 207.5,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787174,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:54Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI3022",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "265_0_WD_2"
+        },
+        "position" : {
+          "latitude" : 1.5119267,
+          "longitude" : 110.35213,
+          "bearing" : 207.5
+        },
+        "timestamp" : "1787787174",
+        "vehicle" : {
+          "id" : "MADANI3022",
+          "label" : "MADANI3022",
+          "license_plate" : "MADANI3022"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI3099",
+    "vehicle_id" : "MADANI3099",
+    "vehicle_label" : "MADANI3099",
+    "license_plate" : "MADANI3099",
+    "wheelchair_accessible" : null,
+    "trip_id" : "264_0_WD_2",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30449",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 0,
+    "trip_headsign" : "Q11",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30449_0",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.5143816,
+    "longitude" : 110.315674,
+    "bearing" : 226.99,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787179,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:59Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI3099",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "264_0_WD_2"
+        },
+        "position" : {
+          "latitude" : 1.5143816,
+          "longitude" : 110.315674,
+          "bearing" : 226.99
+        },
+        "timestamp" : "1787787179",
+        "vehicle" : {
+          "id" : "MADANI3099",
+          "label" : "MADANI3099",
+          "license_plate" : "MADANI3099"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI4006",
+    "vehicle_id" : "MADANI4006",
+    "vehicle_label" : "MADANI4006",
+    "license_plate" : "MADANI4006",
+    "wheelchair_accessible" : null,
+    "trip_id" : "268_0_WD_2",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30453",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 0,
+    "trip_headsign" : "Q14",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30453_0",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.5498517,
+    "longitude" : 110.33781,
+    "bearing" : 182.01,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787173,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:53Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI4006",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "268_0_WD_2"
+        },
+        "position" : {
+          "latitude" : 1.5498517,
+          "longitude" : 110.33781,
+          "bearing" : 182.01
+        },
+        "timestamp" : "1787787173",
+        "vehicle" : {
+          "id" : "MADANI4006",
+          "label" : "MADANI4006",
+          "license_plate" : "MADANI4006"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI4008",
+    "vehicle_id" : "MADANI4008",
+    "vehicle_label" : "MADANI4008",
+    "license_plate" : "MADANI4008",
+    "wheelchair_accessible" : null,
+    "trip_id" : "268_0_WD_1",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30453",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 0,
+    "trip_headsign" : "Q14",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30453_0",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.4568083,
+    "longitude" : 110.45143,
+    "bearing" : 92.28,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787172,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:52Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI4008",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "268_0_WD_1"
+        },
+        "position" : {
+          "latitude" : 1.4568083,
+          "longitude" : 110.45143,
+          "bearing" : 92.28
+        },
+        "timestamp" : "1787787172",
+        "vehicle" : {
+          "id" : "MADANI4008",
+          "label" : "MADANI4008",
+          "license_plate" : "MADANI4008"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI4031",
+    "vehicle_id" : "MADANI4031",
+    "vehicle_label" : "MADANI4031",
+    "license_plate" : "MADANI4031",
+    "wheelchair_accessible" : null,
+    "trip_id" : "268_1_WD_3",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30453",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 1,
+    "trip_headsign" : "Q14",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30453_1",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.451585,
+    "longitude" : 110.46065,
+    "bearing" : 238.18,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787172,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:52Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI4031",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "268_1_WD_3"
+        },
+        "position" : {
+          "latitude" : 1.451585,
+          "longitude" : 110.46065,
+          "bearing" : 238.18
+        },
+        "timestamp" : "1787787172",
+        "vehicle" : {
+          "id" : "MADANI4031",
+          "label" : "MADANI4031",
+          "license_plate" : "MADANI4031"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI4041",
+    "vehicle_id" : "MADANI4041",
+    "vehicle_label" : "MADANI4041",
+    "license_plate" : "MADANI4041",
+    "wheelchair_accessible" : null,
+    "trip_id" : "268_1_WD_2",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30453",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 1,
+    "trip_headsign" : "Q14",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30453_1",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.51465,
+    "longitude" : 110.33363,
+    "bearing" : 355.02,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787176,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:56Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI4041",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "268_1_WD_2"
+        },
+        "position" : {
+          "latitude" : 1.51465,
+          "longitude" : 110.33363,
+          "bearing" : 355.02
+        },
+        "timestamp" : "1787787176",
+        "vehicle" : {
+          "id" : "MADANI4041",
+          "label" : "MADANI4041",
+          "license_plate" : "MADANI4041"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI5010",
+    "vehicle_id" : "MADANI5010",
+    "vehicle_label" : "MADANI5010",
+    "license_plate" : "MADANI5010",
+    "wheelchair_accessible" : null,
+    "trip_id" : "210_1_WD_4",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30401",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 1,
+    "trip_headsign" : "Q05",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30401_1",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.6350733,
+    "longitude" : 110.19548,
+    "bearing" : 259.94,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787176,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:56Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI5010",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "210_1_WD_4"
+        },
+        "position" : {
+          "latitude" : 1.6350733,
+          "longitude" : 110.19548,
+          "bearing" : 259.94
+        },
+        "timestamp" : "1787787176",
+        "vehicle" : {
+          "id" : "MADANI5010",
+          "label" : "MADANI5010",
+          "license_plate" : "MADANI5010"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI5021",
+    "vehicle_id" : "MADANI5021",
+    "vehicle_label" : "MADANI5021",
+    "license_plate" : "MADANI5021",
+    "wheelchair_accessible" : null,
+    "trip_id" : "210_0_WD_3",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30401",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 0,
+    "trip_headsign" : "Q05",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30401_0",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.5578883,
+    "longitude" : 110.34225,
+    "bearing" : 180.22,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787175,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:55Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI5021",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "210_0_WD_3"
+        },
+        "position" : {
+          "latitude" : 1.5578883,
+          "longitude" : 110.34225,
+          "bearing" : 180.22
+        },
+        "timestamp" : "1787787175",
+        "vehicle" : {
+          "id" : "MADANI5021",
+          "label" : "MADANI5021",
+          "license_plate" : "MADANI5021"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI5033",
+    "vehicle_id" : "MADANI5033",
+    "vehicle_label" : "MADANI5033",
+    "license_plate" : "MADANI5033",
+    "wheelchair_accessible" : null,
+    "trip_id" : "270_0_WD_2",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30454",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 0,
+    "trip_headsign" : "Q16",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30454_0",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.5580817,
+    "longitude" : 110.34093,
+    "bearing" : 27.94,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787176,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:56Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI5033",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "270_0_WD_2"
+        },
+        "position" : {
+          "latitude" : 1.5580817,
+          "longitude" : 110.34093,
+          "bearing" : 27.94
+        },
+        "timestamp" : "1787787176",
+        "vehicle" : {
+          "id" : "MADANI5033",
+          "label" : "MADANI5033",
+          "license_plate" : "MADANI5033"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI5041",
+    "vehicle_id" : "MADANI5041",
+    "vehicle_label" : "MADANI5041",
+    "license_plate" : "MADANI5041",
+    "wheelchair_accessible" : null,
+    "trip_id" : "210_0_WD_2",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30401",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 0,
+    "trip_headsign" : "Q05",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30401_0",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.5821983,
+    "longitude" : 110.23528,
+    "bearing" : 284.25,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787171,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:51Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI5041",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "210_0_WD_2"
+        },
+        "position" : {
+          "latitude" : 1.5821983,
+          "longitude" : 110.23528,
+          "bearing" : 284.25
+        },
+        "timestamp" : "1787787171",
+        "vehicle" : {
+          "id" : "MADANI5041",
+          "label" : "MADANI5041",
+          "license_plate" : "MADANI5041"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI5061",
+    "vehicle_id" : "MADANI5061",
+    "vehicle_label" : "MADANI5061",
+    "license_plate" : "MADANI5061",
+    "wheelchair_accessible" : null,
+    "trip_id" : "210_1_WD_3",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30401",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 1,
+    "trip_headsign" : "Q05",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30401_1",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.5737767,
+    "longitude" : 110.28862,
+    "bearing" : 90.57,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787175,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:55Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI5061",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "210_1_WD_3"
+        },
+        "position" : {
+          "latitude" : 1.5737767,
+          "longitude" : 110.28862,
+          "bearing" : 90.57
+        },
+        "timestamp" : "1787787175",
+        "vehicle" : {
+          "id" : "MADANI5061",
+          "label" : "MADANI5061",
+          "license_plate" : "MADANI5061"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI6011",
+    "vehicle_id" : "MADANI6011",
+    "vehicle_label" : "MADANI6011",
+    "license_plate" : "MADANI6011",
+    "wheelchair_accessible" : null,
+    "trip_id" : "211_0_WD_1",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30402",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 0,
+    "trip_headsign" : "Q06",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30402_0",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.30836,
+    "longitude" : 110.29359,
+    "bearing" : 281.34,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787173,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:53Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI6011",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "211_0_WD_1"
+        },
+        "position" : {
+          "latitude" : 1.30836,
+          "longitude" : 110.29359,
+          "bearing" : 281.34
+        },
+        "timestamp" : "1787787173",
+        "vehicle" : {
+          "id" : "MADANI6011",
+          "label" : "MADANI6011",
+          "license_plate" : "MADANI6011"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI6031",
+    "vehicle_id" : "MADANI6031",
+    "vehicle_label" : "MADANI6031",
+    "license_plate" : "MADANI6031",
+    "wheelchair_accessible" : null,
+    "trip_id" : "270_0_WD_3",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30454",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 0,
+    "trip_headsign" : "Q16",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30454_0",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.553885,
+    "longitude" : 110.33808,
+    "bearing" : 62.74,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787171,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:51Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI6031",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "270_0_WD_3"
+        },
+        "position" : {
+          "latitude" : 1.553885,
+          "longitude" : 110.33808,
+          "bearing" : 62.74
+        },
+        "timestamp" : "1787787171",
+        "vehicle" : {
+          "id" : "MADANI6031",
+          "label" : "MADANI6031",
+          "license_plate" : "MADANI6031"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI6112",
+    "vehicle_id" : "MADANI6112",
+    "vehicle_label" : "MADANI6112",
+    "license_plate" : "MADANI6112",
+    "wheelchair_accessible" : null,
+    "trip_id" : "211_1_WD_3",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30402",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 1,
+    "trip_headsign" : "Q06",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30402_1",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.3207533,
+    "longitude" : 110.2936,
+    "bearing" : 19.21,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787171,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:51Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI6112",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "211_1_WD_3"
+        },
+        "position" : {
+          "latitude" : 1.3207533,
+          "longitude" : 110.2936,
+          "bearing" : 19.21
+        },
+        "timestamp" : "1787787171",
+        "vehicle" : {
+          "id" : "MADANI6112",
+          "label" : "MADANI6112",
+          "license_plate" : "MADANI6112"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI6113",
+    "vehicle_id" : "MADANI6113",
+    "vehicle_label" : "MADANI6113",
+    "license_plate" : "MADANI6113",
+    "wheelchair_accessible" : null,
+    "trip_id" : "211_1_WD_2",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30402",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 1,
+    "trip_headsign" : "Q06",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30402_1",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.5192167,
+    "longitude" : 110.334,
+    "bearing" : 0.52,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787175,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:55Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI6113",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "211_1_WD_2"
+        },
+        "position" : {
+          "latitude" : 1.5192167,
+          "longitude" : 110.334,
+          "bearing" : 0.52
+        },
+        "timestamp" : "1787787175",
+        "vehicle" : {
+          "id" : "MADANI6113",
+          "label" : "MADANI6113",
+          "license_plate" : "MADANI6113"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI6118",
+    "vehicle_id" : "MADANI6118",
+    "vehicle_label" : "MADANI6118",
+    "license_plate" : "MADANI6118",
+    "wheelchair_accessible" : null,
+    "trip_id" : "211_0_WD_2",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30402",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 0,
+    "trip_headsign" : "Q06",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30402_0",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.5514883,
+    "longitude" : 110.34183,
+    "bearing" : 202.85,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787175,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:55Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI6118",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "211_0_WD_2"
+        },
+        "position" : {
+          "latitude" : 1.5514883,
+          "longitude" : 110.34183,
+          "bearing" : 202.85
+        },
+        "timestamp" : "1787787175",
+        "vehicle" : {
+          "id" : "MADANI6118",
+          "label" : "MADANI6118",
+          "license_plate" : "MADANI6118"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI7047",
+    "vehicle_id" : "MADANI7047",
+    "vehicle_label" : "MADANI7047",
+    "license_plate" : "MADANI7047",
+    "wheelchair_accessible" : null,
+    "trip_id" : "212_0_WD_2",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30403",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 0,
+    "trip_headsign" : "Q07",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30403_0",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.5485584,
+    "longitude" : 110.337715,
+    "bearing" : 184.2,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787176,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:56Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI7047",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "212_0_WD_2"
+        },
+        "position" : {
+          "latitude" : 1.5485584,
+          "longitude" : 110.337715,
+          "bearing" : 184.2
+        },
+        "timestamp" : "1787787176",
+        "vehicle" : {
+          "id" : "MADANI7047",
+          "label" : "MADANI7047",
+          "license_plate" : "MADANI7047"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI7057",
+    "vehicle_id" : "MADANI7057",
+    "vehicle_label" : "MADANI7057",
+    "license_plate" : "MADANI7057",
+    "wheelchair_accessible" : null,
+    "trip_id" : "212_1_WD_2",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30403",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 1,
+    "trip_headsign" : "Q07",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30403_1",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.547225,
+    "longitude" : 110.3415,
+    "bearing" : 347.88,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787178,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:58Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI7057",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "212_1_WD_2"
+        },
+        "position" : {
+          "latitude" : 1.547225,
+          "longitude" : 110.3415,
+          "bearing" : 347.88
+        },
+        "timestamp" : "1787787178",
+        "vehicle" : {
+          "id" : "MADANI7057",
+          "label" : "MADANI7057",
+          "license_plate" : "MADANI7057"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI7067",
+    "vehicle_id" : "MADANI7067",
+    "vehicle_label" : "MADANI7067",
+    "license_plate" : "MADANI7067",
+    "wheelchair_accessible" : null,
+    "trip_id" : "212_1_WD_3",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30403",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 1,
+    "trip_headsign" : "Q07",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30403_1",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.5064,
+    "longitude" : 110.26668,
+    "bearing" : 73.08,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787171,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:51Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI7067",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "212_1_WD_3"
+        },
+        "position" : {
+          "latitude" : 1.5064,
+          "longitude" : 110.26668,
+          "bearing" : 73.08
+        },
+        "timestamp" : "1787787171",
+        "vehicle" : {
+          "id" : "MADANI7067",
+          "label" : "MADANI7067",
+          "license_plate" : "MADANI7067"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI7101",
+    "vehicle_id" : "MADANI7101",
+    "vehicle_label" : "MADANI7101",
+    "license_plate" : "MADANI7101",
+    "wheelchair_accessible" : null,
+    "trip_id" : "212_0_WD_1",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30403",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 0,
+    "trip_headsign" : "Q07",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30403_0",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.5065817,
+    "longitude" : 110.266,
+    "bearing" : 4.29,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787178,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:58Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI7101",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "212_0_WD_1"
+        },
+        "position" : {
+          "latitude" : 1.5065817,
+          "longitude" : 110.266,
+          "bearing" : 4.29
+        },
+        "timestamp" : "1787787178",
+        "vehicle" : {
+          "id" : "MADANI7101",
+          "label" : "MADANI7101",
+          "license_plate" : "MADANI7101"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI8041",
+    "vehicle_id" : "MADANI8041",
+    "vehicle_label" : "MADANI8041",
+    "license_plate" : "MADANI8041",
+    "wheelchair_accessible" : null,
+    "trip_id" : "213_0_WD_2",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30404",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 0,
+    "trip_headsign" : "Q08",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30404_0",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.4995267,
+    "longitude" : 110.334915,
+    "bearing" : 261.0,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787179,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:59Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI8041",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "213_0_WD_2"
+        },
+        "position" : {
+          "latitude" : 1.4995267,
+          "longitude" : 110.334915,
+          "bearing" : 261.0
+        },
+        "timestamp" : "1787787179",
+        "vehicle" : {
+          "id" : "MADANI8041",
+          "label" : "MADANI8041",
+          "license_plate" : "MADANI8041"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI8092",
+    "vehicle_id" : "MADANI8092",
+    "vehicle_label" : "MADANI8092",
+    "license_plate" : "MADANI8092",
+    "wheelchair_accessible" : null,
+    "trip_id" : "213_1_WD_3",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30404",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 1,
+    "trip_headsign" : "Q08",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30404_1",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.45041,
+    "longitude" : 110.27472,
+    "bearing" : 97.72,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787178,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:58Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI8092",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "213_1_WD_3"
+        },
+        "position" : {
+          "latitude" : 1.45041,
+          "longitude" : 110.27472,
+          "bearing" : 97.72
+        },
+        "timestamp" : "1787787178",
+        "vehicle" : {
+          "id" : "MADANI8092",
+          "label" : "MADANI8092",
+          "license_plate" : "MADANI8092"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI8096",
+    "vehicle_id" : "MADANI8096",
+    "vehicle_label" : "MADANI8096",
+    "license_plate" : "MADANI8096",
+    "wheelchair_accessible" : null,
+    "trip_id" : "213_1_WD_2",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30404",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 1,
+    "trip_headsign" : "Q08",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30404_1",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.5593833,
+    "longitude" : 110.34251,
+    "bearing" : 183.5,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787177,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:57Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI8096",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "213_1_WD_2"
+        },
+        "position" : {
+          "latitude" : 1.5593833,
+          "longitude" : 110.34251,
+          "bearing" : 183.5
+        },
+        "timestamp" : "1787787177",
+        "vehicle" : {
+          "id" : "MADANI8096",
+          "label" : "MADANI8096",
+          "license_plate" : "MADANI8096"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI8989",
+    "vehicle_id" : "MADANI8989",
+    "vehicle_label" : "MADANI8989",
+    "license_plate" : "MADANI8989",
+    "wheelchair_accessible" : null,
+    "trip_id" : "213_1_WD_4",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30404",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 1,
+    "trip_headsign" : "Q08",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30404_1",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.417995,
+    "longitude" : 110.15484,
+    "bearing" : 58.19,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787169,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:49Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI8989",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "213_1_WD_4"
+        },
+        "position" : {
+          "latitude" : 1.417995,
+          "longitude" : 110.15484,
+          "bearing" : 58.19
+        },
+        "timestamp" : "1787787169",
+        "vehicle" : {
+          "id" : "MADANI8989",
+          "label" : "MADANI8989",
+          "license_plate" : "MADANI8989"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI9773",
+    "vehicle_id" : "MADANI9773",
+    "vehicle_label" : "MADANI9773",
+    "license_plate" : "MADANI9773",
+    "wheelchair_accessible" : null,
+    "trip_id" : "214_0_WD_1",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30405",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 0,
+    "trip_headsign" : "Q09",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30405_0",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.6580133,
+    "longitude" : 110.43857,
+    "bearing" : 131.05,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787173,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:53Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI9773",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "214_0_WD_1"
+        },
+        "position" : {
+          "latitude" : 1.6580133,
+          "longitude" : 110.43857,
+          "bearing" : 131.05
+        },
+        "timestamp" : "1787787173",
+        "vehicle" : {
+          "id" : "MADANI9773",
+          "label" : "MADANI9773",
+          "license_plate" : "MADANI9773"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI9774",
+    "vehicle_id" : "MADANI9774",
+    "vehicle_label" : "MADANI9774",
+    "license_plate" : "MADANI9774",
+    "wheelchair_accessible" : null,
+    "trip_id" : "214_1_WD_3",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30405",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 1,
+    "trip_headsign" : "Q09",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30405_1",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.659165,
+    "longitude" : 110.47311,
+    "bearing" : 334.41,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787175,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:55Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI9774",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "214_1_WD_3"
+        },
+        "position" : {
+          "latitude" : 1.659165,
+          "longitude" : 110.47311,
+          "bearing" : 334.41
+        },
+        "timestamp" : "1787787175",
+        "vehicle" : {
+          "id" : "MADANI9774",
+          "label" : "MADANI9774",
+          "license_plate" : "MADANI9774"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI9775",
+    "vehicle_id" : "MADANI9775",
+    "vehicle_label" : "MADANI9775",
+    "license_plate" : "MADANI9775",
+    "wheelchair_accessible" : null,
+    "trip_id" : "214_0_WD_2",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30405",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 0,
+    "trip_headsign" : "Q09",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30405_0",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.5602933,
+    "longitude" : 110.34505,
+    "bearing" : 23.42,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787173,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:53Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI9775",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "214_0_WD_2"
+        },
+        "position" : {
+          "latitude" : 1.5602933,
+          "longitude" : 110.34505,
+          "bearing" : 23.42
+        },
+        "timestamp" : "1787787173",
+        "vehicle" : {
+          "id" : "MADANI9775",
+          "label" : "MADANI9775",
+          "license_plate" : "MADANI9775"
+        }
+      }
+    }
+  }, {
+    "entity_id" : "MADANI9776",
+    "vehicle_id" : "MADANI9776",
+    "vehicle_label" : "MADANI9776",
+    "license_plate" : "MADANI9776",
+    "wheelchair_accessible" : null,
+    "trip_id" : "214_1_WD_2",
+    "trip_start_time" : null,
+    "trip_start_date" : null,
+    "realtime_route_id" : null,
+    "realtime_direction_id" : null,
+    "realtime_schedule_relationship" : null,
+    "static_route_id" : "30405",
+    "static_service_id" : "WEEKDAY",
+    "static_direction_id" : 1,
+    "trip_headsign" : "Q09",
+    "trip_short_name" : null,
+    "shape_id" : "SHP_30405_1",
+    "route_short_name" : null,
+    "route_long_name" : null,
+    "route_type" : null,
+    "route_color" : null,
+    "route_text_color" : null,
+    "latitude" : 1.5666367,
+    "longitude" : 110.407295,
+    "bearing" : 201.91,
+    "odometer_m" : null,
+    "speed_mps" : null,
+    "current_stop_sequence" : null,
+    "stop_id" : null,
+    "current_status" : null,
+    "vehicle_timestamp" : 1787787173,
+    "vehicle_timestamp_utc" : "2026-08-26T23:32:53Z",
+    "congestion_level" : null,
+    "occupancy_status" : null,
+    "occupancy_percentage" : null,
+    "multi_carriage_details" : [ ],
+    "route_static_matched" : false,
+    "trip_static_matched" : true,
+    "direction_matched" : null,
+    "realtime_entity" : {
+      "id" : "MADANI9776",
+      "vehicle" : {
+        "trip" : {
+          "trip_id" : "214_1_WD_2"
+        },
+        "position" : {
+          "latitude" : 1.5666367,
+          "longitude" : 110.407295,
+          "bearing" : 201.91
+        },
+        "timestamp" : "1787787173",
+        "vehicle" : {
+          "id" : "MADANI9776",
+          "label" : "MADANI9776",
+          "license_plate" : "MADANI9776"
+        }
+      }
+    }
+  } ]
+}

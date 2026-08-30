@@ -1,0 +1,31 @@
+{
+  "odata.metadata": "https://example.test/$metadata#TrafficSpeedBands",
+  "value": [
+    {
+      "LinkID": "103000000",
+      "RoadName": "BKE",
+      "RoadCategory": "1",
+      "SpeedBand": 4,
+      "MinimumSpeed": "30",
+      "MaximumSpeed": "39",
+      "StartLon": "103.7701000000000000",
+      "StartLat": "1.4401000000000000",
+      "EndLon": "103.7711000000000000",
+      "EndLat": "1.4411000000000000",
+      "UnknownField": "ignored"
+    },
+    {
+      "LinkID": "103000001",
+      "RoadName": null,
+      "RoadCategory": 2,
+      "SpeedBand": "5",
+      "MinimumSpeed": 40,
+      "MaximumSpeed": 49,
+      "StartLon": 103.7721,
+      "StartLat": 1.4421,
+      "EndLon": 103.7731,
+      "EndLat": 1.4431
+    }
+  ]
+}
+

@@ -1,0 +1,15 @@
+CREATE EXTENSION IF NOT EXISTS pgcrypto;
+CREATE EXTENSION IF NOT EXISTS postgis;
+CREATE SCHEMA IF NOT EXISTS lta;
+
+CREATE OR REPLACE FUNCTION lta.set_update_time()
+RETURNS TRIGGER
+LANGUAGE plpgsql
+AS $$
+BEGIN
+    NEW.update_time = CURRENT_TIMESTAMP;
+    RETURN NEW;
+END;
+$$;
+
+COMMENT ON FUNCTION lta.set_update_time() IS '统一维护LTA业务表最近更新时间的触发器函数；每次UPDATE时自动写入当前数据库时间。';

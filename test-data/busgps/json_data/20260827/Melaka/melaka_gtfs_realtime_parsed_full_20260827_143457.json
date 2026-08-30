@@ -1,0 +1,688 @@
+{
+  "header": {
+    "gtfs_realtime_version": "2.0",
+    "incrementality": "FULL_DATASET",
+    "timestamp": "1787812480"
+  },
+  "entity": [{
+    "id": "62716640-a060-46df-b333-88623068925d",
+    "vehicle": {
+      "trip": {
+        "trip_id": "0006_M22CWLMYMK_12592_1_A2_MONTHURS_1_3",
+        "start_date": "20260827",
+        "route_id": "M22CWLMYMK",
+        "direction_id": 1
+      },
+      "position": {
+        "latitude": 2.219923,
+        "longitude": 102.24814
+      },
+      "timestamp": "1787812479",
+      "vehicle": {
+        "id": "NDR9276",
+        "label": "NDR9276",
+        "license_plate": "NDR9276"
+      }
+    }
+  }, {
+    "id": "7292b1d4-f51e-4124-a87c-10b71f6a22a5",
+    "vehicle": {
+      "trip": {
+        "trip_id": "0006_M22CWLMYMK_12593_0_A3_MONTHURS_2_2",
+        "start_date": "20260827",
+        "route_id": "M22CWLMYMK",
+        "direction_id": 0
+      },
+      "position": {
+        "latitude": 2.222142,
+        "longitude": 102.24871
+      },
+      "timestamp": "1787812479",
+      "vehicle": {
+        "id": "VJF4254",
+        "label": "VJF4254",
+        "license_plate": "VJF4254"
+      }
+    }
+  }, {
+    "id": "a6199fc4-dcc1-4d5a-b281-ac02c26a7dca",
+    "vehicle": {
+      "trip": {
+        "trip_id": "0006_M22CWLMYMK_12592_1_A1_MONTHURS_1_3",
+        "start_date": "20260827",
+        "route_id": "M22CWLMYMK",
+        "direction_id": 1
+      },
+      "position": {
+        "latitude": 2.395944,
+        "longitude": 102.20157
+      },
+      "timestamp": "1787812479",
+      "vehicle": {
+        "id": "NDR9277",
+        "label": "NDR9277",
+        "license_plate": "NDR9277"
+      }
+    }
+  }, {
+    "id": "e79d9004-f615-49b8-94f2-8d6a76feafa3",
+    "vehicle": {
+      "trip": {
+        "trip_id": "0006_M22CWLMYMK_12593_0_A4_MONTHURS_2_2",
+        "start_date": "20260827",
+        "route_id": "M22CWLMYMK",
+        "direction_id": 0
+      },
+      "position": {
+        "latitude": 2.400341,
+        "longitude": 102.20229
+      },
+      "timestamp": "1787812479",
+      "vehicle": {
+        "id": "NDU3473",
+        "label": "NDU3473",
+        "license_plate": "NDU3473"
+      }
+    }
+  }, {
+    "id": "39966421-0110-42d7-a815-4a6c0f2d4388",
+    "vehicle": {
+      "trip": {
+        "trip_id": "0006_M12CWLMYMK_12572_1_P2_ALLDAY_1_1",
+        "start_date": "20260827",
+        "route_id": "M12CWLMYMK",
+        "direction_id": 1
+      },
+      "position": {
+        "latitude": 2.250413,
+        "longitude": 102.25064
+      },
+      "timestamp": "1787812479",
+      "vehicle": {
+        "id": "MDV8295",
+        "label": "MDV8295",
+        "license_plate": "MDV8295"
+      }
+    }
+  }, {
+    "id": "e7a13c60-a11d-4c74-a7cf-0fe382d9d735",
+    "vehicle": {
+      "trip": {
+        "trip_id": "0006_M32CWLMYMK_12601_1_P3_ALLDAY_1_1",
+        "start_date": "20260827",
+        "route_id": "M32CWLMYMK",
+        "direction_id": 1
+      },
+      "position": {
+        "latitude": 2.27467,
+        "longitude": 102.329315
+      },
+      "timestamp": "1787812479",
+      "vehicle": {
+        "id": "MDL2951",
+        "label": "MDL2951",
+        "license_plate": "MDL2951"
+      }
+    }
+  }, {
+    "id": "0cb5bdb6-b492-4866-a987-0276d5172e6e",
+    "vehicle": {
+      "trip": {
+        "trip_id": "0006_M101CWLMYMK_12606_1_A2_ALLDAY_1_9",
+        "start_date": "20260827",
+        "route_id": "M101CWLMYMK",
+        "direction_id": 1
+      },
+      "position": {
+        "latitude": 2.221145,
+        "longitude": 102.250694
+      },
+      "timestamp": "1787812479",
+      "vehicle": {
+        "id": "MDV8309",
+        "label": "MDV8309",
+        "license_plate": "MDV8309"
+      }
+    }
+  }, {
+    "id": "d1dfc2d3-ed89-4889-8d60-80f854aea5bb",
+    "vehicle": {
+      "trip": {
+        "trip_id": "0006_M11CWLMYMK_12571_0_P1_ALLDAY_2_1",
+        "start_date": "20260827",
+        "route_id": "M11CWLMYMK",
+        "direction_id": 0
+      },
+      "position": {
+        "latitude": 2.219387,
+        "longitude": 102.24862
+      },
+      "timestamp": "1787812479",
+      "vehicle": {
+        "id": "MDV2731",
+        "label": "MDV2731",
+        "license_plate": "MDV2731"
+      }
+    }
+  }, {
+    "id": "34d060bd-545a-4cc3-a7ae-9d93f8897ec8",
+    "vehicle": {
+      "trip": {
+        "trip_id": "0006_M23CWLMYMK_12595_0_P1_ALLDAY_2_1",
+        "start_date": "20260827",
+        "route_id": "M23CWLMYMK",
+        "direction_id": 0
+      },
+      "position": {
+        "latitude": 2.349961,
+        "longitude": 102.09648
+      },
+      "timestamp": "1787812479",
+      "vehicle": {
+        "id": "MDL1276",
+        "label": "MDL1276",
+        "license_plate": "MDL1276"
+      }
+    }
+  }, {
+    "id": "7167931f-911e-46ab-810d-0980a5bfe000",
+    "vehicle": {
+      "trip": {
+        "trip_id": "0006_M101CWLMYMK_12606_1_A1_ALLDAY_1_9",
+        "start_date": "20260827",
+        "route_id": "M101CWLMYMK",
+        "direction_id": 1
+      },
+      "position": {
+        "latitude": 2.22096,
+        "longitude": 102.25099
+      },
+      "timestamp": "1787812479",
+      "vehicle": {
+        "id": "MDV2689",
+        "label": "MDV2689",
+        "license_plate": "MDV2689"
+      }
+    }
+  }, {
+    "id": "37344de8-69ea-41ab-a439-4ccf70c1b4f3",
+    "vehicle": {
+      "trip": {
+        "trip_id": "0006_M23CWLMYMK_12594_1_P3_ALLDAY_1_1",
+        "start_date": "20260827",
+        "route_id": "M23CWLMYMK",
+        "direction_id": 1
+      },
+      "position": {
+        "latitude": 2.21992,
+        "longitude": 102.24816
+      },
+      "timestamp": "1787812479",
+      "vehicle": {
+        "id": "MDV2693",
+        "label": "MDV2693",
+        "license_plate": "MDV2693"
+      }
+    }
+  }, {
+    "id": "205f9a04-4338-4c27-b8a1-085687cacc15",
+    "vehicle": {
+      "trip": {
+        "trip_id": "0006_M100CWLMYMK_12605_1_A3_MONTHURS_1_6",
+        "start_date": "20260827",
+        "route_id": "M100CWLMYMK",
+        "direction_id": 1
+      },
+      "position": {
+        "latitude": 2.213526,
+        "longitude": 102.257195
+      },
+      "timestamp": "1787812479",
+      "vehicle": {
+        "id": "MDV6327",
+        "label": "MDV6327",
+        "license_plate": "MDV6327"
+      }
+    }
+  }, {
+    "id": "09a0d73a-7e5e-4b2a-8af2-10c197562157",
+    "vehicle": {
+      "trip": {
+        "trip_id": "0006_M20CWLMYMK_12585_0_P1_ALLDAY_2_1",
+        "start_date": "20260827",
+        "route_id": "M20CWLMYMK",
+        "direction_id": 0
+      },
+      "position": {
+        "latitude": 2.386424,
+        "longitude": 102.21694
+      },
+      "timestamp": "1787812479",
+      "vehicle": {
+        "id": "MDV2708",
+        "label": "MDV2708",
+        "license_plate": "MDV2708"
+      }
+    }
+  }, {
+    "id": "ecc2f71c-2e46-4cdd-b13d-a8f2d64c05cf",
+    "vehicle": {
+      "trip": {
+        "trip_id": "0006_M14CWLMYMK_12576_1_P2_ALLDAY_1_1",
+        "start_date": "20260827",
+        "route_id": "M14CWLMYMK",
+        "direction_id": 1
+      },
+      "position": {
+        "latitude": 2.228022,
+        "longitude": 102.228966
+      },
+      "timestamp": "1787812479",
+      "vehicle": {
+        "id": "MDV8316",
+        "label": "MDV8316",
+        "license_plate": "MDV8316"
+      }
+    }
+  }, {
+    "id": "08340795-8e89-42c9-b32a-91a7a3a81e63",
+    "vehicle": {
+      "trip": {
+        "trip_id": "0006_M12CWLMYMK_12572_1_P1_ALLDAY_1_1",
+        "start_date": "20260827",
+        "route_id": "M12CWLMYMK",
+        "direction_id": 1
+      },
+      "position": {
+        "latitude": 2.248725,
+        "longitude": 102.2311
+      },
+      "timestamp": "1787812479",
+      "vehicle": {
+        "id": "MDL1274",
+        "label": "MDL1274",
+        "license_plate": "MDL1274"
+      }
+    }
+  }, {
+    "id": "e15be519-8cfc-4231-88f4-e525f8d6428b",
+    "vehicle": {
+      "trip": {
+        "trip_id": "0006_M32CWLMYMK_12602_0_P1_ALLDAY_2_1",
+        "start_date": "20260827",
+        "route_id": "M32CWLMYMK",
+        "direction_id": 0
+      },
+      "position": {
+        "latitude": 2.265126,
+        "longitude": 102.30078
+      },
+      "timestamp": "1787812479",
+      "vehicle": {
+        "id": "MDK9445",
+        "label": "MDK9445",
+        "license_plate": "MDK9445"
+      }
+    }
+  }, {
+    "id": "5e50de96-9cef-4a80-86be-b4958ec7bbd2",
+    "vehicle": {
+      "trip": {
+        "trip_id": "0006_M31CWLMYMK_12600_0_A1_ALLDAY_2_2",
+        "start_date": "20260827",
+        "route_id": "M31CWLMYMK",
+        "direction_id": 0
+      },
+      "position": {
+        "latitude": 2.469816,
+        "longitude": 102.39524
+      },
+      "timestamp": "1787812479",
+      "vehicle": {
+        "id": "MDL2941",
+        "label": "MDL2941",
+        "license_plate": "MDL2941"
+      }
+    }
+  }, {
+    "id": "66d278cf-7f47-425a-8fa4-6c2dff2b64bc",
+    "vehicle": {
+      "trip": {
+        "trip_id": "0006_M21CWLMYMK_12587_1_P3_ALLDAY_1_1",
+        "start_date": "20260827",
+        "route_id": "M21CWLMYMK",
+        "direction_id": 1
+      },
+      "position": {
+        "latitude": 2.313729,
+        "longitude": 102.28987
+      },
+      "timestamp": "1787812479",
+      "vehicle": {
+        "id": "JXJ2864",
+        "label": "JXJ2864",
+        "license_plate": "JXJ2864"
+      }
+    }
+  }, {
+    "id": "be53630a-40d2-42e0-b4b1-28da46cd7899",
+    "vehicle": {
+      "trip": {
+        "trip_id": "0006_M20CWLMYMK_12584_1_P3_ALLDAY_1_1",
+        "start_date": "20260827",
+        "route_id": "M20CWLMYMK",
+        "direction_id": 1
+      },
+      "position": {
+        "latitude": 2.232157,
+        "longitude": 102.22581
+      },
+      "timestamp": "1787812479",
+      "vehicle": {
+        "id": "MDV2691",
+        "label": "MDV2691",
+        "license_plate": "MDV2691"
+      }
+    }
+  }, {
+    "id": "261a4187-7838-4d34-a96f-243e1c6f6e42",
+    "vehicle": {
+      "trip": {
+        "trip_id": "0006_M10ACWLMYMK_12566_1_P1_MONTHURS_1_2",
+        "start_date": "20260827",
+        "route_id": "M10ACWLMYMK",
+        "direction_id": 1
+      },
+      "position": {
+        "latitude": 2.222945,
+        "longitude": 102.26044
+      },
+      "timestamp": "1787812479",
+      "vehicle": {
+        "id": "MDV8304",
+        "label": "MDV8304",
+        "license_plate": "MDV8304"
+      }
+    }
+  }, {
+    "id": "bd2fef2f-8aaf-43b3-9820-4ed8e3eb957c",
+    "vehicle": {
+      "trip": {
+        "trip_id": "0006_M13CWLMYMK_12574_1_P2_ALLDAY_1_1",
+        "start_date": "20260827",
+        "route_id": "M13CWLMYMK",
+        "direction_id": 1
+      },
+      "position": {
+        "latitude": 2.216763,
+        "longitude": 102.248116
+      },
+      "timestamp": "1787812479",
+      "vehicle": {
+        "id": "MDV8306",
+        "label": "MDV8306",
+        "license_plate": "MDV8306"
+      }
+    }
+  }, {
+    "id": "c3713d49-4484-408f-8f15-3f0dc43f0bb6",
+    "vehicle": {
+      "trip": {
+        "trip_id": "0006_M17CWLMYMK_12582_1_P2_ALLDAY_1_1",
+        "start_date": "20260827",
+        "route_id": "M17CWLMYMK",
+        "direction_id": 1
+      },
+      "position": {
+        "latitude": 2.21058,
+        "longitude": 102.21262
+      },
+      "timestamp": "1787812479",
+      "vehicle": {
+        "id": "MDV8310",
+        "label": "MDV8310",
+        "license_plate": "MDV8310"
+      }
+    }
+  }, {
+    "id": "96cadb56-e4e9-4d48-8834-25209d96c275",
+    "vehicle": {
+      "trip": {
+        "trip_id": "0006_M15CWLMYMK_12578_1_P2_ALLDAY_1_1",
+        "start_date": "20260827",
+        "route_id": "M15CWLMYMK",
+        "direction_id": 1
+      },
+      "position": {
+        "latitude": 2.220207,
+        "longitude": 102.248245
+      },
+      "timestamp": "1787812479",
+      "vehicle": {
+        "id": "MDV2648",
+        "label": "MDV2648",
+        "license_plate": "MDV2648"
+      }
+    }
+  }, {
+    "id": "e0b40b46-7ab7-47e7-b24f-15c6955c346f",
+    "vehicle": {
+      "trip": {
+        "trip_id": "0006_M14CWLMYMK_12577_0_P1_ALLDAY_2_1",
+        "start_date": "20260827",
+        "route_id": "M14CWLMYMK",
+        "direction_id": 0
+      },
+      "position": {
+        "latitude": 2.207452,
+        "longitude": 102.24531
+      },
+      "timestamp": "1787812479",
+      "vehicle": {
+        "id": "MDV8302",
+        "label": "MDV8302",
+        "license_plate": "MDV8302"
+      }
+    }
+  }, {
+    "id": "e089ac4d-cea6-4d2a-b11a-e545c9cfa63b",
+    "vehicle": {
+      "trip": {
+        "trip_id": "0006_M13CWLMYMK_12575_0_P1_ALLDAY_2_1",
+        "start_date": "20260827",
+        "route_id": "M13CWLMYMK",
+        "direction_id": 0
+      },
+      "position": {
+        "latitude": 2.292939,
+        "longitude": 102.24346
+      },
+      "timestamp": "1787812479",
+      "vehicle": {
+        "id": "MDV2653",
+        "label": "MDV2653",
+        "license_plate": "MDV2653"
+      }
+    }
+  }, {
+    "id": "a6bf5568-302d-45f4-8238-42e50ecfe4d2",
+    "vehicle": {
+      "trip": {
+        "trip_id": "0006_M30CWLMYMK_12597_1_A2_ALLDAY_1_2",
+        "start_date": "20260827",
+        "route_id": "M30CWLMYMK",
+        "direction_id": 1
+      },
+      "position": {
+        "latitude": 2.228369,
+        "longitude": 102.261856
+      },
+      "timestamp": "1787812479",
+      "vehicle": {
+        "id": "MDK4992",
+        "label": "MDK4992",
+        "license_plate": "MDK4992"
+      }
+    }
+  }, {
+    "id": "d32ee595-061f-4d2d-884c-da7b85ccfe02",
+    "vehicle": {
+      "trip": {
+        "trip_id": "0006_M16CWLMYMK_12581_0_P1_ALLDAY_2_1",
+        "start_date": "20260827",
+        "route_id": "M16CWLMYMK",
+        "direction_id": 0
+      },
+      "position": {
+        "latitude": 2.26001,
+        "longitude": 102.17577
+      },
+      "timestamp": "1787812479",
+      "vehicle": {
+        "id": "MDV2697",
+        "label": "MDV2697",
+        "license_plate": "MDV2697"
+      }
+    }
+  }, {
+    "id": "7f352932-3b65-4326-9c6b-581ae64194b6",
+    "vehicle": {
+      "trip": {
+        "trip_id": "0006_M23CWLMYMK_12595_0_A4_ALLDAY_2_2",
+        "start_date": "20260827",
+        "route_id": "M23CWLMYMK",
+        "direction_id": 0
+      },
+      "position": {
+        "latitude": 2.20063,
+        "longitude": 102.2401
+      },
+      "timestamp": "1787812479",
+      "vehicle": {
+        "id": "MDL1275",
+        "label": "MDL1275",
+        "license_plate": "MDL1275"
+      }
+    }
+  }, {
+    "id": "774a1908-c86b-4350-bd47-7c64d676ae28",
+    "vehicle": {
+      "trip": {
+        "trip_id": "0006_M21CWLMYMK_12588_0_P1_ALLDAY_2_1",
+        "start_date": "20260827",
+        "route_id": "M21CWLMYMK",
+        "direction_id": 0
+      },
+      "position": {
+        "latitude": 2.386394,
+        "longitude": 102.21677
+      },
+      "timestamp": "1787812479",
+      "vehicle": {
+        "id": "MDV3655",
+        "label": "MDV3655",
+        "license_plate": "MDV3655"
+      }
+    }
+  }, {
+    "id": "5c1e6895-b8e7-4867-99af-f19a890f8fb2",
+    "vehicle": {
+      "trip": {
+        "trip_id": "0006_M23CWLMYMK_12594_1_P2_ALLDAY_1_1",
+        "start_date": "20260827",
+        "route_id": "M23CWLMYMK",
+        "direction_id": 1
+      },
+      "position": {
+        "latitude": 2.345247,
+        "longitude": 102.111664
+      },
+      "timestamp": "1787812479",
+      "vehicle": {
+        "id": "MDV2730",
+        "label": "MDV2730",
+        "license_plate": "MDV2730"
+      }
+    }
+  }, {
+    "id": "d50e38de-8203-4a96-b4fc-e3cb5ed232f8",
+    "vehicle": {
+      "trip": {
+        "trip_id": "0006_M16CWLMYMK_12580_1_P2_ALLDAY_1_1",
+        "start_date": "20260827",
+        "route_id": "M16CWLMYMK",
+        "direction_id": 1
+      },
+      "position": {
+        "latitude": 2.220261,
+        "longitude": 102.248245
+      },
+      "timestamp": "1787812479",
+      "vehicle": {
+        "id": "MDV2656",
+        "label": "MDV2656",
+        "license_plate": "MDV2656"
+      }
+    }
+  }, {
+    "id": "99e74756-513c-49ad-b001-9ec090135be5",
+    "vehicle": {
+      "trip": {
+        "trip_id": "0006_M15CWLMYMK_12579_0_P1_ALLDAY_2_1",
+        "start_date": "20260827",
+        "route_id": "M15CWLMYMK",
+        "direction_id": 0
+      },
+      "position": {
+        "latitude": 2.209529,
+        "longitude": 102.21454
+      },
+      "timestamp": "1787812479",
+      "vehicle": {
+        "id": "MDV2654",
+        "label": "MDV2654",
+        "license_plate": "MDV2654"
+      }
+    }
+  }, {
+    "id": "9deb605f-587a-4fea-982b-d66c5d7eb469",
+    "vehicle": {
+      "trip": {
+        "trip_id": "0006_M100CWLMYMK_12605_1_A2_MONTHURS_1_6",
+        "start_date": "20260827",
+        "route_id": "M100CWLMYMK",
+        "direction_id": 1
+      },
+      "position": {
+        "latitude": 2.185588,
+        "longitude": 102.27707
+      },
+      "timestamp": "1787812479",
+      "vehicle": {
+        "id": "MDV3653",
+        "label": "MDV3653",
+        "license_plate": "MDV3653"
+      }
+    }
+  }, {
+    "id": "d93e30e3-678d-47a4-af17-53d9bb72e93b",
+    "vehicle": {
+      "trip": {
+        "trip_id": "0006_M10BCWLMYMK_12569_0_P1_ALLDAY_2_1",
+        "start_date": "20260827",
+        "route_id": "M10BCWLMYMK",
+        "direction_id": 0
+      },
+      "position": {
+        "latitude": 2.265468,
+        "longitude": 102.28286
+      },
+      "timestamp": "1787812479",
+      "vehicle": {
+        "id": "MDV2705",
+        "label": "MDV2705",
+        "license_plate": "MDV2705"
+      }
+    }
+  }]
+}

@@ -1,0 +1,62 @@
+traffic:
+  ciq:
+    enabled: ${CIQ_ENABLED:false}
+    timezone: Asia/Kuala_Lumpur
+    schedule:
+      enabled: ${CIQ_SCHEDULE_ENABLED:false}
+      cron: "0 0,15,30,45 * * * *"
+    http:
+      connect-timeout-seconds: 10
+      request-timeout-seconds: 30
+      retry-count: 3
+      retry-delay-seconds: 5
+    lta:
+      base-url: ${LTA_BASE_URL:https://datamall2.mytransport.sg/ltaodataservice}
+      account-key: ${LTA_ACCOUNT_KEY:}
+      accept: application/json
+    collectors:
+      traffic-speed:
+        enabled: ${CIQ_API01_ENABLED:false}
+        endpoint: /v4/TrafficSpeedBands
+        cron: "0 0,15,30,45 * * * *"
+        max-pages: 1000
+        page-size: 500
+      estimated-travel-times:
+        enabled: ${CIQ_API02_ENABLED:false}
+        endpoint: /EstTravelTimes
+        cron: "0 0,15,30,45 * * * *"
+      traffic-incidents:
+        enabled: ${CIQ_API03_ENABLED:false}
+        endpoint: /TrafficIncidents
+        cron: "0 */5 * * * *"
+      vms:
+        enabled: ${CIQ_API04_ENABLED:false}
+        endpoint: /VMS
+        cron: "0 */5 * * * *"
+      faulty-traffic-lights:
+        enabled: ${CIQ_API05_ENABLED:false}
+        endpoint: /FaultyTrafficLights
+        cron: "0 0 * * * *"
+      road-works:
+        enabled: ${CIQ_API06_ENABLED:false}
+        endpoint: /RoadWorks
+        cron: "0 20 0 * * *"
+      traffic-flow:
+        enabled: ${CIQ_API07_ENABLED:false}
+        endpoint: /TrafficFlow
+        cron: "0 40 0 L * *"
+      road-openings:
+        enabled: ${CIQ_API08_ENABLED:false}
+        endpoint: /RoadOpenings
+        cron: "0 25 0 * * *"
+    persistence:
+      batch-size: 500
+      database-write-enabled: ${CIQ_DATABASE_WRITE_ENABLED:false}
+    storage:
+      root-directory: CIQ
+    archive:
+      enabled: ${CIQ_DAILY_ARCHIVE_ENABLED:true}
+      cron: "0 30 0 * * *"
+      zone: Asia/Kuala_Lumpur
+    manual-test:
+      enabled: ${CIQ_MANUAL_TEST_ENABLED:false}

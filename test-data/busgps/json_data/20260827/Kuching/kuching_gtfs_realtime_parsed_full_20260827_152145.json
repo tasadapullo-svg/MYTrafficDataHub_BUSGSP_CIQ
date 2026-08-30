@@ -1,0 +1,833 @@
+{
+  "header": {
+    "gtfs_realtime_version": "2.0",
+    "incrementality": "FULL_DATASET",
+    "timestamp": "1787815277"
+  },
+  "entity": [{
+    "id": "MADANI3011",
+    "vehicle": {
+      "trip": {
+        "trip_id": "265_0_WD_11"
+      },
+      "position": {
+        "latitude": 1.5580317,
+        "longitude": 110.34208,
+        "bearing": 88.26
+      },
+      "timestamp": "1787815258",
+      "vehicle": {
+        "id": "MADANI3011",
+        "label": "MADANI3011",
+        "license_plate": "MADANI3011"
+      }
+    }
+  }, {
+    "id": "MADANI7057",
+    "vehicle": {
+      "trip": {
+        "trip_id": "212_0_WD_11"
+      },
+      "position": {
+        "latitude": 1.5576867,
+        "longitude": 110.342514,
+        "bearing": 230.13
+      },
+      "timestamp": "1787815258",
+      "vehicle": {
+        "id": "MADANI7057",
+        "label": "MADANI7057",
+        "license_plate": "MADANI7057"
+      }
+    }
+  }, {
+    "id": "MADANI7101",
+    "vehicle": {
+      "trip": {
+        "trip_id": "212_0_WD_9"
+      },
+      "position": {
+        "latitude": 1.505435,
+        "longitude": 110.25426,
+        "bearing": 295.93
+      },
+      "timestamp": "1787815258",
+      "vehicle": {
+        "id": "MADANI7101",
+        "label": "MADANI7101",
+        "license_plate": "MADANI7101"
+      }
+    }
+  }, {
+    "id": "MADANI4006",
+    "vehicle": {
+      "trip": {
+        "trip_id": "268_1_WD_9"
+      },
+      "position": {
+        "latitude": 1.559505,
+        "longitude": 110.34247,
+        "bearing": 306.16
+      },
+      "timestamp": "1787815258",
+      "vehicle": {
+        "id": "MADANI4006",
+        "label": "MADANI4006",
+        "license_plate": "MADANI4006"
+      }
+    }
+  }, {
+    "id": "MADANI1071",
+    "vehicle": {
+      "trip": {
+        "trip_id": "206_1_WD_11"
+      },
+      "position": {
+        "latitude": 1.273025,
+        "longitude": 110.45681,
+        "bearing": 312.32
+      },
+      "timestamp": "1787815256",
+      "vehicle": {
+        "id": "MADANI1071",
+        "label": "MADANI1071",
+        "license_plate": "MADANI1071"
+      }
+    }
+  }, {
+    "id": "MADANI4041",
+    "vehicle": {
+      "trip": {
+        "trip_id": "268_1_WD_10"
+      },
+      "position": {
+        "latitude": 1.5148417,
+        "longitude": 110.33357,
+        "bearing": 356.75
+      },
+      "timestamp": "1787815256",
+      "vehicle": {
+        "id": "MADANI4041",
+        "label": "MADANI4041",
+        "license_plate": "MADANI4041"
+      }
+    }
+  }, {
+    "id": "MADANI2352",
+    "vehicle": {
+      "trip": {
+        "trip_id": "267_0_WD_10"
+      },
+      "position": {
+        "latitude": 1.5314733,
+        "longitude": 110.359146,
+        "bearing": 108.75
+      },
+      "timestamp": "1787815256",
+      "vehicle": {
+        "id": "MADANI2352",
+        "label": "MADANI2352",
+        "license_plate": "MADANI2352"
+      }
+    }
+  }, {
+    "id": "MADANI7047",
+    "vehicle": {
+      "trip": {
+        "trip_id": "212_0_WD_10"
+      },
+      "position": {
+        "latitude": 1.5580367,
+        "longitude": 110.34248,
+        "bearing": 335.8
+      },
+      "timestamp": "1787815256",
+      "vehicle": {
+        "id": "MADANI7047",
+        "label": "MADANI7047",
+        "license_plate": "MADANI7047"
+      }
+    }
+  }, {
+    "id": "MADANI5041",
+    "vehicle": {
+      "trip": {
+        "trip_id": "210_1_WD_12"
+      },
+      "position": {
+        "latitude": 1.6349983,
+        "longitude": 110.195465,
+        "bearing": 115.45
+      },
+      "timestamp": "1787815256",
+      "vehicle": {
+        "id": "MADANI5041",
+        "label": "MADANI5041",
+        "license_plate": "MADANI5041"
+      }
+    }
+  }, {
+    "id": "MADANI5010",
+    "vehicle": {
+      "trip": {
+        "trip_id": "210_0_WD_11"
+      },
+      "position": {
+        "latitude": 1.55805,
+        "longitude": 110.341995,
+        "bearing": 22.39
+      },
+      "timestamp": "1787815256",
+      "vehicle": {
+        "id": "MADANI5010",
+        "label": "MADANI5010",
+        "license_plate": "MADANI5010"
+      }
+    }
+  }, {
+    "id": "MADANI5033",
+    "vehicle": {
+      "trip": {
+        "trip_id": "270_0_WD_10"
+      },
+      "position": {
+        "latitude": 1.55926,
+        "longitude": 110.34156,
+        "bearing": 38.78
+      },
+      "timestamp": "1787815256",
+      "vehicle": {
+        "id": "MADANI5033",
+        "label": "MADANI5033",
+        "license_plate": "MADANI5033"
+      }
+    }
+  }, {
+    "id": "MADANI6113",
+    "vehicle": {
+      "trip": {
+        "trip_id": "211_1_WD_10"
+      },
+      "position": {
+        "latitude": 1.542655,
+        "longitude": 110.34079,
+        "bearing": 341.83
+      },
+      "timestamp": "1787815255",
+      "vehicle": {
+        "id": "MADANI6113",
+        "label": "MADANI6113",
+        "license_plate": "MADANI6113"
+      }
+    }
+  }, {
+    "id": "MADANI1161",
+    "vehicle": {
+      "trip": {
+        "trip_id": "207_1_WD_11"
+      },
+      "position": {
+        "latitude": 1.549005,
+        "longitude": 110.240326,
+        "bearing": 81.79
+      },
+      "timestamp": "1787815256",
+      "vehicle": {
+        "id": "MADANI1161",
+        "label": "MADANI1161",
+        "license_plate": "MADANI1161"
+      }
+    }
+  }, {
+    "id": "MADANI5061",
+    "vehicle": {
+      "trip": {
+        "trip_id": "210_0_WD_10"
+      },
+      "position": {
+        "latitude": 1.57314,
+        "longitude": 110.297745,
+        "bearing": 274.76
+      },
+      "timestamp": "1787815255",
+      "vehicle": {
+        "id": "MADANI5061",
+        "label": "MADANI5061",
+        "license_plate": "MADANI5061"
+      }
+    }
+  }, {
+    "id": "MADANI3001",
+    "vehicle": {
+      "trip": {
+        "trip_id": "264_0_WD_11"
+      },
+      "position": {
+        "latitude": 1.5580583,
+        "longitude": 110.3422,
+        "bearing": 66.09
+      },
+      "timestamp": "1787815254",
+      "vehicle": {
+        "id": "MADANI3001",
+        "label": "MADANI3001",
+        "license_plate": "MADANI3001"
+      }
+    }
+  }, {
+    "id": "MADANI1061",
+    "vehicle": {
+      "trip": {
+        "trip_id": "206_0_WD_10"
+      },
+      "position": {
+        "latitude": 1.3224533,
+        "longitude": 110.40739,
+        "bearing": 180.61
+      },
+      "timestamp": "1787815254",
+      "vehicle": {
+        "id": "MADANI1061",
+        "label": "MADANI1061",
+        "license_plate": "MADANI1061"
+      }
+    }
+  }, {
+    "id": "MADANI9774",
+    "vehicle": {
+      "trip": {
+        "trip_id": "214_1_WD_11"
+      },
+      "position": {
+        "latitude": 1.6477534,
+        "longitude": 110.481575,
+        "bearing": 174.03
+      },
+      "timestamp": "1787815255",
+      "vehicle": {
+        "id": "MADANI9774",
+        "label": "MADANI9774",
+        "license_plate": "MADANI9774"
+      }
+    }
+  }, {
+    "id": "MADANI2161",
+    "vehicle": {
+      "trip": {
+        "trip_id": "269_0_WD_11"
+      },
+      "position": {
+        "latitude": 1.4814667,
+        "longitude": 110.333206,
+        "bearing": 0.0
+      },
+      "timestamp": "1787815175",
+      "vehicle": {
+        "id": "MADANI2161",
+        "label": "MADANI2161",
+        "license_plate": "MADANI2161"
+      }
+    }
+  }, {
+    "id": "MADANI2262",
+    "vehicle": {
+      "trip": {
+        "trip_id": "267_1_WD_11"
+      },
+      "position": {
+        "latitude": 1.4361567,
+        "longitude": 110.32807,
+        "bearing": 355.95
+      },
+      "timestamp": "1787815255",
+      "vehicle": {
+        "id": "MADANI2262",
+        "label": "MADANI2262",
+        "license_plate": "MADANI2262"
+      }
+    }
+  }, {
+    "id": "MADANI5021",
+    "vehicle": {
+      "trip": {
+        "trip_id": "210_1_WD_11"
+      },
+      "position": {
+        "latitude": 1.58313,
+        "longitude": 110.23197,
+        "bearing": 121.58
+      },
+      "timestamp": "1787815255",
+      "vehicle": {
+        "id": "MADANI5021",
+        "label": "MADANI5021",
+        "license_plate": "MADANI5021"
+      }
+    }
+  }, {
+    "id": "MADANI2160",
+    "vehicle": {
+      "trip": {
+        "trip_id": "269_0_WD_9"
+      },
+      "position": {
+        "latitude": 1.497945,
+        "longitude": 110.37076,
+        "bearing": 250.26
+      },
+      "timestamp": "1787815254",
+      "vehicle": {
+        "id": "MADANI2160",
+        "label": "MADANI2160",
+        "license_plate": "MADANI2160"
+      }
+    }
+  }, {
+    "id": "MADANI3022",
+    "vehicle": {
+      "trip": {
+        "trip_id": "265_0_WD_10"
+      },
+      "position": {
+        "latitude": 1.5314183,
+        "longitude": 110.358986,
+        "bearing": 154.48
+      },
+      "timestamp": "1787815254",
+      "vehicle": {
+        "id": "MADANI3022",
+        "label": "MADANI3022",
+        "license_plate": "MADANI3022"
+      }
+    }
+  }, {
+    "id": "MADANI9773",
+    "vehicle": {
+      "trip": {
+        "trip_id": "214_0_WD_9"
+      },
+      "position": {
+        "latitude": 1.6079433,
+        "longitude": 110.44218,
+        "bearing": 1.27
+      },
+      "timestamp": "1787815253",
+      "vehicle": {
+        "id": "MADANI9773",
+        "label": "MADANI9773",
+        "license_plate": "MADANI9773"
+      }
+    }
+  }, {
+    "id": "MADANI8008",
+    "vehicle": {
+      "trip": {
+        "trip_id": "213_0_WD_11"
+      },
+      "position": {
+        "latitude": 1.5592833,
+        "longitude": 110.342316,
+        "bearing": 303.09
+      },
+      "timestamp": "1787815254",
+      "vehicle": {
+        "id": "MADANI8008",
+        "label": "MADANI8008",
+        "license_plate": "MADANI8008"
+      }
+    }
+  }, {
+    "id": "MADANI2292",
+    "vehicle": {
+      "trip": {
+        "trip_id": "267_0_WD_11"
+      },
+      "position": {
+        "latitude": 1.5592583,
+        "longitude": 110.342354,
+        "bearing": 171.18
+      },
+      "timestamp": "1787815253",
+      "vehicle": {
+        "id": "MADANI2292",
+        "label": "MADANI2292",
+        "license_plate": "MADANI2292"
+      }
+    }
+  }, {
+    "id": "MADANI9776",
+    "vehicle": {
+      "trip": {
+        "trip_id": "214_1_WD_10"
+      },
+      "position": {
+        "latitude": 1.566245,
+        "longitude": 110.3848,
+        "bearing": 277.75
+      },
+      "timestamp": "1787815253",
+      "vehicle": {
+        "id": "MADANI9776",
+        "label": "MADANI9776",
+        "license_plate": "MADANI9776"
+      }
+    }
+  }, {
+    "id": "MADANI6011",
+    "vehicle": {
+      "trip": {
+        "trip_id": "211_0_WD_9"
+      },
+      "position": {
+        "latitude": 1.44384,
+        "longitude": 110.32957,
+        "bearing": 181.37
+      },
+      "timestamp": "1787815253",
+      "vehicle": {
+        "id": "MADANI6011",
+        "label": "MADANI6011",
+        "license_plate": "MADANI6011"
+      }
+    }
+  }, {
+    "id": "MADANI1135",
+    "vehicle": {
+      "position": {
+        "latitude": 1.5499117,
+        "longitude": 110.24036,
+        "bearing": 354.06
+      },
+      "timestamp": "1787814336",
+      "vehicle": {
+        "id": "MADANI1135",
+        "label": "MADANI1135",
+        "license_plate": "MADANI1135"
+      }
+    }
+  }, {
+    "id": "MADANI9775",
+    "vehicle": {
+      "trip": {
+        "trip_id": "214_0_WD_10"
+      },
+      "position": {
+        "latitude": 1.55952,
+        "longitude": 110.34251,
+        "bearing": 274.86
+      },
+      "timestamp": "1787815252",
+      "vehicle": {
+        "id": "MADANI9775",
+        "label": "MADANI9775",
+        "license_plate": "MADANI9775"
+      }
+    }
+  }, {
+    "id": "MADANI1151",
+    "vehicle": {
+      "trip": {
+        "trip_id": "207_0_WD_10"
+      },
+      "position": {
+        "latitude": 1.5592483,
+        "longitude": 110.3422,
+        "bearing": 234.88
+      },
+      "timestamp": "1787815252",
+      "vehicle": {
+        "id": "MADANI1151",
+        "label": "MADANI1151",
+        "license_plate": "MADANI1151"
+      }
+    }
+  }, {
+    "id": "MADANI4031",
+    "vehicle": {
+      "trip": {
+        "trip_id": "268_1_WD_11"
+      },
+      "position": {
+        "latitude": 1.4540983,
+        "longitude": 110.45881,
+        "bearing": 207.49
+      },
+      "timestamp": "1787815252",
+      "vehicle": {
+        "id": "MADANI4031",
+        "label": "MADANI4031",
+        "license_plate": "MADANI4031"
+      }
+    }
+  }, {
+    "id": "MADANI2362",
+    "vehicle": {
+      "trip": {
+        "trip_id": "267_0_WD_9"
+      },
+      "position": {
+        "latitude": 1.3612517,
+        "longitude": 110.405334,
+        "bearing": 319.99
+      },
+      "timestamp": "1787815252",
+      "vehicle": {
+        "id": "MADANI2362",
+        "label": "MADANI2362",
+        "license_plate": "MADANI2362"
+      }
+    }
+  }, {
+    "id": "MADANI4008",
+    "vehicle": {
+      "trip": {
+        "trip_id": "268_0_WD_9"
+      },
+      "position": {
+        "latitude": 1.4782116,
+        "longitude": 110.338135,
+        "bearing": 104.45
+      },
+      "timestamp": "1787815252",
+      "vehicle": {
+        "id": "MADANI4008",
+        "label": "MADANI4008",
+        "license_plate": "MADANI4008"
+      }
+    }
+  }, {
+    "id": "MADANI6118",
+    "vehicle": {
+      "trip": {
+        "trip_id": "211_0_WD_10"
+      },
+      "position": {
+        "latitude": 1.557955,
+        "longitude": 110.34231,
+        "bearing": 49.65
+      },
+      "timestamp": "1787815251",
+      "vehicle": {
+        "id": "MADANI6118",
+        "label": "MADANI6118",
+        "license_plate": "MADANI6118"
+      }
+    }
+  }, {
+    "id": "MADANI8989",
+    "vehicle": {
+      "trip": {
+        "trip_id": "213_1_WD_12"
+      },
+      "position": {
+        "latitude": 1.417985,
+        "longitude": 110.15479,
+        "bearing": 179.95
+      },
+      "timestamp": "1787815250",
+      "vehicle": {
+        "id": "MADANI8989",
+        "label": "MADANI8989",
+        "license_plate": "MADANI8989"
+      }
+    }
+  }, {
+    "id": "MADANI7067",
+    "vehicle": {
+      "trip": {
+        "trip_id": "212_1_WD_11"
+      },
+      "position": {
+        "latitude": 1.5114733,
+        "longitude": 110.2687,
+        "bearing": 35.42
+      },
+      "timestamp": "1787815251",
+      "vehicle": {
+        "id": "MADANI7067",
+        "label": "MADANI7067",
+        "license_plate": "MADANI7067"
+      }
+    }
+  }, {
+    "id": "MADANI2163",
+    "vehicle": {
+      "trip": {
+        "trip_id": "269_0_WD_10"
+      },
+      "position": {
+        "latitude": 1.5374267,
+        "longitude": 110.373634,
+        "bearing": 321.98
+      },
+      "timestamp": "1787815251",
+      "vehicle": {
+        "id": "MADANI2163",
+        "label": "MADANI2163",
+        "license_plate": "MADANI2163"
+      }
+    }
+  }, {
+    "id": "MADANI6112",
+    "vehicle": {
+      "trip": {
+        "trip_id": "211_1_WD_11"
+      },
+      "position": {
+        "latitude": 1.3082983,
+        "longitude": 110.29353,
+        "bearing": 19.43
+      },
+      "timestamp": "1787815251",
+      "vehicle": {
+        "id": "MADANI6112",
+        "label": "MADANI6112",
+        "license_plate": "MADANI6112"
+      }
+    }
+  }, {
+    "id": "MADANI1051",
+    "vehicle": {
+      "trip": {
+        "trip_id": "206_0_WD_12"
+      },
+      "position": {
+        "latitude": 1.55917,
+        "longitude": 110.34215,
+        "bearing": 226.51
+      },
+      "timestamp": "1787815250",
+      "vehicle": {
+        "id": "MADANI1051",
+        "label": "MADANI1051",
+        "license_plate": "MADANI1051"
+      }
+    }
+  }, {
+    "id": "MADANI1047",
+    "vehicle": {
+      "trip": {
+        "trip_id": "206_1_WD_10"
+      },
+      "position": {
+        "latitude": 1.536335,
+        "longitude": 110.35614,
+        "bearing": 299.18
+      },
+      "timestamp": "1787815250",
+      "vehicle": {
+        "id": "MADANI1047",
+        "label": "MADANI1047",
+        "license_plate": "MADANI1047"
+      }
+    }
+  }, {
+    "id": "MADANI1050",
+    "vehicle": {
+      "trip": {
+        "trip_id": "206_0_WD_11"
+      },
+      "position": {
+        "latitude": 1.5369067,
+        "longitude": 110.35616,
+        "bearing": 151.61
+      },
+      "timestamp": "1787815249",
+      "vehicle": {
+        "id": "MADANI1050",
+        "label": "MADANI1050",
+        "license_plate": "MADANI1050"
+      }
+    }
+  }, {
+    "id": "MADANI1144",
+    "vehicle": {
+      "trip": {
+        "trip_id": "206_1_WD_12"
+      },
+      "position": {
+        "latitude": 1.1660167,
+        "longitude": 110.5667,
+        "bearing": 129.1
+      },
+      "timestamp": "1787815250",
+      "vehicle": {
+        "id": "MADANI1144",
+        "label": "MADANI1144",
+        "license_plate": "MADANI1144"
+      }
+    }
+  }, {
+    "id": "MADANI8092",
+    "vehicle": {
+      "trip": {
+        "trip_id": "213_1_WD_11"
+      },
+      "position": {
+        "latitude": 1.44228,
+        "longitude": 110.22886,
+        "bearing": 66.69
+      },
+      "timestamp": "1787815249",
+      "vehicle": {
+        "id": "MADANI8092",
+        "label": "MADANI8092",
+        "license_plate": "MADANI8092"
+      }
+    }
+  }, {
+    "id": "MADANI8041",
+    "vehicle": {
+      "trip": {
+        "trip_id": "213_0_WD_10"
+      },
+      "position": {
+        "latitude": 1.52139,
+        "longitude": 110.337456,
+        "bearing": 207.94
+      },
+      "timestamp": "1787815249",
+      "vehicle": {
+        "id": "MADANI8041",
+        "label": "MADANI8041",
+        "license_plate": "MADANI8041"
+      }
+    }
+  }, {
+    "id": "MADANI3099",
+    "vehicle": {
+      "trip": {
+        "trip_id": "264_0_WD_10"
+      },
+      "position": {
+        "latitude": 1.5316583,
+        "longitude": 110.321205,
+        "bearing": 254.14
+      },
+      "timestamp": "1787815249",
+      "vehicle": {
+        "id": "MADANI3099",
+        "label": "MADANI3099",
+        "license_plate": "MADANI3099"
+      }
+    }
+  }, {
+    "id": "MADANI7072",
+    "vehicle": {
+      "trip": {
+        "trip_id": "270_0_WD_9"
+      },
+      "position": {
+        "latitude": 1.5597583,
+        "longitude": 110.34247,
+        "bearing": 93.08
+      },
+      "timestamp": "1787815249",
+      "vehicle": {
+        "id": "MADANI7072",
+        "label": "MADANI7072",
+        "license_plate": "MADANI7072"
+      }
+    }
+  }]
+}

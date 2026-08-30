@@ -1,0 +1,36 @@
+2026-08-30 15:34:41.593 [main] INFO  com.mytransitgps.MyTrafficDataHubApplication - Starting MyTrafficDataHubApplication using Java 17.0.17 with PID 23156 (C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\Application\target\classes started by DELL in C:\Users\DELL\Desktop\MYTrafficDataHub_20260829)
+2026-08-30 15:34:41.594 [main] INFO  com.mytransitgps.MyTrafficDataHubApplication - The following 1 profile is active: "longrun"
+2026-08-30 15:34:41.754 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-08-30 15:34:42.205 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-08-30 15:34:42.214 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-08-30 15:34:42.249 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+2026-08-30 15:34:42.757 [main] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-08-30 15:34:42.768 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-08-30 15:34:42.769 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-08-30 15:34:42.770 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-08-30 15:34:42.824 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1190 ms
+2026-08-30 15:34:43.167 [main] INFO  com.mytransitgps.config.RedisConfig - Redis StringRedisTemplate初始化完成
+2026-08-30 15:34:43.225 [main] INFO  c.m.persistence.config.MyBatisDatabaseConfig - MYTransitGPS MyBatis 数据库配置已初始化，城市 Schema 路由已启用
+2026-08-30 15:34:43.865 [main] INFO  com.mytransitgps.config.RedisConfig - Redis byte[] RedisTemplate初始化完成
+2026-08-30 15:34:43.867 [main] INFO  com.mytransitgps.gtfs.config.GtfsFeedRegistry - GTFS Feed注册表初始化完成，feedCount=5，enabledFeedCount=5
+2026-08-30 15:34:44.087 [main] INFO  c.b.m.e.s.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.boot.web.server.servlet.context.AnnotationConfigServletWebServerApplicationContext@24e8de5c
+2026-08-30 15:34:44.215 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-08-30 15:34:44.230 [main] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-08-30 15:34:44.240 [main] INFO  com.mytransitgps.MyTrafficDataHubApplication - Started MyTrafficDataHubApplication in 3.162 seconds (process running for 3.722)
+2026-08-30 15:34:44.242 [main] INFO  c.m.config.RedisStartupConnectionChecker - Redis启动连通性检查未启用，跳过启动Ping
+2026-08-30 15:34:44.243 [main] INFO  c.m.config.ApplicationStartupLoggingListener - Spring Context初始化完成，activeProfiles=longrun
+2026-08-30 15:34:44.243 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub启动配置：profiles=longrun，serverPort=8080，databaseEnabled=true，dbTestEnabled=false，multicityTestEnabled=false，continuousEnabled=true，dailyArchiveEnabled=true，redisStartupCheckEnabled=false，workspaceRoot=C:/MYTrafficDataHubData
+2026-08-30 15:34:44.243 [main] INFO  c.m.config.ApplicationStartupLoggingListener - 交通模块状态：busGpsEnabled=true，busGpsFeedCount=5，ciqEnabled=true，ciqScheduleEnabled=false，ciqTrafficSpeedEnabled=true，ciqArchiveEnabled=true，ciqDatabaseWriteEnabled=true，ltaAccountKeyConfigured=true
+2026-08-30 15:34:44.243 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub服务已就绪，稳定模块=MYTransitGPS
+2026-08-30 15:34:44.243 [main] INFO  c.m.p.s.MulticityContinuousCollectionLifecycle - 连续多城市长期采集准备启动，feedCount=5，intervalSeconds=120，durationMode=UNBOUNDED
+2026-08-30 15:34:44.244 [main] INFO  c.m.p.s.MulticityContinuousCollectionLifecycle - 连续多城市采集生命周期已启动；每Feed间隔=120秒，无固定结束时长，应用运行期间持续采集
+2026-08-30 15:34:44.244 [mytransitgps-continuous-collector] INFO  c.m.p.s.MulticityContinuousCollectionLifecycle - 开始无固定时长多城市连续采集Run；停止条件=应用Stop/线程中断/不可恢复故障
+2026-08-30 15:34:44.258 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub正在关闭
+2026-08-30 15:34:44.260 [main] INFO  c.m.p.s.MulticityContinuousCollectionLifecycle - 收到连续采集停止请求
+2026-08-30 15:34:44.260 [mytransitgps-continuous-collector] INFO  c.m.p.s.MulticityContinuousCollectionLifecycle - 连续多城市采集生命周期已退出
+2026-08-30 15:34:44.260 [main] INFO  c.m.p.s.MulticityContinuousCollectionLifecycle - 连续采集线程已安全停止，collectorCreated=true
+2026-08-30 15:34:44.261 [main] INFO  o.springframework.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-08-30 15:34:44.262 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-08-30 15:34:44.494 [tomcat-shutdown] INFO  o.springframework.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-08-30 15:34:44.494 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-08-30 15:34:44.501 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub已完成关闭流程

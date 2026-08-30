@@ -1,0 +1,4 @@
+package com.mytransitgps.modules.ciq.parser;
+import com.fasterxml.jackson.databind.ObjectMapper;import com.mytransitgps.modules.ciq.domain.EstimatedTravelTimeRecord;import java.util.*;
+/** 独立 Parser：只解析字段，不访问网络/数据库。 */
+public class EstimatedTravelTimesParser { private final ObjectMapper mapper; public EstimatedTravelTimesParser(ObjectMapper m){mapper=m;} public List<EstimatedTravelTimeRecord> parse(byte[] body){var root=CiqJsonParserSupport.root(mapper,body);List<EstimatedTravelTimeRecord> out=new ArrayList<>();for(var n:CiqJsonParserSupport.values(root))out.add(new EstimatedTravelTimeRecord(CiqJsonParserSupport.text(n,"Name"),CiqJsonParserSupport.s(n,"Direction"),CiqJsonParserSupport.text(n,"FarEndPoint"),CiqJsonParserSupport.text(n,"StartPoint"),CiqJsonParserSupport.text(n,"EndPoint"),CiqJsonParserSupport.s(n,"EstTime")));return out;} }

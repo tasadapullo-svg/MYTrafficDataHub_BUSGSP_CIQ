@@ -1,0 +1,113 @@
+{
+  "header": {
+    "gtfs_realtime_version": "2.0",
+    "incrementality": "FULL_DATASET",
+    "timestamp": "1788105696"
+  },
+  "entity": [{
+    "id": "0",
+    "vehicle": {
+      "trip": {
+        "trip_id": "weekend_U3000_U300002_0",
+        "start_time": "00:00:40",
+        "start_date": "20260831",
+        "route_id": "U3000"
+      },
+      "position": {
+        "latitude": 3.133539,
+        "longitude": 101.75752,
+        "bearing": 18.7,
+        "speed": 13.15
+      },
+      "timestamp": "1788105686",
+      "vehicle": {
+        "id": "VEN6127",
+        "license_plate": "VEN6127"
+      }
+    }
+  }, {
+    "id": "1",
+    "vehicle": {
+      "trip": {
+        "trip_id": "weekend_U3000_U300002_0",
+        "start_time": "00:00:20",
+        "start_date": "20260831",
+        "route_id": "U3000"
+      },
+      "position": {
+        "latitude": 3.131554,
+        "longitude": 101.74489,
+        "bearing": 256.2,
+        "speed": 71.12
+      },
+      "timestamp": "1788105669",
+      "vehicle": {
+        "id": "VGG9481",
+        "license_plate": "VGG9481"
+      }
+    }
+  }, {
+    "id": "2",
+    "vehicle": {
+      "trip": {
+        "trip_id": "weekend_T6010_T601001_0",
+        "start_time": "00:00:53",
+        "start_date": "20260831",
+        "route_id": "T6010"
+      },
+      "position": {
+        "latitude": 2.992052,
+        "longitude": 101.59489,
+        "bearing": 2.09,
+        "speed": 36.65
+      },
+      "timestamp": "1788105682",
+      "vehicle": {
+        "id": "WA1376G",
+        "license_plate": "WA1376G"
+      }
+    }
+  }, {
+    "id": "3",
+    "vehicle": {
+      "trip": {
+        "trip_id": "weekend_T6010_T601002_0",
+        "start_time": "00:00:25",
+        "start_date": "20260831",
+        "route_id": "T6010"
+      },
+      "position": {
+        "latitude": 2.988121,
+        "longitude": 101.61614,
+        "bearing": 208.3,
+        "speed": 30.17
+      },
+      "timestamp": "1788105686",
+      "vehicle": {
+        "id": "WVG2493",
+        "license_plate": "WVG2493"
+      }
+    }
+  }, {
+    "id": "4",
+    "vehicle": {
+      "trip": {
+        "trip_id": "weekend_U7508_U750802_0",
+        "start_time": "00:00:22",
+        "start_date": "20260831",
+        "route_id": "U7508"
+      },
+      "position": {
+        "latitude": 3.074595,
+        "longitude": 101.51123,
+        "bearing": 106.1,
+        "speed": 27.78
+      },
+      "timestamp": "1788105685",
+      "vehicle": {
+        "id": "JXK435",
+        "license_plate": "JXK435"
+      }
+    }
+  }]
+}

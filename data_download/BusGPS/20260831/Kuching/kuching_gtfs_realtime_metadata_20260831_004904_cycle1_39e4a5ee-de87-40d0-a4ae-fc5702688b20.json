@@ -1,0 +1,23 @@
+{
+  "run_id" : "multicity_continuous_20260831_004840",
+  "run_uid" : "6da4eda1-f53f-4349-8d34-8cd643939684",
+  "city" : "Kuching",
+  "schema" : "kuching",
+  "feed_id" : "mybas-kuching",
+  "feed_uid" : "16c43968-04de-4126-8a6f-37509de4452e",
+  "request_uid" : "39e4a5ee-de87-40d0-a4ae-fc5702688b20",
+  "snapshot_uid" : "9aa3c618-9843-4b91-9143-34e67fdb55e3",
+  "cycle" : 1,
+  "scheduled_at" : "2026-08-30T16:49:04.928110100Z",
+  "request_started_at" : "2026-08-30T16:49:04.932016300Z",
+  "response_received_at" : "2026-08-30T16:49:04.971544400Z",
+  "http_status" : 200,
+  "response_bytes" : 92,
+  "response_sha256" : "8a9fa9190d9f3061d312d537fe999d543f825dfa5653db7387bd0a86eb590896",
+  "raw_pb_path" : "raw_data/20260831/Kuching/kuching_gtfs_realtime_raw_20260831_004904_cycle1_39e4a5ee-de87-40d0-a4ae-fc5702688b20.pb",
+  "parsed_json_path" : "BusGPS/20260831/Kuching/kuching_gtfs_realtime_parsed_full_20260831_004904_cycle1_39e4a5ee-de87-40d0-a4ae-fc5702688b20.json",
+  "enriched_json_path" : "BusGPS/20260831/Kuching/kuching_gtfs_realtime_enriched_full_20260831_004904_cycle1_39e4a5ee-de87-40d0-a4ae-fc5702688b20.json",
+  "entity_count" : 1,
+  "vehicle_count" : 1,
+  "result" : "SUCCESS"
+}

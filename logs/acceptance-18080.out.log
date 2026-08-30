@@ -1,0 +1,42 @@
+20:37:26.903 [main] INFO com.mytransitgps.MyTrafficDataHubApplication -- MYTrafficDataHub 正在启动，javaVersion=25.0.2
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.3)
+
+2026-08-30 20:37:27.620 [main] INFO  com.mytransitgps.MyTrafficDataHubApplication - Starting MyTrafficDataHubApplication v0.0.1-SNAPSHOT using Java 25.0.2 with PID 9512 (C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\Application\target\Application-0.0.1-SNAPSHOT.jar started by DELL in C:\Users\DELL\Desktop\MYTrafficDataHub_20260829)
+2026-08-30 20:37:27.623 [main] INFO  com.mytransitgps.MyTrafficDataHubApplication - The following 1 profile is active: "dev"
+2026-08-30 20:37:27.796 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-08-30 20:37:28.376 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-08-30 20:37:28.379 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-08-30 20:37:28.414 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+2026-08-30 20:37:28.987 [main] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 18080 (http)
+2026-08-30 20:37:29.002 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-18080"]
+2026-08-30 20:37:29.004 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-08-30 20:37:29.004 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-08-30 20:37:29.032 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1358 ms
+2026-08-30 20:37:29.418 [main] INFO  com.mytransitgps.config.RedisConfig - Redis StringRedisTemplate初始化完成
+2026-08-30 20:37:29.628 [main] INFO  c.m.persistence.config.MyBatisDatabaseConfig - MYTransitGPS MyBatis 数据库配置已初始化，城市 Schema 路由已启用
+2026-08-30 20:37:30.206 [main] INFO  com.mytransitgps.config.RedisConfig - Redis byte[] RedisTemplate初始化完成
+2026-08-30 20:37:30.504 [main] INFO  c.b.m.e.s.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.boot.web.server.servlet.context.AnnotationConfigServletWebServerApplicationContext@8ab78bc
+2026-08-30 20:37:30.614 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-18080"]
+2026-08-30 20:37:30.639 [main] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 18080 (http) with context path '/'
+2026-08-30 20:37:30.647 [main] INFO  com.mytransitgps.MyTrafficDataHubApplication - Started MyTrafficDataHubApplication in 3.57 seconds (process running for 4.008)
+2026-08-30 20:37:30.652 [main] INFO  c.m.config.RedisStartupConnectionChecker - Redis启动连通性检查未启用，跳过启动Ping
+2026-08-30 20:37:30.654 [main] INFO  c.m.config.ApplicationStartupLoggingListener - Spring Context初始化完成，activeProfiles=dev
+2026-08-30 20:37:30.654 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub启动配置：profiles=dev，serverPort=18080，databaseEnabled=true，dbTestEnabled=false，multicityTestEnabled=false，continuousEnabled=false，dailyArchiveEnabled=false，redisStartupCheckEnabled=false，workspaceRoot=data_download
+2026-08-30 20:37:30.654 [main] INFO  c.m.config.ApplicationStartupLoggingListener - 交通模块状态：busGpsEnabled=false，busGpsFeedCount=5，ciqEnabled=false，ciqScheduleEnabled=false，ciqArchiveEnabled=false，ciqDatabaseWriteEnabled=false，ltaAccountKeyConfigured=false
+2026-08-30 20:37:30.655 [main] INFO  c.m.config.ApplicationStartupLoggingListener - CIQ 8接口启用状态：API01=false，API02=false，API03=false，API04=false，API05=false，API06=false，API07=false，API08=false
+2026-08-30 20:37:30.655 [main] INFO  c.m.config.ApplicationStartupLoggingListener - 当前未启用自动多城市连续采集，服务处于待命状态
+2026-08-30 20:37:30.655 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub服务已就绪，稳定模块=MYTransitGPS
+2026-08-30 20:37:32.830 [http-nio-18080-exec-2] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-30 20:37:32.831 [http-nio-18080-exec-2] INFO  o.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-08-30 20:37:32.833 [http-nio-18080-exec-2] INFO  o.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-08-30 20:37:32.922 [http-nio-18080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-08-30 20:37:33.129 [http-nio-18080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@cb09035
+2026-08-30 20:37:33.132 [http-nio-18080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.

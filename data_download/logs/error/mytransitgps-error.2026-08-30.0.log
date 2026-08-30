@@ -1,0 +1,1151 @@
+2026-08-30 15:23:57.151 [mytransitgps-continuous-collector] ERROR c.m.p.service.MulticityDatabaseTenMinuteRunner - 无固定时长多城市采集Run失败，runUid=null，错误信息=Missing json_data directory: C:\MYTrafficDataHubData\json_data
+java.lang.IllegalStateException: Missing json_data directory: C:\MYTrafficDataHubData\json_data
+	at com.mytransitgps.persistence.service.LocalStaticArtifactResolver.resolve(LocalStaticArtifactResolver.java:36)
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.prepareStatic(MulticityDatabaseTenMinuteRunner.java:319)
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.runContinuous(MulticityDatabaseTenMinuteRunner.java:122)
+	at com.mytransitgps.persistence.service.MulticityContinuousCollectionLifecycle.runLoop(MulticityContinuousCollectionLifecycle.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-08-30 15:23:57.153 [mytransitgps-continuous-collector] ERROR c.m.p.s.MulticityContinuousCollectionLifecycle - 无固定时长连续多城市采集Run失败，将在配置的延迟后重新启动，错误信息=Missing json_data directory: C:\MYTrafficDataHubData\json_data
+java.lang.IllegalStateException: Missing json_data directory: C:\MYTrafficDataHubData\json_data
+	at com.mytransitgps.persistence.service.LocalStaticArtifactResolver.resolve(LocalStaticArtifactResolver.java:36)
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.prepareStatic(MulticityDatabaseTenMinuteRunner.java:319)
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.runContinuous(MulticityDatabaseTenMinuteRunner.java:122)
+	at com.mytransitgps.persistence.service.MulticityContinuousCollectionLifecycle.runLoop(MulticityContinuousCollectionLifecycle.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-08-30 18:59:47.431 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-08-30 19:02:08.456 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-08-30 19:30:02.107 [scheduling-1] ERROR c.m.m.ciq.collector.CiqTrafficSpeedCollector - CIQ API01 [DB-N99] 数据库节点失败，本轮后续继续完整Raw采集，runUid=fd87071d-14a6-419f-a328-54adc588700c，page=28，message=class java.lang.Integer cannot be cast to class java.lang.Short (java.lang.Integer and java.lang.Short are in module java.base of loader 'bootstrap')
+java.lang.ClassCastException: class java.lang.Integer cannot be cast to class java.lang.Short (java.lang.Integer and java.lang.Short are in module java.base of loader 'bootstrap')
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.lambda$existingLinks$10(CiqTrafficSpeedPersistenceService.java:242)
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$query$0(JdbcTemplate.java:739)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:670)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:732)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:757)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:773)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.existingLinks(CiqTrafficSpeedPersistenceService.java:238)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.persistBatch(CiqTrafficSpeedPersistenceService.java:176)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.persistPage(CiqTrafficSpeedPersistenceService.java:133)
+	at jdk.internal.reflect.GeneratedMethodAccessor98.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService$$SpringCGLIB$$0.persistPage(<generated>)
+	at com.mytransitgps.modules.ciq.collector.CiqTrafficSpeedCollector.collect(CiqTrafficSpeedCollector.java:110)
+	at com.mytransitgps.platform.collection.CollectionExecutor.execute(CollectionExecutor.java:32)
+	at com.mytransitgps.modules.ciq.scheduler.CiqCollectionScheduler.collectTrafficSpeed(CiqCollectionScheduler.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:128)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$1(ScheduledMethodRunnable.java:122)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:122)
+	at org.springframework.scheduling.config.Task$OutcomeTrackingRunnable.run(Task.java:88)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:94)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-08-30 19:45:01.626 [scheduling-1] ERROR c.m.m.ciq.collector.CiqTrafficSpeedCollector - CIQ API01 [DB-N99] 数据库节点失败，本轮后续继续完整Raw采集，runUid=7aaa077c-089d-4b21-b762-f132f6c2900c，page=28，message=class java.lang.Integer cannot be cast to class java.lang.Short (java.lang.Integer and java.lang.Short are in module java.base of loader 'bootstrap')
+java.lang.ClassCastException: class java.lang.Integer cannot be cast to class java.lang.Short (java.lang.Integer and java.lang.Short are in module java.base of loader 'bootstrap')
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.lambda$existingLinks$10(CiqTrafficSpeedPersistenceService.java:242)
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$query$0(JdbcTemplate.java:739)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:670)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:732)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:757)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:773)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.existingLinks(CiqTrafficSpeedPersistenceService.java:238)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.persistBatch(CiqTrafficSpeedPersistenceService.java:176)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.persistPage(CiqTrafficSpeedPersistenceService.java:133)
+	at jdk.internal.reflect.GeneratedMethodAccessor98.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService$$SpringCGLIB$$0.persistPage(<generated>)
+	at com.mytransitgps.modules.ciq.collector.CiqTrafficSpeedCollector.collect(CiqTrafficSpeedCollector.java:110)
+	at com.mytransitgps.platform.collection.CollectionExecutor.execute(CollectionExecutor.java:32)
+	at com.mytransitgps.modules.ciq.scheduler.CiqCollectionScheduler.collectTrafficSpeed(CiqCollectionScheduler.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:128)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$1(ScheduledMethodRunnable.java:122)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:122)
+	at org.springframework.scheduling.config.Task$OutcomeTrackingRunnable.run(Task.java:88)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:94)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-08-30 19:47:31.221 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.mytransitgps.modules.ciq.dashboard.repository.CiqDashboardRepository required a bean of type 'org.springframework.jdbc.core.JdbcTemplate' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.jdbc.core.JdbcTemplate' in your configuration.
+
+2026-08-30 19:47:31.480 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.mytransitgps.modules.ciq.dashboard.repository.CiqDashboardRepository required a bean of type 'org.springframework.jdbc.core.JdbcTemplate' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.jdbc.core.JdbcTemplate' in your configuration.
+
+2026-08-30 19:47:31.686 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.mytransitgps.modules.ciq.dashboard.repository.CiqDashboardRepository required a bean of type 'org.springframework.jdbc.core.JdbcTemplate' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.jdbc.core.JdbcTemplate' in your configuration.
+
+2026-08-30 19:47:33.637 [mytransitgps-continuous-collector] ERROR c.m.p.service.MulticityDatabaseTenMinuteRunner - 多城市采集运行锁冲突，lockName=multicity_continuous.lock
+2026-08-30 19:47:33.637 [mytransitgps-continuous-collector] ERROR c.m.p.s.MulticityContinuousCollectionLifecycle - 无固定时长连续多城市采集Run失败，将在配置的延迟后重新启动，错误信息=Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+java.lang.IllegalStateException: Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.acquireLock(MulticityDatabaseTenMinuteRunner.java:562)
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.runContinuous(MulticityDatabaseTenMinuteRunner.java:112)
+	at com.mytransitgps.persistence.service.MulticityContinuousCollectionLifecycle.runLoop(MulticityContinuousCollectionLifecycle.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-08-30 19:48:04.928 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.mytransitgps.modules.ciq.monitoring.CiqMonitoringRepository required a bean of type 'org.springframework.jdbc.core.JdbcTemplate' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.jdbc.core.JdbcTemplate' in your configuration.
+
+2026-08-30 19:48:05.185 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.mytransitgps.modules.ciq.monitoring.CiqMonitoringRepository required a bean of type 'org.springframework.jdbc.core.JdbcTemplate' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.jdbc.core.JdbcTemplate' in your configuration.
+
+2026-08-30 19:48:05.369 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.mytransitgps.modules.ciq.monitoring.CiqMonitoringRepository required a bean of type 'org.springframework.jdbc.core.JdbcTemplate' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.jdbc.core.JdbcTemplate' in your configuration.
+
+2026-08-30 19:48:07.086 [mytransitgps-continuous-collector] ERROR c.m.p.service.MulticityDatabaseTenMinuteRunner - 多城市采集运行锁冲突，lockName=multicity_continuous.lock
+2026-08-30 19:48:07.086 [mytransitgps-continuous-collector] ERROR c.m.p.s.MulticityContinuousCollectionLifecycle - 无固定时长连续多城市采集Run失败，将在配置的延迟后重新启动，错误信息=Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+java.lang.IllegalStateException: Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.acquireLock(MulticityDatabaseTenMinuteRunner.java:562)
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.runContinuous(MulticityDatabaseTenMinuteRunner.java:112)
+	at com.mytransitgps.persistence.service.MulticityContinuousCollectionLifecycle.runLoop(MulticityContinuousCollectionLifecycle.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-08-30 19:48:34.208 [mytransitgps-continuous-collector] ERROR c.m.p.service.MulticityDatabaseTenMinuteRunner - 多城市采集运行锁冲突，lockName=multicity_continuous.lock
+2026-08-30 19:48:34.209 [mytransitgps-continuous-collector] ERROR c.m.p.s.MulticityContinuousCollectionLifecycle - 无固定时长连续多城市采集Run失败，将在配置的延迟后重新启动，错误信息=Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+java.lang.IllegalStateException: Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.acquireLock(MulticityDatabaseTenMinuteRunner.java:562)
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.runContinuous(MulticityDatabaseTenMinuteRunner.java:112)
+	at com.mytransitgps.persistence.service.MulticityContinuousCollectionLifecycle.runLoop(MulticityContinuousCollectionLifecycle.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-08-30 19:54:12.267 [mytransitgps-continuous-collector] ERROR c.m.p.service.MulticityDatabaseTenMinuteRunner - 多城市采集运行锁冲突，lockName=multicity_continuous.lock
+2026-08-30 19:54:12.268 [mytransitgps-continuous-collector] ERROR c.m.p.s.MulticityContinuousCollectionLifecycle - 无固定时长连续多城市采集Run失败，将在配置的延迟后重新启动，错误信息=Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+java.lang.IllegalStateException: Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.acquireLock(MulticityDatabaseTenMinuteRunner.java:562)
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.runContinuous(MulticityDatabaseTenMinuteRunner.java:112)
+	at com.mytransitgps.persistence.service.MulticityContinuousCollectionLifecycle.runLoop(MulticityContinuousCollectionLifecycle.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-08-30 19:54:42.274 [mytransitgps-continuous-collector] ERROR c.m.p.service.MulticityDatabaseTenMinuteRunner - 多城市采集运行锁冲突，lockName=multicity_continuous.lock
+2026-08-30 19:54:42.274 [mytransitgps-continuous-collector] ERROR c.m.p.s.MulticityContinuousCollectionLifecycle - 无固定时长连续多城市采集Run失败，将在配置的延迟后重新启动，错误信息=Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+java.lang.IllegalStateException: Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.acquireLock(MulticityDatabaseTenMinuteRunner.java:562)
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.runContinuous(MulticityDatabaseTenMinuteRunner.java:112)
+	at com.mytransitgps.persistence.service.MulticityContinuousCollectionLifecycle.runLoop(MulticityContinuousCollectionLifecycle.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-08-30 19:55:12.277 [mytransitgps-continuous-collector] ERROR c.m.p.service.MulticityDatabaseTenMinuteRunner - 多城市采集运行锁冲突，lockName=multicity_continuous.lock
+2026-08-30 19:55:12.277 [mytransitgps-continuous-collector] ERROR c.m.p.s.MulticityContinuousCollectionLifecycle - 无固定时长连续多城市采集Run失败，将在配置的延迟后重新启动，错误信息=Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+java.lang.IllegalStateException: Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.acquireLock(MulticityDatabaseTenMinuteRunner.java:562)
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.runContinuous(MulticityDatabaseTenMinuteRunner.java:112)
+	at com.mytransitgps.persistence.service.MulticityContinuousCollectionLifecycle.runLoop(MulticityContinuousCollectionLifecycle.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-08-30 19:55:42.281 [mytransitgps-continuous-collector] ERROR c.m.p.service.MulticityDatabaseTenMinuteRunner - 多城市采集运行锁冲突，lockName=multicity_continuous.lock
+2026-08-30 19:55:42.281 [mytransitgps-continuous-collector] ERROR c.m.p.s.MulticityContinuousCollectionLifecycle - 无固定时长连续多城市采集Run失败，将在配置的延迟后重新启动，错误信息=Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+java.lang.IllegalStateException: Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.acquireLock(MulticityDatabaseTenMinuteRunner.java:562)
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.runContinuous(MulticityDatabaseTenMinuteRunner.java:112)
+	at com.mytransitgps.persistence.service.MulticityContinuousCollectionLifecycle.runLoop(MulticityContinuousCollectionLifecycle.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-08-30 19:56:12.284 [mytransitgps-continuous-collector] ERROR c.m.p.service.MulticityDatabaseTenMinuteRunner - 多城市采集运行锁冲突，lockName=multicity_continuous.lock
+2026-08-30 19:56:12.284 [mytransitgps-continuous-collector] ERROR c.m.p.s.MulticityContinuousCollectionLifecycle - 无固定时长连续多城市采集Run失败，将在配置的延迟后重新启动，错误信息=Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+java.lang.IllegalStateException: Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.acquireLock(MulticityDatabaseTenMinuteRunner.java:562)
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.runContinuous(MulticityDatabaseTenMinuteRunner.java:112)
+	at com.mytransitgps.persistence.service.MulticityContinuousCollectionLifecycle.runLoop(MulticityContinuousCollectionLifecycle.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-08-30 19:56:42.288 [mytransitgps-continuous-collector] ERROR c.m.p.service.MulticityDatabaseTenMinuteRunner - 多城市采集运行锁冲突，lockName=multicity_continuous.lock
+2026-08-30 19:56:42.288 [mytransitgps-continuous-collector] ERROR c.m.p.s.MulticityContinuousCollectionLifecycle - 无固定时长连续多城市采集Run失败，将在配置的延迟后重新启动，错误信息=Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+java.lang.IllegalStateException: Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.acquireLock(MulticityDatabaseTenMinuteRunner.java:562)
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.runContinuous(MulticityDatabaseTenMinuteRunner.java:112)
+	at com.mytransitgps.persistence.service.MulticityContinuousCollectionLifecycle.runLoop(MulticityContinuousCollectionLifecycle.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-08-30 20:00:01.972 [scheduling-1] ERROR c.m.m.ciq.collector.CiqTrafficSpeedCollector - CIQ API01 [DB-N99] 数据库节点失败，本轮后续继续完整Raw采集，runUid=05f9c544-d0d8-407b-9462-2ab0e9a3eb76，page=28，message=class java.lang.Integer cannot be cast to class java.lang.Short (java.lang.Integer and java.lang.Short are in module java.base of loader 'bootstrap')
+java.lang.ClassCastException: class java.lang.Integer cannot be cast to class java.lang.Short (java.lang.Integer and java.lang.Short are in module java.base of loader 'bootstrap')
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.lambda$existingLinks$1(CiqTrafficSpeedPersistenceService.java:242)
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$query$0(JdbcTemplate.java:739)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:670)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:732)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:757)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:773)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.existingLinks(CiqTrafficSpeedPersistenceService.java:238)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.persistBatch(CiqTrafficSpeedPersistenceService.java:176)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.persistPage(CiqTrafficSpeedPersistenceService.java:133)
+	at jdk.internal.reflect.GeneratedMethodAccessor87.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService$$SpringCGLIB$$0.persistPage(<generated>)
+	at com.mytransitgps.modules.ciq.collector.CiqTrafficSpeedCollector.collect(CiqTrafficSpeedCollector.java:110)
+	at com.mytransitgps.platform.collection.CollectionExecutor.execute(CollectionExecutor.java:32)
+	at com.mytransitgps.modules.ciq.scheduler.CiqCollectionScheduler.collectTrafficSpeed(CiqCollectionScheduler.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:128)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$1(ScheduledMethodRunnable.java:122)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:122)
+	at org.springframework.scheduling.config.Task$OutcomeTrackingRunnable.run(Task.java:88)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:94)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-08-30 20:02:53.563 [mytransitgps-continuous-collector] ERROR c.m.p.service.MulticityDatabaseTenMinuteRunner - 多城市采集运行锁冲突，lockName=multicity_continuous.lock
+2026-08-30 20:02:53.564 [mytransitgps-continuous-collector] ERROR c.m.p.s.MulticityContinuousCollectionLifecycle - 无固定时长连续多城市采集Run失败，将在配置的延迟后重新启动，错误信息=Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+java.lang.IllegalStateException: Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.acquireLock(MulticityDatabaseTenMinuteRunner.java:562)
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.runContinuous(MulticityDatabaseTenMinuteRunner.java:112)
+	at com.mytransitgps.persistence.service.MulticityContinuousCollectionLifecycle.runLoop(MulticityContinuousCollectionLifecycle.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-08-30 20:03:23.570 [mytransitgps-continuous-collector] ERROR c.m.p.service.MulticityDatabaseTenMinuteRunner - 多城市采集运行锁冲突，lockName=multicity_continuous.lock
+2026-08-30 20:03:23.570 [mytransitgps-continuous-collector] ERROR c.m.p.s.MulticityContinuousCollectionLifecycle - 无固定时长连续多城市采集Run失败，将在配置的延迟后重新启动，错误信息=Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+java.lang.IllegalStateException: Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.acquireLock(MulticityDatabaseTenMinuteRunner.java:562)
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.runContinuous(MulticityDatabaseTenMinuteRunner.java:112)
+	at com.mytransitgps.persistence.service.MulticityContinuousCollectionLifecycle.runLoop(MulticityContinuousCollectionLifecycle.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-08-30 20:04:08.075 [mytransitgps-continuous-collector] ERROR c.m.p.service.MulticityDatabaseTenMinuteRunner - 多城市采集运行锁冲突，lockName=multicity_continuous.lock
+2026-08-30 20:04:08.075 [mytransitgps-continuous-collector] ERROR c.m.p.s.MulticityContinuousCollectionLifecycle - 无固定时长连续多城市采集Run失败，将在配置的延迟后重新启动，错误信息=Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+java.lang.IllegalStateException: Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.acquireLock(MulticityDatabaseTenMinuteRunner.java:562)
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.runContinuous(MulticityDatabaseTenMinuteRunner.java:112)
+	at com.mytransitgps.persistence.service.MulticityContinuousCollectionLifecycle.runLoop(MulticityContinuousCollectionLifecycle.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-08-30 20:04:38.083 [mytransitgps-continuous-collector] ERROR c.m.p.service.MulticityDatabaseTenMinuteRunner - 多城市采集运行锁冲突，lockName=multicity_continuous.lock
+2026-08-30 20:04:38.083 [mytransitgps-continuous-collector] ERROR c.m.p.s.MulticityContinuousCollectionLifecycle - 无固定时长连续多城市采集Run失败，将在配置的延迟后重新启动，错误信息=Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+java.lang.IllegalStateException: Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.acquireLock(MulticityDatabaseTenMinuteRunner.java:562)
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.runContinuous(MulticityDatabaseTenMinuteRunner.java:112)
+	at com.mytransitgps.persistence.service.MulticityContinuousCollectionLifecycle.runLoop(MulticityContinuousCollectionLifecycle.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-08-30 20:05:25.487 [mytransitgps-continuous-collector] ERROR c.m.p.service.MulticityDatabaseTenMinuteRunner - 多城市采集运行锁冲突，lockName=multicity_continuous.lock
+2026-08-30 20:05:25.487 [mytransitgps-continuous-collector] ERROR c.m.p.s.MulticityContinuousCollectionLifecycle - 无固定时长连续多城市采集Run失败，将在配置的延迟后重新启动，错误信息=Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+java.lang.IllegalStateException: Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.acquireLock(MulticityDatabaseTenMinuteRunner.java:562)
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.runContinuous(MulticityDatabaseTenMinuteRunner.java:112)
+	at com.mytransitgps.persistence.service.MulticityContinuousCollectionLifecycle.runLoop(MulticityContinuousCollectionLifecycle.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-08-30 20:05:55.491 [mytransitgps-continuous-collector] ERROR c.m.p.service.MulticityDatabaseTenMinuteRunner - 多城市采集运行锁冲突，lockName=multicity_continuous.lock
+2026-08-30 20:05:55.492 [mytransitgps-continuous-collector] ERROR c.m.p.s.MulticityContinuousCollectionLifecycle - 无固定时长连续多城市采集Run失败，将在配置的延迟后重新启动，错误信息=Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+java.lang.IllegalStateException: Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.acquireLock(MulticityDatabaseTenMinuteRunner.java:562)
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.runContinuous(MulticityDatabaseTenMinuteRunner.java:112)
+	at com.mytransitgps.persistence.service.MulticityContinuousCollectionLifecycle.runLoop(MulticityContinuousCollectionLifecycle.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-08-30 20:06:23.283 [mytransitgps-continuous-collector] ERROR c.m.p.service.MulticityDatabaseTenMinuteRunner - 多城市采集运行锁冲突，lockName=multicity_continuous.lock
+2026-08-30 20:06:23.283 [mytransitgps-continuous-collector] ERROR c.m.p.s.MulticityContinuousCollectionLifecycle - 无固定时长连续多城市采集Run失败，将在配置的延迟后重新启动，错误信息=Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+java.lang.IllegalStateException: Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.acquireLock(MulticityDatabaseTenMinuteRunner.java:562)
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.runContinuous(MulticityDatabaseTenMinuteRunner.java:112)
+	at com.mytransitgps.persistence.service.MulticityContinuousCollectionLifecycle.runLoop(MulticityContinuousCollectionLifecycle.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-08-30 20:06:53.288 [mytransitgps-continuous-collector] ERROR c.m.p.service.MulticityDatabaseTenMinuteRunner - 多城市采集运行锁冲突，lockName=multicity_continuous.lock
+2026-08-30 20:06:53.288 [mytransitgps-continuous-collector] ERROR c.m.p.s.MulticityContinuousCollectionLifecycle - 无固定时长连续多城市采集Run失败，将在配置的延迟后重新启动，错误信息=Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+java.lang.IllegalStateException: Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.acquireLock(MulticityDatabaseTenMinuteRunner.java:562)
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.runContinuous(MulticityDatabaseTenMinuteRunner.java:112)
+	at com.mytransitgps.persistence.service.MulticityContinuousCollectionLifecycle.runLoop(MulticityContinuousCollectionLifecycle.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-08-30 20:15:01.799 [scheduling-1] ERROR c.m.m.ciq.collector.CiqTrafficSpeedCollector - CIQ API01 [DB-N99] 数据库节点失败，本轮后续继续完整Raw采集，runUid=fee80597-24a6-4cbf-b1c8-9adae7a57120，page=28，message=class java.lang.Integer cannot be cast to class java.lang.Short (java.lang.Integer and java.lang.Short are in module java.base of loader 'bootstrap')
+java.lang.ClassCastException: class java.lang.Integer cannot be cast to class java.lang.Short (java.lang.Integer and java.lang.Short are in module java.base of loader 'bootstrap')
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.lambda$existingLinks$1(CiqTrafficSpeedPersistenceService.java:242)
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$query$0(JdbcTemplate.java:739)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:670)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:732)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:757)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:773)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.existingLinks(CiqTrafficSpeedPersistenceService.java:238)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.persistBatch(CiqTrafficSpeedPersistenceService.java:176)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.persistPage(CiqTrafficSpeedPersistenceService.java:133)
+	at jdk.internal.reflect.GeneratedMethodAccessor87.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService$$SpringCGLIB$$0.persistPage(<generated>)
+	at com.mytransitgps.modules.ciq.collector.CiqTrafficSpeedCollector.collect(CiqTrafficSpeedCollector.java:110)
+	at com.mytransitgps.platform.collection.CollectionExecutor.execute(CollectionExecutor.java:32)
+	at com.mytransitgps.modules.ciq.scheduler.CiqCollectionScheduler.collectTrafficSpeed(CiqCollectionScheduler.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:128)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$1(ScheduledMethodRunnable.java:122)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:122)
+	at org.springframework.scheduling.config.Task$OutcomeTrackingRunnable.run(Task.java:88)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:94)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-08-30 20:18:38.730 [mytransitgps-continuous-collector] ERROR c.m.p.service.MulticityDatabaseTenMinuteRunner - 多城市采集运行锁冲突，lockName=multicity_continuous.lock
+2026-08-30 20:18:38.730 [mytransitgps-continuous-collector] ERROR c.m.p.s.MulticityContinuousCollectionLifecycle - 无固定时长连续多城市采集Run失败，将在配置的延迟后重新启动，错误信息=Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+java.lang.IllegalStateException: Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.acquireLock(MulticityDatabaseTenMinuteRunner.java:562)
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.runContinuous(MulticityDatabaseTenMinuteRunner.java:112)
+	at com.mytransitgps.persistence.service.MulticityContinuousCollectionLifecycle.runLoop(MulticityContinuousCollectionLifecycle.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-08-30 20:19:08.734 [mytransitgps-continuous-collector] ERROR c.m.p.service.MulticityDatabaseTenMinuteRunner - 多城市采集运行锁冲突，lockName=multicity_continuous.lock
+2026-08-30 20:19:08.735 [mytransitgps-continuous-collector] ERROR c.m.p.s.MulticityContinuousCollectionLifecycle - 无固定时长连续多城市采集Run失败，将在配置的延迟后重新启动，错误信息=Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+java.lang.IllegalStateException: Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.acquireLock(MulticityDatabaseTenMinuteRunner.java:562)
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.runContinuous(MulticityDatabaseTenMinuteRunner.java:112)
+	at com.mytransitgps.persistence.service.MulticityContinuousCollectionLifecycle.runLoop(MulticityContinuousCollectionLifecycle.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-08-30 20:19:38.738 [mytransitgps-continuous-collector] ERROR c.m.p.service.MulticityDatabaseTenMinuteRunner - 多城市采集运行锁冲突，lockName=multicity_continuous.lock
+2026-08-30 20:19:38.738 [mytransitgps-continuous-collector] ERROR c.m.p.s.MulticityContinuousCollectionLifecycle - 无固定时长连续多城市采集Run失败，将在配置的延迟后重新启动，错误信息=Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+java.lang.IllegalStateException: Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.acquireLock(MulticityDatabaseTenMinuteRunner.java:562)
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.runContinuous(MulticityDatabaseTenMinuteRunner.java:112)
+	at com.mytransitgps.persistence.service.MulticityContinuousCollectionLifecycle.runLoop(MulticityContinuousCollectionLifecycle.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-08-30 20:19:56.075 [mytransitgps-continuous-collector] ERROR c.m.p.service.MulticityDatabaseTenMinuteRunner - 多城市采集运行锁冲突，lockName=multicity_continuous.lock
+2026-08-30 20:19:56.076 [mytransitgps-continuous-collector] ERROR c.m.p.s.MulticityContinuousCollectionLifecycle - 无固定时长连续多城市采集Run失败，将在配置的延迟后重新启动，错误信息=Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+java.lang.IllegalStateException: Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.acquireLock(MulticityDatabaseTenMinuteRunner.java:562)
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.runContinuous(MulticityDatabaseTenMinuteRunner.java:112)
+	at com.mytransitgps.persistence.service.MulticityContinuousCollectionLifecycle.runLoop(MulticityContinuousCollectionLifecycle.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-08-30 20:20:26.079 [mytransitgps-continuous-collector] ERROR c.m.p.service.MulticityDatabaseTenMinuteRunner - 多城市采集运行锁冲突，lockName=multicity_continuous.lock
+2026-08-30 20:20:26.079 [mytransitgps-continuous-collector] ERROR c.m.p.s.MulticityContinuousCollectionLifecycle - 无固定时长连续多城市采集Run失败，将在配置的延迟后重新启动，错误信息=Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+java.lang.IllegalStateException: Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.acquireLock(MulticityDatabaseTenMinuteRunner.java:562)
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.runContinuous(MulticityDatabaseTenMinuteRunner.java:112)
+	at com.mytransitgps.persistence.service.MulticityContinuousCollectionLifecycle.runLoop(MulticityContinuousCollectionLifecycle.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-08-30 20:20:56.084 [mytransitgps-continuous-collector] ERROR c.m.p.service.MulticityDatabaseTenMinuteRunner - 多城市采集运行锁冲突，lockName=multicity_continuous.lock
+2026-08-30 20:20:56.084 [mytransitgps-continuous-collector] ERROR c.m.p.s.MulticityContinuousCollectionLifecycle - 无固定时长连续多城市采集Run失败，将在配置的延迟后重新启动，错误信息=Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+java.lang.IllegalStateException: Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.acquireLock(MulticityDatabaseTenMinuteRunner.java:562)
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.runContinuous(MulticityDatabaseTenMinuteRunner.java:112)
+	at com.mytransitgps.persistence.service.MulticityContinuousCollectionLifecycle.runLoop(MulticityContinuousCollectionLifecycle.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-08-30 20:21:26.087 [mytransitgps-continuous-collector] ERROR c.m.p.service.MulticityDatabaseTenMinuteRunner - 多城市采集运行锁冲突，lockName=multicity_continuous.lock
+2026-08-30 20:21:26.088 [mytransitgps-continuous-collector] ERROR c.m.p.s.MulticityContinuousCollectionLifecycle - 无固定时长连续多城市采集Run失败，将在配置的延迟后重新启动，错误信息=Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+java.lang.IllegalStateException: Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.acquireLock(MulticityDatabaseTenMinuteRunner.java:562)
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.runContinuous(MulticityDatabaseTenMinuteRunner.java:112)
+	at com.mytransitgps.persistence.service.MulticityContinuousCollectionLifecycle.runLoop(MulticityContinuousCollectionLifecycle.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-08-30 20:21:56.091 [mytransitgps-continuous-collector] ERROR c.m.p.service.MulticityDatabaseTenMinuteRunner - 多城市采集运行锁冲突，lockName=multicity_continuous.lock
+2026-08-30 20:21:56.092 [mytransitgps-continuous-collector] ERROR c.m.p.s.MulticityContinuousCollectionLifecycle - 无固定时长连续多城市采集Run失败，将在配置的延迟后重新启动，错误信息=Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+java.lang.IllegalStateException: Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.acquireLock(MulticityDatabaseTenMinuteRunner.java:562)
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.runContinuous(MulticityDatabaseTenMinuteRunner.java:112)
+	at com.mytransitgps.persistence.service.MulticityContinuousCollectionLifecycle.runLoop(MulticityContinuousCollectionLifecycle.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-08-30 20:22:37.589 [mytransitgps-continuous-collector] ERROR c.m.p.service.MulticityDatabaseTenMinuteRunner - 多城市采集运行锁冲突，lockName=multicity_continuous.lock
+2026-08-30 20:22:37.590 [mytransitgps-continuous-collector] ERROR c.m.p.s.MulticityContinuousCollectionLifecycle - 无固定时长连续多城市采集Run失败，将在配置的延迟后重新启动，错误信息=Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+java.lang.IllegalStateException: Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.acquireLock(MulticityDatabaseTenMinuteRunner.java:562)
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.runContinuous(MulticityDatabaseTenMinuteRunner.java:112)
+	at com.mytransitgps.persistence.service.MulticityContinuousCollectionLifecycle.runLoop(MulticityContinuousCollectionLifecycle.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-08-30 20:23:07.594 [mytransitgps-continuous-collector] ERROR c.m.p.service.MulticityDatabaseTenMinuteRunner - 多城市采集运行锁冲突，lockName=multicity_continuous.lock
+2026-08-30 20:23:07.594 [mytransitgps-continuous-collector] ERROR c.m.p.s.MulticityContinuousCollectionLifecycle - 无固定时长连续多城市采集Run失败，将在配置的延迟后重新启动，错误信息=Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+java.lang.IllegalStateException: Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.acquireLock(MulticityDatabaseTenMinuteRunner.java:562)
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.runContinuous(MulticityDatabaseTenMinuteRunner.java:112)
+	at com.mytransitgps.persistence.service.MulticityContinuousCollectionLifecycle.runLoop(MulticityContinuousCollectionLifecycle.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-08-30 20:23:37.599 [mytransitgps-continuous-collector] ERROR c.m.p.service.MulticityDatabaseTenMinuteRunner - 多城市采集运行锁冲突，lockName=multicity_continuous.lock
+2026-08-30 20:23:37.600 [mytransitgps-continuous-collector] ERROR c.m.p.s.MulticityContinuousCollectionLifecycle - 无固定时长连续多城市采集Run失败，将在配置的延迟后重新启动，错误信息=Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+java.lang.IllegalStateException: Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.acquireLock(MulticityDatabaseTenMinuteRunner.java:562)
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.runContinuous(MulticityDatabaseTenMinuteRunner.java:112)
+	at com.mytransitgps.persistence.service.MulticityContinuousCollectionLifecycle.runLoop(MulticityContinuousCollectionLifecycle.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-08-30 20:24:07.602 [mytransitgps-continuous-collector] ERROR c.m.p.service.MulticityDatabaseTenMinuteRunner - 多城市采集运行锁冲突，lockName=multicity_continuous.lock
+2026-08-30 20:24:07.602 [mytransitgps-continuous-collector] ERROR c.m.p.s.MulticityContinuousCollectionLifecycle - 无固定时长连续多城市采集Run失败，将在配置的延迟后重新启动，错误信息=Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+java.lang.IllegalStateException: Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.acquireLock(MulticityDatabaseTenMinuteRunner.java:562)
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.runContinuous(MulticityDatabaseTenMinuteRunner.java:112)
+	at com.mytransitgps.persistence.service.MulticityContinuousCollectionLifecycle.runLoop(MulticityContinuousCollectionLifecycle.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-08-30 20:24:37.606 [mytransitgps-continuous-collector] ERROR c.m.p.service.MulticityDatabaseTenMinuteRunner - 多城市采集运行锁冲突，lockName=multicity_continuous.lock
+2026-08-30 20:24:37.606 [mytransitgps-continuous-collector] ERROR c.m.p.s.MulticityContinuousCollectionLifecycle - 无固定时长连续多城市采集Run失败，将在配置的延迟后重新启动，错误信息=Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+java.lang.IllegalStateException: Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.acquireLock(MulticityDatabaseTenMinuteRunner.java:562)
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.runContinuous(MulticityDatabaseTenMinuteRunner.java:112)
+	at com.mytransitgps.persistence.service.MulticityContinuousCollectionLifecycle.runLoop(MulticityContinuousCollectionLifecycle.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-08-30 20:24:53.006 [mytransitgps-continuous-collector] ERROR c.m.p.service.MulticityDatabaseTenMinuteRunner - 多城市采集运行锁冲突，lockName=multicity_continuous.lock
+2026-08-30 20:24:53.007 [mytransitgps-continuous-collector] ERROR c.m.p.s.MulticityContinuousCollectionLifecycle - 无固定时长连续多城市采集Run失败，将在配置的延迟后重新启动，错误信息=Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+java.lang.IllegalStateException: Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.acquireLock(MulticityDatabaseTenMinuteRunner.java:562)
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.runContinuous(MulticityDatabaseTenMinuteRunner.java:112)
+	at com.mytransitgps.persistence.service.MulticityContinuousCollectionLifecycle.runLoop(MulticityContinuousCollectionLifecycle.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-08-30 20:25:07.610 [mytransitgps-continuous-collector] ERROR c.m.p.service.MulticityDatabaseTenMinuteRunner - 多城市采集运行锁冲突，lockName=multicity_continuous.lock
+2026-08-30 20:25:07.610 [mytransitgps-continuous-collector] ERROR c.m.p.s.MulticityContinuousCollectionLifecycle - 无固定时长连续多城市采集Run失败，将在配置的延迟后重新启动，错误信息=Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+java.lang.IllegalStateException: Multicity DB test is already running: C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\runtime\multicity_continuous.lock
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.acquireLock(MulticityDatabaseTenMinuteRunner.java:562)
+	at com.mytransitgps.persistence.service.MulticityDatabaseTenMinuteRunner.runContinuous(MulticityDatabaseTenMinuteRunner.java:112)
+	at com.mytransitgps.persistence.service.MulticityContinuousCollectionLifecycle.runLoop(MulticityContinuousCollectionLifecycle.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-08-30 20:30:02.006 [scheduling-1] ERROR c.m.m.ciq.collector.CiqTrafficSpeedCollector - CIQ API01 [DB-N99] 数据库节点失败，本轮后续继续完整Raw采集，runUid=0bf56c70-66eb-4287-b6e5-1e8ade493dbf，page=28，message=class java.lang.Integer cannot be cast to class java.lang.Short (java.lang.Integer and java.lang.Short are in module java.base of loader 'bootstrap')
+java.lang.ClassCastException: class java.lang.Integer cannot be cast to class java.lang.Short (java.lang.Integer and java.lang.Short are in module java.base of loader 'bootstrap')
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.lambda$existingLinks$1(CiqTrafficSpeedPersistenceService.java:242)
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$query$0(JdbcTemplate.java:739)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:670)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:732)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:757)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:773)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.existingLinks(CiqTrafficSpeedPersistenceService.java:238)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.persistBatch(CiqTrafficSpeedPersistenceService.java:176)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.persistPage(CiqTrafficSpeedPersistenceService.java:133)
+	at jdk.internal.reflect.GeneratedMethodAccessor94.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService$$SpringCGLIB$$0.persistPage(<generated>)
+	at com.mytransitgps.modules.ciq.collector.CiqTrafficSpeedCollector.collect(CiqTrafficSpeedCollector.java:110)
+	at com.mytransitgps.platform.collection.CollectionExecutor.execute(CollectionExecutor.java:32)
+	at com.mytransitgps.modules.ciq.scheduler.CiqCollectionScheduler.collectTrafficSpeed(CiqCollectionScheduler.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:128)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$1(ScheduledMethodRunnable.java:122)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:122)
+	at org.springframework.scheduling.config.Task$OutcomeTrackingRunnable.run(Task.java:88)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:94)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-08-30 21:00:01.841 [scheduling-1] ERROR c.m.m.ciq.collector.CiqTrafficSpeedCollector - CIQ API01 [DB-N99] 数据库节点失败，本轮后续继续完整Raw采集，runUid=1733db64-4d10-4d2b-a802-e1fd40ae28c4，page=28，message=class java.lang.Integer cannot be cast to class java.lang.Short (java.lang.Integer and java.lang.Short are in module java.base of loader 'bootstrap')
+java.lang.ClassCastException: class java.lang.Integer cannot be cast to class java.lang.Short (java.lang.Integer and java.lang.Short are in module java.base of loader 'bootstrap')
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.lambda$existingLinks$1(CiqTrafficSpeedPersistenceService.java:242)
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$query$0(JdbcTemplate.java:739)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:670)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:732)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:757)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:773)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.existingLinks(CiqTrafficSpeedPersistenceService.java:238)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.persistBatch(CiqTrafficSpeedPersistenceService.java:176)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.persistPage(CiqTrafficSpeedPersistenceService.java:133)
+	at jdk.internal.reflect.GeneratedMethodAccessor110.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService$$SpringCGLIB$$0.persistPage(<generated>)
+	at com.mytransitgps.modules.ciq.collector.CiqTrafficSpeedCollector.collect(CiqTrafficSpeedCollector.java:110)
+	at com.mytransitgps.platform.collection.CollectionExecutor.execute(CollectionExecutor.java:32)
+	at com.mytransitgps.modules.ciq.scheduler.CiqCollectionScheduler.collectTrafficSpeed(CiqCollectionScheduler.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:128)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$1(ScheduledMethodRunnable.java:122)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:122)
+	at org.springframework.scheduling.config.Task$OutcomeTrackingRunnable.run(Task.java:88)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:94)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-08-30 21:15:02.207 [scheduling-1] ERROR c.m.m.ciq.collector.CiqTrafficSpeedCollector - CIQ API01 [DB-N99] 数据库节点失败，本轮后续继续完整Raw采集，runUid=3ee50505-afe5-472c-9a18-d5f52738da15，page=28，message=class java.lang.Integer cannot be cast to class java.lang.Short (java.lang.Integer and java.lang.Short are in module java.base of loader 'bootstrap')
+java.lang.ClassCastException: class java.lang.Integer cannot be cast to class java.lang.Short (java.lang.Integer and java.lang.Short are in module java.base of loader 'bootstrap')
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.lambda$existingLinks$1(CiqTrafficSpeedPersistenceService.java:242)
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$query$0(JdbcTemplate.java:739)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:670)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:732)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:757)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:773)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.existingLinks(CiqTrafficSpeedPersistenceService.java:238)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.persistBatch(CiqTrafficSpeedPersistenceService.java:176)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.persistPage(CiqTrafficSpeedPersistenceService.java:133)
+	at jdk.internal.reflect.GeneratedMethodAccessor101.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService$$SpringCGLIB$$0.persistPage(<generated>)
+	at com.mytransitgps.modules.ciq.collector.CiqTrafficSpeedCollector.collect(CiqTrafficSpeedCollector.java:110)
+	at com.mytransitgps.platform.collection.CollectionExecutor.execute(CollectionExecutor.java:32)
+	at com.mytransitgps.modules.ciq.scheduler.CiqCollectionScheduler.collectTrafficSpeed(CiqCollectionScheduler.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:128)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$1(ScheduledMethodRunnable.java:122)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:122)
+	at org.springframework.scheduling.config.Task$OutcomeTrackingRunnable.run(Task.java:88)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:94)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-08-30 21:30:01.864 [scheduling-1] ERROR c.m.m.ciq.collector.CiqTrafficSpeedCollector - CIQ API01 [DB-N99] 数据库节点失败，本轮后续继续完整Raw采集，runUid=d0feefca-ce2f-42e0-adf6-4b66f08dc197，page=28，message=class java.lang.Integer cannot be cast to class java.lang.Short (java.lang.Integer and java.lang.Short are in module java.base of loader 'bootstrap')
+java.lang.ClassCastException: class java.lang.Integer cannot be cast to class java.lang.Short (java.lang.Integer and java.lang.Short are in module java.base of loader 'bootstrap')
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.lambda$existingLinks$1(CiqTrafficSpeedPersistenceService.java:242)
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$query$0(JdbcTemplate.java:739)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:670)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:732)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:757)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:773)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.existingLinks(CiqTrafficSpeedPersistenceService.java:238)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.persistBatch(CiqTrafficSpeedPersistenceService.java:176)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.persistPage(CiqTrafficSpeedPersistenceService.java:133)
+	at jdk.internal.reflect.GeneratedMethodAccessor109.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService$$SpringCGLIB$$0.persistPage(<generated>)
+	at com.mytransitgps.modules.ciq.collector.CiqTrafficSpeedCollector.collect(CiqTrafficSpeedCollector.java:110)
+	at com.mytransitgps.platform.collection.CollectionExecutor.execute(CollectionExecutor.java:32)
+	at com.mytransitgps.modules.ciq.scheduler.CiqCollectionScheduler.collectTrafficSpeed(CiqCollectionScheduler.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:128)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$1(ScheduledMethodRunnable.java:122)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:122)
+	at org.springframework.scheduling.config.Task$OutcomeTrackingRunnable.run(Task.java:88)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:94)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-08-30 21:36:42.874 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-08-30 21:45:02.067 [scheduling-1] ERROR c.m.m.ciq.collector.CiqTrafficSpeedCollector - CIQ API01 [DB-N99] 数据库节点失败，本轮后续继续完整Raw采集，runUid=2d7260e5-b507-4e68-8e80-6600cd15f353，page=28，message=class java.lang.Integer cannot be cast to class java.lang.Short (java.lang.Integer and java.lang.Short are in module java.base of loader 'bootstrap')
+java.lang.ClassCastException: class java.lang.Integer cannot be cast to class java.lang.Short (java.lang.Integer and java.lang.Short are in module java.base of loader 'bootstrap')
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.lambda$existingLinks$1(CiqTrafficSpeedPersistenceService.java:242)
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$query$0(JdbcTemplate.java:739)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:670)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:732)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:757)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:773)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.existingLinks(CiqTrafficSpeedPersistenceService.java:238)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.persistBatch(CiqTrafficSpeedPersistenceService.java:176)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.persistPage(CiqTrafficSpeedPersistenceService.java:133)
+	at jdk.internal.reflect.GeneratedMethodAccessor109.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService$$SpringCGLIB$$0.persistPage(<generated>)
+	at com.mytransitgps.modules.ciq.collector.CiqTrafficSpeedCollector.collect(CiqTrafficSpeedCollector.java:110)
+	at com.mytransitgps.platform.collection.CollectionExecutor.execute(CollectionExecutor.java:32)
+	at com.mytransitgps.modules.ciq.scheduler.CiqCollectionScheduler.collectTrafficSpeed(CiqCollectionScheduler.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:128)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$1(ScheduledMethodRunnable.java:122)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:122)
+	at org.springframework.scheduling.config.Task$OutcomeTrackingRunnable.run(Task.java:88)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:94)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-08-30 22:30:01.833 [scheduling-1] ERROR c.m.m.ciq.collector.CiqTrafficSpeedCollector - CIQ API01 [DB-N99] 数据库节点失败，本轮后续继续完整Raw采集，runUid=61f9040e-e3ca-49ef-ad94-c3496666e8a3，page=28，message=class java.lang.Integer cannot be cast to class java.lang.Short (java.lang.Integer and java.lang.Short are in module java.base of loader 'bootstrap')
+java.lang.ClassCastException: class java.lang.Integer cannot be cast to class java.lang.Short (java.lang.Integer and java.lang.Short are in module java.base of loader 'bootstrap')
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.lambda$existingLinks$1(CiqTrafficSpeedPersistenceService.java:242)
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$query$0(JdbcTemplate.java:739)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:670)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:732)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:757)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:773)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.existingLinks(CiqTrafficSpeedPersistenceService.java:238)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.persistBatch(CiqTrafficSpeedPersistenceService.java:176)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.persistPage(CiqTrafficSpeedPersistenceService.java:133)
+	at jdk.internal.reflect.GeneratedMethodAccessor92.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService$$SpringCGLIB$$0.persistPage(<generated>)
+	at com.mytransitgps.modules.ciq.collector.CiqTrafficSpeedCollector.collect(CiqTrafficSpeedCollector.java:110)
+	at com.mytransitgps.platform.collection.CollectionExecutor.execute(CollectionExecutor.java:32)
+	at com.mytransitgps.modules.ciq.scheduler.CiqCollectionScheduler.collectTrafficSpeed(CiqCollectionScheduler.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:128)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$1(ScheduledMethodRunnable.java:122)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:122)
+	at org.springframework.scheduling.config.Task$OutcomeTrackingRunnable.run(Task.java:88)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:94)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-08-30 22:45:02.265 [scheduling-1] ERROR c.m.m.ciq.collector.CiqTrafficSpeedCollector - CIQ API01 [DB-N99] 数据库节点失败，本轮后续继续完整Raw采集，runUid=52338b82-11f2-47c5-85e2-fb18e42c743e，page=28，message=class java.lang.Integer cannot be cast to class java.lang.Short (java.lang.Integer and java.lang.Short are in module java.base of loader 'bootstrap')
+java.lang.ClassCastException: class java.lang.Integer cannot be cast to class java.lang.Short (java.lang.Integer and java.lang.Short are in module java.base of loader 'bootstrap')
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.lambda$existingLinks$1(CiqTrafficSpeedPersistenceService.java:242)
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$query$0(JdbcTemplate.java:739)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:670)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:732)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:757)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:773)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.existingLinks(CiqTrafficSpeedPersistenceService.java:238)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.persistBatch(CiqTrafficSpeedPersistenceService.java:176)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.persistPage(CiqTrafficSpeedPersistenceService.java:133)
+	at jdk.internal.reflect.GeneratedMethodAccessor92.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService$$SpringCGLIB$$0.persistPage(<generated>)
+	at com.mytransitgps.modules.ciq.collector.CiqTrafficSpeedCollector.collect(CiqTrafficSpeedCollector.java:110)
+	at com.mytransitgps.platform.collection.CollectionExecutor.execute(CollectionExecutor.java:32)
+	at com.mytransitgps.modules.ciq.scheduler.CiqCollectionScheduler.collectTrafficSpeed(CiqCollectionScheduler.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:128)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$1(ScheduledMethodRunnable.java:122)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:122)
+	at org.springframework.scheduling.config.Task$OutcomeTrackingRunnable.run(Task.java:88)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:94)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-08-30 23:00:02.620 [scheduling-1] ERROR c.m.m.ciq.collector.CiqTrafficSpeedCollector - CIQ API01 [DB-N99] 数据库节点失败，本轮后续继续完整Raw采集，runUid=96970693-f667-4eda-917e-27934e50d5ee，page=28，message=class java.lang.Integer cannot be cast to class java.lang.Short (java.lang.Integer and java.lang.Short are in module java.base of loader 'bootstrap')
+java.lang.ClassCastException: class java.lang.Integer cannot be cast to class java.lang.Short (java.lang.Integer and java.lang.Short are in module java.base of loader 'bootstrap')
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.lambda$existingLinks$1(CiqTrafficSpeedPersistenceService.java:242)
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$query$0(JdbcTemplate.java:739)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:670)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:732)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:757)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:773)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.existingLinks(CiqTrafficSpeedPersistenceService.java:238)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.persistBatch(CiqTrafficSpeedPersistenceService.java:176)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.persistPage(CiqTrafficSpeedPersistenceService.java:133)
+	at jdk.internal.reflect.GeneratedMethodAccessor92.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService$$SpringCGLIB$$0.persistPage(<generated>)
+	at com.mytransitgps.modules.ciq.collector.CiqTrafficSpeedCollector.collect(CiqTrafficSpeedCollector.java:110)
+	at com.mytransitgps.platform.collection.CollectionExecutor.execute(CollectionExecutor.java:32)
+	at com.mytransitgps.modules.ciq.scheduler.CiqCollectionScheduler.collectTrafficSpeed(CiqCollectionScheduler.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:128)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$1(ScheduledMethodRunnable.java:122)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:122)
+	at org.springframework.scheduling.config.Task$OutcomeTrackingRunnable.run(Task.java:88)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:94)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-08-30 23:15:01.807 [scheduling-1] ERROR c.m.m.ciq.collector.CiqTrafficSpeedCollector - CIQ API01 [DB-N99] 数据库节点失败，本轮后续继续完整Raw采集，runUid=5f0f73f0-7c37-488e-be3d-38567f18903b，page=28，message=class java.lang.Integer cannot be cast to class java.lang.Short (java.lang.Integer and java.lang.Short are in module java.base of loader 'bootstrap')
+java.lang.ClassCastException: class java.lang.Integer cannot be cast to class java.lang.Short (java.lang.Integer and java.lang.Short are in module java.base of loader 'bootstrap')
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.lambda$existingLinks$1(CiqTrafficSpeedPersistenceService.java:242)
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$query$0(JdbcTemplate.java:739)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:670)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:732)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:757)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:773)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.existingLinks(CiqTrafficSpeedPersistenceService.java:238)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.persistBatch(CiqTrafficSpeedPersistenceService.java:176)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.persistPage(CiqTrafficSpeedPersistenceService.java:133)
+	at jdk.internal.reflect.GeneratedMethodAccessor92.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService$$SpringCGLIB$$0.persistPage(<generated>)
+	at com.mytransitgps.modules.ciq.collector.CiqTrafficSpeedCollector.collect(CiqTrafficSpeedCollector.java:110)
+	at com.mytransitgps.platform.collection.CollectionExecutor.execute(CollectionExecutor.java:32)
+	at com.mytransitgps.modules.ciq.scheduler.CiqCollectionScheduler.collectTrafficSpeed(CiqCollectionScheduler.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:128)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$1(ScheduledMethodRunnable.java:122)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:122)
+	at org.springframework.scheduling.config.Task$OutcomeTrackingRunnable.run(Task.java:88)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:94)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-08-30 23:30:01.916 [scheduling-1] ERROR c.m.m.ciq.collector.CiqTrafficSpeedCollector - CIQ API01 [DB-N99] 数据库节点失败，本轮后续继续完整Raw采集，runUid=963e127e-4fd5-47d0-b0bd-bfb34307f136，page=28，message=class java.lang.Integer cannot be cast to class java.lang.Short (java.lang.Integer and java.lang.Short are in module java.base of loader 'bootstrap')
+java.lang.ClassCastException: class java.lang.Integer cannot be cast to class java.lang.Short (java.lang.Integer and java.lang.Short are in module java.base of loader 'bootstrap')
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.lambda$existingLinks$1(CiqTrafficSpeedPersistenceService.java:242)
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$query$0(JdbcTemplate.java:739)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:670)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:732)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:757)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:773)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.existingLinks(CiqTrafficSpeedPersistenceService.java:238)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.persistBatch(CiqTrafficSpeedPersistenceService.java:176)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.persistPage(CiqTrafficSpeedPersistenceService.java:133)
+	at jdk.internal.reflect.GeneratedMethodAccessor92.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService$$SpringCGLIB$$0.persistPage(<generated>)
+	at com.mytransitgps.modules.ciq.collector.CiqTrafficSpeedCollector.collect(CiqTrafficSpeedCollector.java:110)
+	at com.mytransitgps.platform.collection.CollectionExecutor.execute(CollectionExecutor.java:32)
+	at com.mytransitgps.modules.ciq.scheduler.CiqCollectionScheduler.collectTrafficSpeed(CiqCollectionScheduler.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:128)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$1(ScheduledMethodRunnable.java:122)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:122)
+	at org.springframework.scheduling.config.Task$OutcomeTrackingRunnable.run(Task.java:88)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:94)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-08-30 23:45:02.164 [scheduling-1] ERROR c.m.m.ciq.collector.CiqTrafficSpeedCollector - CIQ API01 [DB-N99] 数据库节点失败，本轮后续继续完整Raw采集，runUid=142ee50f-8afc-48e8-b5f0-d72265685545，page=28，message=class java.lang.Integer cannot be cast to class java.lang.Short (java.lang.Integer and java.lang.Short are in module java.base of loader 'bootstrap')
+java.lang.ClassCastException: class java.lang.Integer cannot be cast to class java.lang.Short (java.lang.Integer and java.lang.Short are in module java.base of loader 'bootstrap')
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.lambda$existingLinks$1(CiqTrafficSpeedPersistenceService.java:242)
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$query$0(JdbcTemplate.java:739)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:670)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:732)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:757)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:773)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.existingLinks(CiqTrafficSpeedPersistenceService.java:238)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.persistBatch(CiqTrafficSpeedPersistenceService.java:176)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService.persistPage(CiqTrafficSpeedPersistenceService.java:133)
+	at jdk.internal.reflect.GeneratedMethodAccessor92.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719)
+	at com.mytransitgps.modules.ciq.persistence.CiqTrafficSpeedPersistenceService$$SpringCGLIB$$0.persistPage(<generated>)
+	at com.mytransitgps.modules.ciq.collector.CiqTrafficSpeedCollector.collect(CiqTrafficSpeedCollector.java:110)
+	at com.mytransitgps.platform.collection.CollectionExecutor.execute(CollectionExecutor.java:32)
+	at com.mytransitgps.modules.ciq.scheduler.CiqCollectionScheduler.collectTrafficSpeed(CiqCollectionScheduler.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:128)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$1(ScheduledMethodRunnable.java:122)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:122)
+	at org.springframework.scheduling.config.Task$OutcomeTrackingRunnable.run(Task.java:88)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:94)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)

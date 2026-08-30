@@ -1,0 +1,70 @@
+spring:
+  config:
+    activate:
+      on-profile: longrun
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+      database: 0
+      password:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: 123456
+    driver-class-name: org.postgresql.Driver
+
+app:
+  redis:
+    connect-on-startup: false
+
+traffic:
+  file-log-root: ${TRAFFIC_FILE_LOG_ROOT:C:/Users/DELL/Desktop/MYTrafficDataHub_20260829/data_download/logs}
+  bus-gps:
+    enabled: true
+  ciq:
+    enabled: true
+    lta:
+      base-url: https://datamall2.mytransport.sg/ltaodataservice
+      account-key: ExQDdDapS4ySGgzzUnbROg==
+    schedule:
+      enabled: true
+      cron: "0 0,15,30,45 * * * *"
+    collectors:
+      traffic-speed:
+        enabled: true
+      estimated-travel-times:
+        enabled: true
+      traffic-incidents:
+        enabled: true
+      vms:
+        enabled: true
+      faulty-traffic-lights:
+        enabled: true
+      road-works:
+        enabled: true
+      traffic-flow:
+        enabled: true
+      road-openings:
+        enabled: true
+    persistence:
+      database-write-enabled: true
+    archive:
+      enabled: true
+    manual-test:
+      enabled: true
+
+mytransitgps:
+  workspace-root: ${TRAFFIC_WORKSPACE_ROOT:${MYTRANSITGPS_WORKSPACE_ROOT:data_download}}
+  database:
+    enabled: true
+  db-test:
+    enabled: false
+  long-test:
+    enabled: false
+  multicity-db-test:
+    enabled: false
+  continuous:
+    enabled: true
+    validate-after-window: false
+    retry-delay-seconds: 30

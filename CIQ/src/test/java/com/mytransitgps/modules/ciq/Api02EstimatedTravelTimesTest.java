@@ -1,0 +1,4 @@
+package com.mytransitgps.modules.ciq;
+import static org.junit.jupiter.api.Assertions.*;import com.fasterxml.jackson.databind.ObjectMapper;import com.mytransitgps.modules.ciq.parser.EstimatedTravelTimesParser;import com.mytransitgps.modules.ciq.quality.EstimatedTravelTimesValidator;import java.nio.charset.StandardCharsets;import org.junit.jupiter.api.Test;
+/** 单接口 Parser + Validator 节点测试。 */
+class Api02EstimatedTravelTimesTest {@Test void parsesAndValidatesFixture(){var rows=new EstimatedTravelTimesParser(new ObjectMapper()).parse("{\"value\":[{\"Name\":\"AYE\",\"Direction\":2,\"FarEndPoint\":\"CITY\",\"StartPoint\":\"TUAS CHECKPOINT\",\"EndPoint\":\"TUAS WEST RD\",\"EstTime\":1}]}".getBytes(StandardCharsets.UTF_8));assertFalse(rows.isEmpty());assertTrue(new EstimatedTravelTimesValidator().isValid(rows.get(0)));}}

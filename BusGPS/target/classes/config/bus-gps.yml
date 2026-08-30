@@ -1,0 +1,59 @@
+traffic:
+  bus-gps:
+    enabled: true
+    feeds:
+      mybas-johor:
+        enabled: true
+        feed-id: mybas-johor
+        city-code: johor_bahru
+        city-folder: Johor_Bahru
+        city-name: Johor Bahru
+        provider: BAS.MY
+        mode: bus
+        realtime-url: ${BUS_GPS_JOHOR_REALTIME_URL:https://api.data.gov.my/gtfs-realtime/vehicle-position/mybas-johor/}
+        static-url: ${BUS_GPS_JOHOR_STATIC_URL:https://api.data.gov.my/gtfs-static/mybas-johor}
+        schema-key: johor_bahru
+      mybas-kuching:
+        enabled: true
+        feed-id: mybas-kuching
+        city-code: kuching
+        city-folder: Kuching
+        city-name: Kuching
+        provider: BAS.MY
+        mode: bus
+        realtime-url: ${BUS_GPS_KUCHING_REALTIME_URL:https://api.data.gov.my/gtfs-realtime/vehicle-position/mybas-kuching/}
+        static-url: ${BUS_GPS_KUCHING_STATIC_URL:https://api.data.gov.my/gtfs-static/mybas-kuching}
+        schema-key: kuching
+      rapid-bus-kl:
+        enabled: true
+        feed-id: rapid-bus-kl
+        city-code: kuala_lumpur
+        city-folder: Kuala_Lumpur
+        city-name: Kuala Lumpur
+        provider: Prasarana
+        mode: rapid_bus
+        realtime-url: ${BUS_GPS_KL_RAPID_REALTIME_URL:https://api.data.gov.my/gtfs-realtime/vehicle-position/prasarana?category=rapid-bus-kl}
+        static-url: ${BUS_GPS_KL_RAPID_STATIC_URL:https://api.data.gov.my/gtfs-static/prasarana?category=rapid-bus-kl}
+        schema-key: kuala_lumpur_rapid_bus
+      rapid-bus-mrtfeeder:
+        enabled: true
+        feed-id: rapid-bus-mrtfeeder
+        city-code: kuala_lumpur
+        city-folder: Kuala_Lumpur
+        city-name: Kuala Lumpur
+        provider: Prasarana
+        mode: mrt_feeder
+        realtime-url: ${BUS_GPS_KL_MRT_REALTIME_URL:https://api.data.gov.my/gtfs-realtime/vehicle-position/prasarana?category=rapid-bus-mrtfeeder}
+        static-url: ${BUS_GPS_KL_MRT_STATIC_URL:https://api.data.gov.my/gtfs-static/prasarana?category=rapid-bus-mrtfeeder}
+        schema-key: kuala_lumpur_mrt_feeder
+      mybas-melaka:
+        enabled: true
+        feed-id: mybas-melaka
+        city-code: melaka
+        city-folder: Melaka
+        city-name: Melaka
+        provider: BAS.MY
+        mode: bus
+        realtime-url: ${BUS_GPS_MELAKA_REALTIME_URL:https://api.data.gov.my/gtfs-realtime/vehicle-position/mybas-melaka/}
+        static-url: ${BUS_GPS_MELAKA_STATIC_URL:https://api.data.gov.my/gtfs-static/mybas-melaka}
+        schema-key: melaka

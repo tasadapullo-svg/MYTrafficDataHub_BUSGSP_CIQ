@@ -1,0 +1,187 @@
+{
+  "captured_at" : "2026-08-30T17:11:01.639374100Z",
+  "row_counts" : {
+    "core.collection_run" : 33,
+    "jb.api_request_log" : 780,
+    "jb.realtime_snapshot" : 780,
+    "jb.vehicle_observation" : 41254,
+    "jb.vehicle_observation_qc" : 2259,
+    "jb.vehicle_latest_state" : 147,
+    "kuching.api_request_log" : 689,
+    "kuching.realtime_snapshot" : 689,
+    "kuching.vehicle_observation" : 13950,
+    "kuching.vehicle_observation_qc" : 17930,
+    "kuching.vehicle_latest_state" : 54,
+    "kl.api_request_log" : 1362,
+    "kl.realtime_snapshot" : 1362,
+    "kl.vehicle_observation" : 62573,
+    "kl.vehicle_observation_qc" : 37905,
+    "kl.vehicle_latest_state" : 530,
+    "melaka.api_request_log" : 673,
+    "melaka.realtime_snapshot" : 673,
+    "melaka.vehicle_observation" : 11064,
+    "melaka.vehicle_observation_qc" : 908,
+    "melaka.vehicle_latest_state" : 51
+  },
+  "schema_fingerprint" : {
+    "table_count" : 52,
+    "sha256" : "a240ff26460635f9f1f65e773f243bdfdf53f5966588e82a59f31eb8c8e036a3",
+    "metadata_row_count" : 3527
+  },
+  "run_uid" : "d815063e-8d6e-4992-8474-045f22adafa7",
+  "relation_sizes" : {
+    "jb.api_request_log" : {
+      "total_bytes" : 1531904,
+      "table_bytes" : 802816,
+      "index_bytes" : 688128
+    },
+    "jb.realtime_snapshot" : {
+      "total_bytes" : 794624,
+      "table_bytes" : 262144,
+      "index_bytes" : 507904
+    },
+    "jb.vehicle_observation" : {
+      "total_bytes" : 94560256,
+      "table_bytes" : 56328192,
+      "index_bytes" : 38182912
+    },
+    "jb.vehicle_observation_qc" : {
+      "total_bytes" : 1056768,
+      "table_bytes" : 393216,
+      "index_bytes" : 622592
+    },
+    "jb.vehicle_latest_state" : {
+      "total_bytes" : 466944,
+      "table_bytes" : 81920,
+      "index_bytes" : 344064
+    },
+    "kuching.api_request_log" : {
+      "total_bytes" : 1376256,
+      "table_bytes" : 696320,
+      "index_bytes" : 638976
+    },
+    "kuching.realtime_snapshot" : {
+      "total_bytes" : 761856,
+      "table_bytes" : 229376,
+      "index_bytes" : 507904
+    },
+    "kuching.vehicle_observation" : {
+      "total_bytes" : 26910720,
+      "table_bytes" : 14278656,
+      "index_bytes" : 12591104
+    },
+    "kuching.vehicle_observation_qc" : {
+      "total_bytes" : 6463488,
+      "table_bytes" : 3252224,
+      "index_bytes" : 3170304
+    },
+    "kuching.vehicle_latest_state" : {
+      "total_bytes" : 376832,
+      "table_bytes" : 49152,
+      "index_bytes" : 286720
+    },
+    "kl.api_request_log" : {
+      "total_bytes" : 2621440,
+      "table_bytes" : 1466368,
+      "index_bytes" : 1114112
+    },
+    "kl.realtime_snapshot" : {
+      "total_bytes" : 1302528,
+      "table_bytes" : 458752,
+      "index_bytes" : 819200
+    },
+    "kl.vehicle_observation" : {
+      "total_bytes" : 116957184,
+      "table_bytes" : 64847872,
+      "index_bytes" : 52060160
+    },
+    "kl.vehicle_observation_qc" : {
+      "total_bytes" : 13295616,
+      "table_bytes" : 6905856,
+      "index_bytes" : 6348800
+    },
+    "kl.vehicle_latest_state" : {
+      "total_bytes" : 1220608,
+      "table_bytes" : 196608,
+      "index_bytes" : 983040
+    },
+    "melaka.api_request_log" : {
+      "total_bytes" : 1310720,
+      "table_bytes" : 622592,
+      "index_bytes" : 647168
+    },
+    "melaka.realtime_snapshot" : {
+      "total_bytes" : 712704,
+      "table_bytes" : 221184,
+      "index_bytes" : 466944
+    },
+    "melaka.vehicle_observation" : {
+      "total_bytes" : 26124288,
+      "table_bytes" : 15106048,
+      "index_bytes" : 10977280
+    },
+    "melaka.vehicle_observation_qc" : {
+      "total_bytes" : 573440,
+      "table_bytes" : 163840,
+      "index_bytes" : 376832
+    },
+    "melaka.vehicle_latest_state" : {
+      "total_bytes" : 360448,
+      "table_bytes" : 32768,
+      "index_bytes" : 286720
+    }
+  },
+  "database_bytes" : 999231971,
+  "static_versions" : {
+    "mybas-johor" : [ {
+      "uid" : "358c5d91-1c74-4e54-8197-f68f71960b3c",
+      "static_sha256" : "b0293c1a3b6078ceb48d72bfddabd927cc5d7f3f5b911587c6dde50807e215d6",
+      "routes_count" : 21,
+      "trips_count" : 1782,
+      "stops_count" : 988,
+      "stop_times_count" : 76731,
+      "shapes_count" : 40,
+      "shape_points_count" : 14476
+    } ],
+    "mybas-kuching" : [ {
+      "uid" : "eb4fe127-160a-4a61-b093-780db51615f5",
+      "static_sha256" : "a020ac7f025965852cbaff509ae184f0ee957c9f6f9421142a82da83a8e265f1",
+      "routes_count" : 13,
+      "trips_count" : 620,
+      "stops_count" : 406,
+      "stop_times_count" : 17170,
+      "shapes_count" : 23,
+      "shape_points_count" : 611
+    } ],
+    "rapid-bus-kl" : [ {
+      "uid" : "518103ef-8d2f-4360-8640-c45ba13eb608",
+      "static_sha256" : "083170db34edbafcdf7b13cf39150eece637e2af3b7e9766fd0963d59e1de65b",
+      "routes_count" : 137,
+      "trips_count" : 2102,
+      "stops_count" : 4053,
+      "stop_times_count" : 87935,
+      "shapes_count" : 171,
+      "shape_points_count" : 69246
+    } ],
+    "rapid-bus-mrtfeeder" : [ {
+      "uid" : "400b8fb9-cfab-45ce-ba3d-5b5c39292c62",
+      "static_sha256" : "50c70a17faf8d1384e6c69741919806f4641cd975a5cc6addc600e636e9e0fda",
+      "routes_count" : 91,
+      "trips_count" : 6277,
+      "stops_count" : 2112,
+      "stop_times_count" : 174759,
+      "shapes_count" : 92,
+      "shape_points_count" : 35030
+    } ],
+    "mybas-melaka" : [ {
+      "uid" : "cfb0ab47-9372-43a1-92c8-423311e0b761",
+      "static_sha256" : "dbe0ad1ae91d13bc09240fe7f1285f9498f1537c285b28e78a9e26d14b81857d",
+      "routes_count" : 22,
+      "trips_count" : 569,
+      "stops_count" : 678,
+      "stop_times_count" : 25107,
+      "shapes_count" : 43,
+      "shape_points_count" : 18604
+    } ]
+  }
+}

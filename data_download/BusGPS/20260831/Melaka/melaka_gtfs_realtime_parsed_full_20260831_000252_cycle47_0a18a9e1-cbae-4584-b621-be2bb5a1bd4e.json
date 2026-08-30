@@ -1,0 +1,28 @@
+{
+  "header": {
+    "gtfs_realtime_version": "2.0",
+    "incrementality": "FULL_DATASET",
+    "timestamp": "1788105732"
+  },
+  "entity": [{
+    "id": "842ce703-5e98-4cc4-9040-e8ee205c75ad",
+    "vehicle": {
+      "trip": {
+        "trip_id": "0006_M23CWLMYMK_12594_1_P2_ALLDAY_1_3",
+        "start_date": "20260830",
+        "route_id": "M23CWLMYMK",
+        "direction_id": 1
+      },
+      "position": {
+        "latitude": 2.351567,
+        "longitude": 102.11041
+      },
+      "timestamp": "1788105732",
+      "vehicle": {
+        "id": "MDL1275",
+        "label": "MDL1275",
+        "license_plate": "MDL1275"
+      }
+    }
+  }]
+}

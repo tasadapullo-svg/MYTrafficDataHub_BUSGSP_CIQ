@@ -1,0 +1,23 @@
+{
+  "run_id" : "multicity_continuous_20260830_222916",
+  "run_uid" : "5d4da3ac-48ea-49cd-8455-c04b5e6a4c5b",
+  "city" : "Melaka",
+  "schema" : "melaka",
+  "feed_id" : "mybas-melaka",
+  "feed_uid" : "b125c11e-d463-477d-84a3-15870552ac1c",
+  "request_uid" : "5f1ac86b-f59a-4b05-b922-2fa88aa567be",
+  "snapshot_uid" : "c830c1b0-944c-45af-8a26-9f12d76cff9b",
+  "cycle" : 60,
+  "scheduled_at" : "2026-08-30T16:28:52.254525100Z",
+  "request_started_at" : "2026-08-30T16:28:52.255091300Z",
+  "response_received_at" : "2026-08-30T16:28:52.305621100Z",
+  "http_status" : 200,
+  "response_bytes" : 170,
+  "response_sha256" : "52537461c98607cc99e17f1f2b35214ca7b0851e65eb8070ab2ec931787ea4e0",
+  "raw_pb_path" : "raw_data/20260831/Melaka/melaka_gtfs_realtime_raw_20260831_002852_cycle60_5f1ac86b-f59a-4b05-b922-2fa88aa567be.pb",
+  "parsed_json_path" : "BusGPS/20260831/Melaka/melaka_gtfs_realtime_parsed_full_20260831_002852_cycle60_5f1ac86b-f59a-4b05-b922-2fa88aa567be.json",
+  "enriched_json_path" : "BusGPS/20260831/Melaka/melaka_gtfs_realtime_enriched_full_20260831_002852_cycle60_5f1ac86b-f59a-4b05-b922-2fa88aa567be.json",
+  "entity_count" : 1,
+  "vehicle_count" : 1,
+  "result" : "SUCCESS"
+}

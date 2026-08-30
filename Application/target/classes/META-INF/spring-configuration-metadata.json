@@ -1,0 +1,21 @@
+{
+  "groups": [
+    {
+      "name": "app.redis",
+      "type": "com.mytransitgps.config.AppRedisProperties",
+      "sourceType": "com.mytransitgps.config.AppRedisProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "app.redis.connect-on-startup",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.mytransitgps.config.AppRedisProperties",
+      "defaultValue": false
+    }
+  ],
+  "hints": [],
+  "ignored": {
+    "properties": []
+  }
+}
