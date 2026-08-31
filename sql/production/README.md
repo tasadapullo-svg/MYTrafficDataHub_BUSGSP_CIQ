@@ -7,6 +7,7 @@
 1. `00_create_database.sql`：创建 UTF-8 数据库 `mytrafficdatahub`。
 2. `01_gps_ciq_schema_only.sql`：创建扩展、6 个业务 Schema、69 张表、约束、索引、函数、触发器和注释。
 3. `02_verify_empty_schema.sql`：验证表数量和所有表均为 0 行。
+4. `03_required_reference_seed.sql`：初始化应用运行必需的 4 个城市、5 个 GTFS Feed 和 8 个 CIQ API 配置，不包含历史业务数据。
 
 ## 执行顺序
 
@@ -47,6 +48,16 @@ CREATE EXTENSION IF NOT EXISTS postgis;
 PASS: 69 GPS/CIQ tables created and all tables contain zero rows.
 ```
 
+### 第四步：初始化必要参考配置
+
+空库验证通过后执行 `03_required_reference_seed.sql`。预期结果：
+
+```text
+core.study_city = 4
+core.gtfs_feed   = 5
+lta.api_endpoint = 8
+```
+
 预期表数量：
 
 | Schema | 用途 | 表数 |
@@ -77,4 +88,3 @@ TRAFFIC_DB_URL=jdbc:postgresql://<生产数据库IP>:5432/mytrafficdatahub
 - `jbsp` 是旧结构，不属于当前五个 GPS Feed 的数据库路由，因此没有纳入生产业务脚本。
 - 不要在已有业务数据的数据库中把本脚本当作迁移脚本使用；它面向新建空库。
 - 建库与安装扩展通常需要数据库管理员权限，日常应用账号可在初始化后降权。
-
