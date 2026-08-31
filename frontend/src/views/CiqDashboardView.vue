@@ -273,7 +273,7 @@ const latestByApi = computed(() => ['API03', 'API04', 'API05', 'API06', 'API07',
             <option :value="720">{{ label('30 Days', '30 天') }}</option>
           </select>
         </div>
-        <CiqTrend :points="trend" />
+        <CiqTrend :points="trend" :hours="hours" />
       </article>
     </section>
 

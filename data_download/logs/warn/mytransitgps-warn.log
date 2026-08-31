@@ -2568,3 +2568,10 @@
 2026-08-31 01:38:10.195 [main] WARN  c.m.modules.ciq.client.LtaTrafficSpeedClient - LTA AccountKey未配置；CIQ客户端将拒绝发送HTTP请求
 2026-08-31 01:38:15.170 [main] WARN  o.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.mytransitgps]' package. Please check your configuration.
 2026-08-31 01:38:15.760 [main] WARN  o.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.mytransitgps]' package. Please check your configuration.
+2026-08-31 12:17:57.709 [mytransitgps-continuous-collector] WARN  c.m.gtfs.service.RealtimeStaticEnrichmentService - Realtime Static补全存在未匹配项，城市=Kuching，feedId=mybas-kuching，routeUnresolved=1，tripUnmatched=1，原始Realtime实体继续保留
+2026-08-31 12:17:57.710 [mytransitgps-continuous-collector] WARN  c.m.persistence.service.JohorRealtimeQcAnnotator - 检测到Static Route未匹配，feedId=mybas-kuching，snapshotUid=70cb4670-2f32-4239-a1e9-e6a725b85aa3，vehicleId=MADANI1135，原始观测继续保存
+2026-08-31 12:17:57.710 [mytransitgps-continuous-collector] WARN  c.m.persistence.service.JohorRealtimeQcAnnotator - 检测到Static Trip未匹配，feedId=mybas-kuching，snapshotUid=70cb4670-2f32-4239-a1e9-e6a725b85aa3，vehicleId=MADANI1135，原始观测继续保存
+2026-08-31 12:19:43.673 [main] WARN  o.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.mytransitgps]' package. Please check your configuration.
+2026-08-31 12:19:44.749 [main] WARN  o.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.mytransitgps]' package. Please check your configuration.
+2026-08-31 16:06:45.110 [main] WARN  o.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.mytransitgps]' package. Please check your configuration.
+2026-08-31 16:06:45.825 [main] WARN  o.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.mytransitgps]' package. Please check your configuration.

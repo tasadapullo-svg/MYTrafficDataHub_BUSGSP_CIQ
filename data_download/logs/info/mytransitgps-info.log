@@ -18942,3 +18942,611 @@
 2026-08-31 01:38:16.079 [SpringApplicationShutdownHook] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub正在关闭
 2026-08-31 01:38:16.081 [SpringApplicationShutdownHook] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub正在关闭
 2026-08-31 01:38:16.081 [SpringApplicationShutdownHook] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub已完成关闭流程
+2026-08-31 12:17:24.632 [main] INFO  com.mytransitgps.MyTrafficDataHubApplication - Starting MyTrafficDataHubApplication using Java 17.0.17 with PID 12500 (C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\Application\target\classes started by DELL in C:\Users\DELL\Desktop\MYTrafficDataHub_20260829)
+2026-08-31 12:17:24.633 [main] INFO  com.mytransitgps.MyTrafficDataHubApplication - The following 1 profile is active: "longrun"
+2026-08-31 12:17:24.906 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-08-31 12:17:25.672 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-08-31 12:17:25.675 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-08-31 12:17:25.749 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53 ms. Found 0 Redis repository interfaces.
+2026-08-31 12:17:26.406 [main] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-08-31 12:17:26.421 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-08-31 12:17:26.423 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-08-31 12:17:26.424 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-08-31 12:17:26.475 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1775 ms
+2026-08-31 12:17:26.953 [main] INFO  com.mytransitgps.config.RedisConfig - Redis StringRedisTemplate初始化完成
+2026-08-31 12:17:27.198 [main] INFO  com.mytransitgps.gtfs.config.GtfsFeedRegistry - GTFS Feed注册表初始化完成，feedCount=5，enabledFeedCount=5
+2026-08-31 12:17:27.219 [main] INFO  c.m.persistence.config.MyBatisDatabaseConfig - MYTransitGPS MyBatis 数据库配置已初始化，城市 Schema 路由已启用
+2026-08-31 12:17:27.856 [main] INFO  com.mytransitgps.config.RedisConfig - Redis byte[] RedisTemplate初始化完成
+2026-08-31 12:17:28.222 [main] INFO  c.b.m.e.s.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.boot.web.server.servlet.context.AnnotationConfigServletWebServerApplicationContext@4cfbaf4
+2026-08-31 12:17:28.349 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-08-31 12:17:28.364 [main] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-08-31 12:17:28.377 [main] INFO  com.mytransitgps.MyTrafficDataHubApplication - Started MyTrafficDataHubApplication in 4.526 seconds (process running for 5.312)
+2026-08-31 12:17:28.381 [main] INFO  c.m.config.RedisStartupConnectionChecker - Redis启动连通性检查未启用，跳过启动Ping
+2026-08-31 12:17:28.382 [main] INFO  c.m.persistence.service.WorkspaceRootResolver - MYTrafficDataHub 工作区根目录解析完成，source=CONFIGURED，workspaceRoot=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download
+2026-08-31 12:17:28.882 [main] INFO  c.m.gtfs.service.BusGpsLegacyStorageMigrator - BUS GPS历史存储无需迁移，标准目录已生效，workspaceRoot=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download
+2026-08-31 12:17:28.883 [main] INFO  c.m.config.ApplicationStartupLoggingListener - Spring Context初始化完成，activeProfiles=longrun
+2026-08-31 12:17:28.883 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub启动配置：profiles=longrun，serverPort=8080，databaseEnabled=true，dbTestEnabled=false，multicityTestEnabled=false，continuousEnabled=true，dailyArchiveEnabled=true，redisStartupCheckEnabled=false，workspaceRoot=data_download
+2026-08-31 12:17:28.883 [main] INFO  c.m.config.ApplicationStartupLoggingListener - 交通模块状态：busGpsEnabled=true，busGpsFeedCount=5，ciqEnabled=true，ciqScheduleEnabled=true，ciqArchiveEnabled=true，ciqDatabaseWriteEnabled=true，ltaAccountKeyConfigured=true
+2026-08-31 12:17:28.883 [main] INFO  c.m.config.ApplicationStartupLoggingListener - CIQ 8接口启用状态：API01=true，API02=true，API03=true，API04=true，API05=true，API06=true，API07=true，API08=true
+2026-08-31 12:17:28.883 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub服务已就绪，稳定模块=MYTransitGPS
+2026-08-31 12:17:28.885 [main] INFO  c.m.gtfs.service.BusGpsDirectoryInitializer - BUS GPS每日JSON目录初始化完成，trigger=APPLICATION_READY，date=20260831，cityFolderCount=4，path=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\BusGPS\20260831
+2026-08-31 12:17:28.885 [main] INFO  c.m.p.s.MulticityContinuousCollectionLifecycle - 连续多城市长期采集准备启动，feedCount=5，intervalSeconds=120，durationMode=UNBOUNDED
+2026-08-31 12:17:28.885 [main] INFO  c.m.p.s.MulticityContinuousCollectionLifecycle - 连续多城市采集生命周期已启动；每Feed间隔=120秒，无固定结束时长，应用运行期间持续采集
+2026-08-31 12:17:28.885 [mytransitgps-continuous-collector] INFO  c.m.p.s.MulticityContinuousCollectionLifecycle - 开始无固定时长多城市连续采集Run；停止条件=应用Stop/线程中断/不可恢复故障
+2026-08-31 12:17:28.886 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - 无固定时长多城市采集准备开始，intervalSeconds=120，feedCount=5，workspaceRoot=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download
+2026-08-31 12:17:28.886 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - 准备获取无固定时长采集运行锁，lockName=multicity_continuous.lock
+2026-08-31 12:17:28.886 [main] INFO  c.m.modules.ciq.storage.CiqDirectoryInitializer - CIQ每日八接口目录初始化完成，trigger=APPLICATION_READY，date=2026-08-31，apiFolderCount=8，path=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\CIQ\20260831
+2026-08-31 12:17:28.888 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - 无固定时长采集运行锁获取成功，lockName=multicity_continuous.lock
+2026-08-31 12:17:28.888 [mytransitgps-continuous-collector] INFO  c.m.p.service.DatabaseConnectionService - 开始检查PostgreSQL数据库连接与PostGIS基础能力
+2026-08-31 12:17:28.888 [mytransitgps-continuous-collector] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-08-31 12:17:29.052 [mytransitgps-continuous-collector] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@62184501
+2026-08-31 12:17:29.054 [mytransitgps-continuous-collector] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-08-31 12:17:29.112 [mytransitgps-continuous-collector] INFO  c.m.p.service.DatabaseConnectionService - PostgreSQL数据库连接成功，database=postgres，user=postgres
+2026-08-31 12:17:29.112 [mytransitgps-continuous-collector] INFO  c.m.p.service.DatabaseConnectionService - PostgreSQL版本检查通过，version=PostgreSQL 16.4 (Debian 16.4-1.pgdg110+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 10.2.1-6) 10.2.1 20210110, 64-bit
+2026-08-31 12:17:29.112 [mytransitgps-continuous-collector] INFO  c.m.p.service.DatabaseConnectionService - PostGIS检查通过，version=POSTGIS="3.4.3 e365945" [EXTENSION] PGSQL="160" GEOS="3.9.0-CAPI-1.16.2" PROJ="7.2.1 NETWORK_ENABLED=OFF URL_ENDPOINT=https://cdn.proj.org USER_WRITABLE_DIRECTORY=/var/lib/postgresql/.local/share/proj DATABASE_PATH=/usr/share/proj/proj.db" LIBXML="2.9.10" LIBJSON="0.15" LIBPROTOBUF="1.3.3" WAGYU="0.5.0 (Internal)"
+2026-08-31 12:17:29.112 [mytransitgps-continuous-collector] INFO  c.m.p.service.DatabaseConnectionService - MYTransitGPS数据库基础结构检查完成，coreTables=4，jbTables=12，kuchingTables=12，klTables=12，melakaTables=12
+2026-08-31 12:17:29.117 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.DatabaseFeedService - 开始从core.gtfs_feed加载多城市Feed配置，requestedFeedCount=5
+2026-08-31 12:17:29.118 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.DatabaseFeedService - 开始读取GTFS Feed配置，feedId=mybas-johor
+2026-08-31 12:17:29.243 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.DatabaseFeedService - 获取mybas-johor feed_uid完成，feedUid=86671fa7-aac9-4309-9154-91817b0b83a9
+2026-08-31 12:17:29.251 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.DatabaseFeedService - Feed数据库配置加载完成，城市=Johor Bahru，feedId=mybas-johor，feedUid=86671fa7-aac9-4309-9154-91817b0b83a9，schema=jb，enabled=true，pollIntervalSeconds=120，staggerOffsetSeconds=0
+2026-08-31 12:17:29.251 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.DatabaseFeedService - 开始读取GTFS Feed配置，feedId=mybas-kuching
+2026-08-31 12:17:29.254 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.DatabaseFeedService - 获取mybas-kuching feed_uid完成，feedUid=16c43968-04de-4126-8a6f-37509de4452e
+2026-08-31 12:17:29.256 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.DatabaseFeedService - Feed数据库配置加载完成，城市=Kuching，feedId=mybas-kuching，feedUid=16c43968-04de-4126-8a6f-37509de4452e，schema=kuching，enabled=true，pollIntervalSeconds=120，staggerOffsetSeconds=24
+2026-08-31 12:17:29.256 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.DatabaseFeedService - 开始读取GTFS Feed配置，feedId=rapid-bus-kl
+2026-08-31 12:17:29.259 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.DatabaseFeedService - 获取rapid-bus-kl feed_uid完成，feedUid=1210e2fb-1548-4984-a5da-5bd806459722
+2026-08-31 12:17:29.261 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.DatabaseFeedService - Feed数据库配置加载完成，城市=Kuala Lumpur，feedId=rapid-bus-kl，feedUid=1210e2fb-1548-4984-a5da-5bd806459722，schema=kl，enabled=true，pollIntervalSeconds=120，staggerOffsetSeconds=48
+2026-08-31 12:17:29.261 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.DatabaseFeedService - 开始读取GTFS Feed配置，feedId=rapid-bus-mrtfeeder
+2026-08-31 12:17:29.264 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.DatabaseFeedService - 获取rapid-bus-mrtfeeder feed_uid完成，feedUid=7f89e04c-f644-4c27-8817-6b550adb30e4
+2026-08-31 12:17:29.266 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.DatabaseFeedService - Feed数据库配置加载完成，城市=Kuala Lumpur，feedId=rapid-bus-mrtfeeder，feedUid=7f89e04c-f644-4c27-8817-6b550adb30e4，schema=kl，enabled=true，pollIntervalSeconds=120，staggerOffsetSeconds=72
+2026-08-31 12:17:29.266 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.DatabaseFeedService - 开始读取GTFS Feed配置，feedId=mybas-melaka
+2026-08-31 12:17:29.268 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.DatabaseFeedService - 获取mybas-melaka feed_uid完成，feedUid=b125c11e-d463-477d-84a3-15870552ac1c
+2026-08-31 12:17:29.271 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.DatabaseFeedService - Feed数据库配置加载完成，城市=Melaka，feedId=mybas-melaka，feedUid=b125c11e-d463-477d-84a3-15870552ac1c，schema=melaka，enabled=true，pollIntervalSeconds=120，staggerOffsetSeconds=96
+2026-08-31 12:17:29.271 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.DatabaseFeedService - 多城市Feed配置加载完成，feedCount=5
+2026-08-31 12:17:29.271 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - 无固定时长采集Feed配置验证完成，feedCount=5，intervalSeconds=120
+2026-08-31 12:17:29.272 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - 开始准备Static GTFS，feedId=mybas-johor，schema=jb
+2026-08-31 12:17:29.272 [mytransitgps-continuous-collector] INFO  c.m.p.service.LocalStaticArtifactResolver - 开始检查本地Static版本，feedId=mybas-johor
+2026-08-31 12:17:29.396 [mytransitgps-continuous-collector] INFO  c.m.p.service.LocalStaticArtifactResolver - 本地Static证据确认完成，feedId=mybas-johor，sha256=b0293c1a3b6078ceb48d72bfddabd927cc5d7f3f5b911587c6dde50807e215d6，bytes=4875871
+2026-08-31 12:17:29.417 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.parser.GtfsStaticParser - 开始解析Static GTFS ZIP，zipBytes=4875871
+2026-08-31 12:17:30.078 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.parser.GtfsStaticParser - Static GTFS解析完成，routes=21，trips=1782，stops=988，stopTimes=76731，shapes=40，zipEntries=13
+2026-08-31 12:17:30.089 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.service.FeedBoundsService - Feed空间边界计算完成，feedId=mybas-johor，source=REFERENCED_SHAPES_PLUS_STOPS，referencedShapes=40，orphanShapes=0，shapePoints=14687，stops=988，rawLat=[1.351008,1.73103]，rawLon=[103.387593,103.95567]，bufferKm=10.0
+2026-08-31 12:17:30.106 [mytransitgps-continuous-collector] INFO  c.m.p.service.JbStaticPersistenceService - Static版本复用完成，staticVersionUid=358c5d91-1c74-4e54-8197-f68f71960b3c，sha256=b0293c1a3b6078ceb48d72bfddabd927cc5d7f3f5b911587c6dde50807e215d6
+2026-08-31 12:17:30.308 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.StaticUidResolver - Static UUID索引加载完成，staticVersionUid=358c5d91-1c74-4e54-8197-f68f71960b3c，routes=21，trips=1782，stops=988，shapes=40，sha256=b0293c1a3b6078ceb48d72bfddabd927cc5d7f3f5b911587c6dde50807e215d6
+2026-08-31 12:17:30.312 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - Static GTFS准备完成，feedId=mybas-johor，schema=jb，staticVersionUid=358c5d91-1c74-4e54-8197-f68f71960b3c，routes=21，trips=1782，stops=988，shapes=40
+2026-08-31 12:17:30.312 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - 开始准备Static GTFS，feedId=mybas-kuching，schema=kuching
+2026-08-31 12:17:30.313 [mytransitgps-continuous-collector] INFO  c.m.p.service.LocalStaticArtifactResolver - 开始检查本地Static版本，feedId=mybas-kuching
+2026-08-31 12:17:30.380 [mytransitgps-continuous-collector] INFO  c.m.p.service.LocalStaticArtifactResolver - 本地Static证据确认完成，feedId=mybas-kuching，sha256=a020ac7f025965852cbaff509ae184f0ee957c9f6f9421142a82da83a8e265f1，bytes=95837
+2026-08-31 12:17:30.380 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.parser.GtfsStaticParser - 开始解析Static GTFS ZIP，zipBytes=95837
+2026-08-31 12:17:30.447 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.parser.GtfsStaticParser - Static GTFS解析完成，routes=13，trips=620，stops=406，stopTimes=17170，shapes=23，zipEntries=7
+2026-08-31 12:17:30.448 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.service.FeedBoundsService - Feed空间边界计算完成，feedId=mybas-kuching，source=REFERENCED_SHAPES_PLUS_STOPS，referencedShapes=22，orphanShapes=1，shapePoints=602，stops=406，rawLat=[1.164571,1.667894]，rawLon=[110.154792,110.567035]，bufferKm=10.0
+2026-08-31 12:17:30.474 [mytransitgps-continuous-collector] INFO  c.m.p.service.JbStaticPersistenceService - Static版本复用完成，staticVersionUid=eb4fe127-160a-4a61-b093-780db51615f5，sha256=a020ac7f025965852cbaff509ae184f0ee957c9f6f9421142a82da83a8e265f1
+2026-08-31 12:17:30.550 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.StaticUidResolver - Static UUID索引加载完成，staticVersionUid=eb4fe127-160a-4a61-b093-780db51615f5，routes=13，trips=620，stops=406，shapes=23，sha256=a020ac7f025965852cbaff509ae184f0ee957c9f6f9421142a82da83a8e265f1
+2026-08-31 12:17:30.553 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - Static GTFS准备完成，feedId=mybas-kuching，schema=kuching，staticVersionUid=eb4fe127-160a-4a61-b093-780db51615f5，routes=13，trips=620，stops=406，shapes=23
+2026-08-31 12:17:30.554 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - 开始准备Static GTFS，feedId=rapid-bus-kl，schema=kl
+2026-08-31 12:17:30.554 [mytransitgps-continuous-collector] INFO  c.m.p.service.LocalStaticArtifactResolver - 开始检查本地Static版本，feedId=rapid-bus-kl
+2026-08-31 12:17:30.637 [mytransitgps-continuous-collector] INFO  c.m.p.service.LocalStaticArtifactResolver - 本地Static证据确认完成，feedId=rapid-bus-kl，sha256=083170db34edbafcdf7b13cf39150eece637e2af3b7e9766fd0963d59e1de65b，bytes=1677202
+2026-08-31 12:17:30.638 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.parser.GtfsStaticParser - 开始解析Static GTFS ZIP，zipBytes=1677202
+2026-08-31 12:17:31.336 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.parser.GtfsStaticParser - Static GTFS解析完成，routes=137，trips=2102，stops=4053，stopTimes=87935，shapes=171，zipEntries=8
+2026-08-31 12:17:31.358 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.service.FeedBoundsService - Feed空间边界计算完成，feedId=rapid-bus-kl，source=REFERENCED_SHAPES_PLUS_STOPS，referencedShapes=171，orphanShapes=0，shapePoints=69246，stops=4053，rawLat=[2.74334,3.337771441918608]，rawLon=[101.4080054926244,101.9092265881676]，bufferKm=10.0
+2026-08-31 12:17:31.370 [mytransitgps-continuous-collector] INFO  c.m.p.service.JbStaticPersistenceService - Static版本复用完成，staticVersionUid=518103ef-8d2f-4360-8640-c45ba13eb608，sha256=083170db34edbafcdf7b13cf39150eece637e2af3b7e9766fd0963d59e1de65b
+2026-08-31 12:17:31.674 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.StaticUidResolver - Static UUID索引加载完成，staticVersionUid=518103ef-8d2f-4360-8640-c45ba13eb608，routes=137，trips=2102，stops=4053，shapes=171，sha256=083170db34edbafcdf7b13cf39150eece637e2af3b7e9766fd0963d59e1de65b
+2026-08-31 12:17:31.676 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - Static GTFS准备完成，feedId=rapid-bus-kl，schema=kl，staticVersionUid=518103ef-8d2f-4360-8640-c45ba13eb608，routes=137，trips=2102，stops=4053，shapes=171
+2026-08-31 12:17:31.676 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - 开始准备Static GTFS，feedId=rapid-bus-mrtfeeder，schema=kl
+2026-08-31 12:17:31.676 [mytransitgps-continuous-collector] INFO  c.m.p.service.LocalStaticArtifactResolver - 开始检查本地Static版本，feedId=rapid-bus-mrtfeeder
+2026-08-31 12:17:31.758 [mytransitgps-continuous-collector] INFO  c.m.p.service.LocalStaticArtifactResolver - 本地Static证据确认完成，feedId=rapid-bus-mrtfeeder，sha256=50c70a17faf8d1384e6c69741919806f4641cd975a5cc6addc600e636e9e0fda，bytes=2014055
+2026-08-31 12:17:31.759 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.parser.GtfsStaticParser - 开始解析Static GTFS ZIP，zipBytes=2014055
+2026-08-31 12:17:32.914 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.parser.GtfsStaticParser - Static GTFS解析完成，routes=91，trips=6277，stops=2112，stopTimes=174759，shapes=92，zipEntries=8
+2026-08-31 12:17:32.923 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.service.FeedBoundsService - Feed空间边界计算完成，feedId=rapid-bus-mrtfeeder，source=REFERENCED_SHAPES_PLUS_STOPS，referencedShapes=92，orphanShapes=0，shapePoints=35030，stops=2112，rawLat=[2.8949935,3.3132961]，rawLon=[101.4314904,101.8297796]，bufferKm=10.0
+2026-08-31 12:17:32.927 [mytransitgps-continuous-collector] INFO  c.m.p.service.JbStaticPersistenceService - Static版本复用完成，staticVersionUid=400b8fb9-cfab-45ce-ba3d-5b5c39292c62，sha256=50c70a17faf8d1384e6c69741919806f4641cd975a5cc6addc600e636e9e0fda
+2026-08-31 12:17:33.198 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.StaticUidResolver - Static UUID索引加载完成，staticVersionUid=400b8fb9-cfab-45ce-ba3d-5b5c39292c62，routes=91，trips=6277，stops=2112，shapes=92，sha256=50c70a17faf8d1384e6c69741919806f4641cd975a5cc6addc600e636e9e0fda
+2026-08-31 12:17:33.199 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - Static GTFS准备完成，feedId=rapid-bus-mrtfeeder，schema=kl，staticVersionUid=400b8fb9-cfab-45ce-ba3d-5b5c39292c62，routes=91，trips=6277，stops=2112，shapes=92
+2026-08-31 12:17:33.199 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - 开始准备Static GTFS，feedId=mybas-melaka，schema=melaka
+2026-08-31 12:17:33.199 [mytransitgps-continuous-collector] INFO  c.m.p.service.LocalStaticArtifactResolver - 开始检查本地Static版本，feedId=mybas-melaka
+2026-08-31 12:17:33.269 [mytransitgps-continuous-collector] INFO  c.m.p.service.LocalStaticArtifactResolver - 本地Static证据确认完成，feedId=mybas-melaka，sha256=dbe0ad1ae91d13bc09240fe7f1285f9498f1537c285b28e78a9e26d14b81857d，bytes=2228269
+2026-08-31 12:17:33.270 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.parser.GtfsStaticParser - 开始解析Static GTFS ZIP，zipBytes=2228269
+2026-08-31 12:17:33.532 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.parser.GtfsStaticParser - Static GTFS解析完成，routes=22，trips=569，stops=678，stopTimes=25107，shapes=43，zipEntries=13
+2026-08-31 12:17:33.536 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.service.FeedBoundsService - Feed空间边界计算完成，feedId=mybas-melaka，source=REFERENCED_SHAPES_PLUS_STOPS，referencedShapes=43，orphanShapes=0，shapePoints=18604，stops=678，rawLat=[2.18045,2.47411]，rawLon=[102.069819,102.56425]，bufferKm=10.0
+2026-08-31 12:17:33.551 [mytransitgps-continuous-collector] INFO  c.m.p.service.JbStaticPersistenceService - Static版本复用完成，staticVersionUid=cfb0ab47-9372-43a1-92c8-423311e0b761，sha256=dbe0ad1ae91d13bc09240fe7f1285f9498f1537c285b28e78a9e26d14b81857d
+2026-08-31 12:17:33.642 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.StaticUidResolver - Static UUID索引加载完成，staticVersionUid=cfb0ab47-9372-43a1-92c8-423311e0b761，routes=22，trips=569，stops=678，shapes=43，sha256=dbe0ad1ae91d13bc09240fe7f1285f9498f1537c285b28e78a9e26d14b81857d
+2026-08-31 12:17:33.644 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - Static GTFS准备完成，feedId=mybas-melaka，schema=melaka，staticVersionUid=cfb0ab47-9372-43a1-92c8-423311e0b761，routes=22，trips=569，stops=678，shapes=43
+2026-08-31 12:17:33.660 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.CollectionRunService - 开始五Feed无固定时长连续采集，runCode=multicity_continuous_20260831_121733，runUid=48147123-a647-4302-b4a2-2fdd93d488e1，feed数=5，plannedCycles=UNBOUNDED，plannedRequests=UNBOUNDED
+2026-08-31 12:17:33.665 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.SchemaFingerprintService - 开始采集数据库Schema结构指纹，schemas=core,jb,kuching,kl,melaka
+2026-08-31 12:17:33.763 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.SchemaFingerprintService - 数据库Schema结构指纹采集完成，sha256=a240ff26460635f9f1f65e773f243bdfdf53f5966588e82a59f31eb8c8e036a3，metadataRows=3527，expectedTableCount=52
+2026-08-31 12:17:35.514 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - 无固定时长多城市采集Run已启动，runCode=multicity_continuous_20260831_121733，runUid=48147123-a647-4302-b4a2-2fdd93d488e1，feedCount=5，intervalSeconds=120，plannedEnd=NONE
+2026-08-31 12:17:35.514 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - 开始调用GTFS Realtime接口下载数据，城市=Johor Bahru，feedId=mybas-johor，schema=jb，cycle=1，requestSequence=1，scheduledAt=2026-08-31T04:17:33.644362200Z
+2026-08-31 12:17:35.516 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.client.GtfsApiClient - GTFS HTTP接口调用开始，请求类型=REALTIME，host=api.data.gov.my，path=/gtfs-realtime/vehicle-position/mybas-johor/
+2026-08-31 12:17:35.751 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.client.GtfsApiClient - GTFS HTTP请求完成，请求类型=REALTIME，httpStatus=200，latencyMs=233，responseBytes=13248，redirectCount=0，host=api.data.gov.my，path=/gtfs-realtime/vehicle-position/mybas-johor/
+2026-08-31 12:17:35.765 [mytransitgps-continuous-collector] INFO  c.m.p.service.ApiRequestEvidenceService - HTTP请求事实已写入数据库，cycle=1，requestUid=7814af57-e1af-4ab0-91b8-b165f2bf37a2，httpStatus=200，bytes=13248
+2026-08-31 12:17:35.774 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.service.RawArchiveService - RAW Protobuf文件保存完成，bytes=13248，path=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\raw_data\20260831\Johor_Bahru\johor_bahru_gtfs_realtime_raw_20260831_121735_cycle1_7814af57-e1af-4ab0-91b8-b165f2bf37a2.pb
+2026-08-31 12:17:35.809 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.parser.GtfsRealtimeParser - GTFS-Realtime Protobuf解析完成，payloadBytes=13248，entityCount=84，vehicleEntityCount=84
+2026-08-31 12:17:35.965 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.service.JsonOutputService - JSON证据文件保存完成，path=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\BusGPS\20260831\Johor_Bahru\johor_bahru_gtfs_realtime_parsed_full_20260831_121735_cycle1_7814af57-e1af-4ab0-91b8-b165f2bf37a2.json，chars=42114
+2026-08-31 12:17:35.965 [mytransitgps-continuous-collector] INFO  c.m.gtfs.service.RealtimeStaticEnrichmentService - 开始Realtime Static补全，batchId=multicity_continuous_20260831_121733，城市=Johor Bahru，feedId=mybas-johor，entityCount=84
+2026-08-31 12:17:35.979 [mytransitgps-continuous-collector] INFO  c.m.gtfs.service.RealtimeStaticEnrichmentService - Realtime Static补全完成，城市=Johor Bahru，feedId=mybas-johor，vehicles=84，uniqueRoutes=19，routeResolved=84，routeUnresolved=0，tripMatched=84，tripUnmatched=0，directionMatch=84，directionMismatch=0
+2026-08-31 12:17:36.005 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.service.JsonOutputService - JSON对象证据文件保存完成，path=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\BusGPS\20260831\Johor_Bahru\johor_bahru_gtfs_realtime_enriched_full_20260831_121735_cycle1_7814af57-e1af-4ab0-91b8-b165f2bf37a2.json，chars=268400
+2026-08-31 12:17:36.009 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - enriched JSON磁盘重新读取完成，feedId=mybas-johor，schema=jb，cycle=1，requestUid=7814af57-e1af-4ab0-91b8-b165f2bf37a2，vehicles=84，path=BusGPS/20260831/Johor_Bahru/johor_bahru_gtfs_realtime_enriched_full_20260831_121735_cycle1_7814af57-e1af-4ab0-91b8-b165f2bf37a2.json
+2026-08-31 12:17:36.010 [mytransitgps-continuous-collector] INFO  c.m.p.service.RealtimePersistenceService - 开始数据库事务，runUid=48147123-a647-4302-b4a2-2fdd93d488e1，requestUid=7814af57-e1af-4ab0-91b8-b165f2bf37a2，snapshotUid=5a308d73-190b-4c4d-8403-01f7ec1412c9，feedUid=86671fa7-aac9-4309-9154-91817b0b83a9
+2026-08-31 12:17:36.017 [mytransitgps-continuous-collector] INFO  c.m.p.service.RealtimePersistenceService - realtime_snapshot写入完成，snapshotUid=5a308d73-190b-4c4d-8403-01f7ec1412c9
+2026-08-31 12:17:36.017 [mytransitgps-continuous-collector] INFO  c.m.p.service.VehicleObservationDatabaseMapper - 开始将磁盘enriched JSON映射为数据库实体，runUid=48147123-a647-4302-b4a2-2fdd93d488e1，requestUid=7814af57-e1af-4ab0-91b8-b165f2bf37a2，snapshotUid=5a308d73-190b-4c4d-8403-01f7ec1412c9，feedUid=86671fa7-aac9-4309-9154-91817b0b83a9
+2026-08-31 12:17:36.027 [mytransitgps-continuous-collector] INFO  c.m.p.service.VehicleObservationDatabaseMapper - 磁盘enriched JSON数据库实体映射完成，snapshotUid=5a308d73-190b-4c4d-8403-01f7ec1412c9，observations=84，qcRows=0，latestStates=84
+2026-08-31 12:17:36.240 [mytransitgps-continuous-collector] INFO  c.m.p.service.RealtimePersistenceService - vehicle_observation批量写入完成，snapshotUid=5a308d73-190b-4c4d-8403-01f7ec1412c9，rows=84
+2026-08-31 12:17:36.240 [mytransitgps-continuous-collector] INFO  c.m.p.service.RealtimePersistenceService - vehicle_observation_qc写入完成，snapshotUid=5a308d73-190b-4c4d-8403-01f7ec1412c9，rows=0
+2026-08-31 12:17:36.342 [mytransitgps-continuous-collector] INFO  c.m.p.service.RealtimePersistenceService - vehicle_latest_state UPSERT完成，snapshotUid=5a308d73-190b-4c4d-8403-01f7ec1412c9，rows=84
+2026-08-31 12:17:36.342 [mytransitgps-continuous-collector] INFO  c.m.p.service.RealtimePersistenceService - Snapshot数据库事务提交完成，snapshotUid=5a308d73-190b-4c4d-8403-01f7ec1412c9，observations=84，qc=0，elapsedMs=332
+2026-08-31 12:17:36.379 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - Realtime快照处理完成，城市=Johor Bahru，feedId=mybas-johor，schema=jb，cycle=1，snapshotUid=5a308d73-190b-4c4d-8403-01f7ec1412c9，JSON车辆数=84，数据库写入数=84，QC数量=0，重复观测数=0，Static匹配数=84，处理耗时=332ms
+2026-08-31 12:17:36.382 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.service.JsonOutputService - JSON对象证据文件保存完成，path=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\BusGPS\20260831\Johor_Bahru\johor_bahru_gtfs_realtime_metadata_20260831_121735_cycle1_7814af57-e1af-4ab0-91b8-b165f2bf37a2.json，chars=1239
+2026-08-31 12:17:57.644 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - 开始调用GTFS Realtime接口下载数据，城市=Kuching，feedId=mybas-kuching，schema=kuching，cycle=1，requestSequence=2，scheduledAt=2026-08-31T04:17:57.644362200Z
+2026-08-31 12:17:57.644 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.client.GtfsApiClient - GTFS HTTP接口调用开始，请求类型=REALTIME，host=api.data.gov.my，path=/gtfs-realtime/vehicle-position/mybas-kuching/
+2026-08-31 12:17:57.690 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.client.GtfsApiClient - GTFS HTTP请求完成，请求类型=REALTIME，httpStatus=200，latencyMs=46，responseBytes=3914，redirectCount=0，host=api.data.gov.my，path=/gtfs-realtime/vehicle-position/mybas-kuching/
+2026-08-31 12:17:57.695 [mytransitgps-continuous-collector] INFO  c.m.p.service.ApiRequestEvidenceService - HTTP请求事实已写入数据库，cycle=1，requestUid=8126e89f-e120-42b7-943b-9069954c6e52，httpStatus=200，bytes=3914
+2026-08-31 12:17:57.702 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.service.RawArchiveService - RAW Protobuf文件保存完成，bytes=3914，path=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\raw_data\20260831\Kuching\kuching_gtfs_realtime_raw_20260831_121757_cycle1_8126e89f-e120-42b7-943b-9069954c6e52.pb
+2026-08-31 12:17:57.703 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.parser.GtfsRealtimeParser - GTFS-Realtime Protobuf解析完成，payloadBytes=3914，entityCount=43，vehicleEntityCount=43
+2026-08-31 12:17:57.705 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.service.JsonOutputService - JSON证据文件保存完成，path=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\BusGPS\20260831\Kuching\kuching_gtfs_realtime_parsed_full_20260831_121757_cycle1_8126e89f-e120-42b7-943b-9069954c6e52.json，chars=16639
+2026-08-31 12:17:57.705 [mytransitgps-continuous-collector] INFO  c.m.gtfs.service.RealtimeStaticEnrichmentService - 开始Realtime Static补全，batchId=multicity_continuous_20260831_121733，城市=Kuching，feedId=mybas-kuching，entityCount=43
+2026-08-31 12:17:57.709 [mytransitgps-continuous-collector] INFO  c.m.gtfs.service.RealtimeStaticEnrichmentService - Realtime Static补全完成，城市=Kuching，feedId=mybas-kuching，vehicles=43，uniqueRoutes=13，routeResolved=42，routeUnresolved=1，tripMatched=42，tripUnmatched=1，directionMatch=0，directionMismatch=0
+2026-08-31 12:17:57.718 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.service.JsonOutputService - JSON对象证据文件保存完成，path=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\BusGPS\20260831\Kuching\kuching_gtfs_realtime_enriched_full_20260831_121757_cycle1_8126e89f-e120-42b7-943b-9069954c6e52.json，chars=129220
+2026-08-31 12:17:57.719 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - enriched JSON磁盘重新读取完成，feedId=mybas-kuching，schema=kuching，cycle=1，requestUid=8126e89f-e120-42b7-943b-9069954c6e52，vehicles=43，path=BusGPS/20260831/Kuching/kuching_gtfs_realtime_enriched_full_20260831_121757_cycle1_8126e89f-e120-42b7-943b-9069954c6e52.json
+2026-08-31 12:17:57.720 [mytransitgps-continuous-collector] INFO  c.m.p.service.RealtimePersistenceService - 开始数据库事务，runUid=48147123-a647-4302-b4a2-2fdd93d488e1，requestUid=8126e89f-e120-42b7-943b-9069954c6e52，snapshotUid=70cb4670-2f32-4239-a1e9-e6a725b85aa3，feedUid=16c43968-04de-4126-8a6f-37509de4452e
+2026-08-31 12:17:57.724 [mytransitgps-continuous-collector] INFO  c.m.p.service.RealtimePersistenceService - realtime_snapshot写入完成，snapshotUid=70cb4670-2f32-4239-a1e9-e6a725b85aa3
+2026-08-31 12:17:57.724 [mytransitgps-continuous-collector] INFO  c.m.p.service.VehicleObservationDatabaseMapper - 开始将磁盘enriched JSON映射为数据库实体，runUid=48147123-a647-4302-b4a2-2fdd93d488e1，requestUid=8126e89f-e120-42b7-943b-9069954c6e52，snapshotUid=70cb4670-2f32-4239-a1e9-e6a725b85aa3，feedUid=16c43968-04de-4126-8a6f-37509de4452e
+2026-08-31 12:17:57.726 [mytransitgps-continuous-collector] INFO  c.m.p.service.VehicleObservationDatabaseMapper - 磁盘enriched JSON数据库实体映射完成，snapshotUid=70cb4670-2f32-4239-a1e9-e6a725b85aa3，observations=43，qcRows=46，latestStates=43
+2026-08-31 12:17:57.784 [mytransitgps-continuous-collector] INFO  c.m.p.service.RealtimePersistenceService - vehicle_observation批量写入完成，snapshotUid=70cb4670-2f32-4239-a1e9-e6a725b85aa3，rows=43
+2026-08-31 12:17:57.804 [mytransitgps-continuous-collector] INFO  c.m.p.service.RealtimePersistenceService - vehicle_observation_qc写入完成，snapshotUid=70cb4670-2f32-4239-a1e9-e6a725b85aa3，rows=46
+2026-08-31 12:17:57.864 [mytransitgps-continuous-collector] INFO  c.m.p.service.RealtimePersistenceService - vehicle_latest_state UPSERT完成，snapshotUid=70cb4670-2f32-4239-a1e9-e6a725b85aa3，rows=43
+2026-08-31 12:17:57.864 [mytransitgps-continuous-collector] INFO  c.m.p.service.RealtimePersistenceService - Snapshot数据库事务提交完成，snapshotUid=70cb4670-2f32-4239-a1e9-e6a725b85aa3，observations=43，qc=46，elapsedMs=145
+2026-08-31 12:17:57.892 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - Realtime快照处理完成，城市=Kuching，feedId=mybas-kuching，schema=kuching，cycle=1，snapshotUid=70cb4670-2f32-4239-a1e9-e6a725b85aa3，JSON车辆数=43，数据库写入数=43，QC数量=46，重复观测数=0，Static匹配数=42，处理耗时=145ms
+2026-08-31 12:17:57.894 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.service.JsonOutputService - JSON对象证据文件保存完成，path=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\BusGPS\20260831\Kuching\kuching_gtfs_realtime_metadata_20260831_121757_cycle1_8126e89f-e120-42b7-943b-9069954c6e52.json，chars=1217
+2026-08-31 12:18:21.644 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - 开始调用GTFS Realtime接口下载数据，城市=Kuala Lumpur，feedId=rapid-bus-kl，schema=kl，cycle=1，requestSequence=3，scheduledAt=2026-08-31T04:18:21.644362200Z
+2026-08-31 12:18:21.644 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.client.GtfsApiClient - GTFS HTTP接口调用开始，请求类型=REALTIME，host=api.data.gov.my，path=/gtfs-realtime/vehicle-position/prasarana
+2026-08-31 12:18:21.732 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.client.GtfsApiClient - GTFS HTTP请求完成，请求类型=REALTIME，httpStatus=200，latencyMs=87，responseBytes=10557，redirectCount=1，host=api.data.gov.my，path=/gtfs-realtime/vehicle-position/prasarana
+2026-08-31 12:18:21.738 [mytransitgps-continuous-collector] INFO  c.m.p.service.ApiRequestEvidenceService - HTTP请求事实已写入数据库，cycle=1，requestUid=cedeac78-0963-40d1-908c-d05863c8327e，httpStatus=200，bytes=10557
+2026-08-31 12:18:21.745 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.service.RawArchiveService - RAW Protobuf文件保存完成，bytes=10557，path=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\raw_data\20260831\Kuala_Lumpur\kuala_lumpur_rapid_bus_gtfs_realtime_raw_20260831_121821_cycle1_cedeac78-0963-40d1-908c-d05863c8327e.pb
+2026-08-31 12:18:21.746 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.parser.GtfsRealtimeParser - GTFS-Realtime Protobuf解析完成，payloadBytes=10557，entityCount=96，vehicleEntityCount=96
+2026-08-31 12:18:21.751 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.service.JsonOutputService - JSON证据文件保存完成，path=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\BusGPS\20260831\Kuala_Lumpur\kuala_lumpur_rapid_bus_gtfs_realtime_parsed_full_20260831_121821_cycle1_cedeac78-0963-40d1-908c-d05863c8327e.json，chars=45370
+2026-08-31 12:18:21.751 [mytransitgps-continuous-collector] INFO  c.m.gtfs.service.RealtimeStaticEnrichmentService - 开始Realtime Static补全，batchId=multicity_continuous_20260831_121733，城市=Kuala Lumpur，feedId=rapid-bus-kl，entityCount=96
+2026-08-31 12:18:21.757 [mytransitgps-continuous-collector] INFO  c.m.gtfs.service.RealtimeStaticEnrichmentService - Realtime Static补全完成，城市=Kuala Lumpur，feedId=rapid-bus-kl，vehicles=96，uniqueRoutes=52，routeResolved=96，routeUnresolved=0，tripMatched=96，tripUnmatched=0，directionMatch=0，directionMismatch=0
+2026-08-31 12:18:21.766 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.service.JsonOutputService - JSON对象证据文件保存完成，path=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\BusGPS\20260831\Kuala_Lumpur\kuala_lumpur_rapid_bus_gtfs_realtime_enriched_full_20260831_121821_cycle1_cedeac78-0963-40d1-908c-d05863c8327e.json，chars=295651
+2026-08-31 12:18:21.768 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - enriched JSON磁盘重新读取完成，feedId=rapid-bus-kl，schema=kl，cycle=1，requestUid=cedeac78-0963-40d1-908c-d05863c8327e，vehicles=96，path=BusGPS/20260831/Kuala_Lumpur/kuala_lumpur_rapid_bus_gtfs_realtime_enriched_full_20260831_121821_cycle1_cedeac78-0963-40d1-908c-d05863c8327e.json
+2026-08-31 12:18:21.768 [mytransitgps-continuous-collector] INFO  c.m.p.service.RealtimePersistenceService - 开始数据库事务，runUid=48147123-a647-4302-b4a2-2fdd93d488e1，requestUid=cedeac78-0963-40d1-908c-d05863c8327e，snapshotUid=288946eb-8b83-45bd-9a7b-0d1b6f20ccb7，feedUid=1210e2fb-1548-4984-a5da-5bd806459722
+2026-08-31 12:18:21.772 [mytransitgps-continuous-collector] INFO  c.m.p.service.RealtimePersistenceService - realtime_snapshot写入完成，snapshotUid=288946eb-8b83-45bd-9a7b-0d1b6f20ccb7
+2026-08-31 12:18:21.772 [mytransitgps-continuous-collector] INFO  c.m.p.service.VehicleObservationDatabaseMapper - 开始将磁盘enriched JSON映射为数据库实体，runUid=48147123-a647-4302-b4a2-2fdd93d488e1，requestUid=cedeac78-0963-40d1-908c-d05863c8327e，snapshotUid=288946eb-8b83-45bd-9a7b-0d1b6f20ccb7，feedUid=1210e2fb-1548-4984-a5da-5bd806459722
+2026-08-31 12:18:21.778 [mytransitgps-continuous-collector] INFO  c.m.p.service.VehicleObservationDatabaseMapper - 磁盘enriched JSON数据库实体映射完成，snapshotUid=288946eb-8b83-45bd-9a7b-0d1b6f20ccb7，observations=96，qcRows=0，latestStates=96
+2026-08-31 12:18:21.982 [mytransitgps-continuous-collector] INFO  c.m.p.service.RealtimePersistenceService - vehicle_observation批量写入完成，snapshotUid=288946eb-8b83-45bd-9a7b-0d1b6f20ccb7，rows=96
+2026-08-31 12:18:21.982 [mytransitgps-continuous-collector] INFO  c.m.p.service.RealtimePersistenceService - vehicle_observation_qc写入完成，snapshotUid=288946eb-8b83-45bd-9a7b-0d1b6f20ccb7，rows=0
+2026-08-31 12:18:22.075 [mytransitgps-continuous-collector] INFO  c.m.p.service.RealtimePersistenceService - vehicle_latest_state UPSERT完成，snapshotUid=288946eb-8b83-45bd-9a7b-0d1b6f20ccb7，rows=96
+2026-08-31 12:18:22.075 [mytransitgps-continuous-collector] INFO  c.m.p.service.RealtimePersistenceService - Snapshot数据库事务提交完成，snapshotUid=288946eb-8b83-45bd-9a7b-0d1b6f20ccb7，observations=96，qc=0，elapsedMs=307
+2026-08-31 12:18:22.101 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - Realtime快照处理完成，城市=Kuala Lumpur，feedId=rapid-bus-kl，schema=kl，cycle=1，snapshotUid=288946eb-8b83-45bd-9a7b-0d1b6f20ccb7，JSON车辆数=96，数据库写入数=96，QC数量=0，重复观测数=0，Static匹配数=96，处理耗时=307ms
+2026-08-31 12:18:22.102 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.service.JsonOutputService - JSON对象证据文件保存完成，path=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\BusGPS\20260831\Kuala_Lumpur\kuala_lumpur_rapid_bus_gtfs_realtime_metadata_20260831_121821_cycle1_cedeac78-0963-40d1-908c-d05863c8327e.json，chars=1274
+2026-08-31 12:18:39.382 [SpringApplicationShutdownHook] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub正在关闭
+2026-08-31 12:18:39.384 [SpringApplicationShutdownHook] INFO  c.m.p.s.MulticityContinuousCollectionLifecycle - 收到连续采集停止请求
+2026-08-31 12:18:39.390 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.CollectionRunService - 五Feed无固定时长连续采集已正常收尾，runUid=48147123-a647-4302-b4a2-2fdd93d488e1，status=SUCCESS，完整轮次=0，请求=3，成功=3，失败=0
+2026-08-31 12:18:39.395 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - 无固定时长多城市采集收到正常停止信号，runCode=multicity_continuous_20260831_121733，runUid=48147123-a647-4302-b4a2-2fdd93d488e1，完整轮次=0，请求=3，证据已保留
+2026-08-31 12:18:39.395 [mytransitgps-continuous-collector] INFO  c.m.p.s.MulticityContinuousCollectionLifecycle - 连续多城市采集生命周期已退出
+2026-08-31 12:18:39.395 [SpringApplicationShutdownHook] INFO  c.m.p.s.MulticityContinuousCollectionLifecycle - 连续采集线程已安全停止，collectorCreated=true
+2026-08-31 12:18:39.396 [SpringApplicationShutdownHook] INFO  o.springframework.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-08-31 12:18:39.708 [tomcat-shutdown] INFO  o.springframework.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-08-31 12:18:39.716 [SpringApplicationShutdownHook] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub已完成关闭流程
+2026-08-31 12:18:39.721 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-08-31 12:18:39.725 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-08-31 12:19:31.890 [main] INFO  org.apache.maven.surefire.booter.ForkedBooter - Starting ForkedBooter v3.5.4 using Java 17.0.17 with PID 10696 (started by DELL in C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\Application)
+2026-08-31 12:19:31.894 [main] INFO  org.apache.maven.surefire.booter.ForkedBooter - The following 1 profile is active: "test"
+2026-08-31 12:19:32.126 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-08-31 12:19:32.569 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-08-31 12:19:32.573 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-08-31 12:19:32.618 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 0 Redis repository interfaces.
+2026-08-31 12:19:33.274 [main] INFO  com.mytransitgps.config.RedisConfig - Redis StringRedisTemplate初始化完成
+2026-08-31 12:19:33.295 [main] INFO  com.mytransitgps.gtfs.config.GtfsFeedRegistry - GTFS Feed注册表初始化完成，feedCount=5，enabledFeedCount=5
+2026-08-31 12:19:33.455 [main] INFO  com.mytransitgps.config.RedisConfig - Redis byte[] RedisTemplate初始化完成
+2026-08-31 12:19:33.633 [main] INFO  org.apache.maven.surefire.booter.ForkedBooter - Started ForkedBooter in 2.316 seconds (process running for 3.482)
+2026-08-31 12:19:33.639 [main] INFO  c.m.config.RedisStartupConnectionChecker - Redis启动连通性检查未启用，跳过启动Ping
+2026-08-31 12:19:33.641 [main] INFO  c.m.persistence.service.WorkspaceRootResolver - MYTrafficDataHub 工作区根目录解析完成，source=CONFIGURED，workspaceRoot=C:\Users\DELL\AppData\Local\Temp\junit-3469192437650370496
+2026-08-31 12:19:33.643 [main] INFO  c.m.gtfs.service.BusGpsLegacyStorageMigrator - BUS GPS历史存储无需迁移，标准目录已生效，workspaceRoot=C:\Users\DELL\AppData\Local\Temp\junit-3469192437650370496
+2026-08-31 12:19:33.643 [main] INFO  c.m.config.ApplicationStartupLoggingListener - Spring Context初始化完成，activeProfiles=test
+2026-08-31 12:19:33.644 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub启动配置：profiles=test，serverPort=8080，databaseEnabled=false，dbTestEnabled=false，multicityTestEnabled=false，continuousEnabled=false，dailyArchiveEnabled=false，redisStartupCheckEnabled=false，workspaceRoot=C:\Users\DELL\AppData\Local\Temp\junit-3469192437650370496
+2026-08-31 12:19:33.644 [main] INFO  c.m.config.ApplicationStartupLoggingListener - 交通模块状态：busGpsEnabled=true，busGpsFeedCount=5，ciqEnabled=true，ciqScheduleEnabled=false，ciqArchiveEnabled=true，ciqDatabaseWriteEnabled=false，ltaAccountKeyConfigured=false
+2026-08-31 12:19:33.644 [main] INFO  c.m.config.ApplicationStartupLoggingListener - CIQ 8接口启用状态：API01=false，API02=false，API03=false，API04=false，API05=false，API06=false，API07=false，API08=false
+2026-08-31 12:19:33.644 [main] INFO  c.m.config.ApplicationStartupLoggingListener - 当前未启用自动多城市连续采集，服务处于待命状态
+2026-08-31 12:19:33.644 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub服务已就绪，稳定模块=MYTransitGPS
+2026-08-31 12:19:33.649 [main] INFO  c.m.gtfs.service.BusGpsDirectoryInitializer - BUS GPS每日JSON目录初始化完成，trigger=APPLICATION_READY，date=20260831，cityFolderCount=4，path=C:\Users\DELL\AppData\Local\Temp\junit-3469192437650370496\BusGPS\20260831
+2026-08-31 12:19:33.654 [main] INFO  c.m.modules.ciq.storage.CiqDirectoryInitializer - CIQ每日八接口目录初始化完成，trigger=APPLICATION_READY，date=2026-08-31，apiFolderCount=8，path=C:\Users\DELL\AppData\Local\Temp\junit-3469192437650370496\CIQ\20260831
+2026-08-31 12:19:33.657 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub正在关闭
+2026-08-31 12:19:33.664 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub已完成关闭流程
+2026-08-31 12:19:33.772 [main] INFO  org.apache.maven.surefire.booter.ForkedBooter - Starting ForkedBooter v3.5.4 using Java 17.0.17 with PID 10696 (started by DELL in C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\Application)
+2026-08-31 12:19:33.773 [main] INFO  org.apache.maven.surefire.booter.ForkedBooter - The following 1 profile is active: "test"
+2026-08-31 12:19:33.934 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-08-31 12:19:33.936 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-08-31 12:19:33.958 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2026-08-31 12:19:34.045 [main] INFO  com.mytransitgps.config.RedisConfig - Redis StringRedisTemplate初始化完成
+2026-08-31 12:19:34.048 [main] INFO  com.mytransitgps.gtfs.config.GtfsFeedRegistry - GTFS Feed注册表初始化完成，feedCount=5，enabledFeedCount=5
+2026-08-31 12:19:34.051 [main] INFO  com.mytransitgps.config.RedisConfig - Redis byte[] RedisTemplate初始化完成
+2026-08-31 12:19:34.114 [main] INFO  org.apache.maven.surefire.booter.ForkedBooter - Started ForkedBooter in 0.395 seconds (process running for 3.962)
+2026-08-31 12:19:34.115 [main] INFO  c.m.config.RedisStartupConnectionChecker - Redis启动连通性检查未启用，跳过启动Ping
+2026-08-31 12:19:34.116 [main] INFO  c.m.persistence.service.WorkspaceRootResolver - MYTrafficDataHub 工作区根目录解析完成，source=CONFIGURED，workspaceRoot=C:\Users\DELL\AppData\Local\Temp\junit-6777644485526298246
+2026-08-31 12:19:34.117 [main] INFO  c.m.gtfs.service.BusGpsLegacyStorageMigrator - BUS GPS历史存储无需迁移，标准目录已生效，workspaceRoot=C:\Users\DELL\AppData\Local\Temp\junit-6777644485526298246
+2026-08-31 12:19:34.117 [main] INFO  c.m.config.ApplicationStartupLoggingListener - Spring Context初始化完成，activeProfiles=test
+2026-08-31 12:19:34.118 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub启动配置：profiles=test，serverPort=8080，databaseEnabled=false，dbTestEnabled=false，multicityTestEnabled=false，continuousEnabled=false，dailyArchiveEnabled=false，redisStartupCheckEnabled=false，workspaceRoot=C:\Users\DELL\AppData\Local\Temp\junit-6777644485526298246
+2026-08-31 12:19:34.118 [main] INFO  c.m.config.ApplicationStartupLoggingListener - 交通模块状态：busGpsEnabled=true，busGpsFeedCount=5，ciqEnabled=false，ciqScheduleEnabled=false，ciqArchiveEnabled=true，ciqDatabaseWriteEnabled=false，ltaAccountKeyConfigured=false
+2026-08-31 12:19:34.119 [main] INFO  c.m.config.ApplicationStartupLoggingListener - CIQ 8接口启用状态：API01=false，API02=false，API03=false，API04=false，API05=false，API06=false，API07=false，API08=false
+2026-08-31 12:19:34.119 [main] INFO  c.m.config.ApplicationStartupLoggingListener - 当前未启用自动多城市连续采集，服务处于待命状态
+2026-08-31 12:19:34.120 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub服务已就绪，稳定模块=MYTransitGPS
+2026-08-31 12:19:34.127 [main] INFO  c.m.gtfs.service.BusGpsDirectoryInitializer - BUS GPS每日JSON目录初始化完成，trigger=APPLICATION_READY，date=20260831，cityFolderCount=4，path=C:\Users\DELL\AppData\Local\Temp\junit-6777644485526298246\BusGPS\20260831
+2026-08-31 12:19:34.132 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub正在关闭
+2026-08-31 12:19:34.133 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub已完成关闭流程
+2026-08-31 12:19:34.203 [main] INFO  org.apache.maven.surefire.booter.ForkedBooter - Starting ForkedBooter v3.5.4 using Java 17.0.17 with PID 10696 (started by DELL in C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\Application)
+2026-08-31 12:19:34.204 [main] INFO  org.apache.maven.surefire.booter.ForkedBooter - The following 1 profile is active: "test"
+2026-08-31 12:19:34.383 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-08-31 12:19:34.383 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-08-31 12:19:34.402 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2026-08-31 12:19:34.448 [main] INFO  com.mytransitgps.config.RedisConfig - Redis StringRedisTemplate初始化完成
+2026-08-31 12:19:34.451 [main] INFO  com.mytransitgps.gtfs.config.GtfsFeedRegistry - GTFS Feed注册表初始化完成，feedCount=5，enabledFeedCount=5
+2026-08-31 12:19:34.456 [main] INFO  com.mytransitgps.config.RedisConfig - Redis byte[] RedisTemplate初始化完成
+2026-08-31 12:19:34.510 [main] INFO  org.apache.maven.surefire.booter.ForkedBooter - Started ForkedBooter in 0.358 seconds (process running for 4.358)
+2026-08-31 12:19:34.511 [main] INFO  c.m.config.RedisStartupConnectionChecker - Redis启动连通性检查未启用，跳过启动Ping
+2026-08-31 12:19:34.512 [main] INFO  c.m.persistence.service.WorkspaceRootResolver - MYTrafficDataHub 工作区根目录解析完成，source=CONFIGURED，workspaceRoot=C:\Users\DELL\AppData\Local\Temp\junit-526520951808646524
+2026-08-31 12:19:34.513 [main] INFO  c.m.gtfs.service.BusGpsLegacyStorageMigrator - BUS GPS历史存储无需迁移，标准目录已生效，workspaceRoot=C:\Users\DELL\AppData\Local\Temp\junit-526520951808646524
+2026-08-31 12:19:34.514 [main] INFO  c.m.config.ApplicationStartupLoggingListener - Spring Context初始化完成，activeProfiles=test
+2026-08-31 12:19:34.515 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub启动配置：profiles=test，serverPort=8080，databaseEnabled=false，dbTestEnabled=false，multicityTestEnabled=false，continuousEnabled=false，dailyArchiveEnabled=false，redisStartupCheckEnabled=false，workspaceRoot=C:\Users\DELL\AppData\Local\Temp\junit-526520951808646524
+2026-08-31 12:19:34.515 [main] INFO  c.m.config.ApplicationStartupLoggingListener - 交通模块状态：busGpsEnabled=true，busGpsFeedCount=5，ciqEnabled=true，ciqScheduleEnabled=false，ciqArchiveEnabled=false，ciqDatabaseWriteEnabled=false，ltaAccountKeyConfigured=false
+2026-08-31 12:19:34.516 [main] INFO  c.m.config.ApplicationStartupLoggingListener - CIQ 8接口启用状态：API01=false，API02=false，API03=false，API04=false，API05=false，API06=false，API07=false，API08=false
+2026-08-31 12:19:34.516 [main] INFO  c.m.config.ApplicationStartupLoggingListener - 当前未启用自动多城市连续采集，服务处于待命状态
+2026-08-31 12:19:34.516 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub服务已就绪，稳定模块=MYTransitGPS
+2026-08-31 12:19:34.521 [main] INFO  c.m.gtfs.service.BusGpsDirectoryInitializer - BUS GPS每日JSON目录初始化完成，trigger=APPLICATION_READY，date=20260831，cityFolderCount=4，path=C:\Users\DELL\AppData\Local\Temp\junit-526520951808646524\BusGPS\20260831
+2026-08-31 12:19:34.527 [main] INFO  c.m.modules.ciq.storage.CiqDirectoryInitializer - CIQ每日八接口目录初始化完成，trigger=APPLICATION_READY，date=2026-08-31，apiFolderCount=8，path=C:\Users\DELL\AppData\Local\Temp\junit-526520951808646524\CIQ\20260831
+2026-08-31 12:19:34.528 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub正在关闭
+2026-08-31 12:19:34.529 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub已完成关闭流程
+2026-08-31 12:19:34.706 [main] INFO  c.mytransitgps.ciqmanual.Api01LiveCollectorTest - Starting Api01LiveCollectorTest using Java 17.0.17 with PID 10696 (started by DELL in C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\Application)
+2026-08-31 12:19:34.707 [main] INFO  c.mytransitgps.ciqmanual.Api01LiveCollectorTest - The following 1 profile is active: "longrun"
+2026-08-31 12:19:35.073 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-08-31 12:19:35.073 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-08-31 12:19:35.100 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 0 Redis repository interfaces.
+2026-08-31 12:19:35.312 [main] INFO  com.mytransitgps.config.RedisConfig - Redis StringRedisTemplate初始化完成
+2026-08-31 12:19:35.447 [main] INFO  com.mytransitgps.gtfs.config.GtfsFeedRegistry - GTFS Feed注册表初始化完成，feedCount=5，enabledFeedCount=5
+2026-08-31 12:19:35.476 [main] INFO  c.m.persistence.config.MyBatisDatabaseConfig - MYTransitGPS MyBatis 数据库配置已初始化，城市 Schema 路由已启用
+2026-08-31 12:19:36.311 [main] INFO  com.mytransitgps.config.RedisConfig - Redis byte[] RedisTemplate初始化完成
+2026-08-31 12:19:36.719 [main] INFO  c.b.m.e.s.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.web.context.support.GenericWebApplicationContext@2d399e88
+2026-08-31 12:19:36.845 [main] INFO  c.mytransitgps.ciqmanual.Api01LiveCollectorTest - Started Api01LiveCollectorTest in 2.198 seconds (process running for 6.694)
+2026-08-31 12:19:36.846 [main] INFO  c.m.config.RedisStartupConnectionChecker - Redis启动连通性检查未启用，跳过启动Ping
+2026-08-31 12:19:36.847 [main] INFO  c.m.persistence.service.WorkspaceRootResolver - MYTrafficDataHub 工作区根目录解析完成，source=CONFIGURED，workspaceRoot=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download
+2026-08-31 12:19:37.329 [main] INFO  c.m.gtfs.service.BusGpsLegacyStorageMigrator - BUS GPS历史存储无需迁移，标准目录已生效，workspaceRoot=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download
+2026-08-31 12:19:37.329 [main] INFO  c.m.config.ApplicationStartupLoggingListener - Spring Context初始化完成，activeProfiles=longrun
+2026-08-31 12:19:37.329 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub启动配置：profiles=longrun，serverPort=8080，databaseEnabled=true，dbTestEnabled=false，multicityTestEnabled=false，continuousEnabled=true，dailyArchiveEnabled=true，redisStartupCheckEnabled=false，workspaceRoot=data_download
+2026-08-31 12:19:37.329 [main] INFO  c.m.config.ApplicationStartupLoggingListener - 交通模块状态：busGpsEnabled=true，busGpsFeedCount=5，ciqEnabled=true，ciqScheduleEnabled=false，ciqArchiveEnabled=true，ciqDatabaseWriteEnabled=true，ltaAccountKeyConfigured=true
+2026-08-31 12:19:37.329 [main] INFO  c.m.config.ApplicationStartupLoggingListener - CIQ 8接口启用状态：API01=true，API02=true，API03=true，API04=true，API05=true，API06=true，API07=true，API08=true
+2026-08-31 12:19:37.329 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub服务已就绪，稳定模块=MYTransitGPS
+2026-08-31 12:19:37.330 [main] INFO  c.m.gtfs.service.BusGpsDirectoryInitializer - BUS GPS每日JSON目录初始化完成，trigger=APPLICATION_READY，date=20260831，cityFolderCount=4，path=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\BusGPS\20260831
+2026-08-31 12:19:37.331 [main] INFO  c.m.p.s.MulticityContinuousCollectionLifecycle - 连续多城市长期采集准备启动，feedCount=5，intervalSeconds=120，durationMode=UNBOUNDED
+2026-08-31 12:19:37.331 [main] INFO  c.m.p.s.MulticityContinuousCollectionLifecycle - 连续多城市采集生命周期已启动；每Feed间隔=120秒，无固定结束时长，应用运行期间持续采集
+2026-08-31 12:19:37.332 [mytransitgps-continuous-collector] INFO  c.m.p.s.MulticityContinuousCollectionLifecycle - 开始无固定时长多城市连续采集Run；停止条件=应用Stop/线程中断/不可恢复故障
+2026-08-31 12:19:37.332 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - 无固定时长多城市采集准备开始，intervalSeconds=120，feedCount=5，workspaceRoot=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download
+2026-08-31 12:19:37.332 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - 准备获取无固定时长采集运行锁，lockName=multicity_continuous.lock
+2026-08-31 12:19:37.332 [main] INFO  c.m.modules.ciq.storage.CiqDirectoryInitializer - CIQ每日八接口目录初始化完成，trigger=APPLICATION_READY，date=2026-08-31，apiFolderCount=8，path=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\CIQ\20260831
+2026-08-31 12:19:37.334 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - 无固定时长采集运行锁获取成功，lockName=multicity_continuous.lock
+2026-08-31 12:19:37.334 [mytransitgps-continuous-collector] INFO  c.m.p.service.DatabaseConnectionService - 开始检查PostgreSQL数据库连接与PostGIS基础能力
+2026-08-31 12:19:37.334 [mytransitgps-continuous-collector] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-08-31 12:19:37.567 [mytransitgps-continuous-collector] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@54d48b4c
+2026-08-31 12:19:37.569 [mytransitgps-continuous-collector] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-08-31 12:19:37.649 [mytransitgps-continuous-collector] INFO  c.m.p.service.DatabaseConnectionService - PostgreSQL数据库连接成功，database=postgres，user=postgres
+2026-08-31 12:19:37.650 [mytransitgps-continuous-collector] INFO  c.m.p.service.DatabaseConnectionService - PostgreSQL版本检查通过，version=PostgreSQL 16.4 (Debian 16.4-1.pgdg110+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 10.2.1-6) 10.2.1 20210110, 64-bit
+2026-08-31 12:19:37.650 [mytransitgps-continuous-collector] INFO  c.m.p.service.DatabaseConnectionService - PostGIS检查通过，version=POSTGIS="3.4.3 e365945" [EXTENSION] PGSQL="160" GEOS="3.9.0-CAPI-1.16.2" PROJ="7.2.1 NETWORK_ENABLED=OFF URL_ENDPOINT=https://cdn.proj.org USER_WRITABLE_DIRECTORY=/var/lib/postgresql/.local/share/proj DATABASE_PATH=/usr/share/proj/proj.db" LIBXML="2.9.10" LIBJSON="0.15" LIBPROTOBUF="1.3.3" WAGYU="0.5.0 (Internal)"
+2026-08-31 12:19:37.650 [mytransitgps-continuous-collector] INFO  c.m.p.service.DatabaseConnectionService - MYTransitGPS数据库基础结构检查完成，coreTables=4，jbTables=12，kuchingTables=12，klTables=12，melakaTables=12
+2026-08-31 12:19:37.656 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.DatabaseFeedService - 开始从core.gtfs_feed加载多城市Feed配置，requestedFeedCount=5
+2026-08-31 12:19:37.657 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.DatabaseFeedService - 开始读取GTFS Feed配置，feedId=mybas-johor
+2026-08-31 12:19:37.802 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.DatabaseFeedService - 获取mybas-johor feed_uid完成，feedUid=86671fa7-aac9-4309-9154-91817b0b83a9
+2026-08-31 12:19:37.810 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.DatabaseFeedService - Feed数据库配置加载完成，城市=Johor Bahru，feedId=mybas-johor，feedUid=86671fa7-aac9-4309-9154-91817b0b83a9，schema=jb，enabled=true，pollIntervalSeconds=120，staggerOffsetSeconds=0
+2026-08-31 12:19:37.810 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.DatabaseFeedService - 开始读取GTFS Feed配置，feedId=mybas-kuching
+2026-08-31 12:19:37.814 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.DatabaseFeedService - 获取mybas-kuching feed_uid完成，feedUid=16c43968-04de-4126-8a6f-37509de4452e
+2026-08-31 12:19:37.815 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.DatabaseFeedService - Feed数据库配置加载完成，城市=Kuching，feedId=mybas-kuching，feedUid=16c43968-04de-4126-8a6f-37509de4452e，schema=kuching，enabled=true，pollIntervalSeconds=120，staggerOffsetSeconds=24
+2026-08-31 12:19:37.816 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.DatabaseFeedService - 开始读取GTFS Feed配置，feedId=rapid-bus-kl
+2026-08-31 12:19:37.818 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.DatabaseFeedService - 获取rapid-bus-kl feed_uid完成，feedUid=1210e2fb-1548-4984-a5da-5bd806459722
+2026-08-31 12:19:37.821 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.DatabaseFeedService - Feed数据库配置加载完成，城市=Kuala Lumpur，feedId=rapid-bus-kl，feedUid=1210e2fb-1548-4984-a5da-5bd806459722，schema=kl，enabled=true，pollIntervalSeconds=120，staggerOffsetSeconds=48
+2026-08-31 12:19:37.821 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.DatabaseFeedService - 开始读取GTFS Feed配置，feedId=rapid-bus-mrtfeeder
+2026-08-31 12:19:37.823 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.DatabaseFeedService - 获取rapid-bus-mrtfeeder feed_uid完成，feedUid=7f89e04c-f644-4c27-8817-6b550adb30e4
+2026-08-31 12:19:37.824 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.DatabaseFeedService - Feed数据库配置加载完成，城市=Kuala Lumpur，feedId=rapid-bus-mrtfeeder，feedUid=7f89e04c-f644-4c27-8817-6b550adb30e4，schema=kl，enabled=true，pollIntervalSeconds=120，staggerOffsetSeconds=72
+2026-08-31 12:19:37.825 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.DatabaseFeedService - 开始读取GTFS Feed配置，feedId=mybas-melaka
+2026-08-31 12:19:37.827 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.DatabaseFeedService - 获取mybas-melaka feed_uid完成，feedUid=b125c11e-d463-477d-84a3-15870552ac1c
+2026-08-31 12:19:37.829 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.DatabaseFeedService - Feed数据库配置加载完成，城市=Melaka，feedId=mybas-melaka，feedUid=b125c11e-d463-477d-84a3-15870552ac1c，schema=melaka，enabled=true，pollIntervalSeconds=120，staggerOffsetSeconds=96
+2026-08-31 12:19:37.829 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.DatabaseFeedService - 多城市Feed配置加载完成，feedCount=5
+2026-08-31 12:19:37.829 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - 无固定时长采集Feed配置验证完成，feedCount=5，intervalSeconds=120
+2026-08-31 12:19:37.830 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - 开始准备Static GTFS，feedId=mybas-johor，schema=jb
+2026-08-31 12:19:37.830 [mytransitgps-continuous-collector] INFO  c.m.p.service.LocalStaticArtifactResolver - 开始检查本地Static版本，feedId=mybas-johor
+2026-08-31 12:19:37.927 [mytransitgps-continuous-collector] INFO  c.m.p.service.LocalStaticArtifactResolver - 本地Static证据确认完成，feedId=mybas-johor，sha256=b0293c1a3b6078ceb48d72bfddabd927cc5d7f3f5b911587c6dde50807e215d6，bytes=4875871
+2026-08-31 12:19:37.943 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.parser.GtfsStaticParser - 开始解析Static GTFS ZIP，zipBytes=4875871
+2026-08-31 12:19:38.451 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.parser.GtfsStaticParser - Static GTFS解析完成，routes=21，trips=1782，stops=988，stopTimes=76731，shapes=40，zipEntries=13
+2026-08-31 12:19:38.465 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.service.FeedBoundsService - Feed空间边界计算完成，feedId=mybas-johor，source=REFERENCED_SHAPES_PLUS_STOPS，referencedShapes=40，orphanShapes=0，shapePoints=14687，stops=988，rawLat=[1.351008,1.73103]，rawLon=[103.387593,103.95567]，bufferKm=10.0
+2026-08-31 12:19:38.480 [mytransitgps-continuous-collector] INFO  c.m.p.service.JbStaticPersistenceService - Static版本复用完成，staticVersionUid=358c5d91-1c74-4e54-8197-f68f71960b3c，sha256=b0293c1a3b6078ceb48d72bfddabd927cc5d7f3f5b911587c6dde50807e215d6
+2026-08-31 12:19:38.683 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.StaticUidResolver - Static UUID索引加载完成，staticVersionUid=358c5d91-1c74-4e54-8197-f68f71960b3c，routes=21，trips=1782，stops=988，shapes=40，sha256=b0293c1a3b6078ceb48d72bfddabd927cc5d7f3f5b911587c6dde50807e215d6
+2026-08-31 12:19:38.688 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - Static GTFS准备完成，feedId=mybas-johor，schema=jb，staticVersionUid=358c5d91-1c74-4e54-8197-f68f71960b3c，routes=21，trips=1782，stops=988，shapes=40
+2026-08-31 12:19:38.688 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - 开始准备Static GTFS，feedId=mybas-kuching，schema=kuching
+2026-08-31 12:19:38.688 [mytransitgps-continuous-collector] INFO  c.m.p.service.LocalStaticArtifactResolver - 开始检查本地Static版本，feedId=mybas-kuching
+2026-08-31 12:19:38.761 [mytransitgps-continuous-collector] INFO  c.m.p.service.LocalStaticArtifactResolver - 本地Static证据确认完成，feedId=mybas-kuching，sha256=a020ac7f025965852cbaff509ae184f0ee957c9f6f9421142a82da83a8e265f1，bytes=95837
+2026-08-31 12:19:38.762 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.parser.GtfsStaticParser - 开始解析Static GTFS ZIP，zipBytes=95837
+2026-08-31 12:19:38.830 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.parser.GtfsStaticParser - Static GTFS解析完成，routes=13，trips=620，stops=406，stopTimes=17170，shapes=23，zipEntries=7
+2026-08-31 12:19:38.831 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.service.FeedBoundsService - Feed空间边界计算完成，feedId=mybas-kuching，source=REFERENCED_SHAPES_PLUS_STOPS，referencedShapes=22，orphanShapes=1，shapePoints=602，stops=406，rawLat=[1.164571,1.667894]，rawLon=[110.154792,110.567035]，bufferKm=10.0
+2026-08-31 12:19:38.850 [mytransitgps-continuous-collector] INFO  c.m.p.service.JbStaticPersistenceService - Static版本复用完成，staticVersionUid=eb4fe127-160a-4a61-b093-780db51615f5，sha256=a020ac7f025965852cbaff509ae184f0ee957c9f6f9421142a82da83a8e265f1
+2026-08-31 12:19:38.929 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.StaticUidResolver - Static UUID索引加载完成，staticVersionUid=eb4fe127-160a-4a61-b093-780db51615f5，routes=13，trips=620，stops=406，shapes=23，sha256=a020ac7f025965852cbaff509ae184f0ee957c9f6f9421142a82da83a8e265f1
+2026-08-31 12:19:38.931 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - Static GTFS准备完成，feedId=mybas-kuching，schema=kuching，staticVersionUid=eb4fe127-160a-4a61-b093-780db51615f5，routes=13，trips=620，stops=406，shapes=23
+2026-08-31 12:19:38.932 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - 开始准备Static GTFS，feedId=rapid-bus-kl，schema=kl
+2026-08-31 12:19:38.932 [mytransitgps-continuous-collector] INFO  c.m.p.service.LocalStaticArtifactResolver - 开始检查本地Static版本，feedId=rapid-bus-kl
+2026-08-31 12:19:39.013 [mytransitgps-continuous-collector] INFO  c.m.p.service.LocalStaticArtifactResolver - 本地Static证据确认完成，feedId=rapid-bus-kl，sha256=083170db34edbafcdf7b13cf39150eece637e2af3b7e9766fd0963d59e1de65b，bytes=1677202
+2026-08-31 12:19:39.014 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.parser.GtfsStaticParser - 开始解析Static GTFS ZIP，zipBytes=1677202
+2026-08-31 12:19:39.556 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.parser.GtfsStaticParser - Static GTFS解析完成，routes=137，trips=2102，stops=4053，stopTimes=87935，shapes=171，zipEntries=8
+2026-08-31 12:19:39.583 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.service.FeedBoundsService - Feed空间边界计算完成，feedId=rapid-bus-kl，source=REFERENCED_SHAPES_PLUS_STOPS，referencedShapes=171，orphanShapes=0，shapePoints=69246，stops=4053，rawLat=[2.74334,3.337771441918608]，rawLon=[101.4080054926244,101.9092265881676]，bufferKm=10.0
+2026-08-31 12:19:39.597 [mytransitgps-continuous-collector] INFO  c.m.p.service.JbStaticPersistenceService - Static版本复用完成，staticVersionUid=518103ef-8d2f-4360-8640-c45ba13eb608，sha256=083170db34edbafcdf7b13cf39150eece637e2af3b7e9766fd0963d59e1de65b
+2026-08-31 12:19:39.782 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.StaticUidResolver - Static UUID索引加载完成，staticVersionUid=518103ef-8d2f-4360-8640-c45ba13eb608，routes=137，trips=2102，stops=4053，shapes=171，sha256=083170db34edbafcdf7b13cf39150eece637e2af3b7e9766fd0963d59e1de65b
+2026-08-31 12:19:39.784 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - Static GTFS准备完成，feedId=rapid-bus-kl，schema=kl，staticVersionUid=518103ef-8d2f-4360-8640-c45ba13eb608，routes=137，trips=2102，stops=4053，shapes=171
+2026-08-31 12:19:39.784 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - 开始准备Static GTFS，feedId=rapid-bus-mrtfeeder，schema=kl
+2026-08-31 12:19:39.784 [mytransitgps-continuous-collector] INFO  c.m.p.service.LocalStaticArtifactResolver - 开始检查本地Static版本，feedId=rapid-bus-mrtfeeder
+2026-08-31 12:19:39.860 [mytransitgps-continuous-collector] INFO  c.m.p.service.LocalStaticArtifactResolver - 本地Static证据确认完成，feedId=rapid-bus-mrtfeeder，sha256=50c70a17faf8d1384e6c69741919806f4641cd975a5cc6addc600e636e9e0fda，bytes=2014055
+2026-08-31 12:19:39.862 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.parser.GtfsStaticParser - 开始解析Static GTFS ZIP，zipBytes=2014055
+2026-08-31 12:19:40.399 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.parser.GtfsStaticParser - Static GTFS解析完成，routes=91，trips=6277，stops=2112，stopTimes=174759，shapes=92，zipEntries=8
+2026-08-31 12:19:40.410 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.service.FeedBoundsService - Feed空间边界计算完成，feedId=rapid-bus-mrtfeeder，source=REFERENCED_SHAPES_PLUS_STOPS，referencedShapes=92，orphanShapes=0，shapePoints=35030，stops=2112，rawLat=[2.8949935,3.3132961]，rawLon=[101.4314904,101.8297796]，bufferKm=10.0
+2026-08-31 12:19:40.414 [mytransitgps-continuous-collector] INFO  c.m.p.service.JbStaticPersistenceService - Static版本复用完成，staticVersionUid=400b8fb9-cfab-45ce-ba3d-5b5c39292c62，sha256=50c70a17faf8d1384e6c69741919806f4641cd975a5cc6addc600e636e9e0fda
+2026-08-31 12:19:40.584 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.StaticUidResolver - Static UUID索引加载完成，staticVersionUid=400b8fb9-cfab-45ce-ba3d-5b5c39292c62，routes=91，trips=6277，stops=2112，shapes=92，sha256=50c70a17faf8d1384e6c69741919806f4641cd975a5cc6addc600e636e9e0fda
+2026-08-31 12:19:40.586 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - Static GTFS准备完成，feedId=rapid-bus-mrtfeeder，schema=kl，staticVersionUid=400b8fb9-cfab-45ce-ba3d-5b5c39292c62，routes=91，trips=6277，stops=2112，shapes=92
+2026-08-31 12:19:40.587 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - 开始准备Static GTFS，feedId=mybas-melaka，schema=melaka
+2026-08-31 12:19:40.587 [mytransitgps-continuous-collector] INFO  c.m.p.service.LocalStaticArtifactResolver - 开始检查本地Static版本，feedId=mybas-melaka
+2026-08-31 12:19:40.663 [mytransitgps-continuous-collector] INFO  c.m.p.service.LocalStaticArtifactResolver - 本地Static证据确认完成，feedId=mybas-melaka，sha256=dbe0ad1ae91d13bc09240fe7f1285f9498f1537c285b28e78a9e26d14b81857d，bytes=2228269
+2026-08-31 12:19:40.666 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.parser.GtfsStaticParser - 开始解析Static GTFS ZIP，zipBytes=2228269
+2026-08-31 12:19:40.708 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mytransitgps.MyBatisDatabaseEnabledContextTest]: MyBatisDatabaseEnabledContextTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-31 12:19:40.719 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mytransitgps.MyTrafficDataHubApplication for test class com.mytransitgps.MyBatisDatabaseEnabledContextTest
+2026-08-31 12:19:40.721 [main] INFO  c.m.p.s.MulticityContinuousCollectionLifecycle - 收到连续采集停止请求
+2026-08-31 12:19:40.827 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.parser.GtfsStaticParser - Static GTFS解析完成，routes=22，trips=569，stops=678，stopTimes=25107，shapes=43，zipEntries=13
+2026-08-31 12:19:40.833 [mytransitgps-continuous-collector] INFO  com.mytransitgps.gtfs.service.FeedBoundsService - Feed空间边界计算完成，feedId=mybas-melaka，source=REFERENCED_SHAPES_PLUS_STOPS，referencedShapes=43，orphanShapes=0，shapePoints=18604，stops=678，rawLat=[2.18045,2.47411]，rawLon=[102.069819,102.56425]，bufferKm=10.0
+2026-08-31 12:19:40.851 [mytransitgps-continuous-collector] INFO  c.m.p.service.JbStaticPersistenceService - Static版本复用完成，staticVersionUid=cfb0ab47-9372-43a1-92c8-423311e0b761，sha256=dbe0ad1ae91d13bc09240fe7f1285f9498f1537c285b28e78a9e26d14b81857d
+2026-08-31 12:19:40.906 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.StaticUidResolver - Static UUID索引加载完成，staticVersionUid=cfb0ab47-9372-43a1-92c8-423311e0b761，routes=22，trips=569，stops=678，shapes=43，sha256=dbe0ad1ae91d13bc09240fe7f1285f9498f1537c285b28e78a9e26d14b81857d
+2026-08-31 12:19:40.908 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - Static GTFS准备完成，feedId=mybas-melaka，schema=melaka，staticVersionUid=cfb0ab47-9372-43a1-92c8-423311e0b761，routes=22，trips=569，stops=678，shapes=43
+2026-08-31 12:19:40.917 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.CollectionRunService - 开始五Feed无固定时长连续采集，runCode=multicity_continuous_20260831_121940，runUid=796444ea-cb93-453a-961a-7b5d95476c32，feed数=5，plannedCycles=UNBOUNDED，plannedRequests=UNBOUNDED
+2026-08-31 12:19:40.924 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.SchemaFingerprintService - 开始采集数据库Schema结构指纹，schemas=core,jb,kuching,kl,melaka
+2026-08-31 12:19:41.024 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.SchemaFingerprintService - 数据库Schema结构指纹采集完成，sha256=a240ff26460635f9f1f65e773f243bdfdf53f5966588e82a59f31eb8c8e036a3，metadataRows=3527，expectedTableCount=52
+2026-08-31 12:19:42.291 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - 无固定时长多城市采集Run已启动，runCode=multicity_continuous_20260831_121940，runUid=796444ea-cb93-453a-961a-7b5d95476c32，feedCount=5，intervalSeconds=120，plannedEnd=NONE
+2026-08-31 12:19:42.304 [mytransitgps-continuous-collector] INFO  c.m.persistence.service.CollectionRunService - 五Feed无固定时长连续采集已正常收尾，runUid=796444ea-cb93-453a-961a-7b5d95476c32，status=SUCCESS，完整轮次=0，请求=0，成功=0，失败=0
+2026-08-31 12:19:42.312 [mytransitgps-continuous-collector] INFO  c.m.p.s.MulticityContinuousCollectionLifecycle - 连续多城市采集生命周期已退出
+2026-08-31 12:19:42.312 [main] INFO  c.m.p.s.MulticityContinuousCollectionLifecycle - 连续采集线程已安全停止，collectorCreated=true
+2026-08-31 12:19:42.313 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub已完成关闭流程
+2026-08-31 12:19:42.357 [main] INFO  c.mytransitgps.MyBatisDatabaseEnabledContextTest - Starting MyBatisDatabaseEnabledContextTest using Java 17.0.17 with PID 10696 (started by DELL in C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\Application)
+2026-08-31 12:19:42.358 [main] INFO  c.mytransitgps.MyBatisDatabaseEnabledContextTest - The following 1 profile is active: "test"
+2026-08-31 12:19:42.592 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-08-31 12:19:42.594 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-08-31 12:19:42.614 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2026-08-31 12:19:42.693 [main] INFO  com.mytransitgps.config.RedisConfig - Redis StringRedisTemplate初始化完成
+2026-08-31 12:19:42.728 [main] INFO  com.mytransitgps.gtfs.config.GtfsFeedRegistry - GTFS Feed注册表初始化完成，feedCount=5，enabledFeedCount=5
+2026-08-31 12:19:42.737 [main] INFO  c.m.persistence.config.MyBatisDatabaseConfig - MYTransitGPS MyBatis 数据库配置已初始化，城市 Schema 路由已启用
+2026-08-31 12:19:43.226 [main] INFO  com.mytransitgps.config.RedisConfig - Redis byte[] RedisTemplate初始化完成
+2026-08-31 12:19:43.234 [main] INFO  c.b.m.e.s.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.context.annotation.AnnotationConfigApplicationContext@54a81a18
+2026-08-31 12:19:43.279 [main] INFO  c.mytransitgps.MyBatisDatabaseEnabledContextTest - Started MyBatisDatabaseEnabledContextTest in 0.965 seconds (process running for 13.128)
+2026-08-31 12:19:43.280 [main] INFO  c.m.config.RedisStartupConnectionChecker - Redis启动连通性检查未启用，跳过启动Ping
+2026-08-31 12:19:43.280 [main] INFO  c.m.persistence.service.WorkspaceRootResolver - MYTrafficDataHub 工作区根目录解析完成，source=CONFIGURED，workspaceRoot=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829
+2026-08-31 12:19:43.410 [main] INFO  c.m.gtfs.service.BusGpsLegacyStorageMigrator - BUS GPS历史存储无需迁移，标准目录已生效，workspaceRoot=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829
+2026-08-31 12:19:43.410 [main] INFO  c.m.config.ApplicationStartupLoggingListener - Spring Context初始化完成，activeProfiles=test
+2026-08-31 12:19:43.410 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub启动配置：profiles=test，serverPort=8080，databaseEnabled=true，dbTestEnabled=false，multicityTestEnabled=false，continuousEnabled=false，dailyArchiveEnabled=false，redisStartupCheckEnabled=false，workspaceRoot=..
+2026-08-31 12:19:43.410 [main] INFO  c.m.config.ApplicationStartupLoggingListener - 交通模块状态：busGpsEnabled=true，busGpsFeedCount=5，ciqEnabled=false，ciqScheduleEnabled=false，ciqArchiveEnabled=true，ciqDatabaseWriteEnabled=false，ltaAccountKeyConfigured=false
+2026-08-31 12:19:43.410 [main] INFO  c.m.config.ApplicationStartupLoggingListener - CIQ 8接口启用状态：API01=false，API02=false，API03=false，API04=false，API05=false，API06=false，API07=false，API08=false
+2026-08-31 12:19:43.410 [main] INFO  c.m.config.ApplicationStartupLoggingListener - 当前未启用自动多城市连续采集，服务处于待命状态
+2026-08-31 12:19:43.410 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub服务已就绪，稳定模块=MYTransitGPS
+2026-08-31 12:19:43.411 [main] INFO  c.m.gtfs.service.BusGpsDirectoryInitializer - BUS GPS每日JSON目录初始化完成，trigger=APPLICATION_READY，date=20260831，cityFolderCount=4，path=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\BusGPS\20260831
+2026-08-31 12:19:43.419 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mytransitgps.MyTrafficDataHubApplicationTests]: MyTrafficDataHubApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-31 12:19:43.420 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mytransitgps.MyTrafficDataHubApplication for test class com.mytransitgps.MyTrafficDataHubApplicationTests
+2026-08-31 12:19:43.421 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub已完成关闭流程
+2026-08-31 12:19:43.475 [main] INFO  c.mytransitgps.MyTrafficDataHubApplicationTests - Starting MyTrafficDataHubApplicationTests using Java 17.0.17 with PID 10696 (started by DELL in C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\Application)
+2026-08-31 12:19:43.475 [main] INFO  c.mytransitgps.MyTrafficDataHubApplicationTests - The following 1 profile is active: "test"
+2026-08-31 12:19:43.646 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-08-31 12:19:43.646 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-08-31 12:19:43.655 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2026-08-31 12:19:43.696 [main] INFO  com.mytransitgps.config.RedisConfig - Redis StringRedisTemplate初始化完成
+2026-08-31 12:19:43.698 [main] INFO  com.mytransitgps.gtfs.config.GtfsFeedRegistry - GTFS Feed注册表初始化完成，feedCount=5，enabledFeedCount=5
+2026-08-31 12:19:43.700 [main] INFO  com.mytransitgps.config.RedisConfig - Redis byte[] RedisTemplate初始化完成
+2026-08-31 12:19:43.959 [main] INFO  c.b.m.e.s.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.web.context.support.GenericWebApplicationContext@d8a5846
+2026-08-31 12:19:43.997 [main] INFO  c.mytransitgps.MyTrafficDataHubApplicationTests - Started MyTrafficDataHubApplicationTests in 0.574 seconds (process running for 13.845)
+2026-08-31 12:19:43.997 [main] INFO  c.m.config.RedisStartupConnectionChecker - Redis启动连通性检查未启用，跳过启动Ping
+2026-08-31 12:19:43.998 [main] INFO  c.m.persistence.service.WorkspaceRootResolver - MYTrafficDataHub 工作区根目录解析完成，source=CONFIGURED，workspaceRoot=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download
+2026-08-31 12:19:44.379 [main] INFO  c.m.gtfs.service.BusGpsLegacyStorageMigrator - BUS GPS历史存储无需迁移，标准目录已生效，workspaceRoot=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download
+2026-08-31 12:19:44.380 [main] INFO  c.m.config.ApplicationStartupLoggingListener - Spring Context初始化完成，activeProfiles=test
+2026-08-31 12:19:44.380 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub启动配置：profiles=test，serverPort=8080，databaseEnabled=false，dbTestEnabled=false，multicityTestEnabled=false，continuousEnabled=false，dailyArchiveEnabled=false，redisStartupCheckEnabled=false，workspaceRoot=data_download
+2026-08-31 12:19:44.380 [main] INFO  c.m.config.ApplicationStartupLoggingListener - 交通模块状态：busGpsEnabled=true，busGpsFeedCount=5，ciqEnabled=false，ciqScheduleEnabled=false，ciqArchiveEnabled=true，ciqDatabaseWriteEnabled=false，ltaAccountKeyConfigured=false
+2026-08-31 12:19:44.380 [main] INFO  c.m.config.ApplicationStartupLoggingListener - CIQ 8接口启用状态：API01=false，API02=false，API03=false，API04=false，API05=false，API06=false，API07=false，API08=false
+2026-08-31 12:19:44.380 [main] INFO  c.m.config.ApplicationStartupLoggingListener - 当前未启用自动多城市连续采集，服务处于待命状态
+2026-08-31 12:19:44.380 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub服务已就绪，稳定模块=MYTransitGPS
+2026-08-31 12:19:44.381 [main] INFO  c.m.gtfs.service.BusGpsDirectoryInitializer - BUS GPS每日JSON目录初始化完成，trigger=APPLICATION_READY，date=20260831，cityFolderCount=4，path=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\BusGPS\20260831
+2026-08-31 12:19:44.387 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mytransitgps.platform.PlatformConfigurationTest]: PlatformConfigurationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-31 12:19:44.395 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mytransitgps.MyTrafficDataHubApplication for test class com.mytransitgps.platform.PlatformConfigurationTest
+2026-08-31 12:19:44.398 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub已完成关闭流程
+2026-08-31 12:19:44.440 [main] INFO  c.m.platform.PlatformConfigurationTest - Starting PlatformConfigurationTest using Java 17.0.17 with PID 10696 (started by DELL in C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\Application)
+2026-08-31 12:19:44.441 [main] INFO  c.m.platform.PlatformConfigurationTest - The following 1 profile is active: "test"
+2026-08-31 12:19:44.682 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-08-31 12:19:44.682 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-08-31 12:19:44.723 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 0 Redis repository interfaces.
+2026-08-31 12:19:44.788 [main] INFO  com.mytransitgps.config.RedisConfig - Redis StringRedisTemplate初始化完成
+2026-08-31 12:19:44.791 [main] INFO  com.mytransitgps.gtfs.config.GtfsFeedRegistry - GTFS Feed注册表初始化完成，feedCount=5，enabledFeedCount=5
+2026-08-31 12:19:44.795 [main] INFO  com.mytransitgps.config.RedisConfig - Redis byte[] RedisTemplate初始化完成
+2026-08-31 12:19:45.031 [main] INFO  c.b.m.e.s.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.web.context.support.GenericWebApplicationContext@502f9271
+2026-08-31 12:19:45.053 [main] INFO  c.m.platform.PlatformConfigurationTest - Started PlatformConfigurationTest in 0.654 seconds (process running for 14.902)
+2026-08-31 12:19:45.054 [main] INFO  c.m.config.RedisStartupConnectionChecker - Redis启动连通性检查未启用，跳过启动Ping
+2026-08-31 12:19:45.055 [main] INFO  c.m.persistence.service.WorkspaceRootResolver - MYTrafficDataHub 工作区根目录解析完成，source=CONFIGURED，workspaceRoot=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download
+2026-08-31 12:19:45.345 [main] INFO  c.m.gtfs.service.BusGpsLegacyStorageMigrator - BUS GPS历史存储无需迁移，标准目录已生效，workspaceRoot=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download
+2026-08-31 12:19:45.345 [main] INFO  c.m.config.ApplicationStartupLoggingListener - Spring Context初始化完成，activeProfiles=test
+2026-08-31 12:19:45.345 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub启动配置：profiles=test，serverPort=8080，databaseEnabled=false，dbTestEnabled=false，multicityTestEnabled=false，continuousEnabled=false，dailyArchiveEnabled=true，redisStartupCheckEnabled=false，workspaceRoot=data_download
+2026-08-31 12:19:45.345 [main] INFO  c.m.config.ApplicationStartupLoggingListener - 交通模块状态：busGpsEnabled=true，busGpsFeedCount=5，ciqEnabled=false，ciqScheduleEnabled=false，ciqArchiveEnabled=true，ciqDatabaseWriteEnabled=false，ltaAccountKeyConfigured=false
+2026-08-31 12:19:45.345 [main] INFO  c.m.config.ApplicationStartupLoggingListener - CIQ 8接口启用状态：API01=false，API02=false，API03=false，API04=false，API05=false，API06=false，API07=false，API08=false
+2026-08-31 12:19:45.346 [main] INFO  c.m.config.ApplicationStartupLoggingListener - 当前未启用自动多城市连续采集，服务处于待命状态
+2026-08-31 12:19:45.346 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub服务已就绪，稳定模块=MYTransitGPS
+2026-08-31 12:19:45.346 [main] INFO  c.m.gtfs.service.BusGpsDirectoryInitializer - BUS GPS每日JSON目录初始化完成，trigger=APPLICATION_READY，date=20260831，cityFolderCount=4，path=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\BusGPS\20260831
+2026-08-31 12:19:45.349 [main] INFO  com.mytransitgps.gtfs.config.GtfsFeedRegistry - GTFS Feed注册表初始化完成，feedCount=5，enabledFeedCount=5
+2026-08-31 12:19:45.363 [SpringApplicationShutdownHook] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub正在关闭
+2026-08-31 12:19:45.365 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-08-31 12:19:45.366 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-08-31 12:19:45.368 [SpringApplicationShutdownHook] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub正在关闭
+2026-08-31 12:19:45.371 [SpringApplicationShutdownHook] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub正在关闭
+2026-08-31 12:19:45.378 [SpringApplicationShutdownHook] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub正在关闭
+2026-08-31 12:19:45.378 [SpringApplicationShutdownHook] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub已完成关闭流程
+2026-08-31 16:06:38.067 [main] INFO  org.apache.maven.surefire.booter.ForkedBooter - Starting ForkedBooter v3.5.4 using Java 17.0.17 with PID 13068 (started by DELL in C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\Application)
+2026-08-31 16:06:38.072 [main] INFO  org.apache.maven.surefire.booter.ForkedBooter - The following 1 profile is active: "test"
+2026-08-31 16:06:38.292 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-08-31 16:06:38.600 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-08-31 16:06:38.604 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-08-31 16:06:38.644 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
+2026-08-31 16:06:39.277 [main] INFO  com.mytransitgps.config.RedisConfig - Redis StringRedisTemplate初始化完成
+2026-08-31 16:06:39.290 [main] INFO  com.mytransitgps.gtfs.config.GtfsFeedRegistry - GTFS Feed注册表初始化完成，feedCount=5，enabledFeedCount=5
+2026-08-31 16:06:39.432 [main] INFO  com.mytransitgps.config.RedisConfig - Redis byte[] RedisTemplate初始化完成
+2026-08-31 16:06:39.584 [main] INFO  org.apache.maven.surefire.booter.ForkedBooter - Started ForkedBooter in 1.972 seconds (process running for 2.766)
+2026-08-31 16:06:39.587 [main] INFO  c.m.config.RedisStartupConnectionChecker - Redis启动连通性检查未启用，跳过启动Ping
+2026-08-31 16:06:39.589 [main] INFO  c.m.persistence.service.WorkspaceRootResolver - MYTrafficDataHub 工作区根目录解析完成，source=CONFIGURED，workspaceRoot=C:\Users\DELL\AppData\Local\Temp\junit-2594317007367431171
+2026-08-31 16:06:39.590 [main] INFO  c.m.gtfs.service.BusGpsLegacyStorageMigrator - BUS GPS历史存储无需迁移，标准目录已生效，workspaceRoot=C:\Users\DELL\AppData\Local\Temp\junit-2594317007367431171
+2026-08-31 16:06:39.590 [main] INFO  c.m.config.ApplicationStartupLoggingListener - Spring Context初始化完成，activeProfiles=test
+2026-08-31 16:06:39.591 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub启动配置：profiles=test，serverPort=8080，databaseEnabled=false，dbTestEnabled=false，multicityTestEnabled=false，continuousEnabled=false，dailyArchiveEnabled=false，redisStartupCheckEnabled=false，workspaceRoot=C:\Users\DELL\AppData\Local\Temp\junit-2594317007367431171
+2026-08-31 16:06:39.591 [main] INFO  c.m.config.ApplicationStartupLoggingListener - 交通模块状态：busGpsEnabled=true，busGpsFeedCount=5，ciqEnabled=true，ciqScheduleEnabled=false，ciqArchiveEnabled=true，ciqDatabaseWriteEnabled=false，ltaAccountKeyConfigured=false
+2026-08-31 16:06:39.591 [main] INFO  c.m.config.ApplicationStartupLoggingListener - CIQ 8接口启用状态：API01=false，API02=false，API03=false，API04=false，API05=false，API06=false，API07=false，API08=false
+2026-08-31 16:06:39.591 [main] INFO  c.m.config.ApplicationStartupLoggingListener - 当前未启用自动多城市连续采集，服务处于待命状态
+2026-08-31 16:06:39.591 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub服务已就绪，稳定模块=MYTransitGPS
+2026-08-31 16:06:39.594 [main] INFO  c.m.gtfs.service.BusGpsDirectoryInitializer - BUS GPS每日JSON目录初始化完成，trigger=APPLICATION_READY，date=20260831，cityFolderCount=4，path=C:\Users\DELL\AppData\Local\Temp\junit-2594317007367431171\BusGPS\20260831
+2026-08-31 16:06:39.597 [main] INFO  c.m.modules.ciq.storage.CiqDirectoryInitializer - CIQ每日八接口目录初始化完成，trigger=APPLICATION_READY，date=2026-08-31，apiFolderCount=8，path=C:\Users\DELL\AppData\Local\Temp\junit-2594317007367431171\CIQ\20260831
+2026-08-31 16:06:39.601 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub正在关闭
+2026-08-31 16:06:39.608 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub已完成关闭流程
+2026-08-31 16:06:39.680 [main] INFO  org.apache.maven.surefire.booter.ForkedBooter - Starting ForkedBooter v3.5.4 using Java 17.0.17 with PID 13068 (started by DELL in C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\Application)
+2026-08-31 16:06:39.681 [main] INFO  org.apache.maven.surefire.booter.ForkedBooter - The following 1 profile is active: "test"
+2026-08-31 16:06:39.798 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-08-31 16:06:39.798 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-08-31 16:06:39.810 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2026-08-31 16:06:39.872 [main] INFO  com.mytransitgps.config.RedisConfig - Redis StringRedisTemplate初始化完成
+2026-08-31 16:06:39.875 [main] INFO  com.mytransitgps.gtfs.config.GtfsFeedRegistry - GTFS Feed注册表初始化完成，feedCount=5，enabledFeedCount=5
+2026-08-31 16:06:39.879 [main] INFO  com.mytransitgps.config.RedisConfig - Redis byte[] RedisTemplate初始化完成
+2026-08-31 16:06:39.939 [main] INFO  org.apache.maven.surefire.booter.ForkedBooter - Started ForkedBooter in 0.299 seconds (process running for 3.121)
+2026-08-31 16:06:39.940 [main] INFO  c.m.config.RedisStartupConnectionChecker - Redis启动连通性检查未启用，跳过启动Ping
+2026-08-31 16:06:39.941 [main] INFO  c.m.persistence.service.WorkspaceRootResolver - MYTrafficDataHub 工作区根目录解析完成，source=CONFIGURED，workspaceRoot=C:\Users\DELL\AppData\Local\Temp\junit-9068776102139397035
+2026-08-31 16:06:39.941 [main] INFO  c.m.gtfs.service.BusGpsLegacyStorageMigrator - BUS GPS历史存储无需迁移，标准目录已生效，workspaceRoot=C:\Users\DELL\AppData\Local\Temp\junit-9068776102139397035
+2026-08-31 16:06:39.942 [main] INFO  c.m.config.ApplicationStartupLoggingListener - Spring Context初始化完成，activeProfiles=test
+2026-08-31 16:06:39.943 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub启动配置：profiles=test，serverPort=8080，databaseEnabled=false，dbTestEnabled=false，multicityTestEnabled=false，continuousEnabled=false，dailyArchiveEnabled=false，redisStartupCheckEnabled=false，workspaceRoot=C:\Users\DELL\AppData\Local\Temp\junit-9068776102139397035
+2026-08-31 16:06:39.944 [main] INFO  c.m.config.ApplicationStartupLoggingListener - 交通模块状态：busGpsEnabled=true，busGpsFeedCount=5，ciqEnabled=false，ciqScheduleEnabled=false，ciqArchiveEnabled=true，ciqDatabaseWriteEnabled=false，ltaAccountKeyConfigured=false
+2026-08-31 16:06:39.944 [main] INFO  c.m.config.ApplicationStartupLoggingListener - CIQ 8接口启用状态：API01=false，API02=false，API03=false，API04=false，API05=false，API06=false，API07=false，API08=false
+2026-08-31 16:06:39.944 [main] INFO  c.m.config.ApplicationStartupLoggingListener - 当前未启用自动多城市连续采集，服务处于待命状态
+2026-08-31 16:06:39.944 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub服务已就绪，稳定模块=MYTransitGPS
+2026-08-31 16:06:39.947 [main] INFO  c.m.gtfs.service.BusGpsDirectoryInitializer - BUS GPS每日JSON目录初始化完成，trigger=APPLICATION_READY，date=20260831，cityFolderCount=4，path=C:\Users\DELL\AppData\Local\Temp\junit-9068776102139397035\BusGPS\20260831
+2026-08-31 16:06:39.952 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub正在关闭
+2026-08-31 16:06:39.953 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub已完成关闭流程
+2026-08-31 16:06:40.026 [main] INFO  org.apache.maven.surefire.booter.ForkedBooter - Starting ForkedBooter v3.5.4 using Java 17.0.17 with PID 13068 (started by DELL in C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\Application)
+2026-08-31 16:06:40.026 [main] INFO  org.apache.maven.surefire.booter.ForkedBooter - The following 1 profile is active: "test"
+2026-08-31 16:06:40.172 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-08-31 16:06:40.177 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-08-31 16:06:40.191 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2026-08-31 16:06:40.265 [main] INFO  com.mytransitgps.config.RedisConfig - Redis StringRedisTemplate初始化完成
+2026-08-31 16:06:40.269 [main] INFO  com.mytransitgps.gtfs.config.GtfsFeedRegistry - GTFS Feed注册表初始化完成，feedCount=5，enabledFeedCount=5
+2026-08-31 16:06:40.273 [main] INFO  com.mytransitgps.config.RedisConfig - Redis byte[] RedisTemplate初始化完成
+2026-08-31 16:06:40.338 [main] INFO  org.apache.maven.surefire.booter.ForkedBooter - Started ForkedBooter in 0.367 seconds (process running for 3.52)
+2026-08-31 16:06:40.339 [main] INFO  c.m.config.RedisStartupConnectionChecker - Redis启动连通性检查未启用，跳过启动Ping
+2026-08-31 16:06:40.340 [main] INFO  c.m.persistence.service.WorkspaceRootResolver - MYTrafficDataHub 工作区根目录解析完成，source=CONFIGURED，workspaceRoot=C:\Users\DELL\AppData\Local\Temp\junit-17058587723761746949
+2026-08-31 16:06:40.341 [main] INFO  c.m.gtfs.service.BusGpsLegacyStorageMigrator - BUS GPS历史存储无需迁移，标准目录已生效，workspaceRoot=C:\Users\DELL\AppData\Local\Temp\junit-17058587723761746949
+2026-08-31 16:06:40.341 [main] INFO  c.m.config.ApplicationStartupLoggingListener - Spring Context初始化完成，activeProfiles=test
+2026-08-31 16:06:40.341 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub启动配置：profiles=test，serverPort=8080，databaseEnabled=false，dbTestEnabled=false，multicityTestEnabled=false，continuousEnabled=false，dailyArchiveEnabled=false，redisStartupCheckEnabled=false，workspaceRoot=C:\Users\DELL\AppData\Local\Temp\junit-17058587723761746949
+2026-08-31 16:06:40.341 [main] INFO  c.m.config.ApplicationStartupLoggingListener - 交通模块状态：busGpsEnabled=true，busGpsFeedCount=5，ciqEnabled=true，ciqScheduleEnabled=false，ciqArchiveEnabled=false，ciqDatabaseWriteEnabled=false，ltaAccountKeyConfigured=false
+2026-08-31 16:06:40.341 [main] INFO  c.m.config.ApplicationStartupLoggingListener - CIQ 8接口启用状态：API01=false，API02=false，API03=false，API04=false，API05=false，API06=false，API07=false，API08=false
+2026-08-31 16:06:40.342 [main] INFO  c.m.config.ApplicationStartupLoggingListener - 当前未启用自动多城市连续采集，服务处于待命状态
+2026-08-31 16:06:40.342 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub服务已就绪，稳定模块=MYTransitGPS
+2026-08-31 16:06:40.345 [main] INFO  c.m.gtfs.service.BusGpsDirectoryInitializer - BUS GPS每日JSON目录初始化完成，trigger=APPLICATION_READY，date=20260831，cityFolderCount=4，path=C:\Users\DELL\AppData\Local\Temp\junit-17058587723761746949\BusGPS\20260831
+2026-08-31 16:06:40.349 [main] INFO  c.m.modules.ciq.storage.CiqDirectoryInitializer - CIQ每日八接口目录初始化完成，trigger=APPLICATION_READY，date=2026-08-31，apiFolderCount=8，path=C:\Users\DELL\AppData\Local\Temp\junit-17058587723761746949\CIQ\20260831
+2026-08-31 16:06:40.350 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub正在关闭
+2026-08-31 16:06:40.351 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub已完成关闭流程
+2026-08-31 16:06:40.545 [main] INFO  c.mytransitgps.ciqmanual.Api01LiveCollectorTest - Starting Api01LiveCollectorTest using Java 17.0.17 with PID 13068 (started by DELL in C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\Application)
+2026-08-31 16:06:40.546 [main] INFO  c.mytransitgps.ciqmanual.Api01LiveCollectorTest - The following 1 profile is active: "longrun"
+2026-08-31 16:06:40.926 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-08-31 16:06:40.927 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-08-31 16:06:40.939 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2026-08-31 16:06:41.149 [main] INFO  com.mytransitgps.config.RedisConfig - Redis StringRedisTemplate初始化完成
+2026-08-31 16:06:41.252 [main] INFO  com.mytransitgps.gtfs.config.GtfsFeedRegistry - GTFS Feed注册表初始化完成，feedCount=5，enabledFeedCount=5
+2026-08-31 16:06:41.276 [main] INFO  c.m.persistence.config.MyBatisDatabaseConfig - MYTransitGPS MyBatis 数据库配置已初始化，城市 Schema 路由已启用
+2026-08-31 16:06:41.874 [main] INFO  com.mytransitgps.config.RedisConfig - Redis byte[] RedisTemplate初始化完成
+2026-08-31 16:06:42.169 [main] INFO  c.b.m.e.s.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.web.context.support.GenericWebApplicationContext@2d399e88
+2026-08-31 16:06:42.258 [main] INFO  c.mytransitgps.ciqmanual.Api01LiveCollectorTest - Started Api01LiveCollectorTest in 1.777 seconds (process running for 5.44)
+2026-08-31 16:06:42.259 [main] INFO  c.m.config.RedisStartupConnectionChecker - Redis启动连通性检查未启用，跳过启动Ping
+2026-08-31 16:06:42.259 [main] INFO  c.m.persistence.service.WorkspaceRootResolver - MYTrafficDataHub 工作区根目录解析完成，source=CONFIGURED，workspaceRoot=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download
+2026-08-31 16:06:42.588 [main] INFO  c.m.gtfs.service.BusGpsLegacyStorageMigrator - BUS GPS历史存储无需迁移，标准目录已生效，workspaceRoot=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download
+2026-08-31 16:06:42.589 [main] INFO  c.m.config.ApplicationStartupLoggingListener - Spring Context初始化完成，activeProfiles=longrun
+2026-08-31 16:06:42.589 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub启动配置：profiles=longrun，serverPort=8080，databaseEnabled=true，dbTestEnabled=false，multicityTestEnabled=false，continuousEnabled=true，dailyArchiveEnabled=true，redisStartupCheckEnabled=false，workspaceRoot=data_download
+2026-08-31 16:06:42.589 [main] INFO  c.m.config.ApplicationStartupLoggingListener - 交通模块状态：busGpsEnabled=true，busGpsFeedCount=5，ciqEnabled=true，ciqScheduleEnabled=false，ciqArchiveEnabled=true，ciqDatabaseWriteEnabled=true，ltaAccountKeyConfigured=true
+2026-08-31 16:06:42.589 [main] INFO  c.m.config.ApplicationStartupLoggingListener - CIQ 8接口启用状态：API01=true，API02=true，API03=true，API04=true，API05=true，API06=true，API07=true，API08=true
+2026-08-31 16:06:42.589 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub服务已就绪，稳定模块=MYTransitGPS
+2026-08-31 16:06:42.590 [main] INFO  c.m.gtfs.service.BusGpsDirectoryInitializer - BUS GPS每日JSON目录初始化完成，trigger=APPLICATION_READY，date=20260831，cityFolderCount=4，path=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\BusGPS\20260831
+2026-08-31 16:06:42.591 [main] INFO  c.m.p.s.MulticityContinuousCollectionLifecycle - 连续多城市长期采集准备启动，feedCount=5，intervalSeconds=120，durationMode=UNBOUNDED
+2026-08-31 16:06:42.591 [main] INFO  c.m.p.s.MulticityContinuousCollectionLifecycle - 连续多城市采集生命周期已启动；每Feed间隔=120秒，无固定结束时长，应用运行期间持续采集
+2026-08-31 16:06:42.591 [mytransitgps-continuous-collector] INFO  c.m.p.s.MulticityContinuousCollectionLifecycle - 开始无固定时长多城市连续采集Run；停止条件=应用Stop/线程中断/不可恢复故障
+2026-08-31 16:06:42.592 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - 无固定时长多城市采集准备开始，intervalSeconds=120，feedCount=5，workspaceRoot=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download
+2026-08-31 16:06:42.592 [main] INFO  c.m.modules.ciq.storage.CiqDirectoryInitializer - CIQ每日八接口目录初始化完成，trigger=APPLICATION_READY，date=2026-08-31，apiFolderCount=8，path=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\CIQ\20260831
+2026-08-31 16:06:42.592 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - 准备获取无固定时长采集运行锁，lockName=multicity_continuous.lock
+2026-08-31 16:06:42.594 [mytransitgps-continuous-collector] INFO  c.m.p.service.MulticityDatabaseTenMinuteRunner - 无固定时长采集运行锁获取成功，lockName=multicity_continuous.lock
+2026-08-31 16:06:42.594 [mytransitgps-continuous-collector] INFO  c.m.p.service.DatabaseConnectionService - 开始检查PostgreSQL数据库连接与PostGIS基础能力
+2026-08-31 16:06:42.595 [mytransitgps-continuous-collector] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-08-31 16:06:44.084 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mytransitgps.MyBatisDatabaseEnabledContextTest]: MyBatisDatabaseEnabledContextTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-31 16:06:44.092 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mytransitgps.MyTrafficDataHubApplication for test class com.mytransitgps.MyBatisDatabaseEnabledContextTest
+2026-08-31 16:06:44.095 [main] INFO  c.m.p.s.MulticityContinuousCollectionLifecycle - 收到连续采集停止请求
+2026-08-31 16:06:44.095 [mytransitgps-continuous-collector] INFO  c.m.p.s.MulticityContinuousCollectionLifecycle - 连续多城市采集生命周期已退出
+2026-08-31 16:06:44.095 [main] INFO  c.m.p.s.MulticityContinuousCollectionLifecycle - 连续采集线程已安全停止，collectorCreated=true
+2026-08-31 16:06:44.095 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub已完成关闭流程
+2026-08-31 16:06:44.136 [main] INFO  c.mytransitgps.MyBatisDatabaseEnabledContextTest - Starting MyBatisDatabaseEnabledContextTest using Java 17.0.17 with PID 13068 (started by DELL in C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\Application)
+2026-08-31 16:06:44.136 [main] INFO  c.mytransitgps.MyBatisDatabaseEnabledContextTest - The following 1 profile is active: "test"
+2026-08-31 16:06:44.266 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-08-31 16:06:44.266 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-08-31 16:06:44.282 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2026-08-31 16:06:44.359 [main] INFO  com.mytransitgps.config.RedisConfig - Redis StringRedisTemplate初始化完成
+2026-08-31 16:06:44.375 [main] INFO  com.mytransitgps.gtfs.config.GtfsFeedRegistry - GTFS Feed注册表初始化完成，feedCount=5，enabledFeedCount=5
+2026-08-31 16:06:44.380 [main] INFO  c.m.persistence.config.MyBatisDatabaseConfig - MYTransitGPS MyBatis 数据库配置已初始化，城市 Schema 路由已启用
+2026-08-31 16:06:44.678 [main] INFO  com.mytransitgps.config.RedisConfig - Redis byte[] RedisTemplate初始化完成
+2026-08-31 16:06:44.684 [main] INFO  c.b.m.e.s.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.context.annotation.AnnotationConfigApplicationContext@64078e6a
+2026-08-31 16:06:44.740 [main] INFO  c.mytransitgps.MyBatisDatabaseEnabledContextTest - Started MyBatisDatabaseEnabledContextTest in 0.643 seconds (process running for 7.922)
+2026-08-31 16:06:44.740 [main] INFO  c.m.config.RedisStartupConnectionChecker - Redis启动连通性检查未启用，跳过启动Ping
+2026-08-31 16:06:44.741 [main] INFO  c.m.persistence.service.WorkspaceRootResolver - MYTrafficDataHub 工作区根目录解析完成，source=CONFIGURED，workspaceRoot=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829
+2026-08-31 16:06:44.851 [main] INFO  c.m.gtfs.service.BusGpsLegacyStorageMigrator - BUS GPS历史存储无需迁移，标准目录已生效，workspaceRoot=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829
+2026-08-31 16:06:44.852 [main] INFO  c.m.config.ApplicationStartupLoggingListener - Spring Context初始化完成，activeProfiles=test
+2026-08-31 16:06:44.852 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub启动配置：profiles=test，serverPort=8080，databaseEnabled=true，dbTestEnabled=false，multicityTestEnabled=false，continuousEnabled=false，dailyArchiveEnabled=false，redisStartupCheckEnabled=false，workspaceRoot=..
+2026-08-31 16:06:44.853 [main] INFO  c.m.config.ApplicationStartupLoggingListener - 交通模块状态：busGpsEnabled=true，busGpsFeedCount=5，ciqEnabled=false，ciqScheduleEnabled=false，ciqArchiveEnabled=true，ciqDatabaseWriteEnabled=false，ltaAccountKeyConfigured=false
+2026-08-31 16:06:44.853 [main] INFO  c.m.config.ApplicationStartupLoggingListener - CIQ 8接口启用状态：API01=false，API02=false，API03=false，API04=false，API05=false，API06=false，API07=false，API08=false
+2026-08-31 16:06:44.853 [main] INFO  c.m.config.ApplicationStartupLoggingListener - 当前未启用自动多城市连续采集，服务处于待命状态
+2026-08-31 16:06:44.853 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub服务已就绪，稳定模块=MYTransitGPS
+2026-08-31 16:06:44.854 [main] INFO  c.m.gtfs.service.BusGpsDirectoryInitializer - BUS GPS每日JSON目录初始化完成，trigger=APPLICATION_READY，date=20260831，cityFolderCount=4，path=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\BusGPS\20260831
+2026-08-31 16:06:44.862 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mytransitgps.MyTrafficDataHubApplicationTests]: MyTrafficDataHubApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-31 16:06:44.863 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mytransitgps.MyTrafficDataHubApplication for test class com.mytransitgps.MyTrafficDataHubApplicationTests
+2026-08-31 16:06:44.865 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub已完成关闭流程
+2026-08-31 16:06:44.906 [main] INFO  c.mytransitgps.MyTrafficDataHubApplicationTests - Starting MyTrafficDataHubApplicationTests using Java 17.0.17 with PID 13068 (started by DELL in C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\Application)
+2026-08-31 16:06:44.907 [main] INFO  c.mytransitgps.MyTrafficDataHubApplicationTests - The following 1 profile is active: "test"
+2026-08-31 16:06:45.071 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-08-31 16:06:45.071 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-08-31 16:06:45.079 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2026-08-31 16:06:45.146 [main] INFO  com.mytransitgps.config.RedisConfig - Redis StringRedisTemplate初始化完成
+2026-08-31 16:06:45.148 [main] INFO  com.mytransitgps.gtfs.config.GtfsFeedRegistry - GTFS Feed注册表初始化完成，feedCount=5，enabledFeedCount=5
+2026-08-31 16:06:45.153 [main] INFO  com.mytransitgps.config.RedisConfig - Redis byte[] RedisTemplate初始化完成
+2026-08-31 16:06:45.359 [main] INFO  c.b.m.e.s.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.web.context.support.GenericWebApplicationContext@30182a74
+2026-08-31 16:06:45.389 [main] INFO  c.mytransitgps.MyTrafficDataHubApplicationTests - Started MyTrafficDataHubApplicationTests in 0.521 seconds (process running for 8.571)
+2026-08-31 16:06:45.389 [main] INFO  c.m.config.RedisStartupConnectionChecker - Redis启动连通性检查未启用，跳过启动Ping
+2026-08-31 16:06:45.390 [main] INFO  c.m.persistence.service.WorkspaceRootResolver - MYTrafficDataHub 工作区根目录解析完成，source=CONFIGURED，workspaceRoot=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download
+2026-08-31 16:06:45.640 [main] INFO  c.m.gtfs.service.BusGpsLegacyStorageMigrator - BUS GPS历史存储无需迁移，标准目录已生效，workspaceRoot=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download
+2026-08-31 16:06:45.640 [main] INFO  c.m.config.ApplicationStartupLoggingListener - Spring Context初始化完成，activeProfiles=test
+2026-08-31 16:06:45.640 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub启动配置：profiles=test，serverPort=8080，databaseEnabled=false，dbTestEnabled=false，multicityTestEnabled=false，continuousEnabled=false，dailyArchiveEnabled=false，redisStartupCheckEnabled=false，workspaceRoot=data_download
+2026-08-31 16:06:45.640 [main] INFO  c.m.config.ApplicationStartupLoggingListener - 交通模块状态：busGpsEnabled=true，busGpsFeedCount=5，ciqEnabled=false，ciqScheduleEnabled=false，ciqArchiveEnabled=true，ciqDatabaseWriteEnabled=false，ltaAccountKeyConfigured=false
+2026-08-31 16:06:45.640 [main] INFO  c.m.config.ApplicationStartupLoggingListener - CIQ 8接口启用状态：API01=false，API02=false，API03=false，API04=false，API05=false，API06=false，API07=false，API08=false
+2026-08-31 16:06:45.640 [main] INFO  c.m.config.ApplicationStartupLoggingListener - 当前未启用自动多城市连续采集，服务处于待命状态
+2026-08-31 16:06:45.640 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub服务已就绪，稳定模块=MYTransitGPS
+2026-08-31 16:06:45.641 [main] INFO  c.m.gtfs.service.BusGpsDirectoryInitializer - BUS GPS每日JSON目录初始化完成，trigger=APPLICATION_READY，date=20260831，cityFolderCount=4，path=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\BusGPS\20260831
+2026-08-31 16:06:45.647 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mytransitgps.platform.PlatformConfigurationTest]: PlatformConfigurationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-31 16:06:45.653 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mytransitgps.MyTrafficDataHubApplication for test class com.mytransitgps.platform.PlatformConfigurationTest
+2026-08-31 16:06:45.655 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub已完成关闭流程
+2026-08-31 16:06:45.683 [main] INFO  c.m.platform.PlatformConfigurationTest - Starting PlatformConfigurationTest using Java 17.0.17 with PID 13068 (started by DELL in C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\Application)
+2026-08-31 16:06:45.684 [main] INFO  c.m.platform.PlatformConfigurationTest - The following 1 profile is active: "test"
+2026-08-31 16:06:45.799 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-08-31 16:06:45.799 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-08-31 16:06:45.807 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2026-08-31 16:06:45.847 [main] INFO  com.mytransitgps.config.RedisConfig - Redis StringRedisTemplate初始化完成
+2026-08-31 16:06:45.850 [main] INFO  com.mytransitgps.gtfs.config.GtfsFeedRegistry - GTFS Feed注册表初始化完成，feedCount=5，enabledFeedCount=5
+2026-08-31 16:06:45.852 [main] INFO  com.mytransitgps.config.RedisConfig - Redis byte[] RedisTemplate初始化完成
+2026-08-31 16:06:46.008 [main] INFO  c.b.m.e.s.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.web.context.support.GenericWebApplicationContext@13f4149d
+2026-08-31 16:06:46.032 [main] INFO  c.m.platform.PlatformConfigurationTest - Started PlatformConfigurationTest in 0.376 seconds (process running for 9.214)
+2026-08-31 16:06:46.032 [main] INFO  c.m.config.RedisStartupConnectionChecker - Redis启动连通性检查未启用，跳过启动Ping
+2026-08-31 16:06:46.033 [main] INFO  c.m.persistence.service.WorkspaceRootResolver - MYTrafficDataHub 工作区根目录解析完成，source=CONFIGURED，workspaceRoot=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download
+2026-08-31 16:06:46.220 [main] INFO  c.m.gtfs.service.BusGpsLegacyStorageMigrator - BUS GPS历史存储无需迁移，标准目录已生效，workspaceRoot=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download
+2026-08-31 16:06:46.220 [main] INFO  c.m.config.ApplicationStartupLoggingListener - Spring Context初始化完成，activeProfiles=test
+2026-08-31 16:06:46.220 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub启动配置：profiles=test，serverPort=8080，databaseEnabled=false，dbTestEnabled=false，multicityTestEnabled=false，continuousEnabled=false，dailyArchiveEnabled=true，redisStartupCheckEnabled=false，workspaceRoot=data_download
+2026-08-31 16:06:46.220 [main] INFO  c.m.config.ApplicationStartupLoggingListener - 交通模块状态：busGpsEnabled=true，busGpsFeedCount=5，ciqEnabled=false，ciqScheduleEnabled=false，ciqArchiveEnabled=true，ciqDatabaseWriteEnabled=false，ltaAccountKeyConfigured=false
+2026-08-31 16:06:46.220 [main] INFO  c.m.config.ApplicationStartupLoggingListener - CIQ 8接口启用状态：API01=false，API02=false，API03=false，API04=false，API05=false，API06=false，API07=false，API08=false
+2026-08-31 16:06:46.220 [main] INFO  c.m.config.ApplicationStartupLoggingListener - 当前未启用自动多城市连续采集，服务处于待命状态
+2026-08-31 16:06:46.220 [main] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub服务已就绪，稳定模块=MYTransitGPS
+2026-08-31 16:06:46.221 [main] INFO  c.m.gtfs.service.BusGpsDirectoryInitializer - BUS GPS每日JSON目录初始化完成，trigger=APPLICATION_READY，date=20260831，cityFolderCount=4，path=C:\Users\DELL\Desktop\MYTrafficDataHub_20260829\data_download\BusGPS\20260831
+2026-08-31 16:06:46.224 [main] INFO  com.mytransitgps.gtfs.config.GtfsFeedRegistry - GTFS Feed注册表初始化完成，feedCount=5，enabledFeedCount=5
+2026-08-31 16:06:46.241 [SpringApplicationShutdownHook] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub正在关闭
+2026-08-31 16:06:46.245 [SpringApplicationShutdownHook] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub正在关闭
+2026-08-31 16:06:46.247 [SpringApplicationShutdownHook] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub正在关闭
+2026-08-31 16:06:46.249 [SpringApplicationShutdownHook] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub正在关闭
+2026-08-31 16:06:46.249 [SpringApplicationShutdownHook] INFO  c.m.config.ApplicationStartupLoggingListener - MYTrafficDataHub已完成关闭流程
