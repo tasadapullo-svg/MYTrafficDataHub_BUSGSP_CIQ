@@ -21,6 +21,7 @@
         <module>Common</module>
         <module>BusGPS</module>
         <module>CIQ</module>
+        <module>CIQBus</module>
         <module>Application</module>
     </modules>
 
@@ -46,6 +47,11 @@
             <dependency>
                 <groupId>com.mytransitgps</groupId>
                 <artifactId>CIQ</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.mytransitgps</groupId>
+                <artifactId>CIQBus</artifactId>
                 <version>${project.version}</version>
             </dependency>
         </dependencies>
@@ -75,4 +81,3 @@
         </pluginManagement>
     </build>
 </project>
-

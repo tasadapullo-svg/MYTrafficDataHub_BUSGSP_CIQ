@@ -34,6 +34,7 @@ const dataRange = ref('720')
 const dataCategory = ref('')
 const mapLoading = ref(false)
 const dataLoading = ref(false)
+const apisLoading = ref(false)
 
 const n = (v?: number) => v == null
   ? '--'
@@ -108,6 +109,15 @@ async function moduleLoad<T>(key: string, job: Promise<T>, set: (v: T) => void) 
   }
 }
 
+async function loadApis() {
+  apisLoading.value = true
+  try {
+    await moduleLoad('apis', ciqDashboardApi.apis(), v => apis.value = v)
+  } finally {
+    apisLoading.value = false
+  }
+}
+
 async function loadMap(api = mapApi.value) {
   mapApi.value = api
   mapLoading.value = true
@@ -142,7 +152,7 @@ async function loadData() {
 async function refresh() {
   await Promise.all([
     moduleLoad('overview', ciqDashboardApi.overview(), v => overview.value = v),
-    moduleLoad('apis', ciqDashboardApi.apis(), v => apis.value = v),
+    loadApis(),
     moduleLoad('trend', ciqDashboardApi.trend(hours.value), v => trend.value = v),
     moduleLoad('requests', ciqDashboardApi.requests(), v => requests.value = v),
     moduleLoad('storage', ciqDashboardApi.storage(), v => storage.value = v),
@@ -185,11 +195,17 @@ const latestByApi = computed(() => ['API03', 'API04', 'API05', 'API06', 'API07',
     <section class="ciq-top">
       <article class="tech-panel api-overview">
         <h2><b>1</b>{{ label('CIQ API Overview', 'CIQ 接口总览') }}</h2>
-        <div v-if="errors.has('apis')" class="panel-state error">
+        <div v-if="apisLoading" class="panel-state">
+          {{ label('Data loading...', '数据加载中...') }}
+        </div>
+        <div v-else-if="errors.has('apis')" class="panel-state error">
           {{ label('Data unavailable', '数据暂不可用') }}
         </div>
+        <div v-else-if="apis.length === 0" class="panel-state">
+          {{ label('No data', '暂无数据') }}
+        </div>
 
-        <div class="api-card-grid">
+        <div v-else class="api-card-grid">
           <button
             v-for="api in apis"
             :key="api.apiCode"
@@ -205,6 +221,10 @@ const latestByApi = computed(() => ['API03', 'API04', 'API05', 'API06', 'API07',
             <small>{{ apiDescription(api) }}</small>
 
             <div class="api-meta">
+              <span>{{ label('Latest Data', '最新数据') }}</span><b>{{ time(api.latestDataTime) }}</b>
+              <span>{{ label('Today', '今日') }}</span><b>{{ n(api.todayCount) }}</b>
+              <span>{{ label('Total', '累计') }}</span><b>{{ n(api.totalCount) }}</b>
+              <span>{{ label('Last Success', '最近成功') }}</span><b>{{ time(api.lastSuccessTime ?? api.lastSuccess) }}</b>
               <span>{{ label('Cycle', '周期') }}</span><b>{{ api.schedule }}</b>
               <span>{{ label('Last Request', '最近请求') }}</span><b>{{ time(api.lastRequest) }}</b>
             </div>
@@ -212,17 +232,17 @@ const latestByApi = computed(() => ['API03', 'API04', 'API05', 'API06', 'API07',
             <div v-if="api.apiCode === 'API01'" class="layer-stack">
               <div>
                 <label>{{ label('Raw Data Layer', '原始数据层') }}</label>
-                <strong>{{ n(Number(api.metrics.lastCompleteRawRecords ?? api.rawRecords)) }}</strong>
+                <strong>{{ n(api.rawRecords) }}</strong>
                 <small>{{ label('Last complete Singapore snapshot', '最近完整的新加坡全量快照') }}</small>
               </div>
               <div>
                 <label>{{ label('Research Database Layer', '研究数据库层') }}</label>
-                <strong>{{ n(Number(api.metrics.lastCompleteSelected ?? api.ciqSelected)) }}</strong>
+                <strong>{{ n(api.ciqSelected) }}</strong>
                 <small>{{ label('Woodlands + Tuas selected', 'Woodlands + Tuas 研究区筛选') }}</small>
               </div>
               <div>
                 <label>{{ label('DB Inserted', '数据库入库') }}</label>
-                <strong>{{ n(Number(api.metrics.lastCompleteInserted ?? api.dbInserted)) }}</strong>
+                <strong>{{ n(api.dbInserted) }}</strong>
                 <small>{{ label('PostgreSQL rows', 'PostgreSQL 记录') }}</small>
               </div>
             </div>

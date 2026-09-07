@@ -3,6 +3,7 @@ package com.mytransitgps.modules.ciq.dashboard.service;
 import com.mytransitgps.modules.ciq.dashboard.dto.CiqDashboardDtos;
 import com.mytransitgps.modules.ciq.dashboard.repository.CiqDashboardRepository;
 import com.mytransitgps.modules.ciq.dashboard.repository.CiqDashboardRepository.ApiRow;
+import com.mytransitgps.modules.ciq.dashboard.repository.CiqDashboardRepository.ApiDataRow;
 import java.nio.file.FileStore;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -23,7 +24,7 @@ import org.springframework.transaction.annotation.Transactional;
 /** CIQ 大屏只读组合服务；不调用任何 Collector 或外部接口。 */
 @Service
 @ConditionalOnProperty(prefix="mytransitgps.database",name="enabled",havingValue="true")
-@Transactional(readOnly = true, timeout = 10)
+@Transactional(readOnly = true, timeout = 30)
 public class CiqDashboardService {
     private static final ZoneId ZONE = ZoneId.of("Asia/Kuala_Lumpur");
     private static final Map<String,String> ZH = Map.of(
@@ -47,8 +48,9 @@ public class CiqDashboardService {
     }
 
     public List<CiqDashboardDtos.ApiStatus> apis() {
-        Map<String,Object> domain=repository.domainMetrics();
-        return repository.apiRows().stream().map(row->toStatus(row,domain)).toList();
+        Map<String, ApiDataRow> data = new LinkedHashMap<>();
+        repository.apiDataRows().forEach(row -> data.put(row.code(), row));
+        return repository.apiRows().stream().map(row -> toStatus(row, data.get(row.code()))).toList();
     }
 
     public CiqDashboardDtos.ApiStatus api(String code) {
@@ -105,21 +107,20 @@ public class CiqDashboardService {
 
     public CiqDashboardDtos.DashboardPayload payload(int trendHours) { return new CiqDashboardDtos.DashboardPayload(overview(),apis(),trend(trendHours),audit(),requests(20),storage()); }
 
-    private CiqDashboardDtos.ApiStatus toStatus(ApiRow r,Map<String,Object> d) {
+    private CiqDashboardDtos.ApiStatus toStatus(ApiRow r, ApiDataRow data) {
         String status=r.runUid()==null?("API07".equals(r.code())?"WAITING":"NOT_AVAILABLE"):Boolean.TRUE.equals(r.success())?"SUCCESS":"ERROR";
         Map<String,Object> metrics=new LinkedHashMap<>();
-        switch(r.code()) {
-            case "API01"->{metrics.put("woodlandsRecords",d.get("api01Woodlands"));metrics.put("tuasRecords",d.get("api01Tuas"));metrics.put("lastCompleteRawRecords",d.get("api01LastCompleteRaw"));metrics.put("lastCompleteSelected",d.get("api01LastCompleteInserted"));metrics.put("lastCompleteInserted",d.get("api01LastCompleteInserted"));}
-            case "API03"->{metrics.put("activeEvents",d.get("api03Active"));metrics.put("newToday",d.get("api03NewToday"));metrics.put("resolvedToday",d.get("api03ResolvedToday"));metrics.put("ciqRelated",d.get("api03Ciq"));}
-            case "API04"->{metrics.put("devices",d.get("api04Devices"));metrics.put("activeMessages",d.get("api04Active"));metrics.put("messageChangesToday",d.get("api04ChangesToday"));metrics.put("ciqRelated",d.get("api04Ciq"));}
-            case "API05"->{metrics.put("activeFaults",d.get("api05Active"));metrics.put("newToday",d.get("api05NewToday"));metrics.put("resolvedToday",d.get("api05ResolvedToday"));}
-            case "API06"->{metrics.put("activeRoadWorks",d.get("api06Active"));metrics.put("futureRoadWorks",d.get("api06Future"));metrics.put("ciqRelated",d.get("api06Ciq"));}
-            case "API07"->{metrics.put("currentMonth",YearMonth.now(ZONE).toString());metrics.put("downloadStatus",r.runUid()==null?"WAITING":status);metrics.put("parseStatus",r.runUid()==null?null:r.complete()?"PARSED":"--");metrics.put("databaseStatus",r.runUid()==null?null:r.inserted()!=null?"PROCESSED":"--");}
-            case "API08"->{metrics.put("activeEvents",d.get("api08Active"));metrics.put("ciqRelated",d.get("api08Ciq"));}
-            default->{}
+        if ("API07".equals(r.code())) {
+            metrics.put("currentMonth",YearMonth.now(ZONE).toString());
+            metrics.put("downloadStatus",r.runUid()==null?"WAITING":status);
+            metrics.put("parseStatus",r.runUid()==null?null:r.complete()?"PARSED":"--");
+            metrics.put("databaseStatus",r.runUid()==null?null:r.inserted()!=null?"PROCESSED":"--");
         }
+        Instant latestDataTime=data==null?null:data.latestDataTime();
+        Long todayCount=data==null?null:data.todayCount();
+        Long totalCount=data==null?null:data.totalCount();
         return new CiqDashboardDtos.ApiStatus(r.code(),r.name(),ZH.get(r.code()),r.endpoint(),SCHEDULE.get(r.code()),status,
-                r.start(),r.lastSuccess(),r.http(),r.raw(),r.selected(),r.inserted(),r.todayExecutions(),
+                r.start(),r.lastSuccess(),r.lastSuccess(),latestDataTime,todayCount,totalCount,r.http(),r.raw(),r.selected(),r.inserted(),r.todayExecutions(),
                 r.runUid()==null?"N/A":Boolean.TRUE.equals(r.complete())?"COMPLETE":"INCOMPLETE",r.retries(),r.pages(),r.bytes(),
                 duration(r.start(),r.end()),r.error(),r.fileName(),r.fileSize(),r.sha(),metrics);
     }

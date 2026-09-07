@@ -23,11 +23,17 @@ public class CiqDashboardRepository {
 
     public List<ApiRow> apiRows() {
         String sql = """
+                WITH run_stats AS (
+                  SELECT api_endpoint_uid,
+                         max(request_end_time) FILTER (WHERE success) AS last_success,
+                         count(*) FILTER (WHERE request_start_time >= CURRENT_DATE) AS today_executions
+                  FROM lta.collection_run
+                  GROUP BY api_endpoint_uid
+                )
                 SELECT e.api_code,e.api_name,e.endpoint_url,
                        lr.uid,lr.request_start_time,lr.request_end_time,lr.http_status,lr.page_count,
                        lr.record_count,lr.response_bytes,lr.success,lr.snapshot_complete,lr.retry_count,lr.error_message,
-                       (SELECT max(r.request_end_time) FROM lta.collection_run r WHERE r.api_endpoint_uid=e.uid AND r.success) last_success,
-                       (SELECT count(*) FROM lta.collection_run r WHERE r.api_endpoint_uid=e.uid AND r.request_start_time>=CURRENT_DATE) today_executions,
+                       rs.last_success,COALESCE(rs.today_executions,0),
                        CASE WHEN lr.uid IS NULL THEN NULL ELSE CASE e.api_code
                          WHEN 'API01' THEN (SELECT count(*) FROM lta.traffic_speed_observation x WHERE x.run_uid=lr.uid)
                          WHEN 'API02' THEN (SELECT count(*) FROM lta.travel_time_observation x WHERE x.run_uid=lr.uid)
@@ -40,7 +46,7 @@ public class CiqDashboardRepository {
                        END END db_inserted,
                        CASE e.api_code
                          WHEN 'API01' THEN (SELECT count(*) FROM lta.traffic_speed_observation x WHERE x.run_uid=lr.uid)
-                         WHEN 'API02' THEN (SELECT count(*) FROM lta.travel_time_observation x JOIN lta.travel_time_segment s ON s.uid=x.segment_uid WHERE x.run_uid=lr.uid AND s.area_uid IS NOT NULL)
+                         WHEN 'API02' THEN (SELECT count(*) FROM lta.travel_time_observation x JOIN lta.travel_time_segment seg ON seg.uid=x.segment_uid WHERE x.run_uid=lr.uid AND seg.area_uid IS NOT NULL)
                          WHEN 'API03' THEN (SELECT count(*) FROM lta.traffic_incident_event x WHERE x.last_run_uid=lr.uid AND x.area_uid IS NOT NULL)
                          WHEN 'API04' THEN (SELECT count(*) FROM lta.vms_equipment x WHERE x.area_uid IS NOT NULL AND x.last_seen_time BETWEEN lr.request_start_time-interval '1 minute' AND COALESCE(lr.request_end_time,CURRENT_TIMESTAMP)+interval '1 minute')
                          WHEN 'API05' THEN (SELECT count(*) FROM lta.faulty_traffic_light_event x WHERE x.last_run_uid=lr.uid AND x.area_uid IS NOT NULL)
@@ -48,13 +54,77 @@ public class CiqDashboardRepository {
                          WHEN 'API08' THEN (SELECT count(*) FROM lta.road_opening_event x WHERE x.last_run_uid=lr.uid AND x.area_uid IS NOT NULL)
                        END ciq_selected,
                        a.file_name,a.file_size_bytes,a.sha256,
-                       (SELECT count(*) FROM lta.collection_artifact ca WHERE ca.run_uid=lr.uid) artifact_count
+                       COALESCE(a.artifact_count,0) artifact_count
                 FROM lta.api_endpoint e
+                LEFT JOIN run_stats rs ON rs.api_endpoint_uid=e.uid
                 LEFT JOIN LATERAL (SELECT r.* FROM lta.collection_run r WHERE r.api_endpoint_uid=e.uid ORDER BY r.request_start_time DESC LIMIT 1) lr ON true
-                LEFT JOIN LATERAL (SELECT ca.file_name,ca.file_size_bytes,ca.sha256 FROM lta.collection_artifact ca WHERE ca.run_uid=lr.uid ORDER BY ca.create_time DESC LIMIT 1) a ON true
+                LEFT JOIN LATERAL (
+                    SELECT max(ca.file_name) FILTER (WHERE ca.rn=1) file_name,
+                           max(ca.file_size_bytes) FILTER (WHERE ca.rn=1) file_size_bytes,
+                           max(ca.sha256) FILTER (WHERE ca.rn=1) sha256,
+                           count(*) artifact_count
+                    FROM (SELECT x.*,row_number() OVER(ORDER BY x.create_time DESC) rn FROM lta.collection_artifact x WHERE x.run_uid=lr.uid) ca
+                ) a ON true
                 ORDER BY e.api_code
                 """;
         return jdbc.query(sql, (rs, n) -> apiRow(rs));
+    }
+
+    /**
+     * API01-API08 数据层摘要。latest/today 均为业务表真实聚合；total 使用 PostgreSQL
+     * pg_stat_user_tables 的 n_live_tup，避免首页对超大时序表执行全表 COUNT(*)。
+     */
+    public List<ApiDataRow> apiDataRows() {
+        String sql = """
+                WITH table_stats AS (
+                  SELECT relname, n_live_tup::bigint AS total_count
+                  FROM pg_stat_user_tables
+                  WHERE schemaname='lta'
+                )
+                SELECT * FROM (
+                  SELECT 'API01' api_code,
+                         (SELECT max(snapshot_time) FROM lta.traffic_speed_observation) latest_data_time,
+                         (SELECT count(*) FROM lta.traffic_speed_observation WHERE snapshot_time>=CURRENT_DATE) today_count,
+                         COALESCE((SELECT total_count FROM table_stats WHERE relname='traffic_speed_observation'),0) total_count
+                  UNION ALL
+                  SELECT 'API02',
+                         (SELECT max(snapshot_time) FROM lta.travel_time_observation),
+                         (SELECT count(*) FROM lta.travel_time_observation WHERE snapshot_time>=CURRENT_DATE),
+                         COALESCE((SELECT total_count FROM table_stats WHERE relname='travel_time_observation'),0)
+                  UNION ALL
+                  SELECT 'API03',
+                         (SELECT max(last_seen_time) FROM lta.traffic_incident_event),
+                         (SELECT count(*) FROM lta.traffic_incident_event WHERE first_seen_time>=CURRENT_DATE),
+                         COALESCE((SELECT total_count FROM table_stats WHERE relname='traffic_incident_event'),0)
+                  UNION ALL
+                  SELECT 'API04',
+                         (SELECT max(last_seen_time) FROM lta.vms_message_state),
+                         (SELECT count(*) FROM lta.vms_message_state WHERE first_seen_time>=CURRENT_DATE),
+                         COALESCE((SELECT total_count FROM table_stats WHERE relname='vms_message_state'),0)
+                  UNION ALL
+                  SELECT 'API05',
+                         (SELECT max(last_seen_time) FROM lta.faulty_traffic_light_event),
+                         (SELECT count(*) FROM lta.faulty_traffic_light_event WHERE first_seen_time>=CURRENT_DATE),
+                         COALESCE((SELECT total_count FROM table_stats WHERE relname='faulty_traffic_light_event'),0)
+                  UNION ALL
+                  SELECT 'API06',
+                         (SELECT max(last_seen_time) FROM lta.road_work_event),
+                         (SELECT count(*) FROM lta.road_work_event WHERE first_seen_time>=CURRENT_DATE),
+                         COALESCE((SELECT total_count FROM table_stats WHERE relname='road_work_event'),0)
+                  UNION ALL
+                  SELECT 'API07',
+                         (SELECT max(downloaded_time) FROM lta.traffic_flow_file),
+                         (SELECT count(*) FROM lta.traffic_flow_file WHERE downloaded_time>=CURRENT_DATE),
+                         COALESCE((SELECT total_count FROM table_stats WHERE relname='traffic_flow_file'),0)
+                  UNION ALL
+                  SELECT 'API08',
+                         (SELECT max(last_seen_time) FROM lta.road_opening_event),
+                         (SELECT count(*) FROM lta.road_opening_event WHERE first_seen_time>=CURRENT_DATE),
+                         COALESCE((SELECT total_count FROM table_stats WHERE relname='road_opening_event'),0)
+                ) data
+                ORDER BY api_code
+                """;
+        return jdbc.query(sql,(rs,n)->new ApiDataRow(rs.getString(1),instant(rs,2),rs.getLong(3),rs.getLong(4)));
     }
 
     public long countTodayRuns(Boolean success) {
@@ -196,19 +266,6 @@ public class CiqDashboardRepository {
         },args.toArray());
     }
 
-    public Map<String, Object> domainMetrics() {
-        Map<String, Object> m = new LinkedHashMap<>();
-        add(m,"api01Woodlands","SELECT count(DISTINCT o.uid) FROM lta.traffic_speed_observation o JOIN lta.traffic_link_scope s ON s.link_uid=o.link_uid AND s.active JOIN lta.study_area a ON a.uid=s.area_uid AND a.active WHERE a.ciq_code='WOODLANDS'");
-        add(m,"api01Tuas","SELECT count(DISTINCT o.uid) FROM lta.traffic_speed_observation o JOIN lta.traffic_link_scope s ON s.link_uid=o.link_uid AND s.active JOIN lta.study_area a ON a.uid=s.area_uid AND a.active WHERE a.ciq_code='TUAS'");
-        add(m,"api01LastCompleteRaw","SELECT COALESCE((SELECT r.record_count FROM lta.collection_run r JOIN lta.api_endpoint e ON e.uid=r.api_endpoint_uid WHERE e.api_code='API01' AND r.success AND r.snapshot_complete ORDER BY r.request_start_time DESC LIMIT 1),0)");
-        add(m,"api01LastCompleteInserted","SELECT COALESCE((SELECT count(*) FROM lta.traffic_speed_observation o WHERE o.run_uid=(SELECT r.uid FROM lta.collection_run r JOIN lta.api_endpoint e ON e.uid=r.api_endpoint_uid WHERE e.api_code='API01' AND r.success AND r.snapshot_complete ORDER BY r.request_start_time DESC LIMIT 1)),0)");
-        add(m,"api03Active","SELECT count(*) FROM lta.traffic_incident_event WHERE active"); add(m,"api03NewToday","SELECT count(*) FROM lta.traffic_incident_event WHERE first_seen_time>=CURRENT_DATE"); add(m,"api03ResolvedToday","SELECT count(*) FROM lta.traffic_incident_event WHERE resolved_time>=CURRENT_DATE"); add(m,"api03Ciq","SELECT count(*) FROM lta.traffic_incident_event WHERE area_uid IS NOT NULL AND active");
-        add(m,"api04Devices","SELECT count(*) FROM lta.vms_equipment"); add(m,"api04Active","SELECT count(*) FROM lta.vms_message_state WHERE active"); add(m,"api04ChangesToday","SELECT count(*) FROM lta.vms_message_state WHERE first_seen_time>=CURRENT_DATE"); add(m,"api04Ciq","SELECT count(*) FROM lta.vms_equipment WHERE area_uid IS NOT NULL");
-        add(m,"api05Active","SELECT count(*) FROM lta.faulty_traffic_light_event WHERE active"); add(m,"api05NewToday","SELECT count(*) FROM lta.faulty_traffic_light_event WHERE first_seen_time>=CURRENT_DATE"); add(m,"api05ResolvedToday","SELECT count(*) FROM lta.faulty_traffic_light_event WHERE resolved_time>=CURRENT_DATE");
-        add(m,"api06Active","SELECT count(*) FROM lta.road_work_event WHERE active"); add(m,"api06Future","SELECT count(*) FROM lta.road_work_event WHERE start_date>CURRENT_DATE"); add(m,"api06Ciq","SELECT count(*) FROM lta.road_work_event WHERE area_uid IS NOT NULL AND active");
-        add(m,"api08Active","SELECT count(*) FROM lta.road_opening_event WHERE active"); add(m,"api08Ciq","SELECT count(*) FROM lta.road_opening_event WHERE area_uid IS NOT NULL AND active");
-        return m;
-    }
 
     public StorageRow storage() {
         return jdbc.queryForObject("""
@@ -222,7 +279,6 @@ public class CiqDashboardRepository {
                 """, (rs,n)->new StorageRow(rs.getLong(1),rs.getLong(2),rs.getLong(3),rs.getLong(4),rs.getLong(5),instant(rs,6),rs.getLong(7),rs.getLong(8),instant(rs,9)));
     }
 
-    private void add(Map<String,Object> m,String k,String sql){Long v=jdbc.queryForObject(sql,Long.class);m.put(k,v==null?0:v);}
     private static ApiRow apiRow(ResultSet r) throws SQLException { return new ApiRow(r.getString(1),r.getString(2),r.getString(3),(UUID)r.getObject(4),instant(r,5),instant(r,6),integer(r,7),integer(r,8),longValue(r,9),longValue(r,10),(Boolean)r.getObject(11),(Boolean)r.getObject(12),integer(r,13),r.getString(14),instant(r,15),r.getLong(16),longValue(r,17),longValue(r,18),r.getString(19),longValue(r,20),r.getString(21),r.getLong(22)); }
     private static RequestRow requestRow(ResultSet r)throws SQLException{return new RequestRow((UUID)r.getObject(1),instant(r,2),instant(r,3),r.getString(4),r.getString(5),integer(r,6),longValue(r,7),integer(r,8),r.getBoolean(9),r.getBoolean(10),r.getLong(11),longValue(r,12));}
     private static Instant instant(ResultSet r,int i)throws SQLException{Timestamp t=r.getTimestamp(i);return t==null?null:t.toInstant();}
@@ -231,6 +287,7 @@ public class CiqDashboardRepository {
     private static String compass(double bearing){String[] directions={"N","NE","E","SE","S","SW","W","NW"};return directions[(int)Math.floor((bearing+22.5)/45.0)%8];}
 
     public record ApiRow(String code,String name,String endpoint,UUID runUid,Instant start,Instant end,Integer http,Integer pages,Long raw,Long bytes,Boolean success,Boolean complete,Integer retries,String error,Instant lastSuccess,long todayExecutions,Long inserted,Long selected,String fileName,Long fileSize,String sha,long artifactCount){}
+    public record ApiDataRow(String code,Instant latestDataTime,long todayCount,long totalCount){}
     public record RequestRow(UUID uid,Instant start,Instant end,String code,String name,Integer http,Long raw,Integer retry,boolean success,boolean complete,long hashedArtifacts,Long inserted){}
     public record MapPointRow(String apiCode,String recordId,String title,String category,double latitude,double longitude,Instant observedAt,Map<String,Object> details){}
     public record DataRecordRow(String apiCode,String recordId,String category,String title,String description,Instant eventTime,String status,Double latitude,Double longitude,Map<String,Object> details){}

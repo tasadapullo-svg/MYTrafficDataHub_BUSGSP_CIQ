@@ -1,0 +1,179 @@
+.ciqbus-page {
+  width: 100vw;
+  height: 100vh;
+  min-height: 0;
+  overflow: hidden;
+  padding: 8px 14px 10px;
+  display: grid;
+  grid-template-rows: 76px 20px 220px minmax(350px, 1fr) 285px;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.ciqbus-page .dashboard-header { height: 76px; grid-template-columns: 52px minmax(0, 1fr) auto; }
+.ciqbus-page .title-wrap { min-width: 0; gap: 16px; }
+.ciqbus-page .title-wrap h1 { font-size: clamp(24px, 1.55vw, 34px); font-weight: 700; letter-spacing: .07em; }
+.ciqbus-page .header-meta { font-size: clamp(14px, .78vw, 16px); white-space: nowrap; }
+.ciqbus-page .header-meta > div:first-child { gap: 24px; }
+.ciqbus-page .language-switch { display: flex; justify-content: flex-end; gap: 8px; margin-top: 8px; flex-wrap: nowrap; }
+.ciqbus-page .language-switch a,
+.ciqbus-page .language-switch button { height: 36px; margin: 0; padding: 0 15px; display: inline-flex; align-items: center; font-size: 14px; white-space: nowrap; }
+
+.ciqbus-subtitle { margin: 0; text-align: center; color: #86abc4; font-size: clamp(14px, .82vw, 17px); letter-spacing: .06em; line-height: 20px; }
+.ciqbus-summary-grid,
+.ciqbus-live-grid { min-height: 0; display: grid; gap: 10px; }
+.ciqbus-summary-grid { grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); }
+.ciqbus-live-grid { grid-template-columns: minmax(0, 1.38fr) minmax(0, 1fr); }
+.ciqbus-page .tech-panel { min-width: 0; min-height: 0; overflow: hidden; border-radius: 6px; }
+.ciqbus-page .tech-panel h2 { height: 42px; padding: 9px 14px; font-size: clamp(18px, 1.05vw, 21px); font-weight: 650; }
+.ciqbus-page .tech-panel h2 b { width: 27px; height: 27px; font-size: 15px; }
+
+.ciqbus-overview-panel { display: grid; grid-template-rows: 42px minmax(0, 1fr) 46px; }
+.ciqbus-kpis { min-height: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); grid-template-rows: repeat(2, minmax(0, 1fr)); gap: 8px; padding: 0 12px 8px; }
+.ciqbus-kpi { min-width: 0; min-height: 65px; padding: 10px 13px; border: 1px solid #15577f; border-radius: 5px; background: linear-gradient(150deg, rgba(7, 35, 56, .94), rgba(3, 16, 30, .96)); display: flex; flex-direction: column; justify-content: center; }
+.ciqbus-kpi label { margin-bottom: 4px; overflow: hidden; color: #9ab8cc; font-size: clamp(13px, .72vw, 15px); line-height: 1.25; text-overflow: ellipsis; white-space: nowrap; }
+.ciqbus-kpi strong { overflow: hidden; color: #edf9ff; font-size: clamp(24px, 1.7vw, 36px); font-weight: 700; line-height: 1.05; text-overflow: ellipsis; white-space: nowrap; }
+.ciqbus-kpi.accent strong { color: #59e6ff; text-shadow: 0 0 12px rgba(89, 230, 255, .24); }
+.ciqbus-kpi.success strong { color: #57e0a0; }
+.ciqbus-kpi.warning strong { color: #ffd06d; }
+.ciqbus-route-counts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; padding: 0 12px 8px; }
+.ciqbus-route-counts div { min-width: 0; height: 38px; padding: 0 10px; border: 1px solid #0d4a72; border-radius: 5px; background: rgba(4, 25, 45, .9); display: flex; align-items: center; justify-content: space-between; color: #91b2c8; }
+.ciqbus-route-counts span { color: #dff6ff; font-size: 17px; font-weight: 700; }
+.ciqbus-route-counts strong { color: #59e6ff; font-size: 20px; font-weight: 700; }
+
+.ciqbus-status-panel { display: grid; grid-template-rows: 42px minmax(0, 1fr); }
+.ciqbus-status-body { min-height: 0; padding: 0 14px 10px; display: grid; grid-template-rows: minmax(0, 1fr) auto; gap: 8px; }
+.ciqbus-status-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 3px 16px; }
+.ciqbus-status-grid div { min-width: 0; display: grid; grid-template-columns: minmax(82px, .82fr) minmax(0, 1.18fr); align-items: center; gap: 8px; padding: 5px 0; border-bottom: 1px solid rgba(22, 78, 112, .48); font-size: 14px; }
+.ciqbus-status-grid span { color: #8ba9be; }
+.ciqbus-status-grid b { overflow: hidden; color: #e1f1fb; font-weight: 600; text-align: right; text-overflow: ellipsis; white-space: nowrap; }
+.ciqbus-note { margin: 0; padding: 8px 10px; border: 1px solid #175378; border-radius: 5px; background: rgba(4, 30, 48, .76); color: #a6c7da; font-size: 13px; line-height: 1.5; }
+.ciqbus-status-pill { display: inline-block; padding: 3px 9px; border: 1px solid #155b80; border-radius: 12px; color: #8fc9e5; font-size: 12px; }
+.ciqbus-status-pill.confirmed,
+.ciqbus-status-pill.normal { border-color: #14764f; background: rgba(10, 79, 52, .3); color: #58df9d; }
+.ciqbus-status-pill.incomplete,
+.ciqbus-status-pill.stale { border-color: #7f5a1b; background: rgba(91, 60, 13, .3); color: #ffc45b; }
+.ciqbus-status-pill.realtime_unavailable,
+.ciqbus-status-pill.error { border-color: #843d37; background: rgba(96, 40, 31, .3); color: #ff8a7b; }
+
+.ciqbus-live-grid > .tech-panel { height: auto; padding: 0 12px 12px; }
+.ciqbus-map-panel,
+.ciqbus-trend-panel { display: grid; grid-template-rows: 42px minmax(0, 1fr); }
+.ciqbus-map-shell { width: 100%; height: 100%; min-height: 0; position: relative; overflow: hidden; border: 1px solid #0b4069; border-radius: 5px; background: #03111f; }
+.ciqbus-map-shell:fullscreen { width: 100%; height: 100%; padding: 10px; background: #03111f; }
+.ciqbus-map-canvas { width: 100%; height: calc(100% - 38px); background: #051428; }
+.ciqbus-map-shell:fullscreen .ciqbus-map-canvas { height: calc(100% - 38px); }
+.ciqbus-map-shell .map-footer { height: 38px; padding: 0 14px; font-size: 13px; }
+.ciqbus-map-legend { position: absolute; z-index: 500; left: 12px; top: 12px; max-width: 72%; padding: 7px 10px; border: 1px solid #164d73; border-radius: 5px; background: rgba(3, 19, 35, .92); display: flex; flex-wrap: wrap; gap: 7px 12px; color: #c0d8e8; font-size: 13px; }
+.ciqbus-map-legend span { display: inline-flex; align-items: center; gap: 5px; white-space: nowrap; }
+.ciqbus-map-legend i { width: 9px; height: 9px; border-radius: 50%; background: var(--route-color); box-shadow: 0 0 8px var(--route-color); }
+.ciqbus-marker-wrap { border: 0; background: transparent; }
+.ciqbus-marker { width: 42px; height: 42px; border: 2px solid var(--route-color); border-radius: 50%; background: #04172a; box-shadow: 0 0 11px var(--route-color); display: flex; align-items: center; justify-content: center; gap: 2px; color: #effbff; }
+.ciqbus-marker strong { font-size: 12px; font-weight: 750; }
+.ciqbus-marker span { color: var(--route-color); font-size: 14px; }
+.ciqbus-popup h3 em { background: #0b567c; }
+
+.ciqbus-hourly-tools { position: absolute; z-index: 2; top: 5px; right: 13px; height: 32px; display: flex; align-items: center; gap: 8px; color: #93b1c7; font-size: 13px; }
+.ciqbus-hourly-tools input,
+.ciqbus-history-filter input,
+.ciqbus-history-filter select { height: 36px; padding: 0 10px; border: 1px solid #0c4f80; border-radius: 5px; background: #06172c; color: #d5e7f3; font-size: 14px; }
+.ciqbus-hourly-tools input { height: 32px; }
+.ciqbus-hourly-shell { width: 100%; height: 100%; min-height: 0; position: relative; }
+.ciqbus-hourly-chart { width: 100%; height: 100%; }
+.ciqbus-chart-empty { position: absolute; inset: 100px 20px 30px; display: grid; place-items: center; color: #7699b2; font-size: 15px; pointer-events: none; }
+
+.ciqbus-history { display: grid; grid-template-rows: 42px 46px minmax(0, 1fr) 42px; padding-bottom: 8px; }
+.ciqbus-history-filter { display: grid; grid-template-columns: 170px 140px 170px 190px minmax(100px, 1fr); gap: 9px; align-items: center; padding: 0 12px 10px; }
+.ciqbus-history-filter button,
+.ciqbus-pagination button { height: 36px; padding: 0 16px; border: 1px solid #0d5c8d; border-radius: 5px; background: #071d34; color: #d2e7f5; font-size: 14px; cursor: pointer; }
+.ciqbus-history-filter button:hover,
+.ciqbus-pagination button:hover:not(:disabled) { border-color: #00bfe9; color: #fff; }
+.ciqbus-history-table { min-height: 0; margin: 0 12px; overflow: auto; border: 1px solid #0a426b; border-radius: 5px; background: rgba(2, 15, 29, .72); scrollbar-color: #17628e #041326; }
+.ciqbus-history-table table { min-width: 1780px; table-layout: auto; }
+.ciqbus-history-table th,
+.ciqbus-history-table td { height: 32px; padding: 6px 8px; border-bottom: 1px solid rgba(18, 67, 100, .6); font-size: 13px; line-height: 1.3; }
+.ciqbus-history-table th { z-index: 1; background: #08203a; color: #a9c5d9; font-size: 14px; font-weight: 650; }
+.ciqbus-history-table td { color: #c2d6e5; }
+.ciqbus-history-table th:nth-child(1), .ciqbus-history-table td:nth-child(1) { width: 210px; min-width: 210px; max-width: 210px; }
+.ciqbus-history-table th:nth-child(2), .ciqbus-history-table td:nth-child(2) { min-width: 80px; }
+.ciqbus-history-table th:nth-child(3), .ciqbus-history-table td:nth-child(3) { min-width: 100px; }
+.ciqbus-history-table th:nth-child(4), .ciqbus-history-table td:nth-child(4) { min-width: 110px; }
+.ciqbus-history-table th:nth-child(5), .ciqbus-history-table td:nth-child(5) { min-width: 100px; }
+.ciqbus-history-table th:nth-child(6), .ciqbus-history-table td:nth-child(6) { min-width: 150px; }
+.ciqbus-history-table th:nth-child(7), .ciqbus-history-table td:nth-child(7),
+.ciqbus-history-table th:nth-child(8), .ciqbus-history-table td:nth-child(8) { min-width: 170px; }
+.ciqbus-history-table th:nth-child(9), .ciqbus-history-table td:nth-child(9),
+.ciqbus-history-table th:nth-child(10), .ciqbus-history-table td:nth-child(10) { min-width: 110px; }
+.ciqbus-history-table th:nth-child(11), .ciqbus-history-table td:nth-child(11) { min-width: 110px; }
+.ciqbus-history-table th:nth-child(12), .ciqbus-history-table td:nth-child(12) { min-width: 100px; }
+.ciqbus-history-table th:nth-child(13), .ciqbus-history-table td:nth-child(13) { min-width: 150px; }
+.ciqbus-history-table th:nth-child(14), .ciqbus-history-table td:nth-child(14) { min-width: 170px; }
+.ciqbus-history-table .event-id-cell { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #69d9f2; }
+.ciqbus-history-state { height: 100%; min-height: 90px; display: grid; place-items: center; color: #86a8c0; font-size: 14px; }
+.ciqbus-history-state.error { color: #ff8d7d; }
+.ciqbus-pagination { min-height: 0; padding: 7px 12px 0; display: flex; align-items: center; justify-content: flex-end; gap: 10px; color: #9bb7ca; font-size: 14px; }
+.ciqbus-pagination button { height: 32px; padding: 0 13px; }
+.ciqbus-pagination button:disabled { opacity: .4; cursor: not-allowed; }
+
+@media (max-width: 1680px) {
+  .ciqbus-page { padding: 6px 8px; grid-template-rows: 62px 16px 190px minmax(340px, 1fr) 230px; gap: 7px; font-size: 13px; }
+  .ciqbus-page .dashboard-header { height: 62px; grid-template-columns: 38px minmax(0, 1fr) auto; }
+  .ciqbus-page .bus-mark { font-size: 27px; }
+  .ciqbus-page .title-wrap { gap: 9px; }
+  .ciqbus-page .title-wrap h1 { font-size: clamp(22px, 1.65vw, 28px); letter-spacing: .04em; }
+  .ciqbus-page .header-meta { font-size: 12px; }
+  .ciqbus-page .header-meta > div:first-child { gap: 14px; }
+  .ciqbus-page .language-switch { gap: 5px; margin-top: 5px; }
+  .ciqbus-page .language-switch a,
+  .ciqbus-page .language-switch button { height: 30px; padding: 0 9px; font-size: 13px; }
+  .ciqbus-subtitle { font-size: 13px; line-height: 16px; }
+  .ciqbus-page .tech-panel h2 { height: 36px; padding: 6px 10px; font-size: 17px; }
+  .ciqbus-page .tech-panel h2 b { width: 24px; height: 24px; font-size: 13px; }
+  .ciqbus-overview-panel { grid-template-rows: 36px minmax(0, 1fr) 38px; }
+  .ciqbus-kpis { gap: 5px; padding: 0 8px 5px; }
+  .ciqbus-kpi { min-height: 53px; padding: 6px 8px; }
+  .ciqbus-kpi label { font-size: 12px; margin-bottom: 2px; }
+  .ciqbus-kpi strong { font-size: clamp(21px, 1.55vw, 27px); }
+  .ciqbus-route-counts { gap: 5px; padding: 0 8px 5px; }
+  .ciqbus-route-counts div { height: 33px; padding: 0 8px; }
+  .ciqbus-route-counts span { font-size: 15px; }
+  .ciqbus-route-counts strong { font-size: 17px; }
+  .ciqbus-status-panel { grid-template-rows: 36px minmax(0, 1fr); }
+  .ciqbus-status-body { padding: 0 10px 7px; gap: 5px; }
+  .ciqbus-status-grid { gap: 1px 10px; }
+  .ciqbus-status-grid div { grid-template-columns: 75px minmax(0, 1fr); padding: 3px 0; font-size: 12px; }
+  .ciqbus-note { padding: 5px 8px; font-size: 12px; line-height: 1.35; }
+  .ciqbus-live-grid > .tech-panel { padding: 0 8px 8px; }
+  .ciqbus-map-panel,
+  .ciqbus-trend-panel { grid-template-rows: 36px minmax(0, 1fr); }
+  .ciqbus-map-legend { left: 9px; top: 9px; padding: 5px 7px; gap: 5px 8px; font-size: 12px; }
+  .ciqbus-hourly-tools { top: 2px; right: 9px; height: 31px; font-size: 12px; }
+  .ciqbus-hourly-tools input { height: 29px; font-size: 12px; }
+  .ciqbus-history { grid-template-rows: 36px 40px minmax(0, 1fr) 36px; padding-bottom: 5px; }
+  .ciqbus-history-filter { grid-template-columns: 150px 120px 150px 175px minmax(90px, 1fr); gap: 6px; padding: 0 8px 7px; }
+  .ciqbus-history-filter input,
+  .ciqbus-history-filter select,
+  .ciqbus-history-filter button { height: 33px; font-size: 13px; }
+  .ciqbus-history-table { margin: 0 8px; }
+  .ciqbus-history-table th,
+  .ciqbus-history-table td { height: 30px; padding: 5px 8px; font-size: 12px; }
+  .ciqbus-history-table th { font-size: 13px; }
+  .ciqbus-pagination { padding: 4px 8px 0; font-size: 13px; }
+  .ciqbus-pagination button { height: 30px; font-size: 13px; }
+}
+
+@media (min-width: 2200px) {
+  .ciqbus-page { padding: 12px 22px 14px; grid-template-rows: 82px 24px 220px minmax(430px, 1fr) 310px; gap: 12px; }
+  .ciqbus-page .dashboard-header { height: 82px; }
+  .ciqbus-page .title-wrap h1 { font-size: 34px; }
+  .ciqbus-page .language-switch a,
+  .ciqbus-page .language-switch button { height: 40px; padding: 0 18px; font-size: 16px; }
+  .ciqbus-summary-grid,
+  .ciqbus-live-grid { gap: 12px; }
+  .ciqbus-kpi { padding-inline: 16px; }
+  .ciqbus-status-grid div { font-size: 15px; }
+  .ciqbus-note { font-size: 14px; }
+  .ciqbus-map-legend { font-size: 14px; }
+  .ciqbus-history-table th { font-size: 14px; }
+  .ciqbus-history-table td { font-size: 13px; }
+}

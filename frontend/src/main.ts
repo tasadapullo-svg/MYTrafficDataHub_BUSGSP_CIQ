@@ -7,5 +7,6 @@ import './styles/dashboard.css'
 import './styles/viewport-fill.css'
 import './styles/route-map.css'
 import './styles/ciq-dashboard.css'
+import './styles/ciqbus-dashboard.css'
 
 createApp(App).use(router).use(i18n).mount('#app')

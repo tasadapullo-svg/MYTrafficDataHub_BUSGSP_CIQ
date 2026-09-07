@@ -1,0 +1,181 @@
+ciqbus:
+  timezone: Asia/Kuala_Lumpur
+  scheduler:
+    enabled: ${CIQBUS_SCHEDULER_ENABLED:false}
+    cron: "0 */2 * * * *"
+  storage:
+    root: ${CIQBUS_STORAGE_ROOT:C:/Users/DELL/Desktop/马来西亚_新加坡数据综合代码采集项目_BUS_CIQ_20260831_代码数据资料/MYTrafficDataHub_20260829/data_download/CIQBus}
+  http:
+    connect-timeout-seconds: 10
+    request-timeout-seconds: 30
+  lta:
+    base-url: ${LTA_BUSARRIVAL_BASE_URL:https://datamall2.mytransport.sg/ltaodataservice}
+    account-key: "ExQDdDapS4ySGgzzUnbROg=="
+    accept: application/json
+    stop-codes:
+      - "46219"
+      - "46211"
+      - "46109"
+      - "46101"
+    target-services:
+      - "160"
+      - "170"
+      - "170X"
+      - "950"
+  redis:
+    active-ttl-minutes: 90
+    passage-ttl-minutes: 240
+    completed-ttl-minutes: 240
+  matching:
+    threshold: 60
+    max-candidate-age-minutes: 90
+    max-gps-jump-kmh: 90
+    near-stop-meters: 450
+    eta-zero-seconds: 90
+  daily-export:
+    cron: "0 10 0 * * *"
+  route-stops:
+    - route-no: "160"
+      lta-direction: "1"
+      direction-code: SG_TO_JB
+      stop-code: "46101"
+      stop-name: "W'lands Checkpt"
+      stop-sequence: 38
+      passage-type: ENTRY
+      latitude: 1.44460832436456
+      longitude: 103.76774882217022
+    - route-no: "160"
+      lta-direction: "1"
+      direction-code: SG_TO_JB
+      stop-code: "46211"
+      stop-name: "Johor Bahru Checkpt"
+      stop-sequence: 39
+      passage-type: EXIT
+      latitude: 1.46491732433248
+      longitude: 103.76547712149443
+    - route-no: "160"
+      lta-direction: "1"
+      direction-code: JB_TO_SG
+      stop-code: "46219"
+      stop-name: "Johor Bahru Checkpt"
+      stop-sequence: 41
+      passage-type: ENTRY
+      latitude: 1.4654268105665
+      longitude: 103.76826657164715
+    - route-no: "160"
+      lta-direction: "1"
+      direction-code: JB_TO_SG
+      stop-code: "46109"
+      stop-name: "W'lands Checkpt"
+      stop-sequence: 42
+      passage-type: EXIT
+      latitude: 1.44694093553778
+      longitude: 103.76925342517902
+    - route-no: "170"
+      lta-direction: "1"
+      direction-code: SG_TO_JB
+      stop-code: "46101"
+      stop-name: "W'lands Checkpt"
+      stop-sequence: 64
+      passage-type: ENTRY
+      latitude: 1.44460832436456
+      longitude: 103.76774882217022
+    - route-no: "170"
+      lta-direction: "1"
+      direction-code: SG_TO_JB
+      stop-code: "46211"
+      stop-name: "Johor Bahru Checkpt"
+      stop-sequence: 65
+      passage-type: EXIT
+      latitude: 1.46491732433248
+      longitude: 103.76547712149443
+    - route-no: "170"
+      lta-direction: "2"
+      direction-code: JB_TO_SG
+      stop-code: "46219"
+      stop-name: "Johor Bahru Checkpt"
+      stop-sequence: 2
+      passage-type: ENTRY
+      latitude: 1.4654268105665
+      longitude: 103.76826657164715
+    - route-no: "170"
+      lta-direction: "2"
+      direction-code: JB_TO_SG
+      stop-code: "46109"
+      stop-name: "W'lands Checkpt"
+      stop-sequence: 3
+      passage-type: EXIT
+      latitude: 1.44694093553778
+      longitude: 103.76925342517902
+    - route-no: "170X"
+      lta-direction: "1"
+      direction-code: SG_TO_JB
+      stop-code: "46101"
+      stop-name: "W'lands Checkpt"
+      stop-sequence: 6
+      passage-type: ENTRY
+      latitude: 1.44460832436456
+      longitude: 103.76774882217022
+    - route-no: "170X"
+      lta-direction: "1"
+      direction-code: SG_TO_JB
+      stop-code: "46211"
+      stop-name: "Johor Bahru Checkpt"
+      stop-sequence: 7
+      passage-type: EXIT
+      latitude: 1.46491732433248
+      longitude: 103.76547712149443
+    - route-no: "170X"
+      lta-direction: "2"
+      direction-code: JB_TO_SG
+      stop-code: "46219"
+      stop-name: "Johor Bahru Checkpt"
+      stop-sequence: 2
+      passage-type: ENTRY
+      latitude: 1.4654268105665
+      longitude: 103.76826657164715
+    - route-no: "170X"
+      lta-direction: "2"
+      direction-code: JB_TO_SG
+      stop-code: "46109"
+      stop-name: "W'lands Checkpt"
+      stop-sequence: 3
+      passage-type: EXIT
+      latitude: 1.44694093553778
+      longitude: 103.76925342517902
+    - route-no: "950"
+      lta-direction: "1"
+      direction-code: SG_TO_JB
+      stop-code: "46101"
+      stop-name: "W'lands Checkpt"
+      stop-sequence: 7
+      passage-type: ENTRY
+      latitude: 1.44460832436456
+      longitude: 103.76774882217022
+    - route-no: "950"
+      lta-direction: "1"
+      direction-code: SG_TO_JB
+      stop-code: "46211"
+      stop-name: "Johor Bahru Checkpt"
+      stop-sequence: 9
+      passage-type: EXIT
+      latitude: 1.46491732433248
+      longitude: 103.76547712149443
+    - route-no: "950"
+      lta-direction: "1"
+      direction-code: JB_TO_SG
+      stop-code: "46219"
+      stop-name: "Johor Bahru Checkpt"
+      stop-sequence: 15
+      passage-type: ENTRY
+      latitude: 1.4654268105665
+      longitude: 103.76826657164715
+    - route-no: "950"
+      lta-direction: "1"
+      direction-code: JB_TO_SG
+      stop-code: "46109"
+      stop-name: "W'lands Checkpt"
+      stop-sequence: 17
+      passage-type: EXIT
+      latitude: 1.44694093553778
+      longitude: 103.76925342517902

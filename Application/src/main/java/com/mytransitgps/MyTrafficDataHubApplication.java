@@ -2,6 +2,7 @@ package com.mytransitgps;
 
 import com.mytransitgps.gtfs.archive.DailyArchiveProperties;
 import com.mytransitgps.modules.ciq.config.CiqProperties;
+import com.mytransitgps.modules.ciqbus.config.CiqBusProperties;
 import com.mytransitgps.persistence.config.MyTransitGpsDatabaseProperties;
 import com.mytransitgps.platform.config.BusGpsProperties;
 import org.slf4j.Logger;
@@ -23,7 +24,8 @@ import org.springframework.scheduling.annotation.EnableScheduling;
         DailyArchiveProperties.class,
         MyTransitGpsDatabaseProperties.class,
         BusGpsProperties.class,
-        CiqProperties.class
+        CiqProperties.class,
+        CiqBusProperties.class
 })
 public class MyTrafficDataHubApplication {
     private static final Logger log = LoggerFactory.getLogger(MyTrafficDataHubApplication.class);

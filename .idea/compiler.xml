@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="CIQ" />
+        <module name="CIQBus" />
         <module name="Application" />
         <module name="BusGPS" />
         <module name="Common" />
@@ -18,6 +19,7 @@
       <module name="Application" options="-parameters" />
       <module name="BusGPS" options="-parameters" />
       <module name="CIQ" options="-parameters" />
+      <module name="CIQBus" options="-parameters" />
       <module name="Common" options="-parameters" />
     </option>
   </component>

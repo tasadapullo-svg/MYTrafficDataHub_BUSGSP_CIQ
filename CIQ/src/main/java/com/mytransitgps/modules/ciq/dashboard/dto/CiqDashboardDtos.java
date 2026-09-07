@@ -12,7 +12,8 @@ public final class CiqDashboardDtos {
                            Double successRate, Instant generatedAt) { }
 
     public record ApiStatus(String apiCode, String apiName, String nameZh, String endpoint, String schedule,
-                            String status, Instant lastRequest, Instant lastSuccess, Integer httpStatus,
+                            String status, Instant lastRequest, Instant lastSuccess, Instant lastSuccessTime, Instant latestDataTime,
+                            Long todayCount, Long totalCount, Integer httpStatus,
                             Long rawRecords, Long ciqSelected, Long dbInserted, long todayExecutions,
                             String completeness, Integer retryCount, Integer pages, Long responseBytes,
                             Long durationMs, String lastError, String rawFile, Long fileSizeBytes,

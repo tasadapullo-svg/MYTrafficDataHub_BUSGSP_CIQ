@@ -12,7 +12,7 @@ traffic:
       retry-delay-seconds: 5
     lta:
       base-url: ${LTA_BASE_URL:https://datamall2.mytransport.sg/ltaodataservice}
-      account-key: ${LTA_ACCOUNT_KEY:}
+      account-key: "ExQDdDapS4ySGgzzUnbROg=="
       accept: application/json
     collectors:
       traffic-speed:

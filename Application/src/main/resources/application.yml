@@ -7,6 +7,7 @@ spring:
     import:
       - optional:classpath:config/bus-gps.yml
       - optional:classpath:config/ciq.yml
+      - optional:classpath:config/ciqbus.yml
       - optional:classpath:config/monitoring.yml
   data:
     redis:
@@ -19,7 +20,7 @@ spring:
   datasource:
     url: ${TRAFFIC_DB_URL:jdbc:postgresql://localhost:5432/postgres}
     username: ${TRAFFIC_DB_USERNAME:${MYTRANSITGPS_DB_USERNAME:postgres}}
-    password: ${TRAFFIC_DB_PASSWORD:${MYTRANSITGPS_DB_PASSWORD:}}
+    password: 123456
     driver-class-name: org.postgresql.Driver
     hikari:
       minimum-idle: 2
